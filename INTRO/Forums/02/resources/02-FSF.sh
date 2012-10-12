@@ -1,0 +1,1 @@
+cat $1  | grep -i "<dt><a id" -A2 | sed -e 's-<[^>*]*>--g' | sed -e 's-<[^<]*--g' | grep -v "href=" | grep [A-Z,a-z] | grep -v "(#" | grep -v "http://" | grep -v "https://" | sed s-"    "--g | sed s-"   "--g

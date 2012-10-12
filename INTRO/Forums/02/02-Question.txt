@@ -1,0 +1,4 @@
+OSI maintains a list of software licenses recognized as conformat with their definition of “open source software”. FSF maintains a list of software licenses recognized as conformant with their definition of “free software”. 
+1) Please, analyze both list, and focus in the differences. Try to know whether they correspond with licenses that were not analyzed by one of the two bodies, or if they have been rejected as not conformant with their definition. 
+
+2) Explain to which extent these differences are important or not (in terms of how similar the interpretation of both bodies is of “open source software” and “free software”).

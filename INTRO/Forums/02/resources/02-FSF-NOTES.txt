@@ -1,0 +1,2 @@
+Script parses all html
+HTML contains reference to those licenses that are not Free Software, so, take care when parsing !

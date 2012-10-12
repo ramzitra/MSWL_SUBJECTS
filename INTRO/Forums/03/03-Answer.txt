@@ -1,0 +1,47 @@
+The GNU Manifesto is one of the first documents stating the goals of the free software movement. 
+Question 1) Can you determine when it was published, its context, and its immediate consequences? 
+
+  - The GNU Manifesto was written by Richard Stallman. It was published in March 1985, explaining the purpose and philosophy of the GNU Project, which was undertaken to create a non-proprietary Unix-like operating system. It is also a call for participation and support. It is held in high regard within the free software movement as a fundamental philosophical source. 
+
+  - The context in 1985 having to do with computer industry was aproximately like this:
+
+  USA 	The Atari ST, an inexpensive 8 MHz Motorola 68000-based computer, appeared.
+  USA 	MS-DOS 3.1, PC-DOS 3.1 released.
+  USA 	Symbolics registered the symbolics.com domain, the first .com domain in the world.
+  USA 	Expanded memory specification, a memory paging scheme for PCs, was introduced by Lotus and Intel.
+  USA 	Commodore 128 was released. Based on a complex multi-mode architecture, this was Commodore's last 8-bit computer. Cost: $299.95 for each of the CPU unit and accompanying 1571 disk drive.
+  USA 	Commodore released the Amiga, based on a 7.16 MHz Motorola 68000 and a custom chipset. It was the first home computer to feature pre-emptive multitasking operating system. It used a Macintosh-like GUI. Cost: US$1,295 for a system with a single 880 KB 3.5 in disk drive and 256 KB of RAM.
+  USA 	80386 DX released. It supports clock frequencies of up to 33 MHz and can address up to 4 GB of memory (and in theory virtual memory of up to 64 TB, which was important for marketing purposes). It also includes a bigger instruction set than the 80286.
+  USA 	Microsoft Windows launched. Not really widely used until version 3, released in 1990, Windows required DOS to run and so was not a complete operating system 
+  USA 	MS-DOS 3.2, PC-DOS 3.2
+
+  So, basically, MS-DOS was growing as the PC Operating System, while UNIX was the preferred system on the rest of environments (Government, Universities, etc.). 
+  FSF states: "By the 1980s, almost all software was proprietary, which means that it had owners who forbid and prevent cooperation by users. This made the GNU Project necessary"
+  GNU was proposed as alternative to both, and proposed as a, somehow, free Operating System inspired by Unix. Richard Stallman asserts on GNU Manifesto:
+
+  "Unix is not my ideal system, but it is not too bad. The essential features of Unix seem to be good ones, and I think I can fill in what Unix lacks without spoiling them. And a system compatible with Unix would be convenient for many other people to adopt.
+  
+  - The immediate consequences of the GNU Manifesto were:
+  * Many other programmers who were excited about GNU wanted to help. Many programmers showed their desire to contribute part-time work for GNU.
+  * Prominent and reliable software components started to be written:
+    - The GNU Compiler Collection (GCC)
+    - The GNU C Library (glibc)
+    - The GNU Emacs text editor 
+    - The Bash (Unix shell)
+    - The GNOME desktop environment
+  Not so immediate, but also important, was to acomplish the GNU-Linux Complete Operating System. 
+  * By 1990 all the major components of a Free Operating System were written except one: "the kernel". Then Linux, a Unix-like kernel, was developed by Linus Torvalds in 1991 and made free software in 1992. Combining Linux with the almost-complete GNU system resulted in a complete operating system: the GNU/Linux system. Estimates are that tens of millions of people now use GNU/Linux systems. Moreover this, it is the preferred Operating System used in Servers.
+
+  The full text is included with GNU software such as Emacs, and is available on the web [1]
+   
+Question 2) When did the GNU project started to produce usable programs?
+  Initial releases of main GNU project programs were:
+  1985, March    20: GNU Emacs - Version 13.0 is released
+  1987, May      23: GCC - Version 1.0 is released
+  1988, February   : glibc - FSF described glibc as having nearly completed the functionality required by ANSI C.
+  1989, June      7: Bash first beta released
+  GNOME was published very much later. First release was introduced on 1999.
+
+  References: 
+  [1] - http://www.gnu.org/gnu/manifesto.html
+  [2] - http://www.gnu.org/gnu/gnu-history.html

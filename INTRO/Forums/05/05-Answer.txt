@@ -1,0 +1,5 @@
+Question 1) In 1998, Netscape announced that the next release of it web navigator was to be free software. Please, read the announcement, and comment on it. 
+
+Question 2) In particular, explain what happened to the software after the announcement, until the first releases of Firefox, and to which extent the plans by Netscape, as stated in that announcement, became real.
+
+Reference: The Netscape Announcement (in the Moodle site)

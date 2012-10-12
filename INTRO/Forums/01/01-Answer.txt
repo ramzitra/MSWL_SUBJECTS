@@ -1,0 +1,64 @@
+- Comparison among Free Software by Free Software Foundation, Free Software by Debian Free Software Guidelines and Open Software by Open Software Inititive:
+
+  All definitions have common points on:
+
+  1 - Freedom to use the program / No Discrimination on usage
+  2 - Free to inspect and to adapt / Source Code availability   
+  3 - Freedom to redistribute / Free Redistribution
+  4 - Freedom to improve and redistribue improvements / Derived Works 
+
+  Basically, definitions are very similar. However, taking into account previous common statements, main differences between concepts are:
+  
+  A) FSF concepts:
+  - Short and clear concepts. Stated on a permisive way, based on "Freedom".
+  - Can be considered more generalistic than the others.
+  - Can be considered the less restrictive.
+  
+  B) Open Source further concepts:
+  
+  Provides some statements more specific:
+  - Integrity of the Author's Source Code (Redistribution limitations are allowed if license provide a way to 
+    distribute patch files with source code that modify the program at build time).    
+    This statement supposes that this definition is a little bit more restrictive than the Free Software Foundation one.
+  - Technology-Neutrality
+  
+  * It is stated using some limitations on "Must Not" statements, i.e:
+  - No Discrimination statements.
+  - License not specific to a Product
+  - No Restricions on Other Software.
+  
+  C) Debian Free Software Guidelines:
+  Is basically the same definition as the Open Software Definition one, so same peculiarities exposed previously can be applied. 
+  Differences will be explained on next point.
+
+- OSI Open Software and Debian Free Software definitions comparison:
+  Basically, next statements are provided for both concepts:
+
+  Free Software definition (by Debian):
+      1.  Free Redistribution
+      2.  Source Code
+      3.  Derived Works
+      4.  Integrity of The Author's Source Code
+      5.  No Discrimination Against Persons or Groups
+      6.  No Discrimination Against Fields of Endeavor
+      7.  Distribution of License
+      8.  License Must Not Be Specific to Debian
+      9.  License Must Not Contaminate Other Software
+      10. Example Licenses
+
+  Open Source definition (by OSI):
+      1.  Free Redistribution    
+      2.  Source Code
+      3.  Derived Works
+      4.  Integrity of The Author's Source Code
+      5.  No Discrimination Against Persons or Groups
+      6.  No Discrimination Against Fields of Endeavor
+      7.  Distribution of License
+      8.  License Must Not Be Specific to a Product
+      9.  License Must Not Restrict Other Software
+      10. License Must Be Technology-Neutral
+  
+  Debian Free Software Guidelines were first proposed on 1997, by Bruce Perens as main author, although other Debian developers participated too. 
+  Open Source Definition was created from the Debian Free Software Guidelines on 1998 with Bruce Perens and Eric S. Raymond, as an attempt to provide a more generalistic definition (not so linked to Debian).   
+  They are almost the same concept. Open Source Definition just changes point 8 to avoid Debian particularity.
+  Moreover this, Open Surce Definition removes Example licenses statement, providing an statement that emphasizes on Technology Neutrality.

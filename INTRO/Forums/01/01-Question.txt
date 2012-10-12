@@ -1,0 +1,3 @@
+- Compare the Free Software Definition by the FSF, the Debian Free Software Definition with the OSI Open Source Definition. You have all them linked in the main page of the subject. 
+- Do they have any difference? If so, which ones? In case there are differences, do you think they are meaningful, and have important practical consequences or not? 
+- Could you track back the OSI and Debian definitions to find out when those differences, if any, were introduced? (as a side-exercise, determine the date in which both definitions where published, and their primary authors).

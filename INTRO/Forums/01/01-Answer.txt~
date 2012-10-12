@@ -1,0 +1,31 @@
+- Comparison among Free Software by Free Software Foundation, Free Software by Debian Free Software Guidelines and Open Software by Open Software Inititive:
+
+  All definitions have common points on:
+
+  1 - Freedom to run the program / No Discrimination  
+  2 - Free to inspect and to adapt / Source Code availability   
+  3 - Freedom to redistribute / Free Redistribution
+  4 - Freedom to improve and redistribue improvements / Derived Works 
+
+  Taking into account previous common statements, main differences between concepts are:
+  
+  A) FSF concepts:
+  - Short and clear concepts. Stated on a permisive way, based on "Freedom".
+  - Can be considered more generalistic than the others.
+  
+  B) Open Source further concepts:
+  
+  Provides some statements more specific:
+  - Integrity of the Author's Source Code (Redistribution limitations are allowed if license provide a way to 
+    distribute patch files with source code that modify the program at build time)
+  - Technology-Neutrality
+  
+  * It is stated using some limitations on "Must Not" statements, i.e:
+  - No Discrimination statements.
+  - License not specific to a Product
+  - No Restricions on Other Software.
+  
+  C) Debian Free Software Guidelines:
+
+- OSI and Debian definitions comparison:
+  

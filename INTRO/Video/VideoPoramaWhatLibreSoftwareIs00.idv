@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Videoporama>
+	<imgformat>0</imgformat>
+	<OFDDeviceType>Computer</OFDDeviceType>
+	<OFDDeviceModel>Generic PC</OFDDeviceModel>
+	<OFDOutputCodec>MPEG2</OFDOutputCodec>
+	<OFDOutputFormat>XGA 1024x768-25 fps</OFDOutputFormat>
+	<sound>
+		<mainTrack>
+			<soundObject TendV="100.4" TstartV="0.0" fadein="0.0" fadeout="0.0" gain="0" silence="0" silenceD="1.0" track="Main" urlFile="resources/ArethaBluesBrothersThink.mp3"/>
+		</mainTrack>
+		<commentTrack/>
+	</sound>
+	<IMG-0 EXIF_Orientation="-1" EndVideo="00:00:00.000" ObjectType="0" StartVideo="00:00:00.000" bgcolor="000000" bgfile="" speedt="3" tr_option="0" transition="0" urlimage="">
+		<Point-0 timeFixe="4" timeToTravel="0.0" x="0.0" y="0.0" zoom="100.0">
+			<Text Type="ZoomPoint">
+				
+				
+				
+				
+				
+				
+				
+				
+				<Text-0 BackgroundColor="000000" BackgroundForm="2" BackgroundStyle="2" FontColor="ffffff" FontName="DejaVu Sans" FontShadowColor="5f5f5f" FontSize="48" H="0.420103092784" HAlign="1" IsBold="0" IsItalic="0" IsUnderline="0" PenColor="ffffff" PenSize="2" StyleText="5" Text="I&amp;#32;do&amp;#32;not&amp;#32;understand&amp;#32;what&amp;#32;Libre&amp;#32;Software&amp;#32;is&amp;#32;..." VAlign="1" W="0.97293814433" X="0.0109536082474" Y="0.301546391753"/>
+				
+				
+				
+				
+			
+			
+			
+			
+			</Text>
+		</Point-0>
+	</IMG-0>
+	<IMG-1 EXIF_Orientation="1" EndVideo="00:00:00.000" ObjectType="1" StartVideo="00:00:00.000" bgcolor="000000" bgfile="" speedt="3" tr_option="0" transition="1" urlimage="resources/stallman00.jpg">
+		<Point-0 timeFixe="3" timeToTravel="0.0" x="0.25" y="0.0" zoom="65.0">
+			<Text Type="ZoomPoint">
+				
+				
+				
+				
+				
+				
+				
+				
+				<Text-0 BackgroundColor="000000" BackgroundForm="2" BackgroundStyle="2" FontColor="ffffff" FontName="DejaVu Sans" FontShadowColor="5f5f5f" FontSize="36" H="0.134020618557" HAlign="1" IsBold="0" IsItalic="0" IsUnderline="0" PenColor="ffffff" PenSize="2" StyleText="3" Text="A&amp;#32;religion&amp;#32;?" VAlign="1" W="0.433634020619" X="0.548324742268" Y="0.404639175258"/>
+				
+				
+				
+				
+			
+			
+			
+			
+			</Text>
+		</Point-0>
+	</IMG-1>
+	<IMG-2 EXIF_Orientation="1" EndVideo="00:00:00.000" ObjectType="1" StartVideo="00:00:00.000" bgcolor="000000" bgfile="" speedt="3" tr_option="0" transition="0" urlimage="resources/stallman00.jpg">
+		<Point-0 timeFixe="3" timeToTravel="0.0" x="0.25" y="0.0" zoom="65.0">
+			<Text Type="ZoomPoint">
+				
+				
+				
+				
+				
+				
+				
+				
+				<Text-0 BackgroundColor="000000" BackgroundForm="2" BackgroundStyle="2" FontColor="ffffff" FontName="DejaVu Sans" FontShadowColor="5f5f5f" FontSize="36" H="0.283505154639" HAlign="1" IsBold="0" IsItalic="0" IsUnderline="0" PenColor="ffffff" PenSize="2" StyleText="3" Text="Sometimes&amp;#32;seems&amp;#32;so,&amp;#32;but&amp;#32;not&amp;#32;really" VAlign="1" W="0.431701030928" X="0.542525773196" Y="0.363402061855"/>
+				
+				
+				
+				
+			
+			
+			
+			
+			</Text>
+		</Point-0>
+	</IMG-2>
+	<IMG-3 EXIF_Orientation="1" EndVideo="00:00:00.000" ObjectType="1" StartVideo="00:00:00.000" bgcolor="000000" bgfile="" speedt="3" tr_option="0" transition="1" urlimage="resources/commitment00.jpg">
+		<Point-0 timeFixe="2" timeToTravel="0.0" x="0.0" y="0.0" zoom="100.0"/>
+	</IMG-3>
+	<IMG-4 EXIF_Orientation="1" EndVideo="00:00:00.000" ObjectType="1" StartVideo="00:00:00.000" bgcolor="000000" bgfile="" speedt="3" tr_option="0" transition="0" urlimage="resources/commitment00.jpg">
+		<Point-0 timeFixe="3" timeToTravel="0.0" x="0.0" y="0.0" zoom="100.0">
+			<Text Type="ZoomPoint">
+				
+				
+				
+				
+				
+				
+				<Text-0 BackgroundColor="550000" BackgroundForm="0" BackgroundStyle="2" FontColor="ffffff" FontName="DejaVu Sans" FontShadowColor="5f5f5f" FontSize="48" H="0.15537084399" HAlign="1" IsBold="0" IsItalic="0" IsUnderline="0" PenColor="ffffff" PenSize="2" StyleText="5" Text="Commitment&amp;#32;?" VAlign="1" W="0.858056265985" X="0.0843989769821" Y="0.0626598465473"/>
+				
+				
+				
+			
+			
+			
+			</Text>
+		</Point-0>
+	</IMG-4>
+	<IMG-5 EXIF_Orientation="1" EndVideo="00:00:00.000" ObjectType="1" StartVideo="00:00:00.000" bgcolor="000000" bgfile="" speedt="3" tr_option="0" transition="0" urlimage="resources/commitment00.jpg">
+		<Point-0 timeFixe="3" timeToTravel="0.0" x="0.0" y="0.0" zoom="100.0">
+			<Text Type="ZoomPoint">
+				
+				
+				
+				
+				
+				
+				<Text-0 BackgroundColor="550000" BackgroundForm="0" BackgroundStyle="2" FontColor="ffffff" FontName="DejaVu Sans" FontShadowColor="5f5f5f" FontSize="48" H="0.226982097187" HAlign="1" IsBold="0" IsItalic="0" IsUnderline="0" PenColor="ffffff" PenSize="2" StyleText="5" Text="Not&amp;#32;exactly&amp;#32;...." VAlign="1" W="0.900255754476" X="0.0722506393862" Y="0.159846547315"/>
+				
+				
+				
+				
+				
+				
+				<Text-1 BackgroundColor="550000" BackgroundForm="0" BackgroundStyle="2" FontColor="ffffff" FontName="DejaVu Sans" FontShadowColor="5f5f5f" FontSize="48" H="0.15537084399" HAlign="1" IsBold="0" IsItalic="0" IsUnderline="0" PenColor="ffffff" PenSize="2" StyleText="5" Text="Commitment&amp;#32;?" VAlign="1" W="0.858056265985" X="0.0843989769821" Y="0.0626598465473"/>
+				
+				
+				
+			
+			
+			
+			</Text>
+		</Point-0>
+	</IMG-5>
+	<IMG-6 EXIF_Orientation="1" EndVideo="00:00:00.000" ObjectType="1" StartVideo="00:00:00.000" bgcolor="000000" bgfile="" speedt="3" tr_option="8" transition="7" urlimage="resources/cooperation00.jpg">
+		<Point-0 timeFixe="2" timeToTravel="0.0" x="0.0" y="0.0" zoom="100.0"/>
+	</IMG-6>
+	<IMG-7 EXIF_Orientation="1" EndVideo="00:00:00.000" ObjectType="1" StartVideo="00:00:00.000" bgcolor="000000" bgfile="" speedt="3" tr_option="0" transition="0" urlimage="resources/cooperation00.jpg">
+		<Point-0 timeFixe="3.0" timeToTravel="0.0" x="0.0" y="0.0" zoom="100.0">
+			<Text Type="ZoomPoint">
+				<Text-0 BackgroundColor="000000" BackgroundForm="0" BackgroundStyle="2" FontColor="000000" FontName="DejaVu Sans" FontShadowColor="5f5f5f" FontSize="48" H="0.219309462916" HAlign="1" IsBold="0" IsItalic="0" IsUnderline="0" PenColor="ffffff" PenSize="2" StyleText="5" Text="Cooperation&amp;#32;?" VAlign="1" W="0.74104859335" X="0.154731457801" Y="0.0"/>
+			</Text>
+		</Point-0>
+	</IMG-7>
+	<IMG-8 EXIF_Orientation="1" EndVideo="00:00:00.000" ObjectType="1" StartVideo="00:00:00.000" bgcolor="000000" bgfile="" speedt="3" tr_option="0" transition="0" urlimage="resources/cooperation00.jpg">
+		<Point-0 timeFixe="3.0" timeToTravel="0.0" x="0.0" y="0.0" zoom="100.0">
+			<Text Type="ZoomPoint">
+				
+				
+				<Text-0 BackgroundColor="550000" BackgroundForm="0" BackgroundStyle="2" FontColor="000000" FontName="DejaVu Sans" FontShadowColor="5f5f5f" FontSize="36" H="0.25" HAlign="1" IsBold="0" IsItalic="0" IsUnderline="0" PenColor="ffffff" PenSize="2" StyleText="5" Text="Community&amp;#32;cooperates,&amp;#32;but&amp;#32;not&amp;#32;only&amp;#32;cooperation&amp;#32;..." VAlign="1" W="0.783887468031" X="0.106777493606" Y="0.75"/>
+				
+				
+				<Text-1 BackgroundColor="000000" BackgroundForm="0" BackgroundStyle="2" FontColor="000000" FontName="DejaVu Sans" FontShadowColor="5f5f5f" FontSize="48" H="0.219309462916" HAlign="1" IsBold="0" IsItalic="0" IsUnderline="0" PenColor="ffffff" PenSize="2" StyleText="5" Text="Cooperation&amp;#32;?" VAlign="1" W="0.74104859335" X="0.154731457801" Y="0"/>
+				
+			
+			</Text>
+		</Point-0>
+	</IMG-8>
+	<IMG-9 EXIF_Orientation="1" EndVideo="00:00:00.000" ObjectType="1" StartVideo="00:00:00.000" bgcolor="000000" bgfile="" speedt="3" tr_option="0" transition="1" urlimage="resources/dollar-free01.jpg">
+		<Point-0 timeFixe="2" timeToTravel="0.0" x="0.04" y="0.0" zoom="95.0"/>
+	</IMG-9>
+	<IMG-10 EXIF_Orientation="1" EndVideo="00:00:00.000" ObjectType="1" StartVideo="00:00:00.000" bgcolor="000000" bgfile="" speedt="3" tr_option="0" transition="0" urlimage="resources/dollar-free01.jpg">
+		<Point-0 timeFixe="3.0" timeToTravel="0.0" x="0.04" y="0.0" zoom="95.0">
+			<Text Type="ZoomPoint">
+				<Text-0 BackgroundColor="550000" BackgroundForm="0" BackgroundStyle="2" FontColor="ffffff" FontName="DejaVu Sans" FontShadowColor="5f5f5f" FontSize="36" H="0.937979539642" HAlign="1" IsBold="0" IsItalic="0" IsUnderline="0" PenColor="ffffff" PenSize="2" StyleText="5" Text="One&amp;#32;thing&amp;#13;is&amp;#32;sure&amp;#32;!&amp;#13;You&amp;#32;&amp;#13;can&amp;#32;not&amp;#13;win&amp;#32;&amp;#13;money&amp;#13;with&amp;#13;it&amp;#32;!" VAlign="1" W="0.4226342711" X="0.557544757033" Y="0.0166240409207"/>
+			</Text>
+		</Point-0>
+	</IMG-10>
+	<IMG-11 EXIF_Orientation="1" EndVideo="00:00:00.000" ObjectType="1" StartVideo="00:00:00.000" bgcolor="000000" bgfile="" speedt="3" tr_option="0" transition="1" urlimage="resources/gold_dollar00.jpg">
+		<Point-0 timeFixe="2" timeToTravel="0.0" x="0.0" y="0.1" zoom="75.0"/>
+	</IMG-11>
+	<IMG-12 EXIF_Orientation="1" EndVideo="00:00:00.000" ObjectType="1" StartVideo="00:00:00.000" bgcolor="000000" bgfile="" speedt="3" tr_option="0" transition="0" urlimage="resources/gold_dollar00.jpg">
+		<Point-0 timeFixe="4" timeToTravel="0.0" x="0.0" y="0.1" zoom="75.0">
+			<Text Type="ZoomPoint">
+				<Text-0 BackgroundColor="550000" BackgroundForm="0" BackgroundStyle="2" FontColor="ffffff" FontName="DejaVu Sans" FontShadowColor="5f5f5f" FontSize="28" H="1.0" HAlign="1" IsBold="0" IsItalic="0" IsUnderline="0" PenColor="ffffff" PenSize="2" StyleText="5" Text="Not&amp;#32;true&amp;#32;!&amp;#13;You&amp;#32;can&amp;#32;&amp;#13;win&amp;#32;money&amp;#32;with&amp;#13;Libre&amp;#32;Software,&amp;#13;although&amp;#13;usually&amp;#32;&amp;#13;it&amp;#32;is&amp;#13;costless" VAlign="1" W="0.276854219949" X="0.00319693094629" Y="0.0"/>
+			</Text>
+		</Point-0>
+	</IMG-12>
+	<IMG-13 EXIF_Orientation="1" EndVideo="00:00:00.000" ObjectType="1" StartVideo="00:00:00.000" bgcolor="000000" bgfile="" speedt="3" tr_option="0" transition="0" urlimage="resources/license00.png">
+		<Point-0 timeFixe="2" timeToTravel="0.0" x="0.0" y="0.0" zoom="100.0"/>
+	</IMG-13>
+	<IMG-14 EXIF_Orientation="1" EndVideo="00:00:00.000" ObjectType="1" StartVideo="00:00:00.000" bgcolor="000000" bgfile="" speedt="3" tr_option="0" transition="1" urlimage="resources/license00.png">
+		<Point-0 timeFixe="3" timeToTravel="0.0" x="0.0" y="0.0" zoom="100.0">
+			<Text Type="ZoomPoint">
+				<Text-0 BackgroundColor="550000" BackgroundForm="0" BackgroundStyle="2" FontColor="ffffff" FontName="DejaVu Sans" FontShadowColor="5f5f5f" FontSize="36" H="0.191176470588" HAlign="1" IsBold="0" IsItalic="0" IsUnderline="0" PenColor="ffffff" PenSize="2" StyleText="5" Text="What&amp;#32;about&amp;#32;licensing&amp;#32;?" VAlign="1" W="0.89641943734" X="0.0856777493606" Y="0"/>
+			</Text>
+		</Point-0>
+	</IMG-14>
+	<IMG-15 EXIF_Orientation="1" EndVideo="00:00:00.000" ObjectType="1" StartVideo="00:00:00.000" bgcolor="000000" bgfile="" speedt="3" tr_option="0" transition="0" urlimage="resources/license00.png">
+		<Point-0 timeFixe="4" timeToTravel="0.0" x="0.0" y="0.0" zoom="100.0">
+			<Text Type="ZoomPoint">
+				<Text-0 BackgroundColor="550000" BackgroundForm="0" BackgroundStyle="2" FontColor="ffffff" FontName="DejaVu Sans" FontShadowColor="5f5f5f" FontSize="36" H="0.191176470588" HAlign="1" IsBold="0" IsItalic="0" IsUnderline="0" PenColor="ffffff" PenSize="2" StyleText="5" Text="An&amp;#32;important&amp;#32;part,&amp;#32;but&amp;#32;not&amp;#32;the&amp;#32;only&amp;#32;one&amp;#32;" VAlign="1" W="0.89641943734" X="0.0856777493606" Y="0.0"/>
+			</Text>
+		</Point-0>
+	</IMG-15>
+	<IMG-16 EXIF_Orientation="-1" EndVideo="00:00:00.000" ObjectType="0" StartVideo="00:00:00.000" bgcolor="000000" bgfile="" speedt="3" tr_option="0" transition="0" urlimage="">
+		<Point-0 timeFixe="2" timeToTravel="0.0" x="0.0" y="0.0" zoom="100.0">
+			<Text Type="ZoomPoint">
+				<Text-0 BackgroundColor="550000" BackgroundForm="0" BackgroundStyle="2" FontColor="ffffff" FontName="DejaVu Sans" FontShadowColor="5f5f5f" FontSize="48" H="0.631074168798" HAlign="1" IsBold="0" IsItalic="0" IsUnderline="0" PenColor="ffffff" PenSize="2" StyleText="5" Text="So,&amp;#32;What&amp;#32;is&amp;#32;it?" VAlign="1" W="0.625959079284" X="0.196930946292" Y="0.190537084399"/>
+			</Text>
+		</Point-0>
+	</IMG-16>
+	<IMG-17 EXIF_Orientation="-1" EndVideo="00:00:00.000" ObjectType="0" StartVideo="00:00:00.000" bgcolor="000000" bgfile="" speedt="3" tr_option="0" transition="0" urlimage="">
+		<Point-0 timeFixe="2" timeToTravel="0.0" x="0.0" y="0.0" zoom="100.0">
+			<Text Type="ZoomPoint">
+				
+				
+				
+				
+				
+				
+				
+				
+				<Text-0 BackgroundColor="000000" BackgroundForm="0" BackgroundStyle="0" FontColor="FFFFFF" FontName="DejaVu Sans" FontShadowColor="000000" FontSize="48" H="0.451030927835" HAlign="1" IsBold="0" IsItalic="0" IsUnderline="0" PenColor="ffffff" PenSize="2" StyleText="5" Text="Basically&amp;#32;Software..." VAlign="1" W="0.826030927835" X="0.0863402061856" Y="0.288659793814"/>
+				
+				
+				
+				
+			
+			
+			
+			
+			</Text>
+		</Point-0>
+	</IMG-17>
+	<IMG-18 EXIF_Orientation="1" EndVideo="00:00:00.000" ObjectType="1" StartVideo="00:00:00.000" bgcolor="000000" bgfile="" speedt="3" tr_option="0" transition="5" urlimage="resources/softwarelibre00.jpg">
+		<Point-0 timeFixe="3" timeToTravel="0.0" x="0.0" y="0.0" zoom="100.0"/>
+	</IMG-18>
+	<IMG-19 EXIF_Orientation="-1" EndVideo="00:00:00.000" ObjectType="0" StartVideo="00:00:00.000" bgcolor="000000" bgfile="" speedt="3" tr_option="0" transition="0" urlimage="">
+		<Point-0 timeFixe="3" timeToTravel="0.0" x="0.0" y="0.0" zoom="100.0">
+			<Text Type="ZoomPoint">
+				
+				
+				
+				
+				
+				
+				
+				
+				<Text-0 BackgroundColor="000000" BackgroundForm="0" BackgroundStyle="0" FontColor="FFFFFF" FontName="DejaVu Sans" FontShadowColor="000000" FontSize="48" H="0.451030927835" HAlign="1" IsBold="0" IsItalic="0" IsUnderline="0" PenColor="ffffff" PenSize="2" StyleText="5" Text="Basically&amp;#32;Freedom..." VAlign="1" W="0.826030927835" X="0.0863402061856" Y="0.288659793814"/>
+				
+				
+				
+				
+			
+			
+			
+			
+			</Text>
+		</Point-0>
+	</IMG-19>
+	<IMG-20 EXIF_Orientation="1" EndVideo="00:00:00.000" ObjectType="1" StartVideo="00:00:00.000" bgcolor="000000" bgfile="" speedt="3" tr_option="0" transition="1" urlimage="resources/freedom00.jpg">
+		<Point-0 timeFixe="2" timeToTravel="0.0" x="0.0" y="0.0" zoom="100.0"/>
+	</IMG-20>
+	<IMG-21 EXIF_Orientation="1" EndVideo="00:00:00.000" ObjectType="1" StartVideo="00:00:00.000" bgcolor="000000" bgfile="" speedt="3" tr_option="0" transition="0" urlimage="resources/freedom00.jpg">
+		<Point-0 timeFixe="2" timeToTravel="0.0" x="0.0" y="0.0" zoom="100.0">
+			<Text Type="ZoomPoint">
+				
+				
+				<Text-0 BackgroundColor="000000" BackgroundForm="0" BackgroundStyle="2" FontColor="000000" FontName="DejaVu Sans" FontShadowColor="000000" FontSize="36" H="0.0953608247423" HAlign="1" IsBold="0" IsItalic="0" IsUnderline="0" PenColor="ffffff" PenSize="2" StyleText="5" Text="-&amp;#32;Freedom&amp;#32;To&amp;#32;Use&amp;#32;!" VAlign="1" W="0.550893822343" X="0.355263071164" Y="0.201584623092"/>
+				
+			
+			</Text>
+		</Point-0>
+	</IMG-21>
+	<IMG-22 EXIF_Orientation="1" EndVideo="00:00:00.000" ObjectType="1" StartVideo="00:00:00.000" bgcolor="000000" bgfile="" speedt="3" tr_option="0" transition="0" urlimage="resources/freedom00.jpg">
+		<Point-0 timeFixe="2" timeToTravel="0.0" x="0.0" y="0.0" zoom="100.0">
+			<Text Type="ZoomPoint">
+				<Text-0 BackgroundColor="000000" BackgroundForm="0" BackgroundStyle="2" FontColor="000000" FontName="DejaVu Sans" FontShadowColor="000000" FontSize="36" H="0.0953608247423" HAlign="1" IsBold="0" IsItalic="0" IsUnderline="0" PenColor="ffffff" PenSize="2" StyleText="5" Text="-&amp;#32;Freedom&amp;#32;To&amp;#32;Use&amp;#32;!" VAlign="1" W="0.550893822343" X="0.355263071164" Y="0.201584623092"/>
+				<Text-1 BackgroundColor="550000" BackgroundForm="0" BackgroundStyle="2" FontColor="000000" FontName="DejaVu Sans" FontShadowColor="5f5f5f" FontSize="36" H="0.157928388747" HAlign="1" IsBold="0" IsItalic="0" IsUnderline="0" PenColor="ffffff" PenSize="2" StyleText="5" Text="-&amp;#32;Freedom&amp;#32;To&amp;#32;Inspect&amp;#32;!" VAlign="1" W="0.629795396419" X="0.363810741689" Y="0.287723785167"/>
+			</Text>
+		</Point-0>
+	</IMG-22>
+	<IMG-23 EXIF_Orientation="1" EndVideo="00:00:00.000" ObjectType="1" StartVideo="00:00:00.000" bgcolor="000000" bgfile="" speedt="3" tr_option="0" transition="0" urlimage="resources/freedom00.jpg">
+		<Point-0 timeFixe="2" timeToTravel="0.0" x="0.0" y="0.0" zoom="100.0">
+			<Text Type="ZoomPoint">
+				<Text-0 BackgroundColor="550000" BackgroundForm="0" BackgroundStyle="2" FontColor="000000" FontName="DejaVu Sans" FontShadowColor="5f5f5f" FontSize="36" H="0.221867007673" HAlign="1" IsBold="0" IsItalic="0" IsUnderline="0" PenColor="ffffff" PenSize="2" StyleText="5" Text="-&amp;#32;Freedom&amp;#32;To&amp;#32;&amp;#13;Redistribute&amp;#32;!" VAlign="1" W="0.712915601023" X="0.196930946292" Y="0.40537084399"/>
+				<Text-1 BackgroundColor="000000" BackgroundForm="0" BackgroundStyle="2" FontColor="000000" FontName="DejaVu Sans" FontShadowColor="000000" FontSize="36" H="0.0953608247423" HAlign="1" IsBold="0" IsItalic="0" IsUnderline="0" PenColor="ffffff" PenSize="2" StyleText="5" Text="-&amp;#32;Freedom&amp;#32;To&amp;#32;Use&amp;#32;!" VAlign="1" W="0.550893822343" X="0.355263071164" Y="0.201584623092"/>
+				<Text-2 BackgroundColor="550000" BackgroundForm="0" BackgroundStyle="2" FontColor="000000" FontName="DejaVu Sans" FontShadowColor="5f5f5f" FontSize="36" H="0.157928388747" HAlign="1" IsBold="0" IsItalic="0" IsUnderline="0" PenColor="ffffff" PenSize="2" StyleText="5" Text="-&amp;#32;Freedom&amp;#32;To&amp;#32;Inspect&amp;#32;!" VAlign="1" W="0.629795396419" X="0.363810741689" Y="0.287723785167"/>
+			</Text>
+		</Point-0>
+	</IMG-23>
+	<IMG-24 EXIF_Orientation="1" EndVideo="00:00:00.000" ObjectType="1" StartVideo="00:00:00.000" bgcolor="000000" bgfile="" speedt="3" tr_option="0" transition="0" urlimage="resources/freedom00.jpg">
+		<Point-0 timeFixe="4" timeToTravel="0.0" x="0.0" y="0.0" zoom="100.0">
+			<Text Type="ZoomPoint">
+				<Text-0 BackgroundColor="550000" BackgroundForm="0" BackgroundStyle="2" FontColor="000000" FontName="DejaVu Sans" FontShadowColor="5f5f5f" FontSize="36" H="0.157928388747" HAlign="1" IsBold="0" IsItalic="0" IsUnderline="0" PenColor="ffffff" PenSize="2" StyleText="5" Text="-&amp;#32;Freedom&amp;#32;To&amp;#32;Inspect&amp;#32;!" VAlign="1" W="0.629795396419" X="0.363810741689" Y="0.287723785167"/>
+				<Text-1 BackgroundColor="000000" BackgroundForm="0" BackgroundStyle="2" FontColor="000000" FontName="DejaVu Sans" FontShadowColor="000000" FontSize="36" H="0.0953608247423" HAlign="1" IsBold="0" IsItalic="0" IsUnderline="0" PenColor="ffffff" PenSize="2" StyleText="5" Text="-&amp;#32;Freedom&amp;#32;To&amp;#32;Use&amp;#32;!" VAlign="1" W="0.550893822343" X="0.355263071164" Y="0.201584623092"/>
+				<Text-2 BackgroundColor="550000" BackgroundForm="0" BackgroundStyle="2" FontColor="000000" FontName="DejaVu Sans" FontShadowColor="5f5f5f" FontSize="36" H="0.221867007673" HAlign="1" IsBold="0" IsItalic="0" IsUnderline="0" PenColor="ffffff" PenSize="2" StyleText="5" Text="-&amp;#32;Freedom&amp;#32;To&amp;#32;&amp;#13;Redistribute&amp;#32;!" VAlign="1" W="0.712915601023" X="0.196930946292" Y="0.40537084399"/>
+				<Text-3 BackgroundColor="550000" BackgroundForm="0" BackgroundStyle="2" FontColor="000000" FontName="DejaVu Sans" FontShadowColor="5f5f5f" FontSize="36" H="0.168158567775" HAlign="1" IsBold="0" IsItalic="0" IsUnderline="0" PenColor="ffffff" PenSize="2" StyleText="5" Text="-&amp;#32;Freedom&amp;#32;to&amp;#32;&amp;#13;Improve&amp;#32;!" VAlign="1" W="0.654731457801" X="0.224424552429" Y="0.620204603581"/>
+			</Text>
+		</Point-0>
+	</IMG-24>
+</Videoporama>

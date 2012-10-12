@@ -1,0 +1,87 @@
+GNU General Public License (GPL) version 3
+GNU General Public License (GPL) version 2
+GNU Lesser General Public License (LGPL) version 3
+GNU Lesser General Public License (LGPL) version 2.1
+GNU Affero General Public License (AGPL) version 3
+GNU All-Permissive License
+Apache License, Version 2.0
+Artistic License 2.0
+Boost Software License
+Modified BSD license
+CC0
+CeCILL version 2
+The Clear BSD License
+Cryptix General License
+of the ec fonts for LaTeX
+eCos license version 2.0
+Educational Community License 2.0
+Eiffel Forum License, version 2
+EU DataGrid Software License
+Expat License
+FreeBSD license
+Freetype Project License
+License of the iMatix Standard Function Library
+Independent JPEG Group License
+License of imlib2
+Intel Open Source License
+ISC License
+License (MPL) version 2.0
+NCSA/University of Illinois Open Source License
+License of Netscape JavaScript
+OpenLDAP License, Version 2.7
+License of Perl 5 and below
+Public Domain
+License of Python 2.0.1, 2.1.1, and newer versions
+License of Python 1.6a2 and earlier versions
+License of Ruby
+SGI Free Software License B, version 2.0
+Standard ML of New Jersey Copyright License
+Unicode, Inc. License Agreement for Data Files and Software
+The Unlicense
+License of Vim, Version 6.1 or later
+W3C Software Notice and License
+License of WebM
+WTFPL, Version 2
+X11 License
+XFree86 1.1 License
+License of ZLib
+Zope Public License, versions 2.0 and 2.1
+Affero General Public License version 1
+Academic Free License, all versions through 3.0
+Apache License, Version 1.1
+Apache License, Version 1.0
+Apple Public Source License (APSL), version 2
+BitTorrent Open Source License
+Original BSD license
+Common Development and Distribution License (CDDL), version 1.0
+Common Public Attribution License 1.0 (CPAL)
+Common Public License Version 1.0
+Condor Public License
+Eclipse Public License Version 1.0
+European Union Public License (EUPL) version 1.1
+IBM Public License, Version 1.0
+Jabber Open Source License, Version 1.0
+LaTeX Project Public License 1.3a
+LaTeX Project Public License 1.2
+Lucent Public License Version 1.02 (Plan 9 license)
+Microsoft Public License (Ms-PL)
+Microsoft Reciprocal License (Ms-RL)
+ Mozilla Public License (MPL) version 1.1
+Netizen Open Source License (NOSL), Version 1.0
+Netscape Public License (NPL), versions 1.0 and 1.1
+Nokia Open Source License
+Old OpenLDAP License, Version 2.3
+Open Software License, all versions through 3.0
+OpenSSL license
+Phorum License, Version 2.0
+PHP License, Version 3.01
+License of Python 1.6b1 through 2.0 and 2.1
+Q Public License (QPL), Version 1.0
+RealNetworks Public Source License (RPSL), Version 1.0
+Sun Industry Standards Source License 1.0
+Sun Public License
+License of xinetd
+Yahoo! Public License 1.1
+Zend License, Version 2.0
+Zimbra Public License 1.3
+Zope Public License version 1

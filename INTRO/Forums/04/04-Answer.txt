@@ -1,0 +1,15 @@
+Question 1) How do you imagine free software in year 2022? 
+Answer   1) I imagine Free Software with a stronger presence in Software Industry, if possible, than now.  Important Free Software Projects (Linux kernel, Apache Web Server, Firefox Navigator) that are nowadays important, will continue with a higher presence in the different Software Industry Markets, under the same name or after evolving to different projects, but with the same roots that made them to consolidate.
+Android will be the main Operating System used, taking into account that no Personal Computer will exist, as Mobile Platforms (that will be much than phones) will be used at home attached to docking stations. 
+With Android as main operating system, a bunch of free software applications will exist, in the same way as now there is a huge variety of them for the different Linux distributions.
+
+Question 2) In particular, do you think it will be a mainstream model for producing software? Or maybe it will be reduced to some specific niches? (which ones?) Or maybe it will be reduced to irrelevant? And in any case, why?
+Answer   2) Free Software model is an evidence that, agile implementation methods are sucessfull. Linux Kernel project is a good example. It can provide up to a pair of versions in a day, so it is based on small but constant incremental changes.
+In fact, it contains tens of millions of lines of code, but still continues producing versions without collapsing, so it has necessary to use a good software production model.
+Despite this, it has also produced enhancements on other related industries, such as Software Configuration Management tools, with the occurrence of GIT. 
+So, free software projects are, somehow, pioneers on innovation related to software production. And their nature as projects with a big bunch of developers spread around the world will continue to be successful along the time.
+
+Question 3) As a side question, for the main IT device in use by that year, how much free software will be delivered in it, typically? (Just say a percentage)
+Answer   3) As I clarified in the first answer, main IT device will be a very powerful Mobile Platform which will allow all user necessities. This small Mobile Platform will contain "home-peripherals" (Television included) for this platform to provide Multimedia-Home Services (Gaming, VideoConference, Films, etc.).
+Google's Operating System will be Market leader, and Google will invest even higher for the Operating System itself as well as applications to be Free Software.
+So, in general, Google will hold up to 70-80 % of Operating System Market. In IT devices with Android as Operating System, 90 % of Software Applications will be Free Software and, around 10 %, will be proprietary software. 
