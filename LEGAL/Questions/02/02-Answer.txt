@@ -1,0 +1,31 @@
+Q) Traditionally, software patents have been considered harmful for free/open source software. Why?
+A) There are some causes of why software patents are harmful for FLOSS projects. Some of them are exposed below:
+-  The main reason: FLOSS projects are based, among other facts, on being "Open Source". Source code is provided, as they are based on the freedom for users to inspect and modify the code. This fact mades them more vulnerable to patented software detection compared to privative / close software.
+-  Besides this, software is basically, depending on the program complexity, on a great variety of software components that are used together. Many of this commonly third party software that other components take advantage of could be patentable, and, for this reason, free software projects, due to its community based orientation, would make them non-viable, as they do not have same economic resources compared to the great software industry components.  
+-  Another important reason against patents is the fact that they are normally tied to a tedious process based on a National Office that must issue them in response to an application. Meanwhile, copyright exists from the beginnng, and authors can select copyright terms with no further action. The fact that software is a very dynamic industry (even more dinamic if talking about FLOSS projects), make the idea of software patents to be completely against this dynamic character.
+ 
+Q) Find the different techniques and strategies that free software community have implemented (via FLOSS licenses and others) for defending against patents.
+A) The main strategy against patents in FLOSS projects is including anti patent clauses.
+   Among the different FLOSS licenses, GPLv3, LGPLv3, MPL and Apache 2.0, for example, contain patent clauses with particular actions against patterns, including [1]:
+   - Grant of patent rights:
+     * GPLv3: Distribution of modified version grant explicit patent license for the whole program.
+       GPLv3 contains a complete Section (Section 11) to clarify Patent royalty-free licensing:
+
+[ Each contributor grants you a non-exclusive, worldwide, royalty-free patent license under the contributor's essential patent claims, to make, use, sell, offer for sale, import and otherwise run, modify and propagate the contents of its contributor version.
+
+In the following three paragraphs, a “patent license” is any express agreement or commitment, however denominated, not to enforce a patent (such as an express permission to practice a patent or covenant not to sue for patent infringement). To “grant” such a patent license to a party means to make such an agreement or commitment not to enforce a patent against the party ] [2]
+
+     * Apache License 2.0: Grant explicit patent license as well, but only for the changes made by a certain distributor.
+   - Retalliation: Meaning that the granted rights from anyone who initiates litigation shall be retracted. 
+     An example of this kind of grant is contained in MPL 2.0:
+
+[ If You initiate litigation against any entity by asserting a patent infringement claim (excluding declaratory judgment actions, counter-claims, and cross-claims) alleging that a Contributor Version directly or indirectly infringes any patent, then the rights granted to You by any and all Contributors for the Covered Software under Section 2.1 of this License shall terminate ] [3]
+
+   To summarize, FLOSS licences can solve a small bunch of patent related problems in two terms:
+   1) By requiring that distributors of a software package give recipients a licence to use any necessary patents.
+   2) By making patent aggression less attractive, revoking patent rights that a litigator received through the FLOSS licence.
+
+References:
+[1] http://en.swpat.org/wiki/Patent_clauses_in_software_licences
+[2] http://www.gnu.org/licenses/gpl.html
+[3] http://www.mozilla.org/MPL/2.0

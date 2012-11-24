@@ -1,0 +1,54 @@
+In 2003 SCO Group claimed a cluster of legal complaints about Unix and Linux source code: 
+ 
+Q1) What alleged IP violations SCO claimed? ¿What companies was involved?
+A1) SCO claims that IBM had contributed part of SCO's Unix code to te codebase of the Linux Operating System. IBM would have done so without SCO's authorization, incurring on the violation of SCO's intellectual property.
+Moreover this, SCO sent letters to members of the Global 500 companies list to warn them about these claims, to prevent them from using Linux because of the liability that could mean for them.
+It was, obviously, an attempt from SCO to stop increasing popularity of GNU/Linux Operating System.
+Apart from IBM and SCO, claims and counter-claims made by both sides escalated. IBM and Linux distributor Red Hat started legal action against SCO. Meanwhile, SCO sued other companies, as Novell, AutoZone and DaimlerChrysler.
+  
+Q2) How the SCO litigation was resolved? What was the final verdict?
+A2) Litigation was not resolved once, with resulting final verdict following next timeline:
+August 10, 2007: Judge ruled that Novell, not SCO, is the rightful owner of the copyrights covering the Unix Operating System.
+September 27, 2007: Same judge administratively closed the case of SCO vs. IBM due to the fact that SCO went to bankrupt on September 14, 2007 [1].
+August 24, 2009: US Court of Appeals reversed the portion of the August 10, 2007 district court summary judgment in SCO v. Novell. As a result, SCO was permitted to pursue its claim of ownership of the Unix copyrights at trial [2].
+March 30, 2010: the jury returned a verdict in SCO v. Novell, finding again that Novell owns the copyrights [3].
+
+Now, search the Web and read "Open Letter" from Darl McBride, CEO of SCO, dated December 4, 2003:
+ 
+Q3) What does the letter argue about copyleft scheme and GPL license?
+A3) This Open Letter was written by SCO's CEO, Darl Mc Bride, on December 2004 [4].
+    On this letter, Darl Mc Bride alleged that GPL supposes a violation of the United States Constitution, and, in particular, to the Section 8 of Article One, that asserts that:
+
+"Congress shall have Power ... to promote the Progress of Science and useful Arts, by securing for limited Times to Authors and Inventors the exclusive Right to their respective Writings and Discoveries."
+    From SCO's CEO perspective, previous article lead in 1976 to the Copyright Act, in order to provide copy protection in technology products:
+
+"This Constitutional declaration gave rise to our system of copyrights and patents. Congress has enacted several iterations of the Copyright Act. The foundation for current copy protection in technology products is grounded in the 1976 Copyright Act".
+
+    In that same letter, he states, in a lax and vague justification, that GPL is against the United States Constitution, in particular against Section 8 of Article One, due to next reason:
+
+"The software license adopted by the GPL is called "copy left" by its authors. This is because the GPL has the effect of requiring free and open access to Linux (and other) software code and prohibits any proprietary use thereof. As a result, the GPL is exactly opposite in its effect from the "copy right " laws adopted by the US Congress and the European Union."
+    
+
+Q4) Do you think GPL and free software licenses was threatened in any way? Why? (or why not?)
+A4) GPL is, despite its "Copy-Left" nature, a Copyright license. GPL license is, in fact, an individual contract to achieve copyright. Lawerence Lessig gives a justified description of why SCO's position is completely wrong: [5]
+
+"The GNU GPL is a copyright license. It is the creation not of a government, but an individual. There is no way that an individual can violate the constitution merely by writing a contract. And the argument that he can reveals that the author has no understanding of the way constitutional law functions."
+
+    Moreover this, legal minds behind GPL, seemed in the meantime to be not concerned about SCO's claims. 
+    Eben Moglen, who was charged with GPL enforcementa by FSF, asserted in February, 2004: [6]
+
+"I believe the constitutionality attack on the GPL is not a tenable legal argument but is rather a public relations argument."
+
+    He also stated that, regarding Copyright laws, and the possibility for an author to waive copyrights:
+
+"The existing copyright law is constitutional and our license, which fully observes all the requirements that the copyright law places upon it, is also presumptively constitutional." 
+
+    To summarize, GPL and free software authors and lawyers showed no worry about SCO's claims and, of course, had no problem to recognize it.
+
+References:
+[1] http://groklaw.net/article.php?story=2007092110013091
+[2] http://www.groklaw.net/pdf/AppealRuling.pdf
+[3] http://www.groklaw.net/article.php?story=20100330152829622
+[4] http://www.sco.com/copyright
+[5] http://lessig.org/blog/2004/01/is_the_gnu_gpl_unconstitutiona.html
+[6] http://www.linuxinsider.com/story/33121.html

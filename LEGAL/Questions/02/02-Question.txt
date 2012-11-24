@@ -1,0 +1,3 @@
+Traditionally, software patents have been considered harmful for free/open source software. Why?
+
+Find the different techniques and strategies that free software community have implemented (via FLOSS licenses and others) for defending against patents.

@@ -1,0 +1,9 @@
+In 2003 SCO Group claimed a cluster of legal complaints about Unix and Linux source code: 
+ 
+1. What alleged IP violations SCO claimed? ¿What companies was involved?
+2. How the SCO litigation was resolved? What was the final verdict?
+ 
+Now, search the Web and read "Open Letter" from Darl McBride, CEO of SCO, dated December 4, 2003:
+ 
+3. What does the letter argue about copyleft scheme and GPL license?
+4. Do you think GPL and free software licenses was threatened in any way? Why? (or why not?)

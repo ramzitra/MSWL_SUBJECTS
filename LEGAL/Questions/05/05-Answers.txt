@@ -1,0 +1,18 @@
+Q1) Please, read GPL version 2, section 8, and check if this section would be in conflict with any criterion of the Open Source Definition (OSD). 
+A1) Section 8 of GPL, version 2, asserts [1]:
+
+"If the distribution and/or use of the Program is restricted in certain countries either by patents or by copyrighted interfaces, the original copyright holder who places the Program under this License may add an explicit geographical distribution limitation excluding those countries, so that distribution is permitted only in or among countries not thus excluded. In such case, this License incorporates the limitation as if written in the body of this License."
+
+Open Source Definition, on its first clause, guarantees Free Redistribution, in both freedom and costless sense [2]:
+
+"The license shall not restrict any party from selling or giving away the software as a component of an aggregate software distribution containing programs from several different sources. The license shall not require a royalty or other fee for such sale."
+
+Q2) If you think so, which OSD point would fail? Why? What do you think it is OSD-compliant despite that?
+A2) As previously stated, it would be against the first clause in OSD, having to do with the redistribution. 
+GPLv2 establish certain limits to redistribution, depending on the national laws regarding copyright and software patents for a particular country, so that the copyright author can implement limitations on distribution of the program, specifying such restrictions on the body of the license.
+Despite this limitation, OSD considers GPLv2 as a Free Software license, because the limitation is not oriented to restrict the distribution in the literal sense, but, to protect the holder of the copyright of a particular program from being prosecuted in certain countries. In this sense, it is, somehow, like a patent clause.
+
+References:
+[1] http://www.gnu.org/licenses/gpl-2.0.html 
+[2] http://opensource.org/osd
+

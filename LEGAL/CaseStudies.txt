@@ -1,0 +1,13 @@
+1) Apache vs GPL (v2/v3).
+2) GPL vs CDDL.
+3) The Atheros Case.
+
+   Conclussion: SFLC (Software Freedom Law Center). Non-commercial legal advice to free software projects.
+                Origin ar5k branch.
+                3 branches identified:
+                - ath5k-driver : contributors agree to release changes under ISC.
+                - madwifi-oldopenhal : madwifi branch.
+                - ath5k-branch : madwifi branch. release must be under GPL.
+                
+                SFLC: Maintaining Permissive-Licensed Files in a GPL-Licensed Project: Guidelines for Developers
+                      to use BSD-licensed code in GPL'd code.

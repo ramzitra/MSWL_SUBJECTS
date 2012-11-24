@@ -1,0 +1,1 @@
+Please, read GPL version 2, section 8, and check if this section would be in conflict with any criterion of the Open Source Definition (OSD). If you think so, which OSD point would fail? Why? What do you think it is OSD-compliant despite that?

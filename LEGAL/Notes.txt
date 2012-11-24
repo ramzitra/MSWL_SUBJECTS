@@ -1,0 +1,355 @@
+Class 1: (20th October):
+------------------------
+Copyright = Economic Rights
+
+Intellectual Property (Common Law): Copyright + Industrial Property (Patents+Trademarks)
+Intellectual Property (Continental Law): Copyright + Moral Rights
+Public Domain: No Intellectual Property + Moral Rights
+
+Class 2 (27th October):
+-----------------------
+C: First portable language
+Unix: First portable Operating System. It is born due to an anti-monopoly process against AT & T.
+* Software not tied to Hardware: This means that Software and Hardware are unbundled, and Software Industry starts. Before, Software had been free, as was bundled to Hardware.
+
+- Monopolies - Antitrust Laws:
+  Monopoly => Lonely seller (etimological).
+  Being successful is not necessary a monopoly.
+  Single seller does not imply to be a monopoly.
+  UE and Governments decide who is a monopoly. 
+  Natural monopoly: when is enough with one seller (one Baker in a small town).
+  Stallman: Enterprises must be judged because of what they do, not because of what they are.
+  Monopolies are bad for users per se.
+  Free Software is particularly vulnerable to monopolies.
+
+- Software copyright:
+  Copyright was decided instead of patents.
+  Copyright is positive for Free Software, as Free Software would not be possible in case that Software had been protected by patents.
+  Algorithms , procedures and techniques for development are patentable (on USA and Japan).
+  License: Must be licensed ! If not, by default, ALL RIGHTS RESERVED !
+           If want no license specification, Public Domain Dedication.
+  License: If a wrong license is selected, normally no turning back, at least for a particular lesson.
+  Sometimes, license to choose is unique:
+  - Copyleft (GPL): License has to be maintained.
+  - Apache: Contributions have to be Apache.
+
+- Licenses:
+  They are a "contract". EULA=> End User License Agreement.
+  Free Software: Can always be used (although license is not accepted). That is why you do not need to sign anything. EULA is NOT necessary (do not need to sign). 
+ 
+- Public Domain:
+  Place were works go when copyright expires (minimum 50 years). 
+  Spain: LPI is homogeneous to Europe, but in practice, majority of works to Domain Public agress with the previous law (1879 => Life + 80 years).
+  Orphan Works: Can be copyrighted by editor. If author appears, they have to reach an agreement.
+  IT IS NOT COPYRIGHT.
+  It is not a license, is a dedication.
+  Spain: Two issues to the anticipation of the public domain:
+  * Particularly Moral rights: You can retire of the Market due to this fact (and of course from Public Domain).
+  * Private copy: You can not revoke to it (canon). 
+  CC0: A solution (to waive all copyright to the fullest extent allowed by law).
+       If my work can not be public domain, then apply the more permissive license.
+
+- Legal Framework on FLOSS:
+  IMPORTANT:
+  Judge: The only that has to see is how author right works (that is Copyright).
+  So, there is a legal hacking, as FLOSS licenses grant a number of rights, basically, 4 freedoms.
+  If FLOSS license can not be aplied, then Copyright is what is failing.
+  Important, copyright must be specified, and freedoms specified (see class presentations).
+  See also the ISC license.
+  Can I write my own license? YES.
+  Should I write my own license? NO. 
+    - It limits your community (as people do not know if it is valid, as it is unknown).
+    - You will probably get it wrong (i.e.: Artistic License 1.0 of Perl, too artistic!). Let these things to lawyers.
+    - Proliferation of licenses is harmful. 
+      * Can lead to confussion.
+      * It generates uncompatibilities (although not pretending to do so).
+  Copyleft: is a restriction, but globally accepted. 
+    IMPORTANT Copyleft => Requirement for distributions, modifications, etc. to be free as well.
+  Program: Always owned by the license-holder.
+  Owner and Author are not the same. The owner is the one who holds the rights (not the author).
+
+- FLOSS licenses:
+  - No nearly free: (free / not free). There are more or less restrictive licenses.
+  - Two basic: Permissive (Academic/Permissive) And Restrictive => Copyleft (reduced copyleft/copyleft)
+  - Complexity: The complexity on licenses is on REDISTRIBUTION.
+  - Academic Licenses:
+    * The less restrictives: They are the closest to Public Domain.
+    * Popular in American Universities.
+    * Simple / Minimalistic.
+    * They only demand for attribution (keep names and copyright notice).
+    * Example: BSD, MIT.
+  - Permissive Licenses:
+    * Very similar to academic, but a little bit more complex.
+    * Contain protection trademark.
+    * They contain grant of patent (claúsulas anti-patentes). Google liked this for Android (to protect from patents)
+    * Example: Apache License 2.0
+  - Partially closable licenses:
+    * They are the most modern licenses.
+    * Modifications in source code => copyleft
+      foo.c -> foo2.c (keeps same license)
+    * Combiend Works (foo.c + privative.c) => no copyleft
+    * "Copyleft oriented to file".
+    * Example: MPL (Mozilla), CDDL (Open Solaris), LGPL. CDDL is a derivative license of MPL.
+  - Reciprocal Licenses: Copyleft
+    * Do whatever you want , but keep and share with the same license. 
+    * Example: GPL, Affero, APSL (Apple Public Source License).
+    * It tries that, what is free, continues to be free.
+    * Copyleft: 
+      - Only works on redistribution of modifications.
+      - Use: it is permissive.
+
+- License Compatibility:
+  - License A + License B: Check if combination of them is compatible.
+  - Normally: Copyleft not easy to combine with others.
+
+- Patents and Free Software:
+  Free software is very vulnerable to patents due to two reasons:
+  1 - Code is visible, and patent vulnerating is more detectable.
+  2 - Free software is very wide spread and can not be due to patents laws. 
+
+- Anonym works (in Spanish laws):
+  Normally, editor is the owner of the rights.
+  If author is not known, there is a margin for the editor, but if original author apears, rights are returned.
+
+Class 3: (November 2nd, 2012)
+-----------------------------
+  * More than 1000 floss licenses exist. There are many.
+  However, the most of them is one of next:
+
+  ===========================
+  | MINIMALISTIC / ACADEMIC |
+  ===========================
+
+  IMPORTANT NOTE: None of them has Patent Software clauses, while permissive, non academic, contains it.
+  IMPORTANT NOTE: Rarely times means uncompatibilities.
+
+  - BSD License: 
+  --------------
+  * Very well considered (for both parts, open source and privative industry).
+  * "No warranty" clause: This clause normally is not necessary, if no service is provided.
+    If a service is provided, then this clause does not apply.
+  * No restrictions at all: It means high difussion. For this reason, TCP/IP is used in privative software (Windows/Linux).
+  * No legal complexity: in 25 years very very few problems with this license involved. (One case with AT&T).
+    This is an opposite to GPL (there are many GPL violations).
+  * The best license to avoid issues. 
+  * Year 1988 : Before GPL, that is from 1989 year.
+  * BSD 4-clause: It contained an advertising clause, that after was deleted (as there were cases with 70 entries).
+  * BSD 3-clause.
+  * BSD 2-clause: Used in FreeBSD (and also know as FreeBSD License).
+
+  - ISC License: (Internet Systems Consortium)
+  -------------
+  * Used by few, but important, projects: BIND, DHCP, OpenBSD.
+  * Variant from 2-clause BSD License.
+  * The sortest license. Very well written compared to BSD License.
+
+  - MIT License: 
+  --------------
+  * Variant from 2-clause BSD License.
+  * Very wide used: Symphony, RoR, Lua, Putty, Mono, CakePhp and, avobe all, X11 Windows System.
+  * Clarifies very well the rights.
+
+  - Zope Public License:
+  ----------------------
+  * Used by Zope distribution (application server).
+  
+  - WTFPL: 
+  --------
+  * Approved by FSF (compatible with GPL, although its name).
+  * WindowMaker.
+  * By Sam Hocevar, previous leader of Debian.
+
+  - PUBLIC DOMAIN: 
+  ----------------
+  * MEANS NO License.
+  * Software is not licensed under public domain, it is released to public domain.
+
+  IMPORTANT NOTE: PLEASE, SEARCH THAT 4 FREEDOMS IN THE LICENSE ! (i.e.: ipfilter, also known as ipf, license).
+  ipfilter was used in OpenBSD, FreeBSD, and NetBSD, but, ipfilter does not allow modification
+  without consent of author so, it is not FLOSS.
+
+  As result, pf (Packet Filter) has been developed. PF (PFsense) is a high and very powerful tool, used in NetBSD, OpenBSD, etc. It is much better than iptables and similar to very powerful comercial firewalls from Juniper or Cisco.
+    
+  ==============
+  | PERMISSIVE |
+  ==============
+
+  NOTE: Rarely times means uncompatibilities.
+
+  - APACHE LICENSE:
+  -----------------
+  * Apache first license was equivalent to academic.
+  * Allowed to be used on privative software.
+  * Grants patent rights.
+  * Patent retaliation. 
+    - You can insert patents, but have to grant patent rights. 
+    - If lawsuit is started, freedom to use is removed.
+  * Compatibility with GPLv3 (only one-way):
+    - Can combain code of both license, but with resultant GPLv3 code.
+  * Incompatibility with GPLv2 (because of incompatibilities with patent clauses).
+  * Very widely used, as, in example, Android.
+
+  ==========================
+  | WEAK COPYLEFT LICENSES |
+  ==========================
+ 
+  NOTE: Copyleft oriented to just source file.
+
+  - MPL: 
+  ------
+  * Mozilla Public License.
+  * License is only worried about source file. It is copyleft oriented to file.
+  * Modified version of the file must keep the license. An executable can have any license (even if privative).
+  * It contains a template to link to other licenses (at least in version 1.1).
+  * MPL 2.0 has been recently released. Compatible with Apache License and LGPL.
+
+  - CDDL:
+  -------
+  * Based on MPL. Considered and 
+  * Created for Sun Microsystems, for Open Solaris.
+  * One of the nine preferred by OSI.
+  * GPL-incompatible. 
+
+  - LGPL:
+  -------
+  * Library GPL , and later, Lesser GPL.
+  * Was implemented for glibc to be wide used.
+  * Used by Openoffice, Mozilla.
+  * LGPL and GPLv3 only differs from each other in a clause that contains an exception to linking LGPL.
+
+  =====================
+  | COPYLEFT LICENSES |
+  =====================
+
+  NOTE: copyleft: derivative works implies using also GPL. Copyleft only applies to redistribution.
+
+  - GPL:
+  ------
+  * The first in using the Copyleft concept.
+  * Viral character.
+  * Not business friendly.
+  * IMPORTANT: If you link with libraries that are GPL licensed, your code has to be GPL licensed.
+  * Versions 1 and 2: From Stallman and Eben Moglen.
+  * Version 3: Community more involved.
+  * CURIOSITY: As they are viral, even GPLv2 and GPLv3 are incompatible with each other. 
+    What they normally do is to allow redistribution under other Copyleft license (i.e.: GFDL and CC by-sa).
+  * FSF centers GPL to Copyright US Laws, and not on Contracts.
+  * The key is to know what is a derivative works.
+  * Compilation with a GPL tool: not a derivative work.
+  * Output of a GPL script: not a derivative work.
+
+  - GFDL:
+  ------
+  * Copyleft for documentation.
+
+  - CC by-sa:
+  -----------
+  * Copyleft Creative Commons.
+
+  - Affero:
+  ---------
+  * To all efects, it is a GPL. It only contains the "Affero Clause", for provided network services
+  that use GPLed code to distribute the modified version.
+
+  NOTE: It is more important the one who owns the license that the one who wrote the license.
+        This is what basically judges think, paying more attention to what the license owner wanted to achieve with that license than what the license writer was trying to achieve. 
+  NOTE: BSD code is free, but GPL code stays free. FALSE. BSD code also stays free 
+        (although derivative works dont stay free).
+  NOTE  Copyleft is not good for business. FALSE. It depends on the case:
+        - If you are software developer, then if competence changes your code, you should like to get profit of it.
+
+Class 4: (November, 9th, 2012)
+------------------------------
+  Not only software in FLOSS is under copyright. Documentation, Design (UML), could also be under copyright.
+There are additional "culture works" that can be free or not, taking into account license.
+  Free license for culture came after Free licenses for software.
+  It is the same idea of FLOSS, but applied to non-software works. Around software, it could be images, documentation, design, diagrams, etc. But, apart from that, copyright can be applied to written works, audio, video, etc.
+  In general, Free Software and Open Source is under same definition. However, there is not a consensus for free culture works.
+  Stallman distinguishes between functional works and non-functional works, but in general, law treats all culture works the same way.
+  Maybe, it is an error of Stallman, due to what Stallman think about derivative works. Stallman is always thinking on the opinion article he writes, because he does not want his essays to be changed. This change would not be a derivative work, and his limitations means restriction to other useful things, as translations.
+  In derivative works on software, original works are recognized, no plagiarism is allowed.
+
+  It was in year 2000 when Stallman started to talk about free culture works.
+  Stallman (FSF) recomends privative licensing (verbatim and CC by-nd) for some culture works (opinion works, essays, etc.). Translations are also not allowed (only with permission).
+  Verbatim: copy with no modification. 
+  CC by-nd: Creative Commons, non derivative.
+  In general, if you have to ask permission for something, it is not free culture.
+
+  Free culture:
+  -------------
+  There was not a consensus regarding the term of Free Culture.
+  Creative Commons started at 2002, but it contains some kind of licenses that can not be considered to be Free Culture licenses, as they allow some kind of restrictions.
+  Mako Hill provided a clear concept, by means of applying the freedoms of Free Software to Free Culture. He reached a consensus with community, FSF and CC to reach a definition of freedom ("Freedom Defined") to other works that are not software. It is just a definition, nevertheless a license.
+  Non-commercial share-alike: no copyleft. Restriction to derivative work to be non-commercial.
+
+  GNU FDL - GFDL:
+  ---------------
+  Free Document License, by GNU. First freedom license not for software.
+  FDL was considered as the GPL for documentation.
+  Very complex, not easy to be carried out. Does not comply with Debian guidelines, due to the "invariants" parts. 
+  Debian accepted it, but putting out the "invariant" parts, or sending "variant" to non-free repositories.
+  Very thougth to the paper media (printed works), issuing limitations to the digital media.
+  For this reasons, Wikipedia left the license in year 2009, in a non-easy migration to CC by-sa license.
+ 
+  FreeBSD Documentation License:
+  ------------------------------
+  Very similar to FreeBSD software license, applied to documentation.
+
+  BSD Documentation License:
+  --------------------------
+  A try to generalize the FreeBSD Documentation License, including a 3rd clause.
+
+  ISC License:
+  ------------
+  Used by OpenBSD. Simple. Clear.
+
+  Creative Commons:
+  -----------------
+  In general, very flexible. Key: Some rights reserved.
+  Copyleft idea, but not copyleft: share-alike
+  creativecommons.org/choose : to select the CC license taking into account some terms.
+  It is, somehow, a very flexible bunch of licenses, to allow always some kind of restrictions.
+  They do this to prevent some authors to choose typical copyright.
+  Main success: the ease of use to create html to be included via web tool.
+  * 6 general license flavours: if contains "n" (no), it is not free culture.
+  * Special cases: Public Domain (CC0), Founder's Copyright (not very used), Sampling Plus, Non-commercial Sampling Plus.
+  * Retired licenses: Developing Nations, Sampling. Retired because CC decided not to allow copies. 
+  Commercial clause: Very used (blogs, public institution, etc.), but:
+    - Complex.
+    - Not clear of what commercial use it. 
+    It was first introduced in a try to exclude competitors or big enterprises to take profit of them.
+    It can mean that projects can not maintain themselves (typical case: banner in a blog with CC-by-nc photos)
+    Incompatible with other free software projects (Wikipedia, documentation in Debian, etc.).
+    It is better (to protect from competitors), to include the "share-alike" clause.
+    
+Class 5: (November, 16th, 2012)
+-------------------------------
+  Choosing a license:
+  -------------------
+  Choosing a license: not a matter of test. Deep analysis must be done. 
+  Pay attention to Copyleft.
+  Check apart from FSF and OSI, other information sources. Check Debian project, Wikipedia-en (it is not an authority, so MUST check its references).
+  There are no more free or less free FLOSS licenses. In this way, it depends on what to provide.
+  Free Software: when applying a free license, when it is more visible, better. Because, by default, all rights are reserved.
+  File by File Method: errors can appear easily, but Freedom is better mantained (if someone takes the file, the license is taken). 
+  Not everything is allowed with academic licenses. The license text must be keeped, even if many modifications are done.
+  Relicensing BSD to GPL only if there are substantial changes on the BSD licensed software.
+  The important thing : the license. And the methods provided to make the software free. 
+    If the project says it is free software, but the license is not, it is not.
+
+
+NOTE:
+-----
+Linux Kernel : GPLv2 (not superior). 
+Linus planned to pass GPLv3 to Linux if OpenSolaris had used GPLv3 to take advantadge of OpenSolaris components (such as ZFS).
+Android uses Linux kernel, which is GPL. But only makes calls to Linux kernel, is not part of it (not a module). That is why it use other license (Apache).
+Debian legal list: Very recommended.
+PNG: born as alternative to GIT (that was patented by Unisys)
+Net/1: 1988 : First Unix distribution with TCP/IP, first Unix version with no privative code from .
+              Included First Original BSD License.
+OpenLogic: Enterprise that performs analysis on licenses. 
+Search engines can search with certain license in the "Advanced Search".
+Important Relicense: You can only relicense a particular software if you are the copyright holder. If derivative work, new license can be selected if permissive original license, but keeping copyright note.
+Remember: GPLv3 allows the trademark clause on BSD-4. GPLv2 does not.
+Forking: Does not mean a change in licenses. GPL avoids forking, but cases exist (emacs, xemacs). Forking is not always bad, depends on the situation. AVOID FORKAPHOBIA!
+Non warranty clauses: not only on floss, also happens on privative software.

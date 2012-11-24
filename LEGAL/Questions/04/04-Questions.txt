@@ -1,0 +1,8 @@
+Search on the web the European Union Public Licence (EUPL). Read it in the language of your choice and answer the next questions:
+
+1) What kind of license is? (Non-free/permissive/reciprocal...). Justify it.
+2) How does it solve incompatibility with copyleft licenses?
+3) Examine carefully and compare the section 13 of both license versions (1.0 and 1.1). What has it been changed? What do you think it is due this change?
+4) Is it applicable outside the EU? What is the geographic scope of the license?
+5) Does it have anti-patent defense? If so, how is it implemented? (quote the passage). How does it work?
+6) Does it contain an Affero clause? Where? (quote the passage)

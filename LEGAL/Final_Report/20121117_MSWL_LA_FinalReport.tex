@@ -1,0 +1,88 @@
+\documentclass[11pt]{article}
+%Gummi|061|=)
+\title{\textbf{Election of a license. A practical case}}
+\author{Sergio Arroutbi Braojos}
+\date{2012/11/18}
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+As a web developer, someone could think that development being performed has not to be licensed.\\
+Code used is not normally compiled, as multiple language as, in example, php, are interpreted by web servers. \\
+Despite this, normally, there are additional tools used (scripts to retrieve data from other webs, graphics generated, etc.) that, despite the fact that are not part of the web page itself, help on generating data that will be inserted on it, as, for example, the database. \\
+This document studies a particular case, called "buscobici" (bikesearch in Spanish language). There is a web page, buscobici.com, that allows searching for a particular bike, based mainly on custom searchs on a Database that contain links to bike bid offers in different stores (similar, for example, to cars.com). \\
+But the web page is not the only software itself to be considered. There is a also git repository, containing a bunch of tools to implement data retrieving, adaptation and population, statistics generation, and the proper database. This repository is under github.com, in particular, under the path: \\
+https://github.com/sarroutbi/buscobici \\
+So, in fact, the code is public accesible. However, this does not mean that the project is free software, as there is no license information, so, by default, applying specific national laws of the author's country, Spain in this case, all rights are reserved. 
+This document will also study this software, how it is implemented, if modifications to other free or non free software licenses have been done and the license that could be assigned, if an election of the license can be done. 
+
+\section{Acronyms}
+
+GNU - GNU is Not Unix\\
+GPL - General Public License\\
+FLOSS - Free Libre Open Source Software\\
+PSF - Python Software Foundation\\
+
+\section{Analysis of implemented source code}
+
+The first thing that should be done is an analysis of the code that has been implemented, programming languages used and modification to programs that have been developed by others.\\
+In this case of study, an analysis on the Git repository will be performed. After clonning repository, by means of using "sloccount" applications, we discover the existance of next programming languages Lines of Code under the project:\\
+\\
+bash:            3135 (87.13\%)\\
+php:              330 (9.17\%)\\
+python:            78 (2.17\%)\\
+sql:               55 (1.53\%)\\
+\\
+So, project, mainly, is composed of "bash" scripts, very few lines of code in "php" programming language, some "python" very basic tools and "sql" code for Database Creation. "sloccount" does not consider some "gnuplot" existing script as another different tool,  but, in fact, there are scripts on the project using this tool, so we must also consider this tool, especially when it contains the prefix "gnu".\\
+Taking into account previous considerations, license of each of the tools and programming languages should be identified, to consider later license assumptions:\\
+\\
+Bash    Version:4.2  License: GPLv3 (or later)\\
+Php     Version:5.3  License: PHP3.01 License\\
+Python  Version:5.2  License: PSF 2\\
+GnuPlot Version:5.2  License: Gnuplot own license\\
+\\
+All tools and program languages are under terms of free software licenses. It should also be highlighted that, despite name of applications, not all applications are what seem to be. In this case, we find that "Gnuplot" application is not GPL, as the application has nothing to do with the GNU Project. "gnuplot" gnu prefix was acquired to substitute the "new" prefix of "newplot", another program of same characteristics it is based on. So it is clearly not a good idea to make assumptions regarding licenses based on other ideas different from reading a specific license, as the name of the project.\\
+Despite previous considerations, no C/C++ programs exist, so we can assume that there are no programs linking against libraries under GPL license.\\
+It should also be identified if there is a planification on using new programming languages or existing software, and if so, if modifications will be performed. It is not the case for this particular project.\\
+In terms of application, an analysis of what is being done with each program must be performed, to identify which software freedoms we are entitled, but also our obligations, if any:\\
+\\
+* Use: The project is using the code. No restrictions to use in any of the licenses, as they are all free software licenses.\\
+\\
+* Inspection: The project needs no inspection of the tools used source code. However, source code has been obtained by easy means, in particular, via Debian APT repositories, to inspect the licenses.\\
+\\
+* Modification: The project is not modifying any third party software, so no considerations must be performed on modification.\\
+\\
+* Redistribution: The project is not redistributing any third party software. All the code existing on the git repository is self - development code, so no considerations must be performed regarding redistribution.
+
+\section{Requirements to accomplish}
+
+Here the requirements that we wish for our software. Free redistribution, copyleft, derivative modifcations, ...
+Considerations for other things different from software (documentation, statistics generated, etc.).
+
+\section{License selection}
+
+Here a selection of the license assumed for the code. 
+Also, selection of license for non code data.
+\subsection{Software code license}
+\subsection{Non-software license}
+
+\section{Practical implementation}
+
+Here, the implementation to include license selected.
+
+\section{Software final user rights and obligations}
+
+What if a user uses the code? \\
+What if a user distributes the code? \\ 
+What if a user modifies the code? \\
+Whait if a user distribute modifications? \\
+
+\section{Conclussions}
+
+Some conclussions on the analysis performed \\
+
+\section{References}
+
+\end{document}
