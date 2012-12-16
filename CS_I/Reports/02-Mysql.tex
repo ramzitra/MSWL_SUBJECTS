@@ -1,0 +1,92 @@
+\documentclass[11pt]{article}
+
+\title{\textbf{CASE STUDIES I: An Introduction to MySQL}}
+\author{Sergio Arroutbi Braojos}
+\date{\today}
+\begin{document}
+
+\maketitle
+
+\section{History}
+Developed by Michael Widenius and David Axmark\begin{description}
+\item[1995] MySQL AB company founded
+\item[1995] First internal release of MySQL
+\item[2000] MySQl goes free software (GPL)
+\item[2005] MySQL 5.0
+\item[2008] Sun Microsystems acquires MySQL AB
+\item[2008] MySQL 5.1
+\item[2010] Oracle acquires Sun Microsystems
+\item[2011/09] Oracle starts to sell commercial extensions
+\item[2012/09] MySQL 5.5.28
+\end{description}
+
+\section{Introduction}
+MySQL is a Relational DataBase Management System. It is Multi-Platform, as it has ports to a wide bunch of systems, among the most important are  AIX, FreeBSD, HP-UX, Linux, Mac OS X, Microsoft Windows, NetBSD, Novell OpenBSD, OpenSolaris, Solaris, Symbian and SunOS\\
+\\
+MySQL provides a wide compatibility with ANSI SQL 99, and supports several storage engines, amongh them, some examples are MyISAM, InnoDB, Merge, Memory, etc.\\
+\\
+Among other, some features provided are:
+\begin{itemize}
+\item Triggers
+\item SQL caching
+\item Replication
+\item Clustering 
+\item Functions and Custom Functions
+\item Stored Procedures
+\item SSL support
+\item GIS functions integration
+\end{itemize}
+
+Regarding licensing, it is based on a dual-licensing under GPL on the one hand, and a propietary privative license on the other hand. 
+
+\section{Basic commands}
+
+\textbf{Creating a database:\\}
+create database DBNAME;\\
+\\
+\textbf{Deleting a database:\\}
+drop database DBNAME;\\
+\\
+\textbf{Table description:\\}
+show fields from TABLE;\\
+\\
+\textbf{Displaying all available databases:\\}
+show databases;\\
+\\
+\textbf{Selection a database for usage:\\}
+use DBNAME;\\
+\\
+\textbf{Creating a table inside selected database:\\}
+create table users(name varchar(30),password int, email varchar(30));\\
+\\
+\textbf{Displaying all tables inside database:\\}
+show tables;\\
+\\
+\textbf{Getting information about table:\\}
+describe TABLENAME;\\
+\\
+\textbf{Inserting entry into a table:\\}
+insert into users(name, password, email) values('daniel',12345,'daniel@test.com');\\
+\\
+\textbf{Deleting entry from a table:\\}
+delete from users where name='daniel';\\
+\\
+\textbf{Adding new column:\\}
+alter table users add facebook varchar(30);\\
+\\
+\textbf{Adding a new id column to work as the primary key:\\}
+alter table users add id int not null auto\_increment first, add primary key(id);\\
+\\
+\textbf{Changing default value of a column:\\}
+alter table users modify column email varchar(30) default 'test@test.com';\\
+\\
+\textbf{Updating a column:\\}
+update users set email='test@test.com' where id=5;\\
+\\
+\textbf{Displaying the last 100 rows of a table:\\}
+select * from users order by id desc limit 100;\\
+\\
+\textbf{Disconnecting:\\}
+quit
+
+\end{document}

@@ -1,0 +1,75 @@
+\documentclass[11pt]{article}
+
+\title{\textbf{CASE STUDIES I: Free Software Hypervisors}}
+\author{Sergio Arroutbi Braojos}
+\date{\today}
+\usepackage{listings}
+\addtolength{\voffset}{-50pt}
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+Hypervisors are software pieces that allow multiple Operating System in a same machine, known as 'host' machine, to share hardware in paralel. Each of the Operating Systems are known as 'guest' systems.\\
+\\
+From the guest Operating System point, resources can be used as if it had access to them in a normal way, as if no hypervisor existed.\\
+\\
+Hypervisor mission is to control resources access in order to prevent guest Operating System to disrupt each others.\\
+\\
+Regarding type of existing hypervisors, basically two types exist:
+\begin{itemize}
+\item{\textbf{Bare Metal}}. Hypervisor runs on the bare hardware. Guest application executes system calls to Hypervisor, and Hypervisor directly operates on Hardware. \textbf{Best type in terms of performance}.
+\item{\textbf{Hosted Hypervisor}}. Hypervisor runs on the Host Operating System. There is an extra layer compared to Bare Metal, which is the Operating System. This \textbf{additional layer means less performance}, as now, Hypervisor itself has to use system calls to the Host Operating System, which is the one that actions on hardware.
+\end{itemize}
+
+\section{Hypervisor Products}
+\subsection{Xen}
+XEN is a bare metal Hypervisor. This hypervisor is splitted in two "Domains", called DOM0 and DOMU:
+\begin{itemize}
+\item{DOM0}: Domain which contains a Kernel which is able to operate on Hardware, and is controllable by console. Acts as \textbf{control domain}.
+\item{DOMU}: \textbf{Unprivileged Domain}. Contain guests Operating Systems.
+\end{itemize}
+Taking into account working modes for this hypervisor, Xen offers two possibilities:
+\begin{enumerate}
+\item{\textbf{Paravirtualization}}. In this mode, Guests Operating system know about the existance of Xen Hypervisor.\\
+\textbf{Guest have to adapt their own kernels} and adapt system calls. It is considered a lightweight virtualization.\\ 
+\textbf{No CPU virtualization extensions} are required from the host.\\
+\textbf{Emulated hardware is not necessary}.\\
+It is the \textbf{best type of virtualization in terms of performance}.
+\item{\textbf{Full Virtualization}}. In this type of virtualization, Guest system must not be adapted.\\
+\textbf{CPU hardware extensions required (VT/AMD-v)}\\
+\textbf{Emulated hardware is needed}. Emulation is implemented via \textbf{Qemu}.\\
+\textbf{It has a slower performance compared to paravirtualization}, but is easier to implement.
+\end{enumerate}
+Regarding license, Xen is licensed under \textbf{GPLv2}.
+\subsection{KVM}
+KVM (Kernel-based Virtual Machine) is a bare metal Hypervisor. This hypervisor only has a \textbf{fully virtualized model}, where each machine has private virtualized hardware.\\
+\\
+KVM is a set of Linux kernel modules, which provides both core virtualization infrastructure and a processor-specific module.\\
+\textbf{Hardware emulation is done via Qemu}.\\
+\\
+KVM is licensed under various Free Software licenses:
+\begin{itemize}
+\item{KVM kernel module} : GPL v2
+\item{KVM user module} : LGPL v2
+\item{QEMU virtual library and QEMU PC system emulator} : LGPL
+\item{Linux user mode QEMU emulator} : GPL
+\item{BIOS files} : LGPL v2 or later
+\end{itemize}
+\subsection{VirtualBox}
+VirtualBox is a Hosted Hypervisor. It is used for workstation purposes, being one of the most used products to test and evaluate Operating Systems different from the host one.\\
+\\
+VirtualBox uses Qemu in the same way as the already described hypervisors, mainly in two ways:
+\begin{enumerate}
+\item{To emulate some virtual devices}.
+\item{Using the recompiler of Qemu as fallback mechanism}.
+\end{enumerate}
+\subsection{Qemu}
+As stated before, Qemu is commonly used by hypervisors to emulate hardware. Qemu is not a Hypervisor itself, but a software that allows executing and booting both Operating Systems and programs which are for a certain machine (target) in other machine with different architecture (guest).\\
+\\ 
+Qemu has, basically, two working modes:
+\begin{itemize}
+\item{\textbf{Machine emulator}}: QEMU can boot and run Operating Systems made for one machine on a different machine, by means of dynamic translation.
+\item{\textbf{Virtualizer}}: QEMU executes the guest code directly on the host CPU, in order to achieve native performance.
+\end{itemize}
+\end{document}

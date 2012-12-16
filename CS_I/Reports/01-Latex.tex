@@ -1,0 +1,98 @@
+\documentclass[11pt]{article}
+
+\title{\textbf{CASE STUDIES I: Introduction to Latex}}
+\author{Sergio Arroutbi Braojos}
+\date{\today}
+\usepackage{listings}
+\addtolength{\voffset}{-25pt}
+\begin{document}
+
+\maketitle
+
+\section{History}
+
+A computer program (language and interpreter ) created by Donald Knuth in 1977. Knuth prepared a 2nd edition of "The Arts of Computer Programming", Volume 2, in 1977.
+The style of type in 1st edition was no longer available. Knuth wrote the TEX typesetting engine to explore potential of the digital printing equipment.\\
+\\
+He aimed to revert trend of deteriorating typographical quality that affected his own books and articles. Two main aims: highest quality and highest durability. As a result, 700 pages of 2nd ed. written in TEX (Jul. 1980) and published (Jan. 1981). TEX as we use it today was released in 1982, with some slight enhancements added in 1989 (8-bit characters support). It’s currently used for a wide number of volumes published.
+\\
+\section{Introduction}
+
+LaTeX is a sophisticated digital typographical systems. Popular in academia, especially in mathematics, computer science, engineering, and physics. TEX understands about 300 low-level commands (“primitives”). Functionality is provided by format files. Written in a ‘literate’ programming language, Web. The \textbf{design} was frozen, \textbf{dedicated to Public Domain}, in October 1990.\\
+\\
+Regarding LaTeX, it is a set of macros from TeX primitives that abstracted away TeX complexities, and was developed by Leslie Lamport. It incorporates document styles for books, letters, slides, etc. LATEX is free software (LaTeX Project Public License - LPPL), OSI-compliant, no-copyleft.
+\\
+\section{Basic syntax}
+
+\subsection{Top Matter}
+Contains title, date, author's information, such as name, address, etc.:
+
+\lstset{escapechar=\@}
+\begin{lstlisting}
+  \documentclass[11pt, a4paper, oneside]{report}
+  \usepackage [utf8] {inputenc} %utf-8encoding
+  \begin  {document}
+  \title  {How to Structure a LaTeX Document}
+  \author {Bob and Alice}
+  \date   {\today}
+  \maketitle
+\end{lstlisting}
+Format can be observed in the start of this report.
+\subsection{Body Text}
+Abstract, with chapters, sections, subsections\begin{lstlisting}
+  \begin {document}
+  \part {part title}  
+  \chapter {chapter title}
+  \section {section title}
+  \subsection {subsection title}
+  \subsubsection {subsubsection title}
+  \end {document}
+\end{lstlisting}
+This report contains this structure, excluding $\backslash$subsubsection tag.
+\subsection{Font Style and Size}
+How to make bold, italics, monospace, small capital letters or underlined:
+\begin{lstlisting}
+  \textit{text in italics}
+  \textbf{text in bold}
+  \textsc{text in small capital letters}
+  \texttt{text in monospace}
+  \underline{text underlined}
+\end{lstlisting}
+The following resultant appearence of previous LaTeX tags is as follows:\\
+\\
+  \textit{text in italics}, \textbf{text in bold}, \textsc{text in small capital letters}, \texttt{text in monospace},  \underline{text underlined}\\
+\\
+Regarding size, next tags allow different sizes for the font:
+\begin{lstlisting}
+  \tiny  
+  \scriptsize  
+  \footnotesize  
+  \small   
+  \normalsize  
+  \large  
+  \Large  
+  \LARGE  
+  \huge 
+  \Huge
+\end{lstlisting}
+The following resultant appearence of previous LaTeX tags is as follows:\\
+\tiny {tiny}, \scriptsize{scriptsize},  \footnotesize{footnote}, \small{small},   \normalsize{normalsize}, \large{large}, 
+\Large{Large}, \LARGE{LARGE}, \huge{huge}.
+\subsection{Special Environments}
+\normalsize
+Latex provide a group of additional "environments", each of them allowing different actions on texts, such as center, itemize, enumerate, figure, flushright, quotation, etc. Here follows an example on how to create a list by means of the "enumerate" environment:
+\begin{lstlisting}
+ \begin {enumerate}
+ \item ISC license
+ \item Affero license
+ \item Mozilla license
+ \end {enumerate}
+\end{lstlisting}
+Being resultant appearence of previous LaTeX tags as follows:
+\begin {enumerate}
+\item ISC license
+\item Affero license
+\item Mozilla license
+\end {enumerate}
+
+\end{document}
