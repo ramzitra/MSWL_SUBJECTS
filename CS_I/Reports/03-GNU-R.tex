@@ -10,23 +10,62 @@
 \maketitle
 
 \section{Introduction}
-Language and environment for statistical computing and
-graphics.
-Powerful, easy-to-use and libre software (GNU GPL v2).
-Created by Ross Ihaka and Robert Gentleman, based on S
-language created by Chambers et al. (Bell Labs).
-It is a GNU project, now maintained by the R Development
-Core Team.
-Available for multiple operating systems.
-It has become the de facto standard for statistical computing.
-Companies using R: Google, Pfizer, Merck, Johnson \&
-Johnson, Shell, Bank of America, etc.
-R is extensible (libraries or writing your own code/functions).
-R CRAN: 3,305 packages available (1,600 in Jan. 2009, exp.
-growth).
-You will use R to perform data analysis, create graphs and
-reports.
+GNU R is a powerful language, available for multiple operating systems, that offers an environment for \textbf{statistical computing}, to perform data analysis and creation of both graphs and reports around this data.\\
+It was created by Ross Ihaka and Robert Gentleman, based on S language created by Chambers et al. at Bell Labs), and it has become the de facto standard for statistical computing.\\
+There are a lot companies using R. Among the most important, next ones can be highlighted: Google, Pfizer, Merck, Johnson \& Johnson, Shell or Bank of America.\\
+R is an extensible programming language, and provides libraries for writing your own code/functions. Moreover this, R CRAN (Comprehensive R Archive Network) provides more than 3,300 packages to complete the basic R functionality. Taking into account that, by Jan. 2009 there were 1,600 packages, it can be ensured that high activity is arising around this language and its comunity. Its licensing model is based on \textbf{GNU GPL v2 license}.
 
-\section{}
+\section{Hands on}
+\subsection{Installation and execution}
+R installation is very simple. For main Linux Distributions, \textbf{R is included in the main package manager repositories}. For example, in order to install R via Debian package manager (apt), it can be done with the typical apt/aptitude commands:\\
+\\
+user@host:~\$ sudo apt-get update\\
+fenix@blackstorm:~\$ sudo apt-get install r-base\\
+Instalation can be completed with a whole bunch of packages available on repositories (i.e.:for Ubuntu 12.04 more than 150) as well, from spatial statistics to database interfaces.\\
+After instalation, by executing the command "R", the R environment is accesed, with its own command-line available:\\
+user@host:~\$ R\\
 
+R version 2.14.1 (2011-12-22)
+Copyright (C) 2011 The R Foundation for Statistical Computing\\
+...\\
+$>$
+
+\subsection{Obtaining help}
+R command-line provides several ways to obtain help related to the language syntax, the libraries installed, or the different options provided by its command-line:
+\begin{enumerate}
+\item{Help about functions (usage, args...)}\\
+$>$ help(funcName)\\
+$>$ ?funcName
+\item{Search through help doc}\\
+$>$help.search(‘‘word’’)\\
+$>$apropos(’’word’’)
+\item{What is inside a library?}\\
+$>$ library(help=MASS)
+\end{enumerate}
+\subsection{R libraries and scripts}
+On the one hand, GNU R libraries are small packages that provide collections of functions and data sets useful to combine with GNU R language. They are the best solution to perform many statistical analyses. An example on how to install additional libraries is provided below. It has to be taken into account that, for installation to work, R must have been executed as "sudo":\\
+$>$ library(MASS)\\
+$>$ install.packages(‘‘ISwR’’, dep=T)\\
+\\
+On the other hand, GNU R programming language allows definition of scripts to execute the same piece of code without effort, by typing commands on a text file and saving it with .r
+or .R extension, and execute the script, either from R command-line or from the Operating System command-line (batch mode):\\
+$>$ source(‘‘myScript.R’’)\\
+user@password:~\$ R --vanilla $<$ myScript.R
+\subsection{Operations, vectors and symple functions}
+GNU R is a very \textbf{powerful calculator}:\\
+$>$ a=1; b=2; c=3; a+b/c\\
+$[$1$]$ 1.666667\\
+However, if "bc" is preferred, there is also a library to provide an interface to this powerful calculator. But, apart from being a calculator, GNU R provides \textbf{vectors} to compose arrangements of objects, (e.g.numbers, strings, etc.): \\
+$>$ v1 = c(1,2,3,4,5)\\
+$>$ v1\\
+$[$1$]$ 1 2 3 4 5
+\subsection{Graphs}
+Plotting libraries are among the ones of the most later improved functionalities. The \textbf{plot(...)} function can be used to perform plotting and analysis of existing data collections:\\
+$>$ library(MASS)\\
+$>$ plot(Animals\$body, Animals \$brain, log=‘‘xy’’)\\
+\\
+Other useful functions to be used for plotting : lines(), points() or abline(), to draw fits.
+
+\section{Conclussion}
+GNU R is a very powerful language and environment, that has reached to be "de facto" standard for statistical computing. It has a very wide set of additional libraries that help on the use and analysis of the different type of data, as well as contribute to provide data sets and tools to help the user. However, GNU R is \textbf{not recommended to perform simple graph plotting}, due to the ease-of-use that GNU R means. It is more \textbf{recommended to those cases where statistical computing is needed}.
 \end{document}
