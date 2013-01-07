@@ -1,0 +1,70 @@
+\documentclass[11pt]{article}
+
+\title{\textbf{CASE STUDIES I: Introduction to Unix Shell}}
+\author{Sergio Arroutbi Braojos}
+\date{\today}
+\usepackage{listings}
+\addtolength{\voffset}{-50pt}
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+Shells, also known as command interpreters, are just one type of application that executes on user space on any OS (Operating System). They are somehow special due to the fact that they are usually, in Unix-type Operating Systems, the \textbf{first application to be executed acting as interface between user and OS}.\\
+Shells normally execute other applications in foreground or background, and modern ones allow executing advance tasks, such as pipes, redirections, "here-documents" or variable and function handling. They also allow programming for the shells, in what is commonly known as "\textbf{shell scripting}".\\
+An example of a shell script source code could be as follows:\\
+\\
+\#!/bin/bash\\
+echo "Hello world!"\\
+\\
+Some considerations must be taken when using shells or when programming shell scripts:
+\begin{itemize}
+\item{Shell scripts should be programmed in a multi-platform way}
+\item{Shell interpreter, (e.g. "\#!/bin/bash"), must be invoked in the fisrt line}
+\item{Depending on the shell used, peculiarities must be considered}
+\item{Consider using other programming languages before using shells, above all if the programming task is somehow complicated, or efficiency is a must.}
+\end{itemize}
+\section{Type of shells}
+\subsection{Thompson shell}
+This shell was the first Unix shell, developed by Ken Thompson by year 1971. It was precursory to the other Unix shell that came after. It was later improved by John Masey, resulting on the PWB shell. This shell did not allow variables or shell-scripting, but provided some advanced operations, such as piping or redirectioning:\\
+command1 $>$command2$>$\\
+command1 $|$ command2\\
+command1 \^{} command2
+\subsection{Bourne shell}
+Developed by Stephan Bourne in AT\&T Bell Laboratories, it replaced Thompson shell on Unix version 7, by year 1977.\\
+This shell allowed flow and signal control or variables, but it was criticized due to the fact it had no history, and because of the fact it had been badly programmed. However, it turned to be a standard in Unix systems.
+\subsection{C shell}
+C shell (csh) was developed by Bill Joy in California University, by late 70s. It was independent of the platform (worked for other systems different to Unix OS). C shell added improvements, suchs as:
+\begin{itemize}
+\item{Command history}
+\item{Command aliases}
+\item{Auto-completion}
+\end{itemize}
+However, it has also limitations, such as not being able to define functions.\\
+It was named as "C shell", due to the fact that it introduced a grammar very similar to C programming language:\\
+\\
+\#!/bin/csh
+if ( \$string $>$ 255 ) then\\
+echo "Long String"\\
+endif
+\subsection{Tenex C shell}
+Best known as "tcsh", it was developed by Ken Green for Carnegie Mellon University in 1975, it was based on "C shell", including some improvements on command auto-completion or advanced history. It is \textbf{default root user shell} for systems such as \textbf{FreeBSD}, DragonFly BSD or DesktopBSD.
+\subsection{Korn shell}
+It was developed by David Korn on AT\&T Bell Laboratories in 1983. Its main achievement is it \textbf{complies} with Shell Language Standard (\textbf{POSIX 1003.2}). It is also backward-compatible with Bourne Shell.\\
+It was propietary software up to year 2000, belonging to AT\&T. Due to this fact, some open alternatives appeared, such as:
+\begin{itemize}\itemsep0pt
+\item{pdksh}, OpenBSD default shell.
+\item{mksh}, used in Android.
+\end{itemize}
+\subsection{Bourne-again shell}
+Written by Brian Fox in 1989, it is part of the GNU project, licensed under \textbf{GPLv3 or superior}. It is based on different ideas from Korn Shell, C shell and Bourne Shell.\\
+Bash allows programming function, default parameter indication, init scripts, auto-completion, history, here-documents and many other advanced tasks.\\
+It is widely used due to the fact that is the \textbf{default shell included in GNU/Linux systems}.
+\subsection{Z shell}
+Developed by Paul Flastad in Princeton University in 1990, its name is due to to Zhong Shao (zsh), who was Paul's Thessis Professor. Z shell is very well considered and adopted by programmers, due to functionalities such as:
+\begin{itemize}\itemsep0pt
+\item{Automatic correction}
+\item{Custom Configuration}
+\end{itemize}
+Zsh is licensed under a \textbf{MIT-like} license.
+\end{document}
