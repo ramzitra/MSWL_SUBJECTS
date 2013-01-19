@@ -1,6 +1,6 @@
 \documentclass[11pt]{article}
 
-\title{\textbf{CASE STUDIES I: }}
+\title{\textbf{CASE STUDIES I: Translations in Libre Software}}
 \author{Sergio Arroutbi Braojos}
 \date{\today}
 \usepackage{listings}
@@ -9,12 +9,69 @@
 
 \maketitle
 
-\section{History}
+\section{Internationalisation, Localisation and Translation}
+Libre software and free cultural works are based on an  open development model. If it’s free software, among other changes, you can perform translations. In parts different from source code, such as free cultural works, wiki, manuals, translations are also needed for the diffusion of a certain project.\\
+\\
+¿But why translating the software and non software products? The answer is easy, open development model means new scenarios, and a wide set of languages mean, basically, more potential customers.\\
+\\
+In order to introduce the main issues around Translations in Libre Software, some definitions must be introduced:\\
+\\
+\textbf{Internationalisation} is a keyword to define the steps that a certain product has to follow to be identified greographically.\\
+\\
+Meanwhile, \textbf{Localisation} has to do with the process certain software is involved in order to be adapted to a certain Language.\\
+\\
+Last, but not least, \textbf{Translation} defines the process of translating the text from one language to another.\\
+\\
 
+\section{Internationalisation}
+Internationalisation is basically provided through certain types of conventions. Some of this conventions can be around specification of \textbf{file formats}, such as plain text files, PO (Gettext) or XLIFF (OAXAL).\\
+\\
+There are also Internationalisation guides defined, as well as i18n + l10n mailing lists to enable it.
+Meanwhile, from the tools and platforms perspective, some options can be highlighted:
+\begin{itemize}
+\item{GNU Gettext} : tool allowing translation on execution time of text strings.
+\item{Android l10n guide} : to provide localisation rules for Android OS.
+\item{KDE scripts} : to generate POTs, GNOME Damned lies.
+\item{Web l10n} : platforms implementing some i18n tasks.
+\end{itemize}
 
-\section{Introduction}
+\section{Localisation}
+Regarding Localisation, there are two different "flavours" around the platforms availability:
+\begin{enumerate}
+\item{Standalone translation tools}: With different executable tools available in different OS, such as:
+Poedit, Gtranslator, Lokalize or Virtaal.
+\item{Translation web platforms}: More popular as time goes by, with examples such as:
+Pootle, Launchpad, Transifex, Weblate
+\item{Other approaches}: Such as editor add-ons, projects with built-in l10n tools, like Drupal or Wordpress plugins
+.
+\end{enumerate}
+\section{Review, Maintenance and Quality Assurance}
+A good translation integration and handling conveys assuming certain aspects, such as:
+\begin{itemize}
+\item{Consider Translators as part of the community}
+\item{Taking into account translations on the Release Schedule!}
+\item{Create and improve guides, glossaries and other documentation in all languages}
+\item{Track translations authorship: both credit and responsability}
+\end{itemize}
 
-
-\section{Basic syntax}
-
+\section{Benefits and Problems}
+FLOSS projects do not behave in a similar way regarding translations, as some projects do not consider translations at all, while others consider translations a great issue that need resources to be assigned.\\
+\\
+But, do translations really worth the effort ? Benefits and Problems in FLOSS translations must be analyzed, in order to take the decission:
+\begin{itemize}
+\item{Benefits}: Among benefits, some of them are enumerated below:\\ 
+- Extra features, market increase and wider visibility, as well as more potential community members and recruitment.\\
+- Business opportunities: such as professional translators as well as web platforms.\\
+- Social benefits: like reducing the digital gap, providing technology to minority languages or diffusion of Free Cultural Works
+\item{Problems}: Among the most important problems, next can be found:\\
+- Design challenges, i18n aspects not covered by existent tools\\
+- Coordination challenge: developers against translators\\
+- Crowdsourcing and QA, work overload
+\end{itemize}
+\section{Conclussion}
+Translations in Libre Software are a big issue, and exposed aspects have to be taking into account to address the translation strategy around a certain FLOSS project.\\
+\\
+On one side, the simplest strategy will be closing the FLOSS project to be in English by default, from my perspective, the recommended strategy for small/medium projects.\\
+\\
+On the opposite side, great translation integration with an strategy alligned with the FLOSS project development team, involving great efforts and resources. Desirable, but only affordable to huge FLOSS projects.\\
 \end{document}
