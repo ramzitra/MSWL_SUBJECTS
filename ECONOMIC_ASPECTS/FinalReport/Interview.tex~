@@ -1,0 +1,85 @@
+\documentclass[11pt]{article}
+%Gummi|061|=)
+\title{\textbf{An interview}}
+\author{Bitergia: Whoever\\
+Interviewer:Sergio Arroutbi Braojos}
+\date{\today}
+\newcounter{question}
+\setcounter{question}{0}
+\newcounter{answer}
+\setcounter{answer}{0}
+
+\begin{document}
+
+\newcommand\Que[1]{%
+   \leavevmode\par
+   \stepcounter{question}
+   \noindent
+   Q\thequestion. #1\par}
+   
+\newcommand\Ans[1]{%
+%   \leavevmode\par
+   \stepcounter{answer}
+   \noindent
+   A\thequestion. #1\par}
+   
+\maketitle
+
+\section{Introduction}
+
+\section{Interview}
+\Que {Could you please define Bitergia in a few words?}
+\Ans {...}
+
+\Que {Could you please define Bitergia's business and Customers?}
+\Ans {...}
+
+\Que {Why did Bitergia decided to get into that business?}
+\Ans {...}
+\\
+\Que {Which percentage of software used by Bitergia corresponds to Free Sofware?}
+\Ans {...}
+\\
+\Que {Which percentage of software used by Bitergia corresponds to costless Free Sofware?}
+\Ans {...}
+\\
+\Que {Does Free Software usage mean, from Bitergia point of view, a big amount of savings?}
+\Ans {...}
+\\
+\Que {These savings allow Bitergia to decrease prices, or they are used to offer a wider set of services?}
+\Ans {...}
+\\
+\Que {Which percentage of software produced by Bitergia corresponds to Free Sofware?}
+\Ans {...}
+\\
+\Que {Which is the main competitive advantage of producing Free Software?}
+\Ans {...}
+\\
+\Que {Could you please explain, for Bitergia, which are the disadvantages of producing Free Software?}
+\Ans {...}
+\\
+\Que {Which Free Software license or licenses are used in Bitergia, and which is the reason to use it? }
+\Ans {...}
+\\
+\Que {Has Bitergia thought about creating or forking projects to a privative solution? Why/ why not?}
+\Ans {...}
+\\
+\Que {Which marketing campaings are being done by Bitergia?}
+\Ans {...}
+\\
+\Que {How different is marketing in Bitergia compared to other startups producing privative software?}
+\Ans {...}
+\\
+\Que {How many people develops for Bitergia products without working on the Enterprise?}
+\Ans {...}
+\\
+\Que {Which actions has being taking Bitergia to increase comunity?}
+\Ans {...}
+\\
+\Que {Which is the Roadmap for Bitergia in year 2013?}
+\Ans {...}
+\\
+\Que {Will Bitergia concentrate on existing products, or is planning to change to other ones?}
+\Ans {...}
+\\
+\end{document}

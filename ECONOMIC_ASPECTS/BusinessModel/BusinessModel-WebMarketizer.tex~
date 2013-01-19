@@ -1,0 +1,28 @@
+\documentclass[11pt]{article}
+
+\title{\textbf{Business Report: WebMarketizer}}
+\author{Sergio Arroutbi Braojos}
+\date{\today}
+\usepackage{listings}
+\addtolength{\voffset}{-50pt}
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+\textbf{Web Marketizer SL} is a company whose main vision is to develop reports of Market Share associated to on line sales companies.\\
+In order to achieve its mission, Web Marketizer will be based on \textbf{WebMarketizer FLOSS project}, which is a tool, to be developed, that will allow, once correctly configured, connection to on-line sales web pages and automatic extraction of sale data, such as the type of product, the trademark of the product, the link and of course, the price.\\
+The company will sell reports associated to this data to other companies, in order for them to understand the products price in other on-line sale companies, the mean price in the market for a specific product or type of product, the number of different product of each store and, in general, all the on-line market share information that can help a particular company to adjust its strategy to the customer requirements.\\
+Apart from that, Web Marketizer will create a Web Page for all the people to be able to consult, in a costless way, data and price for a product on the different on-line sale webs.
+\section{}
+Clients segments
+Value proposal
+Channels
+Key resources
+Cost structure
+Revenues streams.
+Customer relationships
+Key activities
+Key partners
+
+\end{document}

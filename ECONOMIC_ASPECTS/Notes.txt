@@ -1,0 +1,542 @@
+Class 01: 23-11-2012
+--------------------
+Free software: Different ways to make business, at least, at the beginning.
+
+Privative software model: Based on what?
+  * Licenses: If based on pay for licenses, code is protected.
+  * Other models: As services, to imitate on FLOSS software.
+
+This subject focus on how to win money taking into account freedom of FLOSS.
+
+Another question: is free software model "sustainable"?
+                  Will Libre Office get free software to keep competitive vs M$ Office?
+Sustainability is very important for Free Software Projects to continue in time, and it is not related to business with that particular project. Both concepts not the same, but related.
+If business models exists, sustainability on time is more likely to preserve on time.
+
+Important question: identifying market niche. Sometimes, free software is the only option.
+Linux would have not been developed with a privative model.
+
+Attention: Free Software is not exactly altruism. Sometimes, Free Software is the best option in business. 10 years ago, no considerations on Free Software was considered in companies. Nowadays, deep considerations are taken.
+
+Consideration: Companies that produce software vs. companies that are only consumers (non-IT companies).
+
+FLOSS as the best tool: sometimes, free software is used as the best tool. i.e.: Android. Maybe, Android is not generating profit for Google, but they reached a position in the market not to depend on Apple or M$.
+
+Open innovation: Very wide concept, from Sports to Fashion. They take concept from FLOSS.
+
+Foundations: They have amounts and high bids:
+             Mozilla Foundation: 100 M$
+             Open Stack: 10M$
+
+Some enterprises are winning money: Red Hat is with high profits in the last years.
+
+Numbers on Software Libre. Market on Web Servers. netcraft. 
+Interesting studies, as they are crawling machines to get the information
+on how the information is extracted. 
+It happens sometimes that the market is leaded by a FLOSS Project (Apache in this case).
+Idea: Apache could get enough resources to keep being the leaders across the time.
+      There are companies and individuals that make big effort on Apache.
+      Companies as IBM bet for Apache, as they do not want competitors to gain the market.
+      Apache is also a standard, so to sell a Web Server different from Apache, you 
+      can not sell anything the same or with less performance than Apache.
+
+Browsers Market: Webkit is base for Safari and Android Browser, and both are the leaders
+                 for Mobile Browsers. Curious as Google and Apple fight each other.
+
+Idea: Unstable Market: leader having less than 60% of the Market (Web Browsers Market is).
+
+Apple: Market was changed by Apple because it allowed application to sell with no exclusive rights, but with a percentage (30%, a big amount taking into account the number of applications sold).
+       Google introduced a wider and opener strategy, with a Free Operating System too.
+       This is an example on how selection of FLOSS strategy is good, as nobody thought Android could fight against them.
+
+In year 2008, many enterprises (around 40%) were not using free software, but were interested. Other 30-35% were not interested. Nowadays, everybody having a big/medium company knows that is key for their IT models.
+
+Big computers market: Nowadays, the question is not who uses Linux, but wich distribution of Linux they use. Kernel is the same as the Mobile Devices. That is really something new in informatics. It has to do with openness, adaptability, etc.
+
+It is curious that, in Desktop, Linux never enters (as it is an example of a nice Operating System running on very different systems).
+
+Free Software: it is a particular case, in technology and, of course, in economics.
+               It has to be considered that, Internet is changing the model. 
+               First in time, things were done by small groups in small towns. 
+               Later, things were done by Big Enterprises or States. 
+               Nowadays, we are back to the "small town times", as Internet is used to synchronise people (sometimes not so small, as in the Wikipedia case).
+
+               Economical traditional theories count on consumers on producers, and resources that one generates, and others consume. Market Theory, Supply and Demand, Value Chain, etc.
+               In free software somethings happen in the same format. For now using Linux, Linux had to be started 20 years ago. The difference is that traditional markets are not appliable.
+               First of all, there is no price. With no price, 90 % of theories are not valid. 
+               A Company paying money to Mozilla Foundation can not valuate how much money will recover or win, at least in a direct way. 
+               In fact, it is relevant? Is relevant to know how much money will a Company pay to acquire Mozilla? Market theories can not explain all the models and cooperation ways.
+               There are economist that study this cooperation performance.
+
+Crowdsourcing: Multiple people doing something. New economic value. 
+
+Documentary:
+------------
+1) It is difficult to start some kind of projects (Radio, Television, Newspaper, etc.). 
+2) In other similar markets (super-computer), some time (2002), the biggest supercomputer was SETTI program (were thousands of contributors supplied his limited resources).
+3) Things are changing: Wikipedia, Apache, are FLOSS success stories.
+4) Crowdsourcing (SETI): it is something that can be very huge, involving many people, and done via Internet, by means different from states or big companies.
+5) Computer Market is high advanced, Computers are cheap and gives you freedom to:
+   - Do whatever you want with it.
+   - Share it to do other things, help others.
+6) The most collaborative tool is Google. Google page rank algorithm takes into account what the rest of the people consumes, and what the rest of the people link. They won Open-Directory (Free Software). They take profit of what people does not value, or what people want to do.
+   There are cases as Google Goggles or Scanning words projects in Captchas.
+
+               |---------------|-------------------------------|
+               | Market Based  |         Non-Market            |
+|--------------|---------------|-------------------------------|
+|Decentralized |  Price based  | Social Sharing/Exchange (*1)  | 
+|--------------|---------------|-------------------------------|
+|Centralized   |Firm hierarchy | Government/non profits (NGOs) |
+|--------------|---------------|-------------------------------|
+
+*Before: For small projects (look after of a garden in a neighbourhood)
+       : It is normally valid for "non-material" things, changing the sense of property. That happens on software, music, etc. 
+       : Non-market decentralized models need new means of coordination.
+       : Means competition: (FLOSS vs M$, Skype vs Telecomms, Wikipedia vs Encyclopedias, etc.)
+       : The results of the competition means also the kind of the society we will live.
+
+Class 02: 30-11-2012
+--------------------
+Some questions must be reviewed:
+1) Can Free Software have a prize?
+Yes, in general. Linux distributions are normally sold in Supermarkets. 
+The different thing is that there is someone interested in paying for that software. There are some cases:
+- People who want software to be in the Market.
+- People who want software to be packaged, with instructions available.
+
+2) FLOSS licenses aim to suppress any ownership claims, they are hostile to intellectual property rights.
+Completely false:
+- License grant ownership by copyright, and take profit of it to grant some freedoms.
+- They are not hostile to property rights, as they are based on Copyright.
+The assertion is true for the "Public Domain", but not for FLOSS licenses.
+
+3) FLOSS development is mainly driven by ad-hoc altruism and volunteer effort.
+False:
+- Free Software does not obligate for a project to be altruist, although in some cases, as Debian, it happensn some cases, as Debian, it happens.
+
+4) If I release my software to the FLOSS community, thousands of developers will suddenly start working for me, for nothing.
+Completely False:
+- A community needs some steps, it has a process behind. It needs time.
+- It is a common mistake, for companies, to think that making a software to be free software, for nothing.
+  You need irc, a ticket system, a mail-list, testing process, documentation, screenshots, etc. etc. etc.
+- Normally, you have to offer something, and even some companies offer something more:
+  In example: if you are a nice contributor to my project, my company will engage you.
+- Sometimes, there are Enterprises that are focused on developing for a project, for them to be buyed from another company. Now: OpenStack is an example (Cloud is "on fire").
+
+5) Many big companies and firms (even outside software development business) use FLOSS.
+- True, completely true. Big companies consider it as a critique factor. Google, Facebook, in example.
+- It can also be found (depends on the case) on non-IT enterprises. 
+    * Banco Sabadell is a good example. 
+    * Genivi (for the automotive industry).
+    * Local Motors.
+    * Medical industry.
+
+6) FLOSS is inherently unreliable, and not very well supported.
+- False: if product is successful, it is because of its reliability.
+- Support: it depends on the state of art. 
+  * It is a very good market nich. It is a "vicious cycle", as companies think not a good support exist, but if it exists, companies that offer it does not get it.
+  * In the end, big companies give the support, taking profit of his name. "IBM" does it.
+
+11) GPL does not allow to make profit.
+
+ANOTHER STATEMENT: If my company makes some software free, it is better Apache than GPL.
+It depends on the case, it is not an easy answer, and varies depending on the context:
+A) If enterprises are to make privative software, Apache is the only option. It is the case of Apple, Webkit and Safari. They make Safari (privative) from Webkit.
+B) But if I am aware of the rules, and the rules are: "everybody taking profit of all", then GPL fits better. 
+C) If your enterprise is small, and cooperates with WebKit, you are not taking profit of what Apple and Google are introducing in their browsers.
+
+
+MYSQL Documentary:
+------------------
+Marten G. Mickos
+From Finland, former CEO of MySQL.
+Not an academic view, but a resource getting strategic discussion. It is focused on the practical aspect.
+The best way of promoting Open Source, to make money around it. If Open Source only academic, or altruist, it would not survive.
+Challenge: create a business, successful comercial operation, around open source projects. 
+The goal:FO$$. It is difficult to reach. 
+FOSS is not a business model. It is a production and distribution matter. Comparison to IKEA, smarter production, smarter distribution. Saving money on production, making business from the first. And it is not:
+  - A religion
+  - Charity
+  - Political view
+  - Hobby
+  - Cameraderie
+Why will Opensource win?
+- Customers demanding. Reciprocal licenses help for this (GPL i.e.).
+- Surprising effects on the P/L of software vendor.
+- Everyone is ready for Open-Source. 
+  In example: Google and how they won Symbian, and others. They made Symbian to follow Android, when Android came much later.Sometimes, what is not a Core Product for a company (Google and Android) is Core for any other (Nokia and Symbian). They are forced to move (Nokia ended freeing Symbian).
+
+Success stories:
+- Apache (FOSS). 100% FOSS success. Zero success on commercial.
+- MSFT. 100 % commercial success, 0% FOSS success.
+- RED Hat. Commercial success on Open source.
+- Linux. Partly different (Linux Distributions, some FOSS, some comercial).
+- MySQL. Both.
+- IN GENERAL: Big commercial FOSS success are also Big in non comercial. 
+  Relational Database is powerful, not many had success:
+  * MSFT
+  * IBM
+  * Oracle
+  * Sybase
+- Mysql. Success in relational database due to Open Source, with a privative model would have not success.
+- Marketing. Less cost in Free Software. It is easier to get to users, as it easy downloadable. Always if you have a good product.
+- 99% of companies. They are unsuccessful, independently on the strategy.
+
+
+OPEN SOURCE ECONOMICS:
+----------------------
+Free Software means less cost in Software. Normally:
+1) Can give better services, keeping the price.
+2) Can sell at lower cost.
+- It depends on the market (sensitive to price, non-sensitive to price, etc.), the decission to make.
+Android success seems to be that: less price due to the software price. 
+All the other things are basically the same, above all comparing Android vs Microsoft.
+Iphone: it seems very different, as people buys Iphone, independently on the cost. 
+- For some cases, as Desktop, the percentage saved with Free Software is not that high (a Desktop computer is much lower than a Mobile Phone).
+
+- Another paradigm, price of free software is very high if you do not have much customers, you have to earn very high for the services. When more customers come, you can decrease price for others not to enter.
+  With privative software, the price is fix. To earn money, it is needed to sell much units.
+  The best option: start being free software, and when selling many units, making a privative software.
+
+- Inmmaterial goods: are different from material costs. 
+  Producing software is a "fix" cost. Meanwhile, the cost of selling a car is not the cost of selling 1000 cars, what is named as "incremental cost".
+  But the cost of selling 1 million of copies of Windows is nearly the same of selling 2 millions of copies.
+
+Class 03: 12-14-2013:
+---------------------
+Business arguments to use free software:
+- Chances for improvements.
+- Real competition
+- Technical Feasibility
+- ... (view slides, "Some business arguments")
+Many companies take decissions oriented to products, but not aligned to strategies. 
+Strategies are two sides:
+- Privative strategy: based on business partners, agreements, etc.
+- Free software: inspecting, studying, enrolling people from comunities, etc. etc. etc.
+* Both can be used in a same company, but "sinergies" could be lost.
+Taking into account Free Software arguments:
+  - Advantages of public scrutiny: Products can be inspected, documentation can be checked, quality, in general, is measurable. If you are not able to do it, others (3rd companies) can be working on that. The code that is public is, in general, best done, because it will be watched by more people. Moreover this, everybody can contribute, can integrate improvements, can extend tests, etc.
+  - Real competition in development and maintenance: privative software means not everybody can develop or maintain. Maintenance by third parties uses to be updates and configuration. This is very different in FLOSS. For Linux, for example, there is a huge amount of companies supporting for different environments (24x7x365, embedded, Servers, etc.etc.). There are other environments in FLOSS, such as Libre/Open Office, with not enough experience in supporting them in Madrid.
+  - Technical feasibility vs. marketing: Marketing in FLOSS is different, as Free Software is easily testable, while privative software is not, so marketing is necessary to explain product possibilities. Attention: Marketing is also needed in Free Software, but is not so oriented to explain the product, as product is testable. Marketing is more related to make the product to be known, not to explain how well works the product. In this sense, for Free Software is VERY IMPORTANT to have an easy instalation procedure. 
+    If the right product is not selected in Free Software, is not a so bad situation as if some million dollars would have been paid for licenses.
+  - Easy testing, deployment, update: obvious in Free Software. Updates are sometimes not valued, but they are important as additional value compared to privative software. Depending on the projects, one year means a much more stable version (it happens, for example, with Linux Video Edition).
+  - Lower barriers to business opportunities: Enterprises can center on their core-business. For example, Google can center on being a better Search Engine, and not to acquire licenses to build its infraestructure. They take profit of their budget to focus on the real business. Technology access is very important for companies, and, now, is very easy due to Free Software. 2nd Web phase (Django, NG web servet, HTML5, etc.) state of art is not in companies, it is in comunities.
+  - Non-formal collaboration and pooling of resources: in general, in Free Software world, there are no leader companies, although there are exceptions, such as Google with Android. In Free Software there are some cases where companies that are competitors, but they cooperate between them. Companies have no formal agreements (NDAs are not usual in Free Software). Even more, negotiation is between engineers, not between executives. Even when this enterprises fight in other environment, in this particular environment they want a good product, but not paying all the product (WebKit is important to fight against Mozilla and Microsoft).
+  - Technology transfer: Free Software is the best way for a tool to be expanded. Web is the better example: Many of the advances have been due to Free Software.
+  - Libre software as an strategic tool: Sometimes, Free Software is the only tool to reach on time to a certain market position. Google does not want Mobile Operating System Market, but they want Adevertising on Mobile Software. Google and Android is not the only case. Another case is Oracle, Oracle bought Sun (and Mysql) to avoid monopoly. Telefonica is launching a Firefox OS Mobile Phone in Brazil to test how independent in Mobile Market is from Google and Apple. In general, all Mobile Operators are worried with their dependency of Google and Apple in Mobile Market (Verizon is also doing it with Firefox OS). As curiosity, Iphone was the first that did not include Telefonica Logo. Apple, to fight against Google Maps, are investing in Open Street Maps. 
+
+Some danger aspects disappears when using Free Software:
+* Dependence on monopolies: In 15 years, it is very difficult that a Linux Distribution does not exist. But this is not the case on privative (Windows maybe, Mac OS X not so difficult it disappears in 10 years). HTML5 ? JQuery will be there in 10 years surely.
+* Importance of vendor reliability: Future depends on product acceptance. 
+* Decision taken based on few elements: Companies can invest in improving Free Software (I can translate Linux to Swahili language by just investing an amount of money to pay a translator).
+* Confidence on "black boxes" : software can be studied in detail. Security level is much higher on Free Software.
+
+As basic conclusion:
+- Free software is a viable business option. Is not always the best solution, but is an option.
+- Allows new business opportunities.
+- It is important to know how to take advantage of those, not only because of the price, but also for support, code availability, support availability, etc.
+
+FLOSS Business Models:
+----------------------
+Free Software business models are really young, as no Business Models existed 15 years ago.
+One of the first business models classification: 
+1998: Franck Hecker: A more theoretical model
+Daffara, however, characterizes disjuncts models with a more scientific method
+
+- A great variety Free Software Business Models exist. There are different successful business models, but maybe more sucessful business models are still to appear. 
+- Open Innovation: These kind of models are changing some industrial sectors. Companies have different assets (resources), such as knowledge, factories and people.
+  Open Innovation focus on the knowledge. More companies are successful due to Knowledge company have, and use. It can have knowledge (employee has very good ideas), but this knowledge is not taken to produce for the company. 
+  Before, companies knowledge was hidden outside, in order to gain competitive advantages. When knowledge arrives to competence, companies loose its advantages. It also was necessary to acquire as many knowledge from competitors as possible.
+  Nowadays, paradigm is changing, and trend is changing in High-Innovation Markets. If your engineers do not talk to other's companies, they will not acquire knowledge as well. If some players in Market start sharing knowledge, they start growing much faster. These environments are, e.g., Automotive, Electronics, Internet, etc. If your company stays out, is out of the business. By end of 60es, people in Companies only was there for 18 months (due to a double salary, or due to Enterprise creation). As people changed among enterprises so quickly, Knowledge continued to be shared among others very quickly.
+  OPEN INNOVATION: Means sharing knowledge  
+    Case study: GoldCorp. They needed to find new mineral veins. In general prediction models in mineral and oil factories are very important. The best a company predicts, the more profitable they are. GoldCorp published open contest, sharing their prospection results, for participants to choose new extraction points. The better predictive model gained 575K $. 80% of results were better. If they had done it before, 100$ invested in 1993 would have supposed over 3000$ in 2005. It is an old example of crowdsourcing. 
+    Amazon and Netflix do something similar with offering prediction algorithm models obtained by crowdsourcing means (with prices for the winner).
+    Fashion industry is doing same things as well.
+  FREE SOFTWARE: The company considers, as strategy, to share one of its best assets (software), in order to improve software quality, as GoldCorp did sharing its prospection models.
+  CROWDSOURCING: Crowdsourcing changes the model, as things are "bought" before things are manufactured.
+
+Current trends: 
+- Strategies are changing. Decissions are being shifted to customers, that are people who really know what they want. Companies are also focused on tunning what other companies manufacture, identifying changes that users normally do (automotive / "ala-delta" tunners). 
+- Depending on the environment
+
+Free Software, for this reason, has a lot of things in common with Open Innovation.
+IMPORTANT: Selling price has NOTHING to do with production price.
+Proprietary software is justified by some people to the fact of the cost production.
+  Two types of product value:
+  - Use value: Economic value as a tool, productivity growth.
+  - Sale value: Value as a market product (as final product). A computer means 5000$ for a Software production company, but I wont pay more than 500$ (as this is its real cost).
+NOTE: 75% of salaried programmers work to maintenance tasks, not to development of new features.
+
+Myts:
+=====
+- True value of software does not lie in replacement costs (although what I am consuming today costed 20c, if today price is 1$, I pay 1$). In software, expected value depends on the future service that sellers offer to clients:
+  - Software stability
+  - Help-desk
+  - Documentation
+  - Customization
+  - Training / Certification
+
+- SERVICES == SOURCE OF REVENUES
+  So, this program, will hung up? Integrates with other applications? 
+  Users does not want product, want services (sometimes the product is the service itself).
+
+Organizational model of libre software:
+--------------------------------------- 
+- Many users means more potential customers. On the other hand, sometimes people of comunity mean a task force.
+- Scalability in failures identification and solutions. Free Software users benefit from errors fixed, that is why they use them, as they will get the next version as well (normally with no cost).
+- Sharing risks: WebKit i.e.: risks are 
+- Monopolistic practices are difficult. If so, a fork will appear.
+Each of these characteristics mean business oportunities.
+
+The Commons tragedy myth:
+------------------------
+For common resources, if they are free access, resources are finished quickly, so regulation is needed.
+Sometimes, common resources work.
+Which is the real incentive of producing free software?
+
+Class 04: 21-12-2012
+====================
+Strategic uses of libre software:
+---------------------------------
+* Emerging trend: Source code release under FLOSS licenses. It is very typical on Internet Companies (Google, Facebook). They take some of their software, release it under FLOSS license, and create a community. This is done  with software that is not core for their business.
+* Proprietary software success means that there is no FLOSS options, with quality. FLOSS sometimes mean:
+  - Less cost.
+  - Best quality.
+  A good example is embedded Operating Systems, as Linux (with embedded customization) made other operating systems to disappear.
+
+- Carlos Daffara Taxonomy:
+--------------------------
+* Dual licensing: FLOSS versions and proprietary version. I.e.:
+* Open Core: Mixing FLOSS and proprietary elements. (Core is FLOSS, and ). The company produces the FLOSS core, but some parts of the market customers get privative additional software.
+* Product specialists: Superior knowledge, additional services.
+* Platform providers: Integration, product testing. It is also normal to provide custom software to provide the integration between FLOSS products.
+* Aggregate support providers: First support level for all software. Unique phone-number.
+* Selection/consulting companies: Closer to the analyst role, minimum impact on FLOSS communities. Experts on providing studies of the best FLOSS options.
+* Legal certification and consulting: Assessment on license compatibility.
+* Training and documentation: normally is part of a wider contract, but there are some companies that are specialized on just giving training.
+* R&D cost sharing: Initial investment + creating community to reduce R&D costs. People or other companies can collaborate and take profit. The best example is OpenStack, made by NASA. Rackspace made a product from it, and later they made it free and created a Free Software around it.
+* Indirect revenues: FLOSS is used as commodity, baseline for sales of associated products. It is not a business itself, but 
+
+- Dual licensing:
+-----------------
+* Based on strong copyleft conditions. A company is interested in software, but with a different license scheme.
+You have to be the copyright owner of software.
+  It is a difficult scheme, as many people that are copyright owners do not agree to transfer their copyright, for economic aspects, for its phylosophy, etc.etc.etc. Examples: MySQL(GPL+prop), Mozilla (MPL, GPL, LGPL).
+  GPL gets a wide range of users, with big market share, and if some of them are interested on a privative software, they are customers for this model. For this model, GPL is an advantage.
+  The bad news are because of difficulties for community to continue contributing.
+
+- Open Core:
+------------
+* Similar to dual licensing, but just some parts are privative. Normally:
+  - the Core is FLOSS
+  - extra-components needed by some customers are privative.
+  It is a risky model, as Free Software developers can develop this parts as free software, and if they do that, the business is finished.
+  It is also difficult to have a wide community.
+  A nice example is SugarCRM. Core is Open, but have privative modules.
+  SendMail initially was Free Software, but a company sold modules to configure it.
+
+- Product specialists:
+----------------------
+* Specialists: The people who produces Free Software, is normally specialist on this software.
+  One nice example is Alfresco. Other example is LifeRay. 
+  Normally, if there is a trademark (Suse, RedHat, etc.) they also provide certifications and partnerships, which means a lot of incomes. In Free Software this is a particular view, as a Red Hat certified engineer is normally specialist in a wide number of Free Software applications, as Red Hat is built up on Free Software.
+  For this reason, main revenues come from training, consulting, specialized support for installation, deployment, configuration, extensions, customizations, etc.etc.etc.
+  It is based on the "best product knowledge here" model. 
+  OpenStack now is a project where a lot of companies want to be the specialist (RedHat, etc.). They want to be the first contributors to the project. This is because Rackspace is not on this business, as they provide the cloud services.
+  Sometimes, if a company is not a producer, but has a good Trademark (IBM, in example), then the specialist best considered is not the producer.
+
+- Platform providers:
+--------------------- 
+  Integration of Free Software. Based on the advantages provided by Free Software. It is a difficult model on privative software.
+  It can be local oriented (for your company, I send you engineers to install a particular product).
+  It can be product oriented (I adapt Android for your tablets).
+  It can be integrators of other companies (I am oriented to make all engineering for the product). I search the Hardware provider (China), the Software Provider (USA) and you get the product integrated.
+  As Free Software enters in products (Android), new oportunities appear.
+  Key differentiator is:
+  - I integrate very well.
+  - I integrate very fast.
+  - Resultant product quality is very high.
+  There can be issues with Trademarks, licenses, etc. If I do not respect modifying the code and not changing the name of Firefox, Firefox can sue my company.
+
+- Aggregate support providers:
+------------------------------
+I am a specialized supporter. 2 different strategies:
+  - Employing developers specialized in other products.
+  - Redirecting petitions to other support specialities.
+It is better for customers to have a unique support company. 
+Only works for clients with many products running on mission-critical platforms.
+An example is OpenLogic.
+
+- Selection / consulting companies:
+-----------------------------------
+They do not develop software, just give advice on the best option to install.
+They are considered as "neutral". For an enterprise to be specialist on Free Software Tools, it is difficult, to be expert on all environments. 
+Sometimes they develop tools to evaluate different Free Software Tools.
+Example: Open WebApps.
+
+- Legal certification / consulting:
+-----------------------------------
+Do not develop software, either. Give 
+Example: Palamida, Black Duck. 
+Black Duck, for example, have tools to analyze licensing on the software being developed.
+Other give advice on the licensing, taking into account what the company needs.
+
+- Training and documentation:
+-----------------------------
+To provide documentation on a certain Free Software product. It can be linked to certifications.
+Example: Gbdirect.
+
+- R&D Cost sharing:
+-------------------
+The idea is to have a software product without paying all the cost. They release the product as FLOSS and get profit from external innovations and contributions.
+Maemo (Nokia) was a good example, opener even than Android.
+Other good example is RackSpace for OpenStack. They share costs with other companies (HP; RedHat, ) with lots of contributors.
+ 
+- Indirect revenues:
+--------------------
+I use or produce Free Software just to profit in my particular business. Some Hardware producers, for example, create or invest in Free Software. Intel and Dell are good examples.
+O'Reilly is another example. They invest in a Free Software  project and later sell the book. The first time was Perl. Other cases are Python.
+
+CAGR:
+-----
+Compound Annual Growth Rate. It is a metric to measure Growth Rate in billing, using, etc.
+As Software is increasing very quickly, an increase on Open Source Software is
+The graphic shows that there is a trend that, if continues, means that in a period of X years, privative software will be marginal. 
+Having a look at innovative environments, (Cloud, Mobile, etc.), it seems obvious that this is not a wrong analysis.
+ 
+Class 05: 11-01-2013
+====================
+Open Core review: 
+-----------------  
+Open Core is a business model based on 2 parts. One Free Software Core, and value-added .
+It happend with Apache, where several companies appeared to sell SSL on top of it.
+There is an open discussion: is this model really valid? 
+* On the one hand, it is, in the end, based on privative software around FLOSS. Some parasite companies can appear.
+* On the other hand, other companies come to participate in the Open Core, that would not participate in the Open Core FLOSS project.
+So, in the end, is this model good for a company? Will the company benefit from this model? Well, it depends on the project and the environment. But, Open Core is again privative model, and the case where Open Core exist will result on new complete FLOSS projects, due to the fact that FLOSS have some advantages. So if the Open Core product is successfull, a FLOSS project will appear as there is a business behind the project. The company with the Open Core has to act dynamically, focusing on keeping community on the Open Core product (by releasing as FLOSS some privative software).
+In FLOSS software, if two products exist, the "bigger" one attracts more community and resources. But OpenCore has two flavours:
+- On the one hand, developers are added by companies that are with Open Core.
+- On the other hand, developers are missed due to not be interested in Open Core products.
+So, in the end, it depends on the two numbers above. MySQL succeeded compared to PostgreSQL, with an Open Core / Dual License model (MySQL and MySQL company) vs. a complete Open Source model (PostgreSQL). 
+However, after Oracle having acquired MySQL, other options as MariaDB and noSQL Databases (mongoDB i.e.) that are being developed in other market niches and being completely Free.
+
+Open Innovation:
+----------------
+Innovation itself is only valid when used in the industry. As more users exist for an innovation, better improvements can be added.
+Invention is science, is knowledge. It is basically in a theory environment. Innovation is the invention made in a particular object. 
+Invention alone is not valid. From the point where the problem is resolved, a lot of path must be walked.
+When telephone appeared, it was not very used as telephone communication was fixed from one point to another. But telephone grew exponentially when conmutation appeared, and switching was able to communicate to different people.
+Open Innovation means a process where a lot of players participate, and more resources are needed compared . So, Open Innovation is specially for those cases where innovation can not be afforded in a model different to an Open one with more companies involved. It means involving even the competitors, if I take advantage from them.
+The issue in Open Innovation is, above all, a matter of management.
+Companies use FLOSS in their open innovation strategy (Cloud, OpenStack).
+- Pooled research: Motor Industry consortiums.
+- Spinouts: release some non-core innovation (Google with Android).
+- Selling complements: Income from complements (algo Google with Android, Google on Advertisement, Samsung on Hardware).
+- Donated complements: Income from a core innovation, seek donated labor for valuable complements. Very common in Hardware manufacturers. Intel develops some parts, but for example, they do not work on developing compilers or Operating Systems (they just invest on Linux, GCC/LIBC, etc.).
+
+Video:
+------
+FLOSS is only a matter of knowledge. It has no entry barriers. The only needed thing (a computer) is cheaper along the time. If, from all the users, some of them are producers, it is enough. In FLOSS, some projects have 1 producer each 1000, even each 10000. OpenStack has around 100 programmers, while much more (100000?) are working on Cloud Computing. It depends on the project how big is your project. Normally, 100 programmers are enough for a big FLOSS project.
+Examples:
+GCC: 10 working half time, 30 less time. Not so many people!.
+Linux Kernel: Not much more than 100 programmers full-time.
+So, many times, you scratch where itches. Rap would have not been invented by the Music industry, but now it is the most important music industry.
+Innovation occurs on FLOSS Comunities that would not happen out of FLOSS Comunities. One example is vi. Other is Latex. They continue innovating after tens of years!!!
+Another basic idea is the management. Many times, comunities are based on individuals (Linux), but other times, comunities are based on Enterprises (Webkit, OpenStack). Companies are also finding collaboration in a different way, apart from "clusters" of Enterprises. It is, instead, the comunities based process. Development process is of a different way, but as valid (if not better) as traditional ones.
+GNIVI is starting quicker innovation, compared to innovation of other Car Manufacturers. 
+Pro-AM (Professional Amateur) are professionals that "love" their work. The main motivation is that, including software, this is not as easy as it appears. Moodle was invented by someone who did not know about programming, but knew a lot about pedagogy.
+FLOSS has also another key factor: the quick innovation. You can download quickly, develop quickly, forks to start innovations quickly, etc.etc.etc.
+Companies are changing their process. They give time for innovation to their engineers, for example. Google allows some time for their engineers to start mini-projects. They know most of them will fail, but, on the other hand, if some of them success, it is also very important.
+
+Comunity innovation:
+--------------------
+Types of open innovation are explained.
+Community innovation occurs due to the community self motivations. Webkit, in example, is Webkit, further than any company (google, apple, whatever). 
+Some rules help to "enforce" free circulation (eg: GPL).
+Relatively small set of resources may unleash huge potentials. OpenStack, with 100 people, is very powerful. In some moment, will overcome privative solutions (Amazon, basically).
+
+Sustainability:
+===============
+Which are the FLOSS sustainability most important models? There are some classifications, that have many common thing to business models on enterprises:
+- External funding.
+- Self-funding.
+- Direct-funding:
+- Developments for internal use: Cisco funding software to be able to print internally in any office in the world.
+- Mixed models: some of the above, mixed.
+
+External funding: Public administration
+----------------- ----------------------
+- Very similar to funding in R+D projects. Very similar to gvSIG (gvSIG also developed a product around software). Another case is Germany public administration, so they funded GPG for Windows, as they thought it was good for German citizens and companies.
+  It is very common to be together with R+D projects. It is rare that fundation is only for FLOSS.
+
+External funding:  Non-profit organistations 
+-----------------  -------------------------
+Blender Foundation: Their only mission is to have 3-D FLOSS tools.
+
+External funding:  Some company needing improvements
+-----------------  ---------------------------------
+Igalia is contracted for improving WebKit for other products.
+
+External funding: Indirect revenues
+----------------- -----------------
+Android, Google.
+
+Auto-funding: best kwoledge
+---------------------------
+Mozilla (company) contracted by Google when Firefox did not exist.
+
+Auto-funding: program source
+----------------------------
+
+Auto-funding: program source with limitations
+---------------------------------------------
+
+Auto-funding: special licensing
+-------------------------------
+
+Auto-funding: trademark selling
+-------------------------------
+
+No direct funding
+-----------------
+Companies do not invest money, but engineers, programmers, etc. Other times they offer infrastructures.
+
+Internal developments
+---------------------
+CEPS (Cisco), Eclipse, etc.
+
+Curious:
+-------- 
+Flatr: you ingress money and give money to projects you choose.
+
+GENERIC NOTES:
+--------------
+* Start blog, as earlier, better.
+* Collaborative notebooks.
+* FLOSSManuals: to make books, manuals, etc. Write html, and then you can transform to other.
+* IMPORTANT: Decide, as earlier better, the Final Report.
+* IDEA: If you can not see what a Web is selling, you are the one being sold.
+* FREE HARDWARE: Model is similar, with some peculiarities. Other difference is that Open Hardware is much newer.
+* MAIN IDEA: FREE SOFTWARE IS NOT ALWAYS THE BEST SOLUTION, BUT, PLEASE, CONSIDER THE OPTION.
+* CHECK: Forum 55? to check incomings of FLOSS foundations.
+
+BUSINESS PLAN:
+--------------
+It is a way of what you would tell to an investor for him to invest in my business.
+Check Osterwalder's model.
+Add:
+- Introduction
+- Conclussion: include 
+Notes on business plan, Osterwalder's model:
+- Clients: be precise (geographical, languages, sectors, etc.)
+- Value proposal: differentiate (something new, something very well done)
+- Channels: 
+- Key Values: They are key for business. Platform, people, resources, etc.
+- Cost structure: Set numbers (600€ hiring an office). Set the structure (if Human Resources are important and are not well done, the enterprise is not going to success).
+- Customer relationships: not always necessary (above all, post-sold), loyalty, etc. etc.
+- Key activities: They have to do with the business:
+  * Deploying software: Not a key activity
+  * Getting people who creates courses: key activity
+- Partnership:
+  * People who collaborates. 

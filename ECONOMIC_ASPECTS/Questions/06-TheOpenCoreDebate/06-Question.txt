@@ -1,0 +1,10 @@
+"Open core" is one of the frequent, yet most controversial business model strategies around FLOSS. Open core companies usually defend their right to maintain proprietary licenses on strategic features and modules. Some FLOSS advocates, on the contrary, argue that this approach benefits from FLOSS without contributing back to communities and projects.
+
+In addition to a general discussion on the topic, answer the following questions:
+
+    Find three examples of companies following open core strategies.
+    Could any of these companies switch to a different business model and ensure sustainability? How?
+    Do these companies make any claims on this issue? Summarize their arguments.
+    After learning the arguments from both sides of the story, what is your own opinion on this issue?
+
+

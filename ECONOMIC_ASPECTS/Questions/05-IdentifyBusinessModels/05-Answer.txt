@@ -1,0 +1,130 @@
+Q1) Identify the main (and complementary) business models adopted by five of the following companies:
+
+    Liferay
+    Eucalyptus
+    Acquia
+    BlackDuck
+    Zimbra
+    IBM (libre software projects)
+    Jaspersoft
+    Funambol.
+
+In every case, document your answers as much as possible. In all the cases, there is relevant information in the Net that of course you should use.
+
+A1) Among all possibilities, next companies will be inspected in order to identify their business models among the different models: 
+- Liferay
+- Eucalyptus
+- BlackDuck
+- Acquia
+- Funambol
+
+- Liferay: Liferay is an Open Source CMS (Content Management System), oriented to Enterprise. Among its main customers, some important Companies from very different business, such as Cisco, T-Mobile or Barclays.
+  According to Daffara's Taxonomy on FLOSS Business Models, Liferay's business is oriented to being "Product Specialists".
+  In particular, Liferay Inc. main revenues streams come from its superior knowledge on the Liferay CMS. According to their web, Liferay Inc. sells an Enterprise Edition of the product, which basically grants additional services to the customer, such as [1]:
+  * Guaranteed SLA (Service Level Agreement), in two manners: Gold / Platinum [2], what means 9/5 or 24/7 support respectively.
+  * Regular Service Packs
+  * 5 Year End of Service Policy 
+  * Customer Portal
+  * Optional Indemnification
+  So, taking into account previous consideration, Liferay Inc. revenues streams come basically from additional services offering, such as [3]:
+  * Enterprise Support
+  * Training
+  * Consulting
+ 
+- Eucalyptus: Eucalyptus Systems Inc. is a company that sells AWS(Amazon Web Services)-compatible private and hybrid cloud services, by leveraging existing virtualized infrastructure to create on-demand cloud resource pools. These highly elastic pools can be dynamically scaled up or down as customers application workloads change [4]. Among its main customers, enterprises from very disparate environments such as Puma, Electronic Arts, Fujifilm or Nasa [5].
+  According to Daffara's FLOSS Business Model Taxonomy, Eucalyptus Business Model is based on being "Platform provider". Eucalyptus Systems Inc. integrates services around a set of FLOSS projects, such as KVM or Xen Hypervisors,integrated in a single, tested and verified product, in particular, Eucalyptus. Despite the fact that Eucalyptus is FLOSS, the product name and logo are trademarks.
+  Being a platform provider, Eucalyptus main revenues streams come from:
+  On the one hand, a verification proccess to meet high quality standards, via key factors such as [6]:
+  - Organizational Agility
+  - Operational Efficiency
+  - Infrastructure Flexibility
+  - Dynamic Scalability
+  - Resource Control
+  - Cloud Reliability
+  - Regulatory Compliance
+  - Hybrid Capability
+  - Workload Portability
+  On the other hand, different type of services:
+  * Customer Cloud Support Services, in two flavours, Standard and Premium, offering 9/5 and 24/7 customer support [7].
+  * Cloud Consulting Services [8].
+  * Training: offering different kind of training courses via Eucalyptus University, as well as certifications, and partnership programs [9].
+
+- BlackDuck: According to its web, Black Duck Software helps developers build better software faster with the power of open source software and methods [10]. To do so, BlackDuck offers software and services, to provide basically Open Source Software Assesment, evaluating the use of open source technologies and methods, including community engagement, to achieve business and technology goals. 
+  Initially, Business Model around BlackDuck is not easily classifiable. 
+  On the one hand, they provide Open Source Software Assesment, which includes includes evaluation of a company software to analyze, by using the Black Duck KnowledgeBase, different aspects such as [11]:
+  - Code search, scanning and analysis
+  - Ongoing, automated license compatibility notification
+  - Comparing software in any code base to the known universe of open source code, and reporting matches
+  - Cataloging hard data that documents the code origin
+  So, taking into account previous considerations, BlackDuck Software company could be considered to have a Business Model associated to "Legal Consultancy", as they provide a KnowledgeBase to provide legal assessment for companies about complex problems derived from multiplicity of libre software licenses and their compatibilities.
+  But, on the other hand, Black Duck Software offers the The Black Duck Suite, which is a comprehensive set of governance and compliance automation tools that enable development organizations to harness the power of open source technologies and methods, offering [12]:
+  * Automated governance with a customizable approval workflow.
+  * Automated compliance with code scanning and auditing.
+  * A catalog for open source, commercial and internally-developed software that allows developers to easily find, track and reuse approved code.
+  * Comprehensive code search to help developers find and choose components.
+  * A tool integration framework that is repository-neutral, including easy integration with issue tracking and build systems, software configuration management systems (CMS) and tools.
+  Apart from that, Black Duck Software has a division, named "Olliance Consulting", which provides OSMA (Open Source Management Assesment), offering a quick and easy way to learn about industry best practices and assess organizational readiness and governance maturity around FLOSS [13]. 
+  So, from this perspective, Black Duck Software could be considered as well a "Consulting Company", offering Assessment about selection and evaluation of software products and services, by means of its Black Duck Suite and its Olliance Consulting Division.
+ 
+- Acquia: Acquia company sells support on a FLOSS CMS, in particular, Drupal. In particular, they offer a set of different product, services and technical support for this FLOSS CMS.
+  Regarding products, Acquia sells a set of free downloadable software, such as [14]:
+  - Acquia Drupal: combines Drupal with useful modules to make web publishing faster, easier, and more feature-rich.
+  - Acquia Dev Desktop: free package that installs Acquia Drupal on Windows and Mac OS X.
+  - Drupal Commons: free software for building and hosting collaborative website
+  Regarding services, Acquia offers cloud Drupal based hosting [15]:
+  - Dev Cloud: provides Drupal-optimized hosting with professional administration tools.
+  - Managed Cloud: provides Drupal- optimized hosting in an elastic, high-availability configuration.
+  - Drupal Gardens: a SaaS to design, build, and host Drupal-based sites.
+  Acquia offers as well support services, such as [16]:
+  - Acquia Network: Answers, Tools and Support for professionals who build websites using Drupal.
+  - Drupal Support:  With Client Advisors that guide customers in quiet times and respond to urgent needs.
+  - Remote Administration: assigning Drupal experts to apply fixes, monitor backups, and test changes to keep sites secure and up to date.
+  Last, but not least, Acquia offers training around Drupal as well [17].
+  Taking into account previous considerations, it can be asserted that Acquia's Business Model, according to Daffara's taxonomy of FLOSS Business Model, is being "Product Specialist", selling the "best knowledge here" around Drupal CMS.
+  Their main revenues streams come from services such as:
+  - Training and consulting
+  - Specialized support 
+  - Remote assistency 
+  - Specialized cloud hosting services, but always, based on Drupal together with additional products made by Acquia.
+
+- Funambol: Funambol FLOSS project started as a mobile cloud sync solution . The open source version consists of a sync server, clients/applications/SDKS for mobile devices and computers, and connector software to interface with other mobile systems [18].
+  Apart from this fact, Funambol company provides OneMediaHub, a commercial product based on Funambol that tries to address commercial needs in the market. OneMediaHub allows to secure, sync, and share digital content on mobile devices and computers, automatically and wirelessly, via the cloud. OneMediaHub software represents the company's latest technology. Meanwhile the open source software is not meant for large-scale deployments, and, obviously, it iss not commercially supported.
+  So, basically, Funambol Business Model is based on a "Dual Licensing" model according to Daffara's taxonomy of FLOSS Business Models.
+  Funambol is available in two editions with different licensing model [19]:
+  - Community Edition: uses the AGPLv3 open source license that lets you offer your software to all who wish to use, modify and distribute it freely. 
+  - OneMediaHub is available under a traditional commercial software license. It consists of a superset of Community Edition functionality that makes it suitable for large-scale deployment. For example, it includes an AJAX web portal and provides capabilities to sync rich media and files with the cloud.
+  Revenues streams for Funambol come for selling the commercial version of OneMediaHub. Together with the commercial version of Funambol, OneMediaHub, Funambol has also additional revenues streams, associated to [20]:
+  - Annual Software Maintenance and Technical Support: Funambol provides software maintenance and technical support including technical assistance, troubleshooting and software updates.
+  - Professional Services: Funambol offers consulting services, offering professional services to help companies architect, design and deliver the highest-quality services.
+  - Training: Funambol offers a five day KickStart training program.
+  
+
+References:
+- Liferay:
+[1] http://www.liferay.com/products/liferay-portal/ee/overview 
+[2] http://www.liferay.com/products/liferay-portal/ee/service-levels 
+[3] http://www.liferay.com/services 
+- Eucalyptus:
+[4] http://www.eucalyptus.com/eucalyptus-cloud
+[5] http://www.eucalyptus.com/customers
+[6] http://www.eucalyptus.com/eucalyptus-cloud/iaas
+[7] http://www.eucalyptus.com/services/support
+[8] http://www.eucalyptus.com/services/consulting
+[9] http://www.eucalyptus.com/services/education
+- BlackDuck:
+[10] https://www.blackducksoftware.com/getting-started
+[11] https://www.blackducksoftware.com/products/knowledgebase
+[12] https://www.blackducksoftware.com/products/black-duck-suite
+[13] https://www.blackducksoftware.com/consulting/strategy-development/open-source-management-assessment
+- Acquia:
+[14] https://www.acquia.com/products-services 
+[15] https://www.acquia.com/products-services/cloud-hosting
+[16] https://www.acquia.com/products-services/drupal-support-tools
+[17] https://www.acquia.com/products-services/drupal-training
+- Funambol:
+[18] http://sourceforge.net/projects/funambol
+[19] http://www.funambol.com/solutions/licensing-editions.php
+[20] http://www.funambol.com/support
+
+[X] Economic Aspects of Libre Software:
+    http://docencia.etsit.urjc.es/moodle/mod/resource/view.php?id=4418

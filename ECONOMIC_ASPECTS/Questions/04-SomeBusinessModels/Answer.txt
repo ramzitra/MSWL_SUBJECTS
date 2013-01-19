@@ -1,0 +1,27 @@
+Q1) Research, using information in the web, the business models of Red Hat, Canonical, and Eucalyptus. Describe, briefly, how they earn money, and their business strategy. This excercise tryies to be a first approach to business models, so no analysis is needed, a brief description is enough.
+
+A1) Red Hat, Canonical and Eucalyptus are three companies whose core business is related to FLOSS. Below follows a brief description of the business model followed by each one:
+
+    Red Hat: 
+    Red Hat is a huge company, based on FLOSS, whose business model is not easily classifiable. On 2011, Red Hat revenues increased to more than 1.13 billion dollar [1].
+    Red Hat's main business is customer support. This company sells different subscriptions to companies using Red Hat's software. This business meant, for Red Hat, up to 965 million dollar.
+    Apart from that, Red Hat sells training and services. This part of the business added 146.5 million dollar to Red Hat revenues. This part includes also integration services provided by this company.
+
+    Canonical:
+    Canonical is a company founded by Mark Shuttleworth and based on FLOSS. Canonical main product is the Ubuntu Linux Distribution, and its multiple variants.
+    Canonical Ltd. financial results are not as clear as Red Hat's ones, so it is more difficult to identify their business plan.
+    However, Canonical business model is oriented to be more or less the same as Red Hat's one, as Canonical main product is also a Linux Distribution, and its founder idea was to provide services around software, such as technical suppport, training services, and other services such as cloud services [2].
+    
+    Eucalyptus: 
+    Eucalyptus is open source software for building AWS-compatible private and hybrid clouds [3].
+    Eucalyptus Systems, Inc. is a company that offers cloud computing services based on Eucalyptus Open Source platform. So, basically, the company's main incomes are due to offering this kind of service.
+    However, they also offer custommer support [4], a partnership program [5] as well as training services, based on Eucalyptus certificationo or the Eucalyptus University, which offers custom training programs [6].
+     
+  
+References:
+[1] http://arstechnica.com/business/2012/03/red-hat-hits-a-billion-dollars-in-revenue-a-milestone-for-open-source/ 
+[2] http://www.guardian.co.uk/technology/2008/may/22/internet.software
+[3] http://www.eucalyptus.com
+[4] https://engage.eucalyptus.com
+[5] http://www.eucalyptus.com/partners
+[6] http://www.eucalyptus.com/services/education

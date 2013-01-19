@@ -1,0 +1,71 @@
+"Open core" is one of the frequent, yet most controversial business model strategies around FLOSS. Open core companies usually defend their right to maintain proprietary licenses on strategic features and modules. Some FLOSS advocates, on the contrary, argue that this approach benefits from FLOSS without contributing back to communities and projects.
+
+In addition to a general discussion on the topic, answer the following questions:
+
+Q1) Find three examples of companies following open core strategies.
+A1) The three examples of companies using an open core strategy proposed are Rapid7, SugarCRM and Zimbra:
+
+- Rapid7:
+---------
+  This company acquired Metasploit Inc., a company focused on the Metasploit Framework, a FLOSS project tool to evaluate computer security risks. 
+  On the one hand, Rapid7 now continues on development of Metasploit FLOSS project, providing Metasploit Community Edition, the Open Core version of the product, licensed under a 3-clause BSD license.
+  But, on the other hand, Rapid7 sells two versions under a non-FLOSS commercial license, with enhanced functionality [1]:
+  * Metasploit Community Plus: That provides as additional functionalities, such as:
+    - Password auditing
+    - Smart exploitation
+    - Evidence collection
+  * Metasploit Pro: That provides the same as Metasploit Community Plus version, plus extra-functionality such as: 
+    - Social Engineering
+    - Web application scanning 
+    - ... and many more.  
+
+- SugarCRM:
+-----------
+  This company sells a CRM (Customer Relationship Management). 
+  The Open Core part corresponds to SugarCRM Community Edition (previously known as Sugar Open Source). This version is licensed under GNU Public Affero license.
+  On the other hand, SugarCRM sells different non-FLOSS versions of the CRM under a commercial license, providing Storage for Sugar On-Demand service, together with enhanced functionality [2]:
+  - Sugar Professional: provides Marketing and Support automation
+  - Sugar Corporate: adding to the previous version Mobile services
+  - Sugar Enterprise: which adds customer self-service portal
+  - Sugar Ultimate: adding even more storage (up to 250GB) to the previous versions.
+
+- Zimbra:
+---------
+  Zimbra Inc sells a product called the Zimbra Collaboration Suite (ZCS), which provides both a Mail Server as well as a Web Client, which is a full-featured collaboration suite that supports email, group calendars and document sharing using an Ajax web interface.
+  Zimbra sells two versions of ZCS [3]:
+  - ZCS Open Source Edition: The Open Core product, licensed under Zimbra Public License (ZPL), which is a FLOSS license recognized by both OSI and FSF.
+  - ZCS Network Edition: A non FLOSS version under a commercial license which provides improvements such as:
+    * Integration with Microsoft Outlook
+    * S/MIME 
+    * Advanced search for large Inbox 
+    * ... and many more.
+
+Q2) Could any of these companies switch to a different business model and ensure sustainability? How?
+A2) Sure, any of the companies could adjust its strategy to a different business model, based on releasing under FLOSS license all the code, and readjusting their strategy to be product specialists. Revenues, in these cases shold come from aspects such as:
+  - Training.
+  - Consulting.
+  - Deployment and configuration.
+  - Extensions and customization.
+
+Q3) Do these companies make any claims on this issue? Summarize their arguments.
+A3) Compaines are aware of the difficulties and risks that an "Open Core" strategy, involving privative software, carries. All the companies have special entries on its web pages having to do with the community, the resources available for the community or the commitment to the Open Source .
+  An example is Rapid7, that includes on its web page an entry to justify its strategy [4]:
+
+"Before we acquired the Metasploit Project, it was supported by an incredibly active and enthusiastic community of 25,000 of the most technically sophisticated and highly respected security experts in the world. (...)  
+The community now stands at 125,000 active users, and our revenue from the commercial offerings is helping us keep the Metasploit Framework free for the community."
+
+  Basically, companies using Open Core strategy justify how helpful is their appearence and the commercial releases selling for the particular community under the Open Core.
+
+Q4) After learning the arguments from both sides of the story, what is your own opinion on this issue?
+A4) From my perspective, open core strategy is very risky from a company's point of view. The company have to perform a deep analysis on aspects such as:
+  - The state of art of the Open Core project.
+  - The privative software being developed around Open Core, and how helpful or desirable is for the community.
+  - The ammount of developers the community can loose if this strategy is started or continued, versus the ammount of developers the company can provide to the project.
+  - The profitability of selling non-FLOSS versions with privative software, against redifining the strategy to being a "Product Specialist". Anyway, they should always re-invest (in money or resoures) to the OpenCore FLOSS project.
+  Just in case the profitability is much bigger when using this strategy and enough community support actions are carried out this kind of strategy is worthy. Otherwise, risks for a fork to appear or for the Open Core FLOSS project to loose community (which means loosing quality, functionality, etc.) make this strategy not to be desirable.
+  
+References:
+[1] http://www.metasploit.com/about/choose-right-edition/
+[2] http://www.sugarcrm.com/page/editions-pricing/en
+[3] http://www.zimbra.com/products/compare_products.html
+[4] http://www.metasploit.com/about/open-source/
