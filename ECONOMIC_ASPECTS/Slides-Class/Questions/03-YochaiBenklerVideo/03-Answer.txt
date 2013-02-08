@@ -1,0 +1,22 @@
+Q1) Benkler presents a diagram showing different positions for product or services according to the type of management (centralized / decentralized) and economic profitability (market / non-market). He characterizes all his examples in this presentation falling in the non-market/decentralized space. Find counterexamples of enterprises like Crowdspring, making economic profit from a decentralized, crowdsourced platform (if possible, outside the FLOSS sector).
+
+A1) As stated before, Crowdspring is an enterprise that allows to ask for a certain small business to a particular customer, and asks for users to propose ideas, prototypes or sketches in a private way. 
+Customer selects one final user, and start cooperating with the user to get the final Business. Among the business, some possibilities to initiate are:
+- A web design.
+- A logo design.
+- Print design.
+- Graphic design.
+- Writing.
+  Crowdspring earns money with a little percentage of each business that is finally arised.
+
+  Another example making economic profit from a decentralized model is the Crowdfunding projects web pages. Sites like Kick-Starter (and a high bunch of competitors to it, like "Lanzanos" in Spain), allow people to publish projects that need to be funded. Normally, funds are oriented to micro-funds where the people that donate the money receives something in exchange. 
+  Crowdfunding sites take profit from this model by taking a little percentage of the total funds. In case of Kick-Starter, this percentage is 5%. Taking into account that Kick-Started was successful to fund projects more than 3000 projects, and some of them were up to 10 million dollars, this model is not a bad business.
+
+  More examples of a decentralized model working is InnoCentive. This Web-Based platform community enables matching scientists to research and development challenges presented by companies worldwide.
+
+  Last, but not least, a mention to Spigit. Spigit is a technology company that provides a software platforms for enterprise innovation management.
+  Among their products, they offer Free Private Crowdsourcing tools to companies. Based on this tool, they offer an entry point for other products of the company.
+
+References:
+[1] http://www.topsite.com/best/crowdsourcing
+   

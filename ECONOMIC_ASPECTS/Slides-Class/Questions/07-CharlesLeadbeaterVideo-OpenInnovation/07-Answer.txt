@@ -1,0 +1,33 @@
+Q1) View "Charles Leadbeater on innovation", and comment about it. 
+A1) The talk by C.Leadbeater issues about "Creative Collaboration" [1]. 
+    To start with, C.Leadbeater introduces the next topic: Who created the "Mountain Bike" (MTB)? 
+    C.Leadbeater clarifies about how different are the classic economic theories from the reality. And MTB is a real example, as MTB was born in California, due to the fact that some classic bikes users were not comfortable with the traditional bikes. It was after some time when companies discovered the business around MTB, although nowadays MTB means 58 billion $ (65% of the total Bike Market).
+    Leadbeater introduce the term of passionate "pro-am" consumers, to this kind of consumers that perform innovation by means of creative collaborations, rather than by means of traditional business organizations. This aspect, <b>new kind of organization, without organizations</b> is were the huge challenge resides.  
+    Associated to this idea, Leadbeater talk about "radical innovation". He issues how telephone was invented for a very different mission compared to how users ended using it. This example allows him to address the fact that many times, an invention is performed with great uncertainty, without knowing the final usage that the particular invention will face.
+    From my perspective, FLOSS is a good breeding ground for this kind of innovation, as FLOSS nature favours different software components to mix and mingle them in order to innovate.
+    
+    The second main thread is around "Disruptive Innovations". Leadbeater exposes how many times Big Companies are not the best channell to hold a disruptive innovation, as it is difficult to planify how successful it can be. Companies want to hear about continuing innovation, to existing users, with existing channels, as they have an "in-built tendency to reinforce past success". 
+  This is why Emerging Markets are the breeding groud for passional users. Hip-Hop/Rap music is exposed as the best example. It started on the streets, with "pro-am" people that created it, distributed it, and made it how it is. The style was so "aggresively different", that it would have never been invented in Big Companies. Nowadays, it is the most important cultural music and has a powerful industry.
+    Related to this issue, FLOSS many times is the only option to develop a competition against a software product which has a dominance in the market. No company will fund a mail client based on privative software even if it is much better, as Outlook is so dominant that it is not possible to compete against it.
+
+    To continue with the talk, Leadbeater addresses how the two type of phylosophies and organizations, meaning traditional companies versus open innovation, Microsoft vs. Linux, Privative versus FLOSS, professional journalists versus bloggers. The main aspect around this issue is to foreground the different places between the two opposite places, and how Microsoft is proceeding to release Free Software, how FLOSS projects are not only altruism and need funding and organization on a more structured way, or which is the role to play by BBC with the new types of journalism.
+
+    Last but not least, Leadbeater talks about "users as producers". Leadbeater travelled to Timothy Chan, creator of Shanda, the largest computer game company in China, with 250 million subscribers. Shanda employees only 500 people, to provide the gaming platform basically. Meanwhile, users create their characters and are the real producers for the games, apart from being consumers. This kind of companies, built on communities, is very powerful, although they are not created on top of FLOSS. 
+    However, this kind of behaviour is dominant in many FLOSS projects, as normally, some users, cooperate with the project in different ways:
+    - By testing the software and reporting issues.
+    - By contributing software, to perform new functionalities or fix existing bugs.
+    - By creating or fixing the documentation.
+    - By solving other user's issues via Forums.
+    - And so forth, and so on ...
+    
+Q2) In addition to a general comment on the presentation, address one of the issues detailed in the slides for this assignment.
+A2) Among the different issues, I will focus on the fact of professional "pro-am" consumers, and how they can lead innovation around a certain product.
+    I completely agree with Leadbeater on the key factor around this issue, which is how initially, what are assumed to be "amateur" users around a certain product, get into a high level of understanding of the product due to simply how interested this kind of consumers are on it. 
+    If someone loves doing something, let say kitesurfing, will always be more involved in trying to innovate around products around this sport, compared to those who work for a company which manufactures kitesurfing products, despite the fact that they are experts on the materials used to build this kind of products.
+    One illustrative example of "pro-am" consumers innovation is "The Sims" [2].
+    In the Sims computer game, player can create their own family and home on a computer, as well as watch the inhabitants doing different daily issues such as sleeping, eating, argueing, etc. Before the on-line version was shipped, the designers released tools that allowed players to create their own content for the game as, in example, furniture or architectural styles for houses. Within a year of the game’s initial release there were hundreds of independent content creators, more than 200 fan websites displaying more than half a million collectable items available to the game’s millions of players. More than 90 per cent of the content in the Sims game is now created by a Pro-am sector of the Sims playing community, with an estimation that there are 30,000 Pro-Am modifications to the Sims game that can be downloaded from the internet. 
+    The Sims community is a good example of distributed and self-organising body of Pro-Am knowledge, where gamers are constantly innovating.
+
+References:
+[1] http://www.ted.com/talks/charles_leadbeater_on_innovation.html
+[2] http://www.demos.co.uk/files/proamrevolutionfinal.pdf

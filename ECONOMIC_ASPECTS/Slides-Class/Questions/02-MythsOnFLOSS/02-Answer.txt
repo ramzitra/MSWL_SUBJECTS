@@ -1,0 +1,23 @@
+Q1) Review of 10 statements about economic aspects of FLOSS. They could be true, or not, or arguable. Select one or two, and explain why do you think it is true or false, and/or under which circunstances. You can focus on the last four statements, that were not discussed in class.
+
+A1) From the pending statements about economic aspects of FLOSS, I will focus on the next:
+
+Statement: "Private companies contribute to FLOSS, since they can get profit in exchange."
+
+This statement is completely true. The fact is that, private companies, are betting to FLOSS in different ways for several reasons. One of them is, obviously, taking profit in exchange.
+One example is IBM company. IBM supports Apache Foundation, but also takes profit from some products developed by this one. For example, IBM sells support for Apache Geronimo, the J2EE Open Source Server developed by the Apache Foundation. 
+Another different question is the way the companies are getting profit, as in FLOSS projects measuring profits can not be easy, depending on the situation. 
+Another example is Google and FLOSS Android project. It is difficult to know the amount of money Google is earning due to Android, as developing Android was just a movement from Google to avoid main competitors (Apple and Microsoft) to be market leaders in Mobile Operating System Market. Indeed, Google is probably not making money directly on Mobile Operating System Market, but, instead, they avoided loosing their core business position in Mobile Operating System, what means indirectly continuing to have profits in this environment.
+  
+Statement: "FLOSS software has achieved to become a market leader in certain sectors"
+
+This statement is completely true. There is a bunch of examples that allow to assert previous statement. Among all of them, it must be highlighted next ones:
+1 - Apache Web Server. Undisputed Web Server Market Leader. On November 2012, it has around 60% of the Market Share [1]
+2 - The Linux Kernel. The Linux Kernel Operating System is as well leader in some IT-related markets.
+A good example is Super-Computer Markets, where Linux Operating System goes beyond 90% of the Market Share [2].
+3 - CMS Market. In top of  the list of CMS Market Share, Wordpress is the leader with no discussion, with a total of 55% of the Market Share. Meanwhile, inmmediate competitors are also FLOSS projects, in particular Joomla (8.8%) and Drupal(7.0%) [3]. First privative CMS solution, vBulletin, comes in the 4th place, with a low and decreasing arket share (3,5%).
+
+References:
+[1] http://news.netcraft.com/archives/2012/11/01/november-2012-web-server-survey.html 
+[2] http://www.top500.org/list/2012/11/
+[3] http://w3techs.com/technologies/history_overview/content_management

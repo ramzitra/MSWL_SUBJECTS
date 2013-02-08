@@ -1,0 +1,23 @@
+Abstract: One or two interviews will be hold with people initiating a startup based on Free Software. Some issues will be foregrounded, as, in example:
+
+- Advantages and disadvantages on a Startup due to FLOSS use.
+
+- Advantages and disadvantages on a Startup due to FLOSS production.
+
+- Considerations to be taken into account when initiating a startup regarding Free Software:
+
+  * Potential customers
+
+  * Comunity involvment
+
+  * Positioning: Decreasing costs or improving services
+
+  * etc.
+
+- Plans to fork to propietary software.
+
+- Economic impact expected due to community involvement
+
+- etc.
+
+Some derived questions from issues above would be proposed to the interviewed people, to try to clarify economic aspects on startups with a Free Software based mod
