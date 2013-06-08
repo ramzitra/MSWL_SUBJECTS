@@ -1,0 +1,67 @@
+\documentclass[11pt]{article}
+%Gummi|061|=)
+\title{\textbf{Guilty: Statistics Proposal}}
+\author{Sergio Arroutbi Braojos}
+\date{\today}
+\setlength{\parindent}{0cm}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+This document is an approachment to the different statistics that should be dumped associated to the different data which can be dumped from a project via the Guilty Tool.\\
+\\
+Guilty is a tool written by Carlos Garcia Campos and hosted in LibreSoft. This tool allows dumping, in different output formats, the result of a typical "blame" control version subcommand to dump for a particular file the author, date and commit of the different lines contained in itself.\\
+
+\section{Guilty}
+
+From MetricsGrimoire perspective, although some extensions analyse the lines of code (LOC) being changed on a particular commit, there is not a strict control regarding the LOC hosted on a particular repository.\\
+\\
+Taking this lack into account, there is an oportunity to take profit from existing tools that allow a deep inspection of the LOC changed on a particular file, the commit associated to it, the user who performed it and the date where it was completed.\\
+\\
+As stated previously, Guilty tool, hosted on Libresoft Git repository, allows performing this type of analysis, LOC oriented, and providing information for each line of code having to do with SCM.\\
+\\
+In this aspect, the main purpose will be, \textbf{in a first stage, to introduce Guilty application in MetricsGrimoire forge}, allowing to provided additional information  around metrics, including to dump information to a database that will keep different entries, one per line of code, containing the author, the date, the file, the line number, the last revision.\\
+\\
+Regarding metrics to be extracted from Guilty, next list shows some examples of the different possibilities:
+\begin{itemize}
+\item{LOC changes by file and/or commit in a certain period}
+\item{LOC changes by file and/or user in a certain period}
+\item{LOC changes on a certain preconfigured period}
+\item{LOC changes changes multiplied per user in a certain period} (in order to prioritize activity from different developers)
+\item{Proportion of the source code (\%) unchanged in a certain period}
+\end{itemize}
+
+In order to ennumerate the different kind of statistics that can be generated with Guilty, first some chategories will be identified, in order to differentiate the different kind of statistics.
+
+\section{Alive vs. Dead Code}
+This subcathegory will enable knowledge about how antique the code is. Statistics would work by dumping in total lines of code and in proportion statistics, code unchanged in a certain period of time.
+\begin{itemize}\itemsep0.pt
+\item{Statistic Input}:  Period of time
+\item{Statistic Output}: LOC unchanged (total) / LOC unchanged (\%) / Unchanged files (total) / Unchanged files (\%)
+\item{Statistic Output}: LOC changed (total) / LOC changed (\%) / Changed files (total) / Changed files (\%)
+\end{itemize}
+
+\section{Changes on a file or group of files}
+This subcathegory will allow to dump specific reports for a particular file, group of file, directory and group of directories:
+\begin{itemize}\itemsep0.pt
+\item{Statistic Input}:  Period of time
+\item{Statistic Output}: LOC unchanged (total) / LOC unchanged (\%) 
+\item{Statistic Output}: LOC changed (total) / LOC changed (\%) 
+\end{itemize}
+
+\section{Changes associated to users}
+This subcathegory will allow to dump specific reports associated to the LOC changes of particular user:
+\begin{itemize}\itemsep0.pt
+\item{Statistic Input}:  Period of time (and optionally, user or group of users)
+\item{Statistic Output}: LOC changed per user (lines / user) 
+\item{Statistic Output}: LOC changed multiplied per user (lines * user) 
+\end{itemize}
+
+\section{Conclusion}
+Guilty tool provides some enhancements that can help on contributing to Metrics Grimoire, in order to achieve a wider collection of metrics data to be dumped and later analyzed.\\
+\\
+Previous statistics will help on clarifying the state of the activity that a particular project is experiencing, in order to complete the statistics dumped for the different reports available in VizGrimoire. 
+\end{document}
