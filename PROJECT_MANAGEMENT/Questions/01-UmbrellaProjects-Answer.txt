@@ -1,0 +1,18 @@
+Q1) What is the purpose and main goals of the openDesktop community? 
+    The openDesktop community (openDesktop.org) [1] provides a social network service to serve as an umbrella site summarizing the content of all the other web sites in the network having to do with the main FLOSS Desktop projects, basically KDE and GNOME, but also with content of other contribution to FLOSS Desktop, such as Beryl/Compiz, Qt, XFCE, etc. The Slogan of the project is : "Let's build the Desktop of the future".
+    OpenDesktop.org have content related to sites such as KDE-Look.org, KDE-Apps.org, GTK-Apps.org, GNOME-Look.org and many other similar sites. Among the different type of contents that can be found on OpenDesktop.org, next cathegories can be found [2]:
+    - Artwork: Containing information on different websites such as KDE-Look.org, GNOME-Look.org, Xfce-Look.org, Box-Look.org, Beryl-Themes.org or Compiz-Themes.org.
+    - Linux Distributions: Containing information of sites related to "Linux Distros Art" such as Debian-Art.org, Gentoo-Art.org, SUSE-Art.org, Ubuntu-Art.org, Kubuntu-Art.org, LinuxMint-Art.org, Fedora-Art.org or Mandriva-Art.org.
+    - Applications: Summarizing different application for desktop related websites such as KDE-Apps.org, GTK-Apps.org, CLI-Apps.org, Qt-Apps.org, Qt-Prop.org, Maemo-Apps.org, Java-Apps.org, eyeOS-Apps.org or Android-Community.org.
+    - Documents: With information regarding doucment templates used in different websites such as KDE-Files.org, OpenTemplate.org, GIMPStuff.org, InkscapeStuff.org, ScribusStuff.org or BlenderStuff.org.
+
+Q2) Do you think it makes sense to join efforts in the development of open desktop environments? Provide at least 2 reasons to support your answer.
+    From my perspective, it DOES make sense to join efforts in the development of open desktop environments, as well as make sense any other FLOSS environment.
+    The main reasons to join efforts are basically:
+    - To avoid duplications and know which issues is the rest of FLOSS projects working on.
+    - To unify efforts and try to split different tasks among software development task of the different existing communities.
+    - To design and implement homogeneous interfaces, data structs and file formats, trying to create common standards
+    - To share and change opinions about contents, tools, software components, knowledge and any other aspect.
+
+[1] http://opendesktop.org/help/about.php
+[2] http://opendesktop.org/help/faq1.php

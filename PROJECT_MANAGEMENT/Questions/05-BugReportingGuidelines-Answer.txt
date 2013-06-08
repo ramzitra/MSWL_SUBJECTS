@@ -1,0 +1,51 @@
+Analyze the following bug reporting guidelines from the WebKit project:
+
+http://www.webkit.org/quality/bugwriting.html.
+
+Q1) Pick up another popular FLOSS project/community with similar guidelines and find similarities and differences. 
+A1) I have chosen the Mozilla Foundation bug writing guidelines, available on next link:
+
+https://developer.mozilla.org/en-US/docs/Mozilla/QA/Bug_writing_guidelines
+
+    However, previous link has an introductory message on the considerations to take into account for writing a bug, while a more complete description on the bug submission information is in the next QMO link:
+
+https://quality.mozilla.org/docs/bugzilla/starter-kit/how-to-write-a-proper-bug/ 
+  
+    Apart from that, it also has to be considered the main fields "Bugzilla" includes. To do so, we can have a look into a particular issue, such as the one in the next link:
+
+https://bugzilla.mozilla.org/show_bug.cgi?id=530478
+
+    The main similarities are:
+    - Summary: To identify the problem, the more clear and specific, the better.
+    - Description: A detailed explanation of the problem, with complete information to reproduce it. 
+    - Component: Identifying the sub-part of the software the bug is appearing. If the component is not easy to identify, a "General" (or similar) option is always available.
+    - OS: To specify the Operating System where the bug was reproduced
+    - Priority and Severity: To specify importance and scope of the bug
+    - URL: Webkit includes this field to include a URL to provide a mean of target URL to test the bug. Mozilla does not.
+    - Keywords: Both Webkit and Mozilla through Bugzilla include a specific apart to include keywords.
+    - Depends on / Blocks: To include other related bugs this bug depends on or is blocking to.
+
+    Meanwhile, the main differences are:
+    - Steps to reproduce: This part only appears on the Mozilla guideline, as Webkit asserts to include the steps to reproduce in the Description.
+    - Actual result: This part only appears on the Mozilla guideline, as Webkit asserts to include the steps to reproduce in the Description.
+    - Expected result: This part only appears on the Mozilla guideline, as Webkit asserts to include the steps to reproduce in the Description.
+    - Platform: Webkit provides, apart from OS, a field to identify the platform (Macintosh, Mobile Phone, ...)
+
+Q2) After this, can you briefly summarize which are (in your own opinion) the most relevant guidelines for submitting appropriate bug reports to a FLOSS project. 
+A2) From my perspective, before opening a certain bug, both Webkit (http://www.webkit.org/quality/reporting.html) and Mozilla (https://developer.mozilla.org/en-US/docs/Mozilla/QA/Bug_writing_guidelines) highlight to accomplish certain previous requirements, two in particular:
+    - Being sure the latest stable version of the software is being used.
+    - Search in the particular Bugzilla (Webkit/Mozilla) if the bug is already notified.
+    Once previous requirement is accomplished, the main information to include is:
+    - Summary: to give a short but enough descriptive information of the issue.
+    - Detailed description: to include as many useful information associated to the issue as possible. The information has to include enough information for another user to reproduce the bug.
+    - Operating System and/or platform: to provide more information about the platform
+    - Subcomponent: if it is easy to identify the sub-part of the software where the issue is going on.
+    - Keywords: to identify the possible scope of the bug, as well as the type of it.
+    
+    The rest of fields are normally particular to a certain kind of software, such as, in example, the URL (only makes sense together with Browser/Navigation software).
+
+Q3) What is the role of automated bug reporting systems in this process?
+A3) Automatic Bug Reporting Tools (ABRT) are normally a program or a daemon which runs silently in the background to keep track of the possible failures that can be going on. 
+    Normally, this kind of tool are activated when an application crashes/kernel oops is detected. In such case,  the application/daemon collects the relevant problem data, such as log files, core files, the crashing application's command line parameters and other type of relevant information, and store the information.
+    Together with storing the information, there is normally a possibility for the ABRT to fulfill information on a remote Bug Tracking tool in an automatic way.
+

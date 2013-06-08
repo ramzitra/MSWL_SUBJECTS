@@ -1,0 +1,68 @@
+Notabilia (http://notabilia.net/) is a project aimed at visualizing the 100 longest article for deletion discussions in the English Wikipedia.
+
+Choose 3 of these discussions at random and answer the following questions:
+
+Q1) In general, ¿do you think that participants follow standard netiquette guidelines?
+A1) To start with, I have chosen next 3 discussions for deletion on next topics:
+    - Islamophobiaphobia [1]
+    - Dead Playboy Playmates [2]
+    - Allegations of state terrorism by United States [3]
+
+    The discussions held around both 3 topics, are ruled by netiquette guidelines, although some editors sometimes do ignore some of them:
+    Some netiquette rules used, such as:
+    - They start with a key (Keep/Delete/Merge) to decide if the article has to be kept / deleted.
+    - They normally (not always) include a reason about why the Keep/Delete decission is being taken.
+    - In general, no offense is provided. 
+    - No cappital letters are used.
+    - Identation is used to discussion on certain Keep/Delete decissions.
+    - Each of the entries in the discussion are being signed.
+    However, some netiquette rules are being ignored [1], such as:
+    - Avoid "Me Too" messages: i.e.: Delete. "Per above". 
+    - Avoid sarcasm: i.e.: messages such as: "You have to be kidding" 
+    - Avoid offensive messages: i.e.: "Delete. Silliness"
+
+Q2) Can you find any specific guidelines in the Wikipedia project concerning this matter?
+A2) Yes, there is a specific guideline containing how to keep friendly discussions on what Wikipedia calls "talk pages" [2].
+    The main objectives to accomplish on this type of talk pages are:
+    - Communicate
+    - Stay on topic
+    - Be positive
+    - Stay objective
+    - Deal with facts
+    - Share material
+    - Discuss edits
+    - Make proposals
+    Good practices proposed by this guidelines are:
+    - Checking no other similar discussion exist
+    - Comment on content, not on contributor
+    - Sign the posts
+    - Be concise
+    - Keep clear layout
+    - Keep discussion focused
+    - Read the archives
+    - Be welcome to newcomers
+    - Use minor flag for minor changes only
+    - Avoid excessive emphasize
+    - Use English
+    - Avoid posting the same threads
+    - Avoid repeating
+    - Use wiklinks
+    Last, but obviously not least, next issues are considered to be unacceptable behaviour:
+    - Personal attacks 
+    - Misrepresentation of other people
+    - Asking for other personal details
+    - Impersonate other editors
+    - Claim to be administrator / having an access level you do not really have 
+    - Use talk page as forum, as it is intended only to be for discussions.
+
+Q3) Do you think it is easy to follow these discussions only by using identation? Can you offer any suggestions to improve the interface to debate with other editors?
+A3) Yes, from my perspective identation is a very easy way to follow the discussion, as graphically it can be easy understood which points are referring to other ones. 
+    Despite the fact that identation can be ankward to follow if long discussions are taken, there are some resources, such as "Outdent Template" [6], to fix this kind of issue.
+    From my point of view, the interface provided to debates is easily understandable and provide a good mechanisnms to discuss the issues. In order to improve the interface to debate, I would only add some graphics to dinamically keep track of what is being going on in the debate, such as, for example, a bar diagram to include tracking of the different Keep/Delete/Merge votes that editors have included in the debate. 
+
+[1] http://en.wikipedia.org/wiki/Wikipedia:Articles_for_deletion/Islamophobiaphobia
+[2] http://en.wikipedia.org/wiki/Wikipedia:Articles_for_deletion/Dead_Playboy_Playmates
+[3] http://en.wikipedia.org/wiki/Wikipedia:Articles_for_deletion/Allegations_of_state_terrorism_by_the_United_States
+[4] http://www.ietf.org/rfc/rfc1855.txt
+[5] http://en.wikipedia.org/wiki/Wikipedia:Talk_page
+[6] http://en.wikipedia.org/wiki/Template:Outdent

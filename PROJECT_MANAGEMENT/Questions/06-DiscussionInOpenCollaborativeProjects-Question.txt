@@ -1,0 +1,7 @@
+Notabilia (http://notabilia.net/) is a project aimed at visualizing the 100 longest article for deletion discussions in the English Wikipedia.
+
+Choose 3 of these discussions at random and answer the following questions:
+
+In general, ¿do you think that participants follow standard netiquette guidelines?
+Can you find any specific guidelines in the Wikipedia project concerning this matter?
+Do you think it is easy to follow these discussions only by using identation? Can you offer any suggestions to improve the interface to debate with other editors?

@@ -1,0 +1,5 @@
+Analyze the following bug reporting guidelines from the WebKit project:
+
+http://www.webkit.org/quality/bugwriting.html.
+
+Pick up another popular FLOSS project/community with similar guidelines and find similarities and differences. After this, can you briefly summarize which are (in your own opinion) the most relevant guidelines for submitting appropriate bug reports to a FLOSS project. What is the role of automated bug reporting systems in this process?

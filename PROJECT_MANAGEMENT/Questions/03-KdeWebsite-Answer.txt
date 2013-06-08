@@ -1,0 +1,26 @@
+The main website for the KDE community is http://www.kde.org/. Visit this site and follow the links to answer these questions:
+
+Q1) What is the main document that we must read if we are interested in starting to contribute to a KDE project, as a developer?
+A1) The main document to read is "Beginners Guide to KDE development", which is the basic guide for beginner developers to understand different tasks, as how to [1]: 
+    - Submit a bug fix.
+    - Write a new application powered by KDE technology.
+    - Contribute to an existing project.
+    - Add functionality to existing KDE development libraries.
+
+Q2) What is the main aim of KDE TechBase?
+A2) TechBase is a wiki containing different useful information for developers.
+    This repository is associated to any part of a KDE release, and contains information written by volunteers, and editable by any registered user. Although care is taken, there is no guarantee of the accuracy in the different entries [2].
+
+Q3) Find out at least 5 different software tools that KDE uses to manage their projects (including, for instance, version control systems, bug-tracking systems, communication, etc.). Include the URL to each tool to backup your answer.
+A3) Example of software tools used in KDE projects are enummerated below:
+ 
+    VCS            : GIT     : git://anongit.kde.org/
+    Bug-Tracking   : KDE Web : https://bugs.kde.org/
+    Mail List      : Mailman : https: //mail.kde.org/mailman/listinfo/kde
+    Communication  : IRC     : irc.freenode.net#kde
+    Social Networks: Facebook: http://www.facebook.com/kde
+    Social Networks: Twitter : @kdecommunity
+
+References:
+[1] http://flossmanuals.net/kde-guide/
+[2] http://techbase.kde.org/KDE_TechBase:About

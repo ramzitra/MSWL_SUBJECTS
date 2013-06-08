@@ -1,0 +1,6 @@
+Let's assume that you are a developer interested in joining the Calligra project, an office suite in KDE. Answer the following questions:
+
+    Is it possible to browse the code tree of these project? What is the URL of this repository? What is the software for version control used in this project?
+    Can you find any specific guidelines for submitting your first patch to this project (or any other KDE project)?
+    What are the main developers of Calligra? Can you contact the developers somehow?
+

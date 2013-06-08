@@ -1,0 +1,37 @@
+Let's assume that you are a developer interested in joining the Calligra project, an office suite in KDE. Answer the following questions:
+
+Q1) Is it possible to browse the code tree of these projects? What is the URL of this repository? What is the software for version control used in this project?
+A1) As Free Software Project, obviously, code can be downloaded and browsed as well. 
+    The URL of this repository for the code of Calligra to be downloaded is:  git://anongit.kde.org/calligra
+    As the URL shows, Control Version system is GIT.
+
+Q2) Can you find any specific guidelines for submitting your first patch to this project (or any other KDE project)?
+    In order to push changes, an identity of "KDE developer" is necessary. To obtain such identity, someone must: 
+    1 - Initiate a user registration process [2]
+    2 - Agree the terms of the "KDE code of conduct" [3]
+    3 - Once registered as user, fill a form to obtain the developer role, with information associated to your development issues, such as [4]:  
+        -> Supporter (if any).
+        -> Supporting evidence, as, in example, providing mail list links issuing your fixes, reviewing requests, etc.
+        -> Reasons to apply for being KDE developer.
+
+Q3) What are the main developers of Calligra? Can you contact the developers somehow?
+    The main developers are [5]:
+    - Boudewijn Rempt
+    - Cyrille Berger Skott
+    - Dimitry Kazakov
+    - Dan Leinir Turthra Jensen
+    - Friedrich W. H. Kossebau
+ 
+    They all can be contacted by different methods, as they all have a public profile with email to contact: 
+    - Boudewijn Rempt: boud (at) valdyas.org
+    - Cyrille Berger Skott: cberger (at) cberger.net
+    - Dmitry Kazakov: dimula73 (at) gmail.com
+    - Dan Leinir Turthra Jensen: admin (at) leinir.dk
+    - Friedrich W. H. Kossebau: kossebau (at) kde.org
+ 
+References:
+[1] http://community.kde.org/Calligra/Building/Building_Calligra#Getting_the_source_code
+[2] https://identity.kde.org/index.php?r=registration
+[3] http://www.kde.org/code-of-conduct/
+[4] https://identity.kde.org/index.php?r=developerApplication
+[5] https://projects.kde.org/projects/calligra/activity

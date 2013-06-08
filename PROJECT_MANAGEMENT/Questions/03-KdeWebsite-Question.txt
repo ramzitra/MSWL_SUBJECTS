@@ -1,0 +1,6 @@
+The main website for the KDE community is http://www.kde.org/. Visit this site and follow the links to answer these questions:
+
+    What is the main document that we must read if we are interested in starting to contribute to a KDE project, as a developer?
+    What is the main aim of KDE TechBase?
+    Find out at least 5 different software tools that KDE uses to manage their projects (including, for instance, version control systems, bug-tracking systems, communication, etc.). Include the URL to each tool to backup your answer.
+

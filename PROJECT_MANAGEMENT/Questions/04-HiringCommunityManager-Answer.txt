@@ -1,0 +1,22 @@
+Read Chapter 13 of Jono Bacon's book "Art of Community Building" (http://www.artofcommunityonline.org/get/) and answer the following questions:
+
+Q1) Which are the main skills/assets of a good community manager?
+A1) According to Jono Bacon's perspective, the main skills/assets of a good community manager depend on the kind of community he/she will manage.
+    However, there is one key aspect a community manager must have: 
+    - A community manager must have both marketing and engineering strong knowledge, and must be aware of the story lines flowing through them. If one is missing, community can feel unbalanced, misrepresented, and ineffective.
+    - Apart from that, a community manager must be well versed in the mechanics and technical/social foundations of collaboration in open source communities and should be able to strategically structure and execute objectives that enable your community on the ground to do great work.
+
+
+Q2) Which are the main caveats to be considered when hiring a community manager?
+A2) Apart from previous aspects, and taking into consideration the community's behaviour, it also has to be taken into account that community manager role has always associated some kind of tasks that come together with next expectations:
+    - Adjustment to the role: In two ways:
+      * Adjustment to the community management. As time passes, and the community is better known by the community manager, the management must be adjusted to the community behaviour.
+      * Adjustment according to the focus and strategy of the project.
+      So the main idea is that community manager must be flexible and adaptative.
+    - Unusual hours: as many communities span to multiple countries with different time zones
+    - Travel: it is usual to travel to conferences and other different events.
+    - Public Attention: as community manager is usually public representative of the community.
+    - Conflict Resolution: as the role implies usually facing conflicts and taking part into the resolution of them. 
+    - Technical knowledge: Some communities are very technical dependant, and often require a community manager with extensive technical experience in the workflow, infrastructure, and processes of a technical collaborative community. This knowledge, far from being static, will continue to increase as the community evolve, and community manager must be aware of the technical changes and strategies, being expected to learn the new knowledges and skills.
+    - Presentation skills: As it is useful to get out on conference circuit and perform presentations on both the community manager's work and the project itself.
+

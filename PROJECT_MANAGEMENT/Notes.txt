@@ -1,0 +1,855 @@
+FLOSS PROJECTS MANAGEMENT:
+--------------------------
+Contact: felipe.ortega@urjc.es
+
+Class 01: 2013/01/18: Main components on Management
+
+3 main components when managing FLOSS projects:
+-----------------------------------------------
+- Technical tools: Mail lists, IRC chat, discussion, forum, Bug Tracking Tool, Feature Request Tool, Wiki.
+- Sustainability: economic viability, economic aspects such as other project relationship, incomes, etc. Also important FLOSS Licensing: Re-licensing, License selection, Dual licensing, Triple licensing, etc.etc.etc.
+- Community: volunteers search and management. Volunteers must be analyzed from a management perspective. Community does not appear from nothing. 
+
+Examples of communities analyzed: Two main Projects: KDE project and ASF.
+
+Main target: Understand how to create and manage an FLOSS project effectively.
+
+Exercise:
+
+- What would I do if I want to release a project under FLOSS license ?
+  1) Check the copyright owners, contact them.
+  2) I need a forge. Code => Repository, Version Control System (VCS). VCS: 
+     - To have branch
+     - To have milestones
+     - Which type? Centralized, Distributed?
+       Distributed: Allows better integration between different repositories. In the general case, more than one developed are going to participate. In this situation (Team of developers), it is better to use a distributed system (GIT, Mercurial, Bazaar), as it allows better off-line connection.
+     Free Service of non-FLOSS forges:
+     - Github (the one with the bigger GIT forge).
+     Free Service and FLOSS forge:
+     - Sourceforge (right now, it is still the most used forge). Sourceforge created a new forge and released its software, Allura. Allura is hosted on SourceForge (they eat their own food).
+     WARNING: Having your own forge is not an easy topic. It is not an easy issue to maintain a forge.
+     WARNING2: Forges are very particular. Forges Inter-operability are bad, as they are very user oriented. It is a vendor Lock-in. Forge services providers are not interested in inter-operability, as they are interested in keeping the users the longer, the better.
+
+  3) BUG Tracking: Or anything more potent (as Launchpad or Redmine). Launchpad, for example, allows tracking bugs from other projects. 
+     Redmine, Trac: Are IMP (Integral Management Platforms). Provide an Integral Management for the whole project.
+
+  4) Communication among members: Mailing lists. Google Groups, Yahoo Groups, mailman, ILC
+
+  5) Real-time communication: IRC, Mumble, Jabber, identi.ca, Twitter.
+
+  6) Feedback: Forms, surveys.
+
+  7) Forums (help me!), blogs, planets (rss aggregator), Web Site.
+
+  8) Project Documentation: VERY IMPORTANT. Without people specialist on documentation, documentation will have no good quality.
+     - Wikis, DocuWikis. PDF auto-generated manuals if possible. 
+     - Requirements
+     - Design 
+     - Manuals / Developers Manuals (APIs) / FAQs / Howtos
+     - About / Contacts
+
+  9) Internasionalisation / Translation. It is important to choose a good traduction tool.
+     Community fragementation: splitting among different languages. Two issues:
+     - Effort fragmentation
+     - Duplicity
+     Many community have one line: Default Language, English. 
+     `-> The problem of this is selling the services in non english-spoken customer who pay for services.
+     Others: cross-over against different languages: For those communities having customers around the world. 
+     It the project is international, Forums and WebSites tools must have multi-language support. Blogs and Planets are still individual focused, and multi-language is not used.
+
+  10) Code Revision and Continuos Integration tools (integrated or not in IMS). Gerrit / Jenkins.
+
+  11) Social Networks, basically Facebook, Twitter, Enterprise (LinkedIn). OpenStack is a precursor on this.
+
+  12) Q&A website. Voting system that improve the quality (better system than the Forum).
+ 
+  13) QA (Quality Assurance). Difficult to implement, just implemented on Big Projects (Apache, Mozilla, Canonical, etc.). Developers are not very aware of the tests.
+      However, consider the scope of the tests.
+
+Other interesting issue: Is there any FLOSS project that is like the one I am initiating?
+------------------------
+Beryl And Compiz: 2 FLOSS project for Beautify Desktop. Both projects where driving to the same target: creating beautiful . The differences were in the way they worked:
+ - Beryl: Most sophisticated configuration.
+ - Compiz: Integration and efficiency with the particular Desktop (compiz-GNOME, compiz-KDE, etc.).
+ Each time a major release of a distribution that used it (Ubuntu) was accomplished, many BUGS were reported.
+ They joined efforts, and one of the best advantages was the seamless integration (no particular configurators for KDE or GNOME). Configuration is done via Desktop Configuration.
+ Another similar issue is related to the different Linux Distributions. Linex, GuadaLinex, Max, ...
+
+Visibility: 
+-----------
+The idea is not using just a community, is promoting it. More developers, users, translators, mean:
+- More users: More bug reports.
+- More developers: More bug resolved.
+- More translators: More potential users.
+The visibility is provided through:
+- Blogs
+- Forums
+- Webs
+- But also, by ease of use, ease of integration, ease of integration, etc.
+* Visibility: GIMP, for example, has initiated a better visibility, by changing its code and providing plugin framework.
+* Integration with others: Another key factor is the cooperation with bigger projects. However, by integrating in a bigger project, you win visibility, but loose: 
+  - Steering 
+  - Autonomy
+  Also, it is important to planify if it will be possible to be integrated in a bigger project (as big amount of BUGS will appear, for example).
+* Visibility: 
+  - Web always have to provide users with access to:
+    * Download / Get It / Free. Better without asking for any data ! 
+    * HOWTO 
+    * FAQ
+    * Online Demo (Wordpress, JQuery)
+    * Documentation
+    * What's New ! IMPORTANT: To check the level of the community involvement.
+    * Mailing lists
+    * Related projects
+    * Portfolio: who is using your project 
+    * About / Contact
+  - Web always have to provide developers with access to:
+    * Licensing
+    * VCS Control System Link
+* Installation process: VERY IMPORTANT TO BE well documented! If not, users are lost! 
+    It is very important to identify the TARGET user, (sysadmins, programmers, end users, ... )
+    For any of them, always provide easy access to installation.
+    If possible, packetize the application (.deb, .rpm, .exe, ...).
+* Cleaning code: Your code is your image.
+   - Is your code easy? 
+   - Is it readable?
+   - Commits: the more atomic, the better.
+   - Coding guidelines.
+* Files:
+  - LICENSE / COPYING (License)
+  - README (General Info)
+  - CHANGELOG (less since GIT) / NEW FEATURES (Changes made, next changes)
+  - INSTALL (Installation process)
+  - doc (Documentation) 
+* Demos:
+  - Live Demo: Best option.
+  - If not live demo: provide dummy data to enable easy .
+* Tools: 
+  - Remote / Distributed. 
+  - Keep registry about everything (to keep an eye also on the decissions taken)
+* Netiquette in mailing lists:
+  - Write intelligible message
+  - Some acronyms are ok:
+    * IMHO
+    * YMMV
+    * BTW
+    * ROTFL
+    * GISY
+    Others not!
+  - Pasting style ! 
+    * Top Posting 
+    * Inline Reply
+* How can I advertise the project?
+  - SourceForge, Github, FSF ...
+  - Your own blog and website.
+  - Well explanation of the tool:
+    -> What is it?
+    -> Where to get it?
+    -> Features
+    -> Requirements
+    -> Current version
+
+Class 02: 2013/01/25: Community Management
+
+FLOSS Communities:
+------------------
+Why communication inside a community is important?
+Community Manager rol is very appreciated nowadays. But is a responsible and not easy job, as it a rol associated to:
+- Projects with increasing complexity: Ubuntu, Linux Kernel, ... It means:
+  * Many companies interested, "multiple stakeholders".
+  * Many users.
+  * Many developers.
+
+- Projects with increasing commercial interest:
+  In example, the case of Mozilla Foundation. In last 10 years, MF started a very intense campaign with two main objectives:
+  * Improving trademark.
+  * Getting the 2nd position in the market (after Internet Explorer).
+  * Improving income. Apart from Google paying 80 % of the development, due to Google including itself as default browser in Firefox.
+  
+Community manager role started as a role for a community leader to be in touch with companies.
+
+But, why are so important communities?
+  1) Collaborative Internet has taken us from Read/Only to Read/Write users.
+     The concept "downstream/upstream" associated to programming. But what is this concept?
+     - Downstream: What I download (a small company, i.e.) from the different communities (I use CMS, MySQL, etc). This means:
+       -> Keep update: getting last versions, take decissions based on technologies, etc.
+     - Upstream: What can I offer, as a company, to the community? 
+       -> If I develop a new software (associated , I can take different decissions:
+          * Make it privative.
+          * Mantain as FLOSS in the company, but without integration in the main  
+          * UPSTREAM: Integrating it in the community (the simplest thing: Bug Fixing). This is the easiest way companies have to integrate in the communities. Nowadays, in example, 80% of code in Linux Kernel is provided by companies, and 80 % of this percentage is done by companies that started contributing fixes.
+       Many companies use FLOSS, but concentrate only in Downstream. Many times, viability and visibility of your company depends on "UPSTREAM", as this means that community start knowing your knowledge and your visibility increases.
+     
+   2) Community manager rol also has to do with the participants / users that have a certain project. Associated to this, a community manager has to:
+     - Be aware of the technical issues of the projects in big detail. You have to understand some basic of programming and above all, understanding the project, in terms of:
+       -> Understanding the Software Architecture of the project.
+       -> Identifying the project components.
+       -> Being aware of which components are being developed.
+     - Public relationships: The commercial part. He/she has to be very well on selling the project, and must:
+       -> Motivate sponsors.
+       -> Atract developers.
+       -> Atract users.
+       -> Cooperate with other projects.
+     - Mediation: A community manager must also be very well on listening the main voices, and:
+       -> Identify issues (and even better to anticipate them).
+       -> Pacifying between groups of the project (a typical example, QA vs. the rest of the project).
+
+     Seth Goding, in example, asserted that community manager was to be one of the most important roles in the future. WARNING: It is not an easy role, meaning a lot of work (many of them are hyperactive).
+
+     Typical tasks from a community manager are:
+     - Interaction (with users, developers, stakeholders)
+     - Organizational aspects, having to do NOT with roadmap, but more with issues, users tendency, etc.
+     - Cooperate and communicate with companies involved.
+
+     And which tools have to use a community manager?: 
+     - Face to face meetings.
+     - Stands at conferences.
+     - Online training events.
+     - Bug squashing parties. Sorting out bugs.
+     - Newsletter, planet of blogs.
+     - Hackathons: an event in which computer programmers and others in the field of software development, like graphic designers, interface designers and project managers collaborate intensively on software projects.
+       Normally it means experienced programmers instructing newbies and later contributing to new plugins, etc.
+
+     How is community manager evaluated? 
+     - Number of downloads.
+     - Number of developers on the community.
+     - Broadcasting: Social Network, etc.
+     - Sponsors involved. 
+     - 
+     - ... one of its first decission is to evaluate her/him self and the rest of the community, in terms of quantity and quality.
+     Many companies, nowadays, have community managers, even if not FLOSS. All the companies with on-line users or potential customers are important, but many times do not know about how evaluate them.
+     Depending on the type of role, the community manager selection is different. In Debian or Apache is selected from inside, while in a single-vendor, as Ubuntu (Canonical) is selected by the main company behind.
+
+  The style:
+  ----------
+  - Writting clearly 
+  - Talk "different languages":
+    * Developer-developer
+    * Developer-user
+  - Manage different communication channels.
+  - Control the public image:
+    * "Think before you type". All you type is stored, kept, etc. What you type always depend on what you write.
+    * Try to avoid problems and concerns for the community.
+    * Curious: Most antique communities are, more resistant to the problematic inidividuals.
+  - Take into account that do not know about developers.
+
+  Structure and formatting is important:
+  --------------------------------------
+  - Different channels follow different rules.
+  - Do not try to write, via e-mail, as if you were writing SMS.
+  - "Tempo" and depth of sentences and conversations is also different depending on the channel.
+  - Netiquette rules.
+  - Office hours: above all for single-vendor projects.
+
+  Content and tone:
+  -----------------
+  - Be bold: try to be polite and diplomatic.
+  - Style can get terse as you become busier.
+  - Don't be rude.
+  - Avoid "ad honimem" attacks (directly to somebody). 
+  - Manage on-line faces:
+    * Corporate e-mail
+    * Personal e-mail
+    * Aliases
+  - Supress long disclaimers. 
+
+  Common pitfalls:
+  ----------------
+  - Posting without purpose
+  - Dealing with unproductive threads
+  - Long threads for soft topics (not argue by arguing).
+  - Holy wars (OSI vs. Free Software; No)
+  - Noisy minority. Be aware of them. They are subgroups that try to insist on something, but without being the ones that are most representative or majority. Apache defines something which is "if you do not talk, you agree". And is not bad, as not anybody can have an opinion on something.
+
+  Some additional hints:
+  ----------------------
+  - Planning your growth (growing too fast can be dangerous)
+  - Consider all resources as permanent (and replicable) archives.
+  -
+  - Avoid conversations on bug tracker tools.
+
+  Security issues:
+  ----------------
+  - Fixing and admiting issues on the projects openly. The most important, security issues.
+
+  Release, updates
+  ----------------
+
+  Branding
+  --------
+  Identify your brand, as main FLOSS projects:
+  - Debian means stability, security.
+  - Ubuntu means "ease of use".
+  - Drupal means plugins, extensions.
+  - MySQL/MariaDB: Web Development.
+  - Wikipedia: Free Knowledge.
+
+  Netiquette Rules
+  ----------------
+  Depending on the channel:
+  1) IM, IRC, whatsup: 
+     - Take into account it is a "direct channel" (maybe 2 a.m. is not a good option)
+     - Respect other's state (Busy).
+     - IRC: do not use colours. 
+     - Avoid bots and spam. 
+     - Center on the topic.
+     - Do not troll.
+     - Avoid Capital letters.
+     - Do not cover illegal topics.
+
+  2) Mail lists:
+     - RFC 1855 (check and summarize).
+     - Be aware of:
+       * Different cultures. 
+       * Different customes.
+       * Different religions.
+
+Class 03: 2013/02/01
+--------------------
+The third session is entitled to emphasize on the burocracy part.
+Which is the role of a company or more inside a project? 
+What should happen on the project?
+
+Free Software Communities Management: Apache (Video)
+-----------------------------------------------------
+In this video, the organization of one of the biggest and more complicated communities is shown.
+Apache is an antique community. They have a robust organisation, though the organisation is also very decoupled (projects are very stand-alone).
+Despite this fact, when Apache assembly has to organize.
+
+The video (key ideas):
+- Apache: very different to other communities (vs. KDE or others)
+- Origin: Delaware (very few legal requirements to company foundation)
+- Founded on 1995.
+- ASF: Apache Software Foundation (legal coverage of all the projects, similar to GNU, a Foundation). Based on 501.3-C (USA "no lucrative" public foundation). Simillar legal form as Mozilla Foundation, GNU, Wikipedia or OSI.KDE is also Dedicated to the public goodness. 
+  NOTE: this type of companies are founded as foundations, as this is normally the best legal form to show neutrality and transparency. They pay less taxes compared to normal companies, but the real reason is the previous one.
+- A very important fact for a foundation is the people who initiates the enterprise need to have a human quality. Then some of the authors are explained:
+  - Brian Behlendorf
+  - Roy T. Fielding
+  - Rob Hartill
+  - David Robinson
+  - Cliff Skolnick
+  - Randy Terbush
+  - Robert S. Thau
+  - Andrew Wilson
+  Some of them are very intelligent, but other have other good communities.
+  In that moment, NCSA project (HTTP server Public Domain) was closed, the main engineers moved to Netscape. The people out of the movement decided to initiate a community around the project, as they got out of support.
+  NOTE: is very common that a project to response to a necessity. 
+        Something similar happened when Sun was bought by Oracle (to control Solaris/Open Solaris, MySQL, OpenOffice and Java). So, what happened with this technologies?:
+        - OpenSolaris: born as the "Fedora" of Solaris by Sun. Oracle moved the project. The project forks to Illumus.
+        - OpenOffice: similar to previous. LibreOffice is born as fork with the "Document Foundation" as the legal form. 
+        - MySQL: MariaDB appears.
+        - Java: It has also been more independent and company agnostic.
+  When a company grows much, it is better to have a legal form, specially when software is produced:
+  - You need to contract people or service in order to allow project management, and having legal form is just the only way. Brian Behlendorf needed to wake up at 4.am. (US time) to provide access to commmiters in other parts of the world. 
+  - People organization. With an organization you can provide a strategy, etc.
+  - To receive donations you need to have a legal form.
+  - If a foundation exist, if a company decides to demand the project, not a person is imputed, but the foundation.
+  - Also, it is a way to create and register the Trademark.
+
+  The philosophy on the project is normally based on meritocracy. It is not only related to number of commiters, but also having to do with legal aspects, great translators, etc.etc.etc. This is a normal issue in FLOSS projects, as sometimes is difficult to recognize "non-programming" merits.
+  IMPORTANT NOTE:This is very important for a project to success (translating, having a good documentation, people being on the IRC to help newbies, etc.etc.etc).
+
+  Do-ocracy: the person who does, decides. Let the person who is going to do something, to do it. 
+  It is normal in other environments that a lot of people talks but nobody does anything. It is also normal to have branches for someone who works individually to result on a future release (as Apache Tomcat 4 - Catalina).
+  The key idea: it is very different way of working in a company (hierarchy, objectives, decission) compared to a FLOSS project (where people works in a voluntary way). 
+  In software . In FLOSS project the managers have to take profit of different "branches".
+  Apache: Look to be as opener, the better. 
+          Idea: Never take decissions out of open lists.
+          Other idea: the more diverse, the better. More women, better. When more countries, the better. If some one does not speak a good english, no problem, you also need translators.
+
+  Development: 
+  Software: Adaptative, as necessities occur. It is important to understand the software phase:
+  - Starting: Promises, lots of people contribute.
+  - Legacy: Better not to touch it much.
+  Better guided by users compared to the one guided by external requirements, at least, in a certain way.
+
+  Apache: is a weak thing in Apache.
+
+  Meritocracy chain:
+  User.
+  Commiter. It is not always easy to gain commit access, although you are commiter in other Apache project.
+  PMC: Project Management Commitee. Means you have opportunity to vote.
+
+  Apache joke: "Patches server" The real reason: they modelized as the "Apache" tribus, as they were standalone who joined when the necessity appeared.  
+
+  Some numbers (2011):
+  Board of Directors: 9
+  Officers (executive): 95
+  Members: 329 +- 40 (emerit)
+  Commiters: 2543
+  Code Revisions: 1060109 
+
+  Directors Council: 
+  - 9 members.
+  - Resource Management and Assignation, Trademark, Intellectual Property.
+  - STV: Single Transfer under Vote (different to D'Hont Law). Difficult to understand.
+  - Monthly (under teleconference + IRC). Sometimes they meet personally.
+  - Does not decide on technical aspects.
+
+  PMC: 
+  - Never have a meeting. 
+  - They manage a project, but focused on technical aspects. 
+  - Personal decissions: on a private list (i.e.: criticise a commiter). Basically because of that everything in public list is stored.
+  - Technical Decissions have to appear on a public list.
+  - Mail List: Better for geographic distribution (in general, ).
+
+  Decissions Taken:
+  - Lazy conseous: 3 positive vote, non negative vote, is valid to take a decission. Maybe 20 members exist, so no further decissons. 
+  - Vote validities: 
+    +1 (agree and I will help), 
+    +0 (agree), 
+    -0 (do not agree, but continue), 
+    -1 (against, a technical reason has to be provided, or, at least, an alternative has to be provided)
+
+  Philosophy: 
+  - Software cooperative development. 
+  - High quality software.
+  - Respectful cooperation, honest, based on technical decisson.
+  - No reprocities conditions.
+  - Apache License, version 2.0. No reprocities, GPLv3 compatible, Patent clausing, etc.
+  - Antimonopoly: Companies with more than 50% of the source code not allowed (avoid single vendor). 
+
+  Apache project creation:
+  - Initial project: 2004: HTTP-Server.
+  - Later: James (web server), xml, xerces, jakarta (Java Server code), Portals (Java, Web portals).
+  - Now: data analysis, Hadoop, Hbase, ...
+         search: Lucene, Solr, ...
+         mail: SpamAssasin, ...
+  IDEA: They try to separate in new projects as earlier, better, to avoid great hierarchies (wide growth versus vertical growth). It is normal that some projects are out of one single project. Example: Jakarta.
+
+  2004-2006: 
+  - "Incubator": Harmony (class library in Android) is a project born in it. 
+  Xalan/Xerces/XML_Graphics (SVG) too. 
+
+  Operation:
+  - Much work: By volunteers. 
+  - Sysadmin.
+  - Executive Assistant.
+  - ...
+
+  Auxiliary projects:
+  - Infrastructure
+  - Security
+  - Incubator
+  - Conferences (ApacheCon)
+  - Labs
+  - Attic
+
+  - Lifecycle:
+    * Incubator:
+      - Used to create new projects. 
+      - Supervision of communities, legal and cultural aspects.
+      - Normal way to enter.
+      - You Need:
+        * Functional code base working
+        * Copyright donation intention
+        * A responsible member (known as the "Champion"). Must work much
+        * Menthors
+      - Objective:
+        * Create healty community based on diverse, etc.
+      - It was created as the foundation started to enter a lot of code, and .
+      - Projects: Felix, Lucene.NET, log4..., Roller, ...
+      - Typical project origins:
+        -> Some projects from Bea (before Oracle bought it).
+    * Apache Attic: Created in 2008.
+      "Elephant Cementery". To close distribution list, etc. 
+      Code remains, but no more management associated, (close commits, bugtrackets, etc.).
+      In order to study projects with few activity.
+      For users to know that reached End Of Line.
+    * Apache Lab: 
+      For commiters to upload code . Normally for individual developers.
+      Do not allow to free versions.
+    * Apache Extras:
+      Google collaboration.
+      External projects related to Apache (plugins, extensions).
+
+  - Conferences:
+    * ApacheCon Europe. 
+    * ApacheCon USA.
+    * Barcamps, retreats, ...
+
+  - Tools:
+    * Original VCS: CVS, Subversion (2006), GIT (experimental). Some of the boards of Apache are commiters to Subversion. Subversion indeed is from Apache Foundation.
+    * Bugtrackers: Bugzilla, JIRA, Confluence... (have also free licenses). Not homogeneous.
+
+  - IDEA: to decrease entry barriers. It is very key factor for FLOSS projects, so the easier to provide commits/patches, etc., the better. Gerrit and other similar tools help on this.
+
+  - IDEA: FLOSS as a Whale: It is huge, but feeds of "micro patches".
+
+  - Harmony conflict: between Google and Sun, as Google uses Harmony (project from ASF) as the virtual machine.
+    It is a case where the foundation is useful, for any developer to be accused. It is a curious thing that people can commit code that is unuseful, but you can be accused by a company for that code. It is the case that happened on Google and Sun (Oracle now), as the security classes with patents were not being used on Google.
+    In general, since Oracle bought Sun, Java is less used from big companies.
+    NOTE: When a project gets huge, it is difficult to have under control the code under the project. It is important to get traceability of which code is used. Test-Driven development for example is a good practice to avoid this.
+
+  - IDEA: Git flexibility. Allows filtering which things will be public.
+
+  - Trademark protection: It is a key factor in FLOSS. It is a bad idean than FLOSS is not against Trademark and image. Apache has also an image, and is very aware of it. They want quality.
+
+--- END OF VIDEO PART ---
+
+  - Mozilla vs. Apache:
+    Mozilla Mission: "Our mission is to promote openness, innovation & opportunity on the Web".
+    Special license: Frees under three licenses.
+    Mozilla Corporation: is a company that allows Google to pay to them. All the money is supposed to be donated to the Foundation.
+
+    Mozilla is similar to Apache (Code, Labs, Incubators). 
+    However Mozilla has "Drumbeats", that is to promote Mozilla (Mozilla is much more aware of promotion compared to Apache).
+    In Mozilla there is more than one Foundation:
+    - Mozilla Foundation
+    - Mozilla Corporation, subsidiary company of the Mozilla Foundation.
+    - Mozilla Online (China)
+    Communities:
+    - Mozilla Itala
+    - Mozilla Hispano
+    - Mozdev Community Organization (associated to programmers).
+
+    - Mozilla Organization:
+    -----------------------
+
+    --------------
+    - Incubation -
+    --------------
+    Are more "At-home" development compared to Apache. Is more focused to the Mozilla Applications.
+
+    - Drumbeat:
+    -----------
+    About two years ago, the Mozilla Foundation started experimenting with a set of big ideas, using “Mozilla Drumbeat” as an umbrella brand and laboratory. Our thinking:
+              -----------------------------
+    - OUTREACH: External promotion, community attraction. 
+    - First: 2009. 2010: Barcelona. Events with a double proportion:
+      * Promotion
+      * Innovation
+    - Receive new ideas, make hackatons, etc. 
+    - I.E.:
+      * Universal subtitles, i.e., was founded on Barcelona 2010.
+      * Open Licensing: traceability of the license, through a plugin, to include copyright.
+    - Grow the Mozilla community. In size and diversity.
+    - Reach out to new audiences.  People working in other spaces that matter. Like education, journalism, filmmaking, and youth.
+    - Collaborate on new projects and software. Lock web developers in a room with these new audiences, shake vigorously, and wait for lightning to strike.
+    - Work open. Template and package Mozilla’s uniquely open way of working along the way.
+    - Invite the world. Extend that out to anyone who wanted to play.
+  
+    - Mozilla Labs:
+    --------------
+    Point that acts as virtual lab for people to innovate, create and experiment with new innovations / technologies. Composed of:
+    * Test Pilot: Structured data through Firefox to build better products 
+    * Gaming: Online game innovation
+    * Prism: To allow web applications to be splitted from the desktop.
+    * Jetpack: To allow easier and more open Firefox add-ons.
+    * Bespin: Web-based code editor based on HTML5.
+    * Design Challenge: Open forum to share ideas, visions, technologies, etc. 
+    * Add-ons builder: To easy buy extension for Firefox.
+
+    - Incubators:
+    -------------
+    Central point of innovation, with new ideas being developed to reach innovation on the open web.
+    More focused on the ideas rather than projects. 
+
+    --------
+    - Code -
+    --------
+    Tools: 
+    - Bugzilla
+    - Crash Stats
+    - Graphs: To collect statistics (time response on SSOO, etc.)
+    - MXR: To display source code on a web way
+    - Tinderbox: To index projects?
+    - Repositories:
+
+    SQA: QMO (Quality Mozilla.org)
+  
+    Repositories:
+    - Github
+    - Bazaar
+    - Mercurial
+    - CVS 
+    - Subversion
+  
+    Developer Network:
+    - Resource for developer interested on Web, Mobile, Add-ons, etc.
+    - Based on plugins, which is the ecosystem to grow the core of Firefox.
+  
+    Applications:
+    - Camino: Web browser for MAC OS
+    - Thunderbird + Lightning: Mail + Calendar/Task Managemenet/Scheduling
+    - Sea Monkey (All In one): Web brower, mail, newsgroup client, HTML Editor
+    - Bugzilla.
+    - Firefox, including Support, Add-ons, 
+  
+    -------------------
+    - Community Sites - 
+    ------------------- 
+    - Wiki
+    - IRC
+    - Creative Collective (community designers, artists)
+    - Store - Merchandise
+    - Air Mozilla (community activity)
+    - Planet (Blogs).
+
+    ----------------
+    - Local Places - 
+    ----------------
+    - Europe
+    - Asia
+    - US / Canada
+    - Latin America
+    - EMEA
+
+    --------------------------------
+    - Main differences with Apache - 
+    --------------------------------
+    - Mozilla: more centralized. Offices centralized. Centralized on Firefox.
+      Apache: Projects more standalone, less hierarchy.
+    - MUCH MORE PROMOTION.
+    - Mozilla: More oriented to end-user. Apache: More oriented to technical-user. 
+
+---- END OF APACHE / MOZILLA
+
+    ----------------------
+    - The case of Essjay -
+    ----------------------
+    * Essjay: this case is about an astonishing Wikipedian.
+      He was highly proactive and participative. 
+      He also bragged (vacilar) about long academic career, 2 PhD. (antique culture and religious law).
+    * The real debate: do we have to get to know Essjay? Jimy Whales said not, but other wikipedias wanted to know the real man (to get if his academic career was so). 
+      Wikipedian put him in the end side out of the community. The issue really was a credibility issue, as he cheated on his career.
+      He finished working on Wikia.
+    * CONCLUSSIONS:
+      - Online personality vs. real personality. Be aware of the personality.
+      - Wikipedia: Jimmy Wales proposed a merito-cracy based on personal, but that was rejected. 
+        What was accepted is that final result is not based on the achademic authority.
+      - Do-ocracy and meritocracy try to make a balance associated to it, but together with respect between others and good community environment.
+
+Class 04: 2013/02/07
+--------------------
+  - Article about Matt Asay on managing a software project.
+    The key factor: Meritocrary not always mean the best programmer. 
+    The article's view is around who must compose the leadership of the project. 
+    In general it is based on meritocracy, but it has not to be around only based on technical factors.
+    Warning: being good technically is a key factor. But there is also other key factors:
+    - Being organized.
+    - Knowing the root of the project.
+    - Knowing who is participating in each part of the project.
+    - Being a good "software architect". 
+    - Cleaning parts of legacy code.
+    - Resolving conflicts.
+    - "Ego" management.
+    To summarize, FLOSS projects are not only code, it has also to do with other technical and non-technical issues.
+
+  - Bikeshed:
+    It talks about long discussion on "triffles" (minucia/nimiedad).
+    The real thing is that you should not care about the color of the Bikeshed.
+    "Meaning you can build a bikeshed does not mean that you can discuss on the color it must have."
+    The "mail" has to do with a discussion on Poul-Henning Kamp writting to public BSD list a reflexion on the importance of thinking and reflexioning before writing mails to public lists. 
+    1) In the end, it has to do with netiquette rules.
+    2) But, the main view, is about Time Management. It is very important to write mails that are positive, that are useful, for people not to loose time reading mail. There are some estimations that ensure that 80% of mails can be kept out, and, if so, it means increasing productivity in 30%.
+    3) When trolls and long discussions are happening, means no newbies participating, as these factors mean higher entry barriers.
+
+    - Community Anti-Patterns: Dave Neary
+    --------------------------
+    The pattern is a concept to take something that repeats sistematically.
+    This "anty-patterns" are appliable to both FLOSS projects but also to other type of communities. 
+    * Cookie Licker:
+      - Symptom: as "Cookie Monster", is a person who is always volunteer, but does not finish the work.
+        "It is nearly finished". Usually a stopper for the community. 
+      - Causes:
+        * Desire to have things done well. "Enthusiastic" => Over-Commit.
+        * Normally you believe you can make time.
+        * The cookie is licked, but not eaten
+        * Once there is commitment, if not accomplished, it means Failure.
+      - Treatment:
+        * Set deadlines on tasks.
+        * Make Failure OK. (Release the commitment to others).
+
+    * Vampire help: 
+      - Symptom: Someone who offeres help, but then ask for help sistematically.
+      - Treatment:
+        * Good newbie docs.
+        * Encourage recent newbies to answer newbies questions.
+        * Let Me Google That For You.
+        * RTFM: Read The Fucking Manual.
+
+    * Command and Control:
+      - Symptoms: Single-Vendor Open Source.
+        * Joint Copyright Assignment.
+        * All Commiters from one company.
+        * No public roadmap, unannouced features arrive regularly. 
+        * THE OPPOSITE OF APACHE.
+      - Justification:
+        * There are companies to run.
+        * We need to own the code for business...
+      - Treatment:
+        * Define policies.
+        * Public roadmap process.
+        * Exchange influence for control.
+
+    * Headless chicken: (J.Benjamin Toshack like issue)
+      - Symptoms: Everybody goes his way.
+      - Treatment:
+        * Organization.
+        * 
+      
+    * Bikeshed:
+      - Treatment:
+        * Please! Do not feed the troll. 
+        * Best way: ignore the trolls.
+
+    * Leadership:
+      - Symptom: 
+        * Your leader takes to bad path.
+        * Free Speech: I won't apologize for exercising what is mine by right!
+        * Abuse of Authority.
+      - Treatment:
+        * Mob Rules (Masa Fuerte).
+
+    * Beware Dunbar's Number:
+      - Concept: As human being, there is a limit on the number you can know.
+      - Treatment:
+        * Delegation.
+
+    * Do-ocracy:
+
+    * Smoke Filled Rooms.
+      - Concept: 
+      - Treatment:
+        * Do not allow groups to positionate project to a certain place.
+        * Everything public, for all the people to participate.
+
+    * Fear of community:
+      - Symptom: Untrusting in the community reports (bugs not early accepted, for example).
+      - Treatment: Trusting in the community (obvious)
+      
+    * Blackhole:
+      - Symptom: Not everything is visible. 
+      - Treatment:
+        * Work in a house glass (Transparency).
+        * Open Design != Design by Committee.
+        * "Doing things open".
+        * Managers + engineers in community development.
+
+    * Broken Window:
+      - Symptoms:
+        * Off-Topic/Bikeshed threads on mailing list
+        * Wiki vandalism
+        * Flames
+      - Treatment:
+        * Document Best Practices
+        * Remind offenders early
+        * Spread policing load around. Remember community rules from time to time.
+
+    * Broken Record:
+      - Sympton: You are told to be the "bad guy"
+      - Treatment: Learn to say no.
+
+    FINAL THOUGHT: 
+      Communities are emotional places. Teams and communities are built on people, and people is not only a number. 
+      Bad Managers are only aware of resources, but there are people, with bad days, who have feelings, etc.
+    
+    COMMUNITY GOAL:
+      Create a fun, friendly environment where people feel safe sharing. Try to enjoy the thing !
+
+    CLASS EXERCISE:
+    ---------------
+    1) Summarize Fedora / Ubuntu teams and proposal of the teams. Similarities, differences.
+    2) Entry mechanisms to the community.
+    3) Improvements for this particular project.
+
+    Ubuntu:
+    -------
+    1) Ubuntu teams
+
+    2) Entry mechanisms
+       - Accomplishment: In order to propose programming issues to be resolved by accomplishments.=> Meritocracy
+         * Assure quality and stability in the platform.
+         * Provide the ability to publish your accomplishments online.
+         * Expand our range of accomplishments.
+         * Expand and improve the documentation for our accomplishments.
+         * Provide a greater breadth of translations coverage.
+ 
+       - Accomplishment examples: 
+         Examples for each cathegory: 
+         * Bugs
+         * Developers
+         * Testing
+
+         Bug: A particular aspect:
+         TROPHY (1): Register on IRC
+         TROPHY (2): Set up ISO testing account
+         TROPHY (3): Register email in launchpad
+         TROPHY (8): Become a bug contact for a particular package
+  
+       
+       - Accomplishment creation:
+         * Accomplishment should primarily focus on the aquisition of a new skill (e.g. I filed my first bug) or the completion of a new experience (e.g. I sent my first email in Thunderbird).
+         * Accomplishments should represent a piece of user's activity that is worth rewarding. Accomplishment "Use GNOME shell instead of Unity" does not reward user's activity, but his taste - definitely avoid that sort of trophies.
+         * Accomplishments shouldn't cause worthless activity, nor be based upon traffic, nor be based on numerical achievements. For example if one was "Filed 10 bugs" people would just file worthless bugs, instead concentrate on the effect that the trophy would have on the project. Accomplishments should be never based on meaningless traffic, like "Posted 500 Forum Posts".
+         * When writing the documentation for your accomplishment, you should always assume the reader has no knowledge of the accomplishment or the software and technologies involved. Use the 'summary' field as an opportunity to explain in detail what the accomplishment is, explain any jargon.
+         * Accomplishments are exciting and positive opportunities; the tone and language we use in the documentation should be friendly and encouraging.Accomplishments should either be great fun, or provide entertaining challenges for the user. Who would want to waste his time accomplishing "Be an active commentator on all Ubuntu related blogs"?
+         * Accomplishments should be family friendly. Leave out any swear/curse words or naughty language/jokes.
+         * Optionally, Accomplishments should nudge people to do things that are good for the community, even if they're not fun. Things that encourage maintenance of things that are out of date or cleaning out old information should be encouraged as they help keep resources relevant.
+         * One of the functions of accomplishments is encouraging users to keep learning Ubuntu. Although this rule may not apply if you are creating a set of accomplishments for your game, this is quite important for Ubuntu accomplishments. Think how much might a newcomer learn reading the description of "Became a LoCo member" accomplishment! 
+
+         #ubuntu-meeting: Team meetings. The next one takes place tomorrow, Thursday 26th July 2012 in #ubuntu-meeting on freenode at 6pm UTC / 11am Pacific / 2pm Eastern. I hope you can join us! 
+         #ubuntu-accomplishments: Team meetings. The next one takes place tomorrow, Thursday 26th July 2012 in #ubuntu-meeting on freenode at 6pm UTC / 11am Pacific / 2pm Eastern. I hope you can join us!
+       Ubuntu provides clear mechanisms to help to contribute by specifying big cathegories "needed":
+       - Programmers
+       - Documentation Writers
+       - Translators
+       - Testers 
+       - Support
+
+       Mechanisms:
+       * Contribution: Developing, Documentation, Artwork, Support, Bug squad.
+       * Help/Information: Documentation, Support, Community Blogs (Planet Ubuntu), News.
+       * Community Structure: Governance, Code of Conduct, Project teams, Local Ubuntu teams.
+
+EVALUATION: 
+-----------
+Exercises + Blog Entries (at least two entries) + Collaborative notebook + Final Report (Main Course Project). 
+Also, in 4th class, a presentation (group of 2 or 3 people) will have to be accomplished around a Forge, to show: 
+  - Integration with bug tracking
+  - Integration with Web/Wikis
+  - Integration with other tools
+  - Examples of projects using it.
+  - Possible forges: Github, SourceForge, CENATIC forge, Savannah, Launchpad, extra services if you pay ...
+
+* Final Report: You work for a company that owns a FLOSS tool. You must step by step create and manage a plan of a new FLOSS project. The important issue is one: IT HAS TO BE RELEASED UNDER DUAL LICENSING (MANDATORY!!!). ONE FLOSS AND ONE COMMERCIAL LICENSE.
+  The tool selected must not be innovative. Economic viability will not be under evaluation for the subject. It can be assumed that the project will be successful. 
+  What is under evaluation, in the Final Report, is :
+  - the tools (forges, tools to use, to communicate.). (1st session)
+    ATTENTION: The forge selected IS NOT NECCESSARY TO BE THE SAME AS THE STUDIED IN THE FOURTH CLASS.
+  - netiquette rules (2nd session)
+  - community / volunteer management (2nd session)
+  - burocracy (3rd session)
+  - project architecture
+  - the copyright owners
+  - competence projects (and relations to them).
+  RECOMMENDATION: Include a diagram to include the hierarchy of the project.
+
+NOTES:
+------
+- Read "Read/Write" Talk (by Lessig) in Ted Talks.
+- Time Management for System Administrators: By Limoncelli.
+
+FINAL WORK:
+-----------
+- Better: Pyme - Startup
+- 31 March 2013, Deadline
+- Dual-licensing: 
+  * One permissive
+  * One strict gpl
+- Type of application: whatever
+- Sections:
+  * Management : From a technical view.
+  * Communication, Documentation, Netiquette.
+  * Organization politics (Apache/Neutrality/Community Driven vs. Single-Vendor)
+- Community:
+  * Teams
+  * Volunteers: Community Management, 
+  * Mechanisms to grow:
+  * Emphasize on:
+    - Quality?
+    - Usability?
+    - ???
+- Technical Infrastructure: IMPORTANT: it has to be a reason for the selection.
+  "I choose this forge, due to ...". There has to be a selection and decission taking.

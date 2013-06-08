@@ -1,0 +1,22 @@
+FINAL WORK:
+-----------
+- Better: Pyme - Startup
+- 31 March 2013, Deadline
+- Dual-licensing: 
+  * One permissive
+  * One strict gpl
+- Type of application: whatever
+- Sections:
+  * Management : From a technical view.
+  * Communication, Documentation, Netiquette.
+  * Organization politics (Apache/Neutrality/Community Driven vs. Single-Vendor)
+- Community:
+  * Teams
+  * Volunteers: Community Management, 
+  * Mechanisms to grow:
+  * Emphasize on:
+    - Quality?
+    - Usability?
+    - ???
+- Technical Infrastructure: IMPORTANT: it has to be a reason for the selection.
+  "I choose this forge, due to ...". There has to be a selection and decission taking.

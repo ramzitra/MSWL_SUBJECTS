@@ -1,0 +1,532 @@
+\documentclass[11pt]{article}
+%Gummi|061|=)
+\title{\textbf{MSWL Project Management: Summary of Activities}}
+\author{Sergio Arroutbi Braojos}
+\usepackage{hyperref}
+\date{\today}
+%\addtolength{\topmargin}{-0.5in}
+\usepackage[bottom=14em]{geometry}
+\usepackage{amsmath}
+\usepackage{mathtools}
+
+\begin{document}
+
+\hypersetup
+{   
+pdfborder={0 0 0}
+}
+   
+\maketitle
+
+\tableofcontents
+
+\pagebreak
+
+\section{Introduction}
+WebTools SL is a company specialized on Web development located in Madrid, Spain. With a total of 20 employees, the company has developed different web tools designed and customized for different kind of customers in Spain. Among these customers, they have important companies in different environments, such as:
+\begin{itemize}\itemsep0pt
+\item{Hardware development companies.}
+\item{Software development companies.}
+\item{Internet Service Providers.}
+\end{itemize}
+The main strength of the company belongs to the well qualified work force. For working in the company, having a good knowledge of Web development languages and tools is a MUST, although additional knowledge having to do with FLOSS projects associated to Web development are appreciated as well.\\
+\\
+Moreover this, the company invest up to 10\% of the earnings in technology training for the employees, in order to provide employees with updates of the latests technologies used, both in Web development, but also in other environments such as DDBB (DataBases) programming and administration, generic programming languages, scripting languages, software forges and VCS (version control system), graphic design, etc.\\
+\\
+Among the weaknesses of the company, the lack of a strong marketing knowledge is an issue. Besides this, the commercial work force consists only of 2 of the 20 people working on the company, so selling strength needs backing to wide spread the company's business.\\
+\\
+Among the different available web products they have developed, main incomes come, nowadays, from most to less importance, due to the next ones:
+\begin{itemize}\itemsep0pt
+\item{Web Network Administration tools.}
+\item{A web software forge front-end for CVS and SVN.}
+\item{A web forum framework, based on CSS3, HTML5 and JQuery.}
+\end{itemize}
+All of this software products are under proprietary licenses, with copyright belonging to the company.\\
+\\
+Regarding Web Network Administration tools, the product is well sold and has a strong market share position, increasing along the time, so no changes are considered in terms of licensing, development strategy or billing.
+Meanwhile, the company has lost definitely the market associated to their software forge web tools, due to the appearance and huge spread of GIT.\\
+\\
+Somehow, this company wants to promote, improve and enhance their Web Forum framework, called \textbf{OLEF} (Open Libre Enhanced Forums) in order to explore this Market Niche. Feedback regarding this tool is quite good from customers perspective, above all in terms of usability, performance and look-appearance.\\
+\\
+However, customers have communicated the company the lack of different functionalities they would like to own for integrating the product on their corporate network. Among the different functionalities pending, next ones can be found:
+\begin{itemize}\itemsep0pt
+\item{Integration of an additional Question / Answer mode, similar to Stack Overflow}
+\item{Integration of a badging/vote system to highlight the best responses}
+\item{Integration of a much more powerful report \& statistic tool}
+\item{Integration of a live chat and voice over IP communication system between the forum members}
+\item{Security improvements}
+\item{Multiple theme selection}
+\end{itemize}
+The mission is to achieve previous enhancements in one year time.\\
+\\
+Unfortunately, the company has no budget to invest on developing all the new functionality, so releasing the software as FLOSS is the unique solution for achieving the goal.\\
+\\
+The company has a total budget of 50.000 \$ to invest on the project, although has clarified that this budget should be invested on marketing, communication channels and in general for the project promotion activities. The company is not willing to contract additional developers or other staff, although will contribute a community manager specially contracted for the project, a project leader, a documentalist and three developers to the OLEF project, two of them experts on Web development and the other one an expert on solving security issues.
+\\
+\\Two very important customers would be willing to integrate the FLOSS product and acquire a very important integration and support contract with the company.\\
+\\
+So, to summarize, this is the challenge. Developing all the new functionality described above by starting a FLOSS project, with no impact on performance, while keeping the look and feel and ease of use of the framework.
+
+\pagebreak
+
+\section{Current competitors analysis}
+Web Forums are a very useful way of off-line communication. This kind of web interaction has reached to be the standard for handling question/answer issues related to a specific topic. FLOSS world is not an exception to this point. Rather, it can be ensured that FLOSS projects use and deploy web forums even in a more active way compared to other fields.\\
+\\
+Apart from previous statement, it is important to highlight that, in the last years, new Web programming languages such as HTML5, together with new version 3 of CSS and libraries such as JQuery have improved drastically the web look and feel.\\
+\\
+However, it seems that in Web Forums market, no further development of Web forums has appeared based on this technologies, or if existing, there is still a market niche to work and take profit on.\\
+\\
+On this chapter, some of the main Web Forums frameworks will be analyzed, in order to consider the strengths and weaknesses of any of them and take some conclusions on the different aspects where development of the project should concentrate.\\
+\\
+Both FLOSS and proprietary software Web forums would be analyzed, although the first will be the ones to focus on, as they are in fact a closer competitor due to the similarities of strategy followed (in terms of community management, distribution, business model, etc.).\\
+\\
+But, which are the most used and deployed Web forums existing on the Internet? Although no reliable market share research have been found related to this issue, some of the most important forums can be checked on this URL: \url{http://rankings.big-boards.com/}\\
+\\
+This web indexes main Web forums around the world and ranks them considering the number of posts existing on the web. Although not a 100\% reliable method, is a good approach to consider how spreaded is a particular forum. So, to summarize, \url{http://rankings.big-boards.com/}\\ contains information of the main Web forums all over the world, such as:
+\begin{itemize}\itemsep0pt
+\item{Number of posts}
+\item{Number of users}
+\item{Statistics of the site}
+\item{Language used}
+\item{\textbf{Software used} (when it was possible to identify it)}
+\end{itemize}
+A quick inspection on the data hosted on this page allows to take some conclusions.
+On the one hand, it seems that Web forum software market is basically split into two main Web forum frameworks:
+\begin{itemize}
+\item{\textbf{vBulletin}. A proprietary software which is, apparently, the market leader on Web forum market, with a total of \textbf{1384} entries on the web.}
+\item{\textbf{phpBB}. A FLOSS web forum software which a wide-spread use on the Internet, with a total of 240 entries on the rank.}
+\item{\textbf{Invision}. A proprietary web forum software, with a total of 226 entries on the rank.}
+\end{itemize}
+The rest of the forums have a much lower market share, and no further inspection will be performed. Previous data allow to take some conclusions regarding the market:
+\begin{enumerate}\itemsep0pt
+\item{The market leader solution is \textbf{Propietary Software}.}
+\item{The second market position, although being a FLOSS project, could be considered to have a very \textbf{much lower market share compared to the market leader}.}
+\item{In the third position is, again, placed a proprietary Software Web forum framework.}
+\end{enumerate}
+In next sub-sections, a deeper analysis of each of the two first software solutions would be performed, in order to identify the weakness and strengths of each of the products, one of each type (FLOSS and proprietary software) and take some conclusions on the development strategies.
+
+\subsection{vBulletin}
+vBulletin seems to be the leader in the Web forum software. Developed by Internet Brands Inc., some of the main world-wide forums, such as \url{http://offtopic.com} are using this software. But, why is this software so popular?\\
+\\
+Why does it have a so big market share compared to its competitors? What is the key factor for the success of this software?\\
+\\
+No evaluation can be provided on this forum software, as it is a non-free (249\$) proprietary solution, but, having a look at the most important forums using this software, the software seems to be characterized by \textbf{strengths} such as:
+\begin{itemize}\itemsep0pt
+\item{Flexibility}: A multiple bunch of plugins allow to improve the functionality and, above all, to adapt the look and feel to the administrators necessities.
+\item{Ease of use}: In terms of user experience. The interface for the end user is really simple, but, in turn, very complete. 
+\item{Ease of administration}: In terms of administration permissions, banning, statistics, post management.
+\item{\textbf{Look and feel}}: The key factor. It is, surely, the best in this aspect.
+\item{Robustness}: In terms of bug, errors discovered. The up-time statistics are also very good in these aspect.
+\item{Integration with Content Management Systems}, such as Wordpress.
+\end{itemize}
+Meanwhile, the main \textbf{weaknesses} of this product are related, basically, to the fact of \textbf{not being FLOSS}:
+\begin{itemize}\itemsep0pt
+\item{No inspection of the software can be performed.}
+\item{No modifications can be performed to adapt to the user requirements.}
+\item{Support depends on a single-vendor. No FLOSS community exist associated to the product.}
+\end{itemize}
+Apart from that, having to pay for the license make it not available for certain communities with no budget for software acquirement.
+
+\subsection{phpBB}
+phpBB is the leading FLOSS software for Web Forums. Some of the most important forums world-wide, such as \url{http://gaiaonline.com}, are hosted on top of this forum software framework.\\
+\\
+In terms of software, the product seems to be characterized by \textbf{strengths}, some of them associated directly to being FLOSS, while others don't, such as:
+\begin{itemize}\itemsep0pt
+\item{Community Support}
+\item{Developer Support}
+\item{End-user Ease of Use}
+\item{Robustness}: In terms of bug, errors discovered. The up-time statistics are very good, and the community behind allows continuous improvement in this sense.
+\end{itemize}
+Meanwhile, among the \textbf{weakness}, it can be highlighted the next ones:
+\begin{itemize}\itemsep0pt
+\item{SEO-friendliness}
+\item{Installation/Administration Ease of Use}
+\item{Flexibility} Due to the difficulty of installing Plugins/Themes
+\item{CMS integration}
+\end{itemize}
+To summarize, it has to be highlighted that there is an important market niche in Web forum market. The key factor is trying to improve those factors that are weaknesses of phpBB FLOSS project, such as:
+\begin{itemize}\itemsep0pt
+\item{Ease of installation and administration}
+\item{Ease of module expansion and plugins}
+\item{CMS integration}
+\item{Look and feel}
+\end{itemize}
+Taking into account that the Look and Feel issues are well considered in our product, for being programed in HTML5/CSS3/Jquery and PHP, it is concluded that the main development strategy will be focused, on the one hand, \textbf{on administration/installation ease of use}, and, on the other hand, \textbf{on module and themes expansion} and integration in general, and with CMS (Wordpress preferably) in particular.
+
+\pagebreak
+
+\section{Licensing selection}
+Licensing model is a key factor that must be deeply analyzed in order to decide different factors which will be adopted up on creation of the OLEF open source project, and will continue to follow the project along the time.
+\subsection{Opensource vs. proprietary software}
+From a company perspective, community involvement is a very important factor, and quick grow of the community is a desirable fact that should be maintained along the time.\\
+\\
+Apart from that, changing OLEF to be an open source project and release under an opensource licensing schema is not a desirable strategy, but the only path that the company could follow in order to accomplish the goal.\\
+\\Apart from previous statement, \textbf{no considerations of releasing under any proprietary license have been taken}, mainly because of two reasons:
+\begin{enumerate}\itemsep0pt
+\item{\textbf{Community and opensource commitment}}. A high risk is observed by the company on considering any kind of proprietary software licensing, even with a dual licensing model. 
+\item{\textbf{No necessary risk}}. From the company's perspective, no considerations on building a business model based on a proprietary licensing has been considered. Even an opensource business model based on an open core and proprietary licenses add-ons is not necessary, as main customers have communicated the company their desire to focus on having a service contract associated to integration, support and training services.
+\end{enumerate}
+\subsection{Licensing model analysis}
+Once the licensing schema has been decided to be based on a fully opensource licensing model, the main decision consider is which license will be selected for the project. In order to decide which opensource license to pick, some requirements of the project must be considered:
+\begin{itemize}\itemsep0pt
+\item{\textbf{Small company}}. This project is born in an SME, with very limited resources. For this reason, the license selected must be one of the most popular licenses in the opensource environment. No license proliferation can be started by the company, neither a not known license can be selected due to the doubts it can suppose for particular contributors to enter OLEF project community.
+\item{\textbf{The fastest widespread of the project, the better}}. Regarding community involvement, it is preferable to select the most accepted license from the community perspective.
+\item{\textbf{Everybody is welcome}}. No particular target user/developer/business are considered to be part of the OLEF community. The company commitment to the opensource model makes that other companies start contributing a desirable fact along the time. In this manner, very different beings, from particular developers to big companies, will be welcomed to contribute and participate on the OLEF project.
+\item{\textbf{Best knowledge here business model}}. Taking into consideration the business model to be acquired, oriented to be based on support, training and integration of the solution, it is not a risk the creation of forks of the project to create a proprietary product based on it. The major risk considered is the fork of the project to another opensource project. To avoid it, approval of the OLEF project as an opensource project from the community will be a mandatory desirable fact.
+\end{itemize}
+Having in mind previous requirements, \textbf{the best option seems to be a copyleft license schema} based on the GPL license, that will provide Community Involvemen, due to the fact that GPL is the most used license.
+However, copyleft model in general, and GPL license in particular, are not well considered by some of the potential community members, in particular two types of them:
+\begin{itemize}
+\item{Some community members}: Some community members of very important projects such as Apache, Mozilla, or BSD-like distributions, consider copy-left strategy as a non desirable one due to the obligations that this kind of model implies in terms of licensing compatibility and contamination.
+\item{Some companies}: Whose business model could be associated to split the project or part of it to a proprietary business model, or just to a non copy-left model. 
+\end{itemize}
+For previous reasons, an alternative approach to license the code is based on a \textbf{dual licensing model}. This involves releasing OLEF project software under two licensing schemes:
+\begin{itemize}\itemsep0pt
+\item{\textbf{A copyleft license}}. In these terms, a strong copyleft license, such as the GNU GPL, would be considered in order to commit with the community, favour its involvement and wide spread the project, the more, the better. 
+\item{\textbf{A permissive license}}. In order to allow users or companies who are not intended to be bound by the copyleft license to contract the non-copyleft version. Generally, they would do this because they wish to produce a product based on the code but not confined by a copyleft license.
+\end{itemize}
+Once the license model has been considered, it is very important to select which GPL license and permissive license would be considered.\\
+\\
+Regarding GPL license, \textbf{GPLv3} would be selected, due to the fixes that this version represent compared to the previous version (GPLv2), in terms of patent closures, and compatibility issues.\\
+\\
+Meanwhile, regarding the permissive license, the main requirement will be the selection of a well known permissive license with patent closures. For this reason, \textbf{Apache License v2.0} would be selected.
+
+\pagebreak
+
+\section{Technical Infrastructure}
+On this chapter, a detailed description of the technical infrastructure needed for the project will be exposed. Before inspecting the different alternatives available to deploy the project, there are some basic requirements that must be accomplished by the platform selected. Among the necessary tools that the , it can be found:
+\begin{itemize}\itemsep0pt
+\item{\textbf{Software forge}}. Based on GIT, due to the importance of this CVS, as well as the increasing popularity it is acquiring, even more on FLOSS projects.
+\item{\textbf{Bug/New Functionality Tracking}}. A flexible and ease of use based, integrated with the software forge. It is considered, by company previous experiences, a very important issue developers can check which changes correspond to a a certain bug or functionality.
+\item{\textbf{Documentation}}. It is a desirable aspect to have a wiki integrated on the software forge, which allows to link to documentation of the project from the source code.
+\item{\textbf{Code revision}}. Integrated if possible in the software forge platform.
+\end{itemize}
+Apart from the software forge, other communication channels will be desirable to contribute, from the project management point of view, to facilitate the communication between all the participants in the project. To do so, next resources will be available for the people involve to communicate each other:
+\begin{itemize}\itemsep0pt
+\item{\textbf{Mail Lists}}.
+\item{\textbf{Real Time Communication tools}}. 
+\item{\textbf{Forums}}.
+\end{itemize}
+Regarding those \textbf{aspects that will not be managed by the company} because of its budget limitation and small size, will be:
+\begin{itemize}\itemsep0pt
+\item{\textbf{Internationalization}}. English will be the default language. If translation contribution are provided by volunteers, will be welcome, but no further effort associated to translation is considered by the company.
+\item{\textbf{SQA}}. Specific SQA task force will not be assumed by the company. A basic test will be performed for each software release, but no regression test suites will be developed on the company. A continuous integration system will also be desirable for the company, but just to check and validate the code, not to perform deep testing tasks.
+\end{itemize}
+Last, but not least, there are some requirements that the company has introduced to the project managers:
+\begin{itemize}\itemsep0pt
+\item{\textbf{No budget for technology platform available for the OLEF project}}. All the hosted technology platform services must be cost-less. Company will only contribute with some servers that would be used for internal purposes (basically, continuous integration).
+\item{\textbf{Ease of use}}. Ease of use will be a MUST for the platform technology. Company want the fastest development, the better.
+\item{\textbf{Look and Feel}}. In order to continue with the strategy of high look and feel quality, very simple and not customizable platforms would be better not used.
+\end{itemize}
+On the next chapters, different technology platform would be analyzed, in order to take a decision of which one to use taking into consideration previous requirements.
+\subsection{Study of the main software forges}
+With requirements and considerations enumerated , the most famous cost-less technology platforms will be analyzed, to check to which grade the requirements are accomplished:
+\begin{enumerate}\itemsep0pt
+\item{\textbf{Launchpad}}. Although Launchpad is one of the best cost-less FLOSS software forges on the Internet, it uses Bazaar as preferable VCS. Although using GIT is somehow possible on Bazaar, seeing how committed to Bazaar is Launchpad, and taking into consideration \textbf{the requirement of using GIT as VCS, Launchpad would be preferred not to be used}, at least, before analyzing if there are other options more committed to GIT VCS.
+\item{\textbf{BerliOS}}. BerliOS Developer is a costless service to FLOSS projects offering CVS, SVN, Mercurial or GIT VCS, as well as, mailing lists, bug tracking, message boards and forums, task management, etc. However, the \textbf{small spread of this platform}, that hosts less than 5000 projects and just a bit more of 50000 registered users. These numbers are considered a \textbf{risk in terms of community support related to the platform}, so this reason is enough to avoid this technology.
+\item{\textbf{GNU Savannah}}. This software forge will not be selected due to similar reasons compared to the previous one. 58421 registered users and 3505 hosted projects make the company to consider \textbf{the small spread of this platform}, so this reason is enough to avoid this technology. Moreover this, other aspects such as the low ease of use as well as well as the not desirable look and feel make this platform even less recommendable compared to any of the previous ones.
+\item{\textbf{Bitbucket}}. Bitbucket is a software forge belonging to Atlassian Software company. With a very nice look and feel, this software forge is based on GIT and Mercurial CVS, and offers several costless . However, the fact that no all the functionality is available costless make this forge preferably to be avoided.
+\item{\textbf{Google Code}}. Google Code software forge has a complete source forge with different features such as code revision, bug tracker and wiki. The VCS is compatible with GIT, Mercurial and Subversion. However, look and feel is excessively simple. However, Google Code is contemplated as an option to be used as source forge, even more with a company as Google INC. involved. 
+\item{\textbf{Source Forge/Allura}}. Source Forge is the market leader in terms of projects hosted. With more than 400000 projects hosted, well-known FLOSS projects such as VLC Media Player, Apache OpenOffice, FileZilla or TortoiseSVN. With GIT CVS, a nice look and feel and its market position, is another option for the OLEF project.
+\item{\textbf{Github}}. Github is the other main software forge available on the Internet. With an increasing spread since it was initiated in 2008, the company has increased its popularity on an exponential way. With a plenty of nice functionalities, a commitment to GIT that is present even on the platform name, a very acceptable look and feel and a continue improvement philosophy, Github is the last selectable option to host the OLEF project.
+\end{enumerate}
+At a first glance, any of the last three previous solutions should be valid in order to host our project. However, Google Code look and feel is a handicap for this forge to be selected, and decreases the real options to Github and Source Forge software forges.\\
+\\
+In the following subsection a deeper comparison of both software forges would be performed, in order to have a more detailed information when taking the definitive decision on which platform should be selected.
+\subsection{SourceForge vs. Github}
+The previous chapters have helped on filtering among the different and more important platforms available to implement a source code forge platform, resulting on two candidates: SourceForge and Github.\\
+\\
+Which is the more suitable platform for OLEF project? To carry out this decision, a first comparison of the different functionalities of each platform will be exposed.\\
+\\
+Next table, shows the differences in terms of available features of each of the software forges under analysis, in particular, for the most important issues considered for the OLEF project:\\
+\begin{center}
+  \begin{tabular}{ | c | c | c | c | c | c | c | c | }
+    \hline
+    \textbf{Forge} & \textbf{Code review} & \textbf{Bug tracking} & \textbf{Wiki} & \textbf{Web hosting} \\
+    \hline
+    GitHub & Yes & Yes & Yes & Yes\\ 
+    \hline
+    SourceForge & No & Yes & Yes & Yes\\
+    \hline
+  \end{tabular}
+\end{center}
+Bringing to foreground the different requirements exposed on this chapter, there is an issue which is not handled on SourceForge and can be managed in Github, which is \textbf{code revisions}. The lack of code revisions on SourceForge, together with the other requirements previously analyzed, make \textbf{Github to be selected as the software forge for the OLEF project}.
+\subsection{Additional project tools}
+Selection of the software forge platform technology, in particular Github, make some of the requirements of the project to be accomplished. Among these requirements, next ones should be highlighted:
+\begin{enumerate}\itemsep0pt
+\item{\textbf{Software forge}}. Distributed software VCS based on GIT.
+\item{\textbf{Issue tracking}}. Integrated with the VCS.
+\item{\textbf{Wiki}}. In order to collect most of the project documentation, the Github wiki will be used.
+\item{\textbf{Code Revision}}. In a "pull-request" manner, Github allows a code revision mechanism, together with a system that enables code comments on each of the changes.
+\item{\textbf{Web Hosting}}. Main web page will be available on Github to be the central point of access to the different sections associated to the project.  
+\end{enumerate}
+However, some other tools need to be introduced to complete the collection of applications for the project to be successful.\\
+\\
+Taking into account requirements of the project, basically, \textbf{no budget for platform technology}, the rest of the tools to be used by the company staff and project community will be exposed.\\
+\\
+On the technical plane, a pair of \textbf{continuous integration servers}, for syntax check handling, \textbf{based on Jenkins project}. These servers will exist on the company on a 24x7 basis to perform a very light SQA. These servers are costless for the company, as they are part of the spare hardware available on the company.\\
+\\
+Meanwhile, on the other hand, \textbf{tools focused on communication channels and social media must be implemented}, in order to ensure flowing communication for the project community. Among the communication tools considered, next ones will be created:
+\begin{itemize}\itemsep0pt
+\item{\textbf{Mail Lists}}. Some mail list will be created through "MailMan" site to . In particular, next three ones will be created:
+\begin{itemize}\itemsep0pt
+\item{\textbf{olef-users}}. Where all the people who uses the OLEF Web Forum on a user way will be able to send doubts, critics and other issues.
+\item{\textbf{olef-administration}}. Where all the people who uses the OLEF from an administration role will be able to send doubts, critics and other issues.
+\item{\textbf{olef-developers}}. Where developers can send development issues, ask for advise on development tasks, etc.
+\item{\textbf{olef-management}}. A private list where the project managers can discuss on OLEF project administration matters.
+\end{itemize}
+\item{\textbf{Real Time Communication}}. Real Time Communication will be implemented by the creation of a IRC channel. In particular, the channel \textbf{\#olef} will be created on the IRC node \textbf{irc-freenode.org}.
+\item{\textbf{OLEF Blog Planet}}. There will be a \textbf{main blog to keep track of the main news} related to the project, such as new software releases, important customer achievements, important milestones reached, etc. Meanwhile, by means of a \textbf{blog planet},  developers and project managers will be able to create their own blogs in case they want to comment on different stuff related to the project.
+\item{\textbf{Forums}}. Obviously, \textbf{implemented through the OLEF Web forum FLOSS project}. These forums will be both for "help me" issues, but above all for showing potential users the quality and revolutionary look and feel of the platform.
+\end{itemize}
+Meanwhile, regarding social media, next channels will be created:
+\begin{itemize}\itemsep0pt
+\item{\textbf{Twitter}}. By means of creation of a normal twitter account.
+\item{\textbf{Facebook}}. By means of creating a "Facebook page".
+\item{\textbf{identi.ca}}. By means of creation of a normal identi.ca account.
+\item{\textbf{Linked in}}. By means of creation of a project page associated to the already existing of the company.
+\end{itemize}
+
+\pagebreak
+
+\section{Community Management}
+On this chapter, an analysis of the different decisions to be taken according to project management issues will be performed. To do so, this chapter will contain two main subsections to consider the different strategies to face by project management roles.\\
+\\
+On the one hand, consideration of the \textbf{technical issues} will be proposed on next subchapters:
+\begin{itemize}\itemsep0pt
+\item{\textbf{Organization politics}}. In this subchapter, the strategy to face in terms of FLOSS project management approach would be considered. Basically, requirements of the project will be analyzed to check if the strategy must be more similar to the Apache Project one, based on Neutrality and Community driven, or, if on the opposite side, a more Single-Vendor strategy must be followed, similarly to the one followed by companies as MySQL or SugarCRM.
+\item{\textbf{Development plan}}. On this subchapter, the development strategy will be proposed. Which features of the project are most important? Which is the development focus? Considerations regarding development plan, road map and good practices for source code development will be considered.
+
+\item{\textbf{Documentation}}. This subchapter will collect which documentation should be created for the OLEF project, for each of the different roles involved 
+\item{\textbf{Emphasis on}}. This subchapter handles with the strategy to follow in terms of project key aspects. Would be the project focused on Quality? Will it be focused on usability by end-user and administrators?. On this chapter answers to previous questions should be found.
+\end{itemize}
+On the other hand, next subchapters will bring to foreground the different aspects related to \textbf{community management}, marketing and communication channels:
+\begin{itemize}\itemsep0pt
+\item{\textbf{Communication strategies and Marketing}}. This chapter will focus on the marketing activities that will be performed, taking into account the available budget and the strategic decisions that were taken into consideration.
+\item{\textbf{Volunteers: Community Management}}. Which mechanisms will be implemented to attract community? This section will analyze different actions that can be taken to sort out this issue. 
+\item{\textbf{Netiquette rules}}. On this chapter, the netiquette rules that will rule the community will be foregrounded, in order to keep a good environment and avoid unnecessary flames.
+\end{itemize}
+\subsection{Project management}
+At this point, a complete set of requirements associated to the project have been analyzed. With this information, the technical strategy will be foregrounded in next subsections in order to accomplish those requirements that are associated to the technical plane, such as:
+\begin{itemize}\itemsep0pt
+\item{\textbf{Organization strategy}}. Regarding the target community contributors for the OLEF opensource project, the main strategy will be the more contributors, the better. In order to do so, the organization politics will be proposed in order to favour the transparency, avoiding a single vendor strategy that could be detected by the community as undesirable. Project management will be initially performed in the company, but along the time additional companies will be welcomed to contribute and participate on management decisions.
+\item{\textbf{Design strategy}}. The project will focus on usability, in terms of ease of use and usability. Apart from that, the key factor will be around look and feel. All the power of HTML5, CSS3 and JQUERY will be  Technical project management will define the emphasize areas, taking into account.
+\item{\textbf{Feature development}}. The features to implement were proposed in the introductory chapter. However, some decisions must be taken in order to prioritize the different software developments to accomplish the goals according to the customer necessities, but with an eye on the community opinions and wills.
+\item{\textbf{Documentation}}. Documentation considerations will be proposed in order to accomplish a good spread of the OLEF project. Special emphasis will be put on ease of use, installation and administration. 
+\end{itemize}
+\subsubsection{Organization politics}
+As previously stated, the organization politics of the OLEF opensource project will be centered on transparency and community involvement in decisions. Although born in a company, the strategy regarding the organization will be aligned to the communities that are a example in terms of transparency, community involvement and decision, and out of single vendor strategies, to show the community that the company is committed to opensource for OLEF project and that the project is a desirable place to contribute.\\
+\\
+\textbf{Being conscious of the big differences with Apache Software Foundation, the main goal is to reach a similar organization of the project}. In this sense, the company will first search additional companies in order to start contributing to the OLEF project and demonstrate to the community that a single vendor strategy is far from being the company's strategy.\\
+\\
+\textbf{The philosophy of the project regarding community will be based on meritocracy}. But meritocracy not only related to number of committers, but also having to do with legal aspects, document contributions, help on project spread, etc. Although this is a normal issue in opensource projects, as sometimes is difficult to recognize "non-programming" merits, an extra effort will be invested by project management, as it is considered very important for this project to success on non programming stuff related to having a good documentation, people being on the IRC to help newbies, etc.\\
+\\
+\textbf{Do-ocracy}: This word will be one of the mainly used words in community strategy: the person who does, decides. The philosophy will be based on: let the person who is going to do something, to do it and show the project management how capable she/he is and how she/he can contribute to the project. It should be normal to have branches for someone who works individually to result on a future release, if project management considers the work to be a good contribution for the project. Besides this, if the contribution is not desirable, an extra effort on explaining the reasons for discarding contributions will be performed.\\
+\\ 
+The main idea from project management perspective will be the next: \textbf{it is very different way of working in a company} (hierarchy, objectives, decision) \textbf{compared to an opensource project}, where people works in a voluntary way. Although people working in the company for the project will be focused  on the different features desirable for the customers, regarding the community, an eye on its necessities and wills will be kept, promoting all the different ideas that can help on spreading and improving the project.\\
+\\
+Apart from the technical view, regarding the cultural view of the OLEF project the project managers will follow the next strategy: \textbf{the opener, the better}.  In order to be aligned with this strategy, the idea is not to try to take decisions out of open lists, favoring the community to  participate, but always based on different roles having to do with the meritocracy. Some different roles will be created, having to do with the particular situation of the community member. An example could be a similar role hierarchy as the one existing in ASF:
+\begin{itemize}\itemsep0pt
+\item{User}.
+\item{Commiter}.
+\item{MC}. Management committee. Meaning you have opportunity to vote in main decisions.
+\end{itemize}
+Apart from that, from a cultural point of view, the main idea will be: \textbf{the more diverse, the better}. More women, better. When more countries, the better. If some one does not speak a good English, no problem, other stuff such as theme designing, work art or other stuff will be waiting.
+\subsubsection{Emphasize on areas}
+Regarding the aspects where project management should focus to develop, improve a promote, there are two sets of requirements that should be accomplished:\\
+\\
+On the one hand, the emphasize areas have been collected from previous chapters in order to focus on strengths and improve weakness of the OLEF project. In particular, the emphasize areas will be the next ones:
+\begin{itemize}\itemsep0pt
+\item{\textbf{Look and feel}}: The key factor. All developments should continue to focus on the great look and feel of the OLEF forums.
+\item{\textbf{Flexibility}}: Related to the look and feel aspect, the possibility to develop plugins to allow  improving the functionality and, above all, to adapt the look and feel to the administrators necessities is a very desirable feature to be developed.
+\item{\textbf{Ease of use}}: In terms of user experience. 
+\item{\textbf{Ease of administration}}: In terms of administration permissions, banning, statistics, post management.
+\item{\textbf{Robustness}}: In terms of bug, errors discovered. The up-time statistics are also very good in these aspect.
+\item{\textbf{Integration with Content Management Systems}}, such as Wordpress.
+\end{itemize}
+On the other hand, there is a set of requirements that were specified by the customers to be desirable to be developed. Together with the idea of the areas to emphasize, the order from most to less important requirements from customer perspective will be:
+\begin{itemize}\itemsep0pt
+\item{\textbf{Security improvements}}. Although not exactly aligned with the emphasize area, is a so important factor for those interacting software platforms on the Internet that is considered as a mandatory area to improve.
+\item{\textbf{Multiple theme selection}}. Regarding the plugins to be developed for the OLEF web forums, a first one should be a plugin to allow loading and characterizing the forums on an easy way by allowing multiple theme selection, from the administrator but also for the user if needed.
+\item{\textbf{Integration of an additional Question/Answer mode}},  similar to Stack Overflow. This feature will contribute to the ease of use of the forums, as apart from the typicial area/thread/post strategy, an additional way of posting Q\&A threads will be developed in order to allow users to initiate this kind of interaction regarding a particular topic.
+\item{\textbf{Integration of a badging/vote system to highlight the best responses}}. Aligned to the previous requirement, this feature should help on improving the user implication on the OLEF web forums, helping on its spread.
+\item{Integration of a much more powerful report \& statistic tool}. A very desirable tool for helping administration, however is not a key feature for project management, as not completely aligned to the areas to emphasize.
+\item{Integration of a live chat and voice over IP communication system between the forum members}. Although desirable from a customer perspective, there are two factors that make this feature not to be a priority one for the development line:
+\begin{enumerate}\itemsep0pt
+\item{Difficulty of implementation}. Having to do with the difficulty of integration on the project of the live chat, and, above all, with the integration of a communication server based on VoIP (SIP i.e.). Achieving this goal will be very expensive in terms of resources. For this reason, this feature is considered to have not top priority.
+\item{Out of scope}. Although this feature could help on positioning the product with a key feature not available on competitors, it has not to do with the areas to emphasize, so for this reason will be considered to have not top priority.
+\end{enumerate}
+\item{\textbf{Documentation}}. Apart from development tasks, a very important area aligned to the ease of use, administration and development is documentation. Documentation will be a first priority task, and project management efforts will be performed to promote documenting high quality manuals with continuous improvement.
+\end{itemize}
+
+\subsubsection{Development plan}
+After analyzing those areas where the project should focus, a development plan for the next year will be proposed in order to have some data around timing associated to feature development. Obviously, \textbf{the company will focus its developers and documentalist on key features}, and will try community to focus on them, but allowing the community members to focus on those areas they consider more desirable to contribute.\\
+\\
+Regarding the available resources, company contributes to the project with the following resources:
+\begin{itemize}\itemsep0pt
+\item{Community manager}. 
+\item{Project manager}. Will be dedicated 50\% to project management, 50\% to design and implementation issues.
+\item{2 Web Development experts}. Dedicated to new developments having to do with new features.
+\item{1 Security expert}. Dedicated to security issues improvement.
+\item{1 Documentalist}. Dedicated to create the different manuals, design the wiki, etc.
+\end{itemize}
+The company has an \textbf{effective resource rate of 70\%}, taking into consideration different issues having to do with vacations, ailments, training, etc., meaning that with previous resources, \textbf{the task force contributed by the company to the OLEF project} will be:
+\begin{itemize}\itemsep0pt
+\item{2.5 x 12 x 0.7 = 21 persons x month for web development.}
+\item{12 x 0.7 = 8.4 persons x month for security issues.}
+\item{12 x 0.7 = 8.4 persons x month for documentation issues.}
+\end{itemize}
+After a deep analysis performed by both community manager and project leader, together with experts on each area, a list of main development work package together with an estimation in persons * month of them have been created. The resulting list is set forth below:
+\begin{enumerate}\itemsep0pt
+\item{\textbf{Security improvements}}. Meaning anti-SPAM protection, anti DoS attacks, anti password stealing and other features. \textbf{Cost: 24 persons x month}.
+\item{\textbf{Plugin insertion feature}}. HTML5, JQUERY, CSS3 and PHP development for creating a common framework for developers to contribute with plugins to the core of the project. \textbf{Cost: 9 persons x month}.
+\item{\textbf{Multiple theme selection}}. HTML5, JQUERY, CSS3 and PHP development for creating a common framework for theme selection. \textbf{Cost: 3 persons x month}.
+\item{\textbf{Integration of an additional Question/Answer mode}}. HTML5, JQUERY, CSS3 and PHP development for creating a common framework for Q\&A threads. \textbf{Cost: 6 persons x month}.
+\item{\textbf{Integration of a badging/vote system to highlight the best responses}}. Development of a meritocracy system inside the project. \textbf{Cost: 3 persons x month}.
+\item{\textbf{Documentation}}. Creation of user manual, administrator manual, moderator manual, installation manual and tour of the project. Also, design of the wiki will be performed. Apart from that, visual manuals based on video tutorials with key documentation will be created and distributed to enforce ease of use associated to the OLEF web forums.  \textbf{Cost: 36 persons x month}.
+\end{enumerate}
+Taking into account the resources available, the OLEF project management should focus on creating community \textbf{for enforcing two main areas}:
+\begin{itemize}\itemsep0pt
+\item{\textbf{Documentation}}
+\item{\textbf{Security issues}}
+\end{itemize}
+\subsubsection{Documentation}
+In order to improve the project diffusion, promote community involvement and attract users to participate in the OLEF opensource project, documentation quality is a key factor. High quality manuals and help information regarding the project must be available for users in order to be attracted by it and start contributing to it. For this reason, next manuals will be developed:
+\begin{itemize}\itemsep0pt
+\item{\textbf{Installation Manual}}. Although the ease of installation is a must, the different steps to proceed with installation of the . Database installation, required packages, password management, roles designing and other stuff will be documented, with a complete set of screen captures adequately commented in order to make installation procedure a very simple task.
+\item{\textbf{User Manual}}. Common operations to be performed by a normal user of the forums must be correctly commented. Actions such as creating a thread, posting a topic, create a Q\&A thread, citing another post, voting for a post, sending a private message or changing the theme should be part of this manual. As always, with a complete set of screen captures adequately commented in order to make using the forum a very simple task with a good manual to follow in case of doubt.
+\item{\textbf{Administration Manual}}. This manual will cover all the stuff related to the typical actions that the administrators of a forum can perform. Operations such as forums organization, areas administration, users and groups management, permissions and roles, styles installation and selection, customizations and maintenance will be part of this manual.
+\item{\textbf{Moderator Manual}}. This manual will document different actions to be performed by the moderators of the forums. Edition of posts, post movement, post removal, post split an d post lock will be typical operations performed by this kind of users and will have to be correctly documented in a visual and very understandable manner.
+\item{\textbf{Development Manual}}. Having to do with the technical background on plugin development, a complete development manual will be available to accomplish a simple objective: make plugin development the simplest, the better. The developers of the plugin development feature will cooperate with the documentalist in order to help on creating and improving this manual.
+\item{\textbf{Video tutorials}}. Together with the manuals, a video tutorial for each of them will be created. These kind of tutorials will be considered a summarized part of the main manuals, covering those basic but more important aspects of the corresponding ones.
+\item{\textbf{Quick video tour}}. Apart from the specific manual, a quick tour tutorial will be developed in order to demonstrate the different features, in a visual way and with emphasis on look and feel, ease of use, installation, administration and moderation.
+\end{itemize}
+\subsection{Marketing and communication}
+Once the technical issues have been analyzed, designed and planned, the main pending aspect having to do with OLEF opensource project management involves designing a correct Marketing and Communication strategy.\\
+\\
+The main goals of Marketing and Communication around OLEF opensource project will be:
+\begin{itemize}\itemsep0pt
+\item{\textbf{Focus on areas}}. Communication channels will focus on several tasks that have been identified as having top priority for the project success, such as:
+\begin{enumerate}\itemsep0pt
+\item{Look and feel strategy}
+\item{Security enhancements}
+\item{Ease of use, administration, installation}
+\item{Flexibility mechanisms implementation}
+\item{Developing extra features}
+\end{enumerate}
+\item{\textbf{Community building}}. The main goal of the OLEF project is related to the \textbf{community building, the quicker, the better}. The OLEF project should center on building community, not only for development roles, but specially on those ones who are key for project success:
+\begin{enumerate}\itemsep0pt
+\item{Documentalists}
+\item{Security Experts}
+\item{Graphic Designers}
+\item{Supporting roles}
+\item{Developers}
+\end{enumerate}
+Despite previous considerations, another important factor for OLEF project to success is, of course, \textbf{achieving enough popularity in the opensource world in general, and in web forums in particular}.\\
+\\
+To do so, marketing and communication channels will also \textbf{focus on promotion of the product oriented to final users}.
+\end{itemize}
+
+\subsubsection{Marketing / Communication strategies}
+Marketing and communication channels selected will be aligned with the technical strategies taking into consideration OLEF opensource project requirements.\\
+\\
+Although with a limitation on resources, introductory chapter already stated that the total budget that could be dedicated from the company for the next year was 50000 \$. Community manager will be in charge of analyzing the different communication channels and marketing strategy for the next year, trying to split in an homogeneous manner the total budget among the different channels and campaigns.\\
+\\
+After analyzing the different aspects that are high priority for the project, next budget allocation was decided by community manager:
+\begin{itemize}\itemsep0pt
+\item{\textbf{Opensource conference attending}}. 20000 \$. Dedicated to attending the main opensource conferences and events, such as FOSDEM, OSCON, etc. Community manager will perform presentation of the project in the main conferences, focusing on the main strengths that the project hosts.
+\item{\textbf{Final user ad-campaign}}. 10000 \$. Allocated to insert advertising of OLEF opensource project on specialized media, such as LinuxJournal, Linux weekly news, FOSS user magazine, etc.
+\item{\textbf{SEO campaign}}. 5000 \$. A Search Engine Optimization specialized company will be hired in order to place OLEF opensource project in the first places of search engines in general, and, above all, Google in particular, to the searches having to do with the keywords "opensource", "forums", and "framework".
+\item{\textbf{Community building}}. 15000 \$. This budget will be dedicated to advertising oriented to community building. In this aspect, 5000 \$ will be dedicated for investment on attracting community, by means of advertising on specialized media. Apart from that, contests to promote certain activities key for the project to success will be created, such as:
+\begin{itemize}
+\item{Best contributors to OLEF project documentation}. 1500 \$. Having to do with attracting documentalist to the project community, this contest will reward best contributions to the documentation of the OLEF project. Three rewards of 750 \$, 500 \$ and 250 \$ will be distributed.
+\item{OLEF project security enhancement}. 1500 \$. Best contributions to security enhancements of the project will receive rewards of 750 \$ 500 \$ and 250\$.
+\item{Impressive OLEF Theme creations}. 1000 \$. With an eye of keeping improving the look and feel of the project, the best theme created for the OLEF forums boards will obtain rewards of 600 \$,  300 \$ and 100\$ respectively.
+\item{Best contributors to Ease of Use/Installation/Administration on OLEF project}.
+1000 \$. Having to do with attracting developers that contribute code to enhance any of the issues related to the ease of use, administration and installation. Best contributions will obtain rewards of 600 \$, 300 \$, and 100\$ respectively.
+\end{itemize}
+\end{itemize}
+The rest of the money (around 5000 \$), will be dedicated to create events oriented to build community, by means of conferences, Hackathons, Bug Squashing parties, etc.
+Apart from marketing strategy, the other important resource that the community manager of the OLEF project should handle is dedicated to communication channels.\\
+\\
+By means of using the communication channels available for the OLEF opensource project, community manager will notify main events having to do with the OLEF project.\\
+\\
+Apart from the channel, the important issue when communicating information will be the content of communication itself. Which events should be notified by the community manager? In general, all the information that community should be interested on. Next list shows important events that community manager should not ignore:
+\begin{itemize}\itemsep0pt
+\item{\textbf{New major releases}}. When new major releases of the project are performed, notification to the community should be performed as earlier, better.
+\item{\textbf{Project achievements}}. In order to communicate important achievements of the project, i.e.: number of users of the project achieved, number of contributors achieved, companies that have joined to the community and will start contributing, prices received from specialized media, etc.
+\item{\textbf{Community technical information}}. Having to do with important information for the good work of the community: new technical issues, servers maintenance, etc.
+\item{\textbf{Community non-technical information}}. Information such as contest launching, conference and hackatons dates, contest winners, best contributors of the week, etc.
+\item{\textbf{What media say}}. Compilation of articles of what specialized opensource media are saying about the project will be also part of the community management information sharing.
+\item{\textbf{Hearsay management}}. A very important aspect of this project is to be the more transparent, the better, towards the community. Hearsay clarification, by means of confirmation or denial of those aspects that can concern the community, should be a must for the community manager.
+\end{itemize}
+
+Regarding the communication channels where previous information will be notified and updated, community manager will be in charge of creating and updating the information in the typical channels that all the projects and companies use nowadays:
+\begin{itemize}\itemsep0pt
+\item{\textbf{Social media}}. With no doubt, the main communication channel for any type of project / company existing on the Internet. Community manager should communicate through different media such as:
+\begin{itemize}\itemsep0pt
+\item{\textbf{Twitter}}. By means of notifying important events the Twitter account of the OLEF project in less than 140 characters.
+\item{\textbf{Facebook}}. By means of communicating via the Facebook page associated to the project a complete description of the main issues around the OLEF project.
+\item{\textbf{identi.ca}}. By means of communicating through the identi.ca account associated to the project a complete description of the main issues around the OLEF project.
+\item{\textbf{Linked in}}. By means of communicating through Linked in account the main events associated to the project.
+\end{itemize}
+\item{\textbf{Web \& blog}}. Community manager will create high quality entries on the project main blog to communicate the most important events around the project in 300 to 400 word articles. These articles will be linked from the main web page of the project.
+\item{\textbf{Mail list}}. Through the private \textbf{olef-management} list, community manager together with project manager and other community members will discuss strategies around the project, such as feature development, users banning, etc.
+\end{itemize}
+
+\subsubsection{Community building and new volunteers attraction}
+Apart from those aspects who have to do with marketing and communication strategies, beyond the advertisement, the conferences, the contests and in general all the marketing stuff, there are some other key facts that help on improving community building and new volunteers attraction.\\
+\\
+Regarding those most important issues, community management has identified a list of differenet aspects that should be considered for OLEF project community to be considered a desirable community to participate, such as:
+\begin{itemize}\itemsep0pt
+\item{\textbf{Community identification}}. Control and adapt the strategies to the type of community behind and the different roles participating and contributing to the project. Listening to the community necessities, suggestions and requirements is also mandatory for the community manager.
+\item{\textbf{mentorship program}}. In order to facilitate community newbies, a mentorship program will be hold in order to facilitate newbies start contributing. A voluntary expert developer/documentalist/graphic designer will act as mentor for those starting contributors who will surely have a lot of doubts regarding the different aspects of the project.
+\item{\textbf{Upstream politics}}. The company will be transparent in terms of contributions that are developed inside in order to show the \textbf{upstream contributions} that the company is providing to the project, and how helpful these contribution can be for the rest of the community.
+\item{\textbf{Meritocracy ranking}}. Similar to what is happening in other opensource projects, a meritocracy ranking will be created in order to , in an easy and funny manner. Users with highest rank will get the MC status, obtaining access to the \textbf{olef-management} list and contributing to decisions related to the project management.
+\item{\textbf{Support local user groups}}. Community manager will be in charge of keeping track of the different local groups that could exist around the project. In this sense, web entries in order to identify different local groups will be created in order to facilitate community members to meet each other.
+\item{\textbf{Encourage a hacker culture}}. Empower community to perform , to innovate, to support failures, and to dedicate time to play with technologies and other projects that could be helpful for improving the OLEF project.
+\item{\textbf{Decrease barriers to entry}}. Try to decrease barriers that contributors face when entering a project: avoid using unusual tools, promote easy processes for bug reporting, pull requests or patch acceptation, and, above all, avoid legal forms to be signed before contributing.
+\item{\textbf{Avoid community anti-patterns}}. Bikeshed anti-pattern was performed was described before. However, other anti-patterns such as Cookie-Licker, Command \& Control, Water Cooler, Black Hole, Troll or RTFM should be avoided as well.
+\item{\textbf{Cooperate with other opensource projects}}. Other opensource project cooperation is normally appreciated by the community. Enforcing cooperation with other projects and empowering collaboration with them will improve the community perception of the OLEF project.
+\end{itemize}
+
+\subsubsection{Netiquette rules}
+Once community is built, project management in general and community manager in particular is required to \textbf{ensure a good atmosphere within the community}. The main prerequisites to target this requirement will be:
+\begin{itemize}\itemsep0pt
+\item{\textbf{Respect and tolerance}}. As the center philosophical idea. Everybody is welcome, keeping the idea of \textbf{being open} as the one prevailing in the project.
+\item{\textbf{Flames avoiding}}. Discussions around any topic will be welcomed, above all if the background is oriented to improving the project. However, \textbf{community management will be in charge of ending flames the earlier, the better}.
+\item{\textbf{"Bikeshed" avoiding}}. Project management will be in charge of avoiding long discussions on trivial aspects. 
+\end{itemize}
+Previous ideas will host a \textbf{dedicated and highlighted place on the main web page of the OLEF project}, and will be of mandatory acceptance to anyone who is willing to enter and contribute on the community. Behavior resulting on being non-compliance with previous assertions from a community member will result on she or he being banned in the different community channels and resources, resulting on a temporal or definitive banning situation depending on the misconduct.\\
+\\
+Besides this, a complete set of netiquette rules will be proposed to preserve a good environment inside the community. \textbf{This set of rules will be a summary of the RFC 1855 Netiquette guidelines}, among which next ones must be highlighted:
+\begin{enumerate}\itemsep0pt
+\item{\textbf{Don't SHOUT}}. While it might look clearer to someone if everything is in capitals in your message, it is considered SHOUTING, and for that reason, not acceptable.
+\item{\textbf{Do not top-post}}. Avoiding Top-posting, which is an annoying practice of replying to a message by typing a response above that the one being responded.
+\item{\textbf{Do not cross-post}}. Avoid sending the same message to multiple mail lists.
+\item{\textbf{Don't be impatient}}. The people who participate on a community aren't paid for their time.
+\item{\textbf{Do not write directly to list/group members}}. If doing so, ensure to be granted with the right permission from the person you are contacting to.
+\item{\textbf{When starting a new thread don't just reply to another message}}. Replying to a message sent by someone else and clear the subject line is not always resulting on an expected Behavior for recipients.
+\item{\textbf{Choose a meaningful subject}}. Dedicate some time to choose a meaningful for the others subject in order for the recipients to understand quickly the issues being proposed.
+\item{\textbf{Avoid SMS-like writing}}. The use of abbreviations like "plz" instead of "please", "u" instead of "you", "4" instead of "for", etc. does not favor communication between members, and should be avoided.
+\item{\textbf{Ensure line width is no longer than 72 to 76 characters}}. Nobody can assume that all e-mail clients behave the same way, and while some of the might wrap lines automatically when the text reaches the right of the window containing it, not all do.
+\item{\textbf{Choose a short signature}}. The signature should be short. \textbf{The generally accepted length is no more than 4 lines} but 5 or even 6 lines will be acceptable.
+\end{enumerate}
+ 
+\pagebreak
+
+\section{Conclusions}
+Releasing a project is not a trivial task. On this report, some of the different aspects to be considered when an SME company takes the decision of releasing an existing project as Open Source have been analyzed.\\
+\\
+On the introductory chapter, an analysis of the company, the company's environment and the product to be released were brought forward. It is important to contextualize the different aspects where the project is located, in order to take decisions around the strategy that must be followed.\\
+\\
+Subsequently, a deep analysis of the competitors was performed, in order to know the main competitors in terms of market share, and recognize the strengths and weakness of each of them in order to identify the strategies that the project will perform to try to get a good position in terms of market share, market acceptance, community involvement and other facts.\\
+\\
+Afterwards, some considerations on the licensing scheme to be adopted by the project was foregrounded. In licensing selection chapter, some basic tips were introduced to show how selection of a good license or set of licenses is a key factor not only in terms of business model, but also in terms of community involvement and acceptance.\\
+\\
+Technical Infrastructure was later studied in order to clarify which infrastructure fits better into the OLEF project requirements, not only considering the technical requirements, but also with an eye of the community necessities and how project management roles can supply different mechanisms to help on fixing them.\\
+\\
+Last, but not least, a chapter having to do with the most important issues related to the project management were considered, not only from a technical perspective, but also from a marketing and community building perspective. In this chapter, an introductory analysis to technical issues having to do with areas to emphasize on, feature development selection and resources planning were introduced. Apart from that, some guidelines to analyze those issues having to do with a community manager role, such as marketing and communication channels and community building were performed.\\
+\\
+After the analysis of previous issues, the only goal of this report is to help on providing an introductory guide to some of the most important aspects to be considered when starting a opensource project, and the different decisions that could be taken to accomplish the project requirements and goals.\\
+\end{document}
