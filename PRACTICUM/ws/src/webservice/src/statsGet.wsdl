@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="statsGet"
+ targetNamespace="urn:"
+ xmlns:tns="urn:"
+ xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+ xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:ns2="urn:"
+ xmlns:SOAP="http://schemas.xmlsoap.org/wsdl/soap/"
+ xmlns:MIME="http://schemas.xmlsoap.org/wsdl/mime/"
+ xmlns:DIME="http://schemas.xmlsoap.org/ws/2002/04/dime/wsdl/"
+ xmlns:WSDL="http://schemas.xmlsoap.org/wsdl/"
+ xmlns="http://schemas.xmlsoap.org/wsdl/">
+
+<types>
+
+ <schema targetNamespace="urn:"
+  xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+  xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:ns2="urn:"
+  xmlns="http://www.w3.org/2001/XMLSchema"
+  elementFormDefault="unqualified"
+  attributeFormDefault="unqualified">
+  <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+  <complexType name="guiltyStat"><!-- guiltyStat -->
+
+   <sequence>
+     <element name="date" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/><!-- guiltyStat::date -->
+     <element name="file" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/><!-- guiltyStat::file -->
+     <element name="author" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/><!-- guiltyStat::author -->
+     <element name="loc" type="xsd:double" minOccurs="1" maxOccurs="1"/><!-- guiltyStat::loc -->
+   </sequence>
+  </complexType>
+  <!-- operation request element -->
+  <element name="statsGet">
+   <complexType>
+    <sequence>
+     <element name="date" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/><!-- ns2__statsGet::date -->
+     <element name="file" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/><!-- ns2__statsGet::file -->
+     <element name="author" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/><!-- ns2__statsGet::author -->
+    </sequence>
+   </complexType>
+  </element>
+  <!-- operation response element -->
+  <element name="statsGetResponse">
+   <complexType>
+    <sequence>
+     <element name="stat" type="ns2:guiltyStat" minOccurs="1" maxOccurs="1"/><!-- ns2__statsGet::stat -->
+    </sequence>
+   </complexType>
+  </element>
+ </schema>
+
+</types>
+
+<message name="statsGetRequest">
+ <part name="parameters" element="ns2:statsGet"/><!-- ns2__statsGet::ns2__statsGet -->
+</message>
+
+<message name="statsGetResponse">
+ <part name="parameters" element="ns2:statsGetResponse"/>
+</message>
+
+<portType name="statsGetPortType">
+ <operation name="statsGet">
+  <documentation>Service definition of function ns2__statsGet</documentation>
+  <input message="tns:statsGetRequest"/>
+  <output message="tns:statsGetResponse"/>
+ </operation>
+</portType>
+
+<binding name="statsGet" type="tns:statsGetPortType">
+ <SOAP:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+ <operation name="statsGet">
+  <SOAP:operation soapAction=""/>
+  <input>
+     <SOAP:body parts="parameters" use="literal"/>
+  </input>
+  <output>
+     <SOAP:body parts="parameters" use="literal"/>
+  </output>
+ </operation>
+</binding>
+
+<service name="statsGet">
+ <documentation>gSOAP 2.8.4 generated service definition</documentation>
+ <port name="statsGet" binding="tns:statsGet">
+  <SOAP:address location="http://localhost:12345"/>
+ </port>
+</service>
+
+</definitions>
