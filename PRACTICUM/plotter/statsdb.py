@@ -193,7 +193,6 @@ def getTimeAuthorLOCchanges(cur, table, extra):
 def getTimeLOCchanges(cur, table, time, file, author):
 
   if file == '' and author == '':
-    basic_query = "SELECT COUNT(*) FROM " + table
     common_query = "SELECT COUNT(*) FROM " + table + " WHERE "
   elif file == '':
     author_id, ok = getDBAuthorId(cur, author)
@@ -215,7 +214,7 @@ def getTimeLOCchanges(cur, table, time, file, author):
   if time == '':
     time  = 'Always'
   if time == 'Always':
-    query = basic_query
+    query = common_query + ' DATE BETWEEN DATE_SUB(NOW(), INTERVAL 100 YEAR) AND NOW();'
   elif time == 'LastWeek':
     query = common_query + ' DATE BETWEEN DATE_SUB(NOW(), INTERVAL 1 WEEK) AND NOW();'
   elif time == 'LastMonth':
