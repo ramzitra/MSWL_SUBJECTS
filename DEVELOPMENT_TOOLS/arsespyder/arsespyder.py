@@ -23,17 +23,22 @@ def main ():
 
     url = args.url
 
-    print_links(url[0], 1, depth)
+    print_child_list(url[0], 1)
+    print_links(url[0], 2, depth)
 
 def print_links(url, depth, max_depth):
     url_list = pyarsespyder.print_urls(url)
-
     if depth <= max_depth:
         for l in url_list:
-            print_depth_point(depth)
-            print " %s" % (l)
+            print_child_list(l, depth)
         for l in url_list:
             print_links(l, depth+1, max_depth)
+
+def print_child_list(url, depth):
+    url_list = pyarsespyder.print_urls(url)
+    for l in url_list:
+        print_depth_point(depth)
+        print " %s" % (l)
 
 def print_depth_point(depth):
     counter = 0
