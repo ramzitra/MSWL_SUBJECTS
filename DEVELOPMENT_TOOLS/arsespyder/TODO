@@ -1,0 +1,23 @@
+This file includes a list of TODOs that could be added to the arsespyder Web crawler for it to contain enhanced functionality:
+
+1) Include a "-t" option for a tree view. If this option was included, once provided by the user, the links should appear on a tree basis, to identify which link depends on which one. Format, up on this option provided, should be as follows:
+
+-- http://level_1_a.link.org/
+|  |
+|  +-- http://level_2_a_a.link.org
+|  +-- http://level_2_a_b.link.org
+|
+-- http://level_1_b.link.org/
+|  |
+|  +-- http://level_2_b_a.link.org
+|  |   |
+|  |   +-- http://level_3_b_a_a.link.org   
+|  |   +-- http://level_3_b_a_b.link.org   
+|  |
+|  +-- http://level_2_b_b.link.org
+|   
+-- http://level_1_c.link.org/
+   |
+   +-- http://level_2_c_a.link.org
+
+2) Include a "-c" option to enable autocompletion of URLs for those cases where a URL link is not of the format "http://whatever.org/test.html" and just the file name "test.html". As the URL containing the link is known, i.e: "http://whatever.org", links from root URL pointing to a non "http://" url link should be auto-completed with the parent url link.
