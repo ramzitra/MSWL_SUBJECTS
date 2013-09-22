@@ -17,8 +17,9 @@
 from bs4 import BeautifulSoup as Soup
 import geturl
 import sys
+from validateurl import url_is_valid
 
-def print_urls(url):
+def get_url_list(url):
     text = geturl.urlToString(url)
     try:
         s = Soup(text)
@@ -32,7 +33,7 @@ def print_links_to_level(url, max_depth):
     recursive_analyze_links(url, 2, max_depth)
     
 def recursive_analyze_links(url, depth, max_depth):
-    url_list = print_urls(url)
+    url_list = get_url_list(url)
     if depth <= max_depth:
         for l in url_list:
             print_child_list(l, depth)
@@ -40,10 +41,11 @@ def recursive_analyze_links(url, depth, max_depth):
             recursive_analyze_links(l, depth+1, max_depth)
 
 def print_child_list(url, depth):
-    url_list = print_urls(url)
+    url_list = get_url_list(url)
     for l in url_list:
-        print_depth_point(depth)
-        print " %s" % (l)
+        if url_is_valid(l):
+            print_depth_point(depth)
+            print " %s" % (l)
 
 def print_depth_point(depth):
     counter = 0
