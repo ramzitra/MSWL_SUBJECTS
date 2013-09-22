@@ -17,7 +17,7 @@
 from bs4 import BeautifulSoup as Soup
 import geturl
 import sys
-from validateurl import url_is_valid
+from validateurl import url_is_http
 
 def get_url_list(url):
     text = geturl.urlToString(url)
@@ -43,7 +43,7 @@ def recursive_analyze_links(url, depth, max_depth):
 def print_child_list(url, depth):
     url_list = get_url_list(url)
     for l in url_list:
-        if url_is_valid(l):
+        if url_is_http(l):
             print_depth_point(depth)
             print " %s" % (l)
 

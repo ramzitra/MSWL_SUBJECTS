@@ -16,7 +16,7 @@
 #
 from urlparse import urlparse 
 
-def url_is_valid(url):
+def url_is_http(url):
     parsed = urlparse(url)
     if parsed.scheme and \
     (parsed.scheme == 'http' or parsed.scheme == 'https'):
