@@ -1,0 +1,33 @@
+To install "arsespyder" Web crawler, there are two methods available:
+
+A) Installing from source code (RECOMMENDED)
+------------------------------
+
+   In order to install arsespyder from source code, next step should be followed:
+
+   A.1) Install python-setuptools on your Linux distribution
+
+   # apt-get install python-setuptools
+
+   A.2) Download arsespyder from URL https://pypi.python.org/packages/source/a/arsespyder/arsespyder-0.0.3.tar.gz
+
+NOTE: Alternative download URL is: http://sarroutbi.dyndns.org/DEVELOPMENT_TOOLS/arsespyder-0.0.3.tar.gz
+
+   A.3) Unpack the source code:
+  
+   # tar zxvf arsespyder-0.0.3.tar.gz
+
+   A.3) Install with "setuptools":
+
+   # cd arsespyder-0.0.3
+
+   A.4) Run python setup.py install, as root:
+
+   # sudo python setup.py install
+
+B) Installing binaries
+----------------------
+
+   In order to install from binary files, run "easy_install"
+
+   # sudo easy_install arsespyder    
