@@ -20,6 +20,20 @@ from validateurl import url_is_http
 
 DEPTH_LEVEL_CHARACTER = '*'
 
+def exit_error(error, error_code):
+    """ 
+    exit_error function prints an error and exit with code specified
+   
+    Keyword arguments:
+    error -- The error to print on the screen
+    error_code -- The error_code returned by the program
+
+    """
+    print ""
+    print error
+    print ""
+    sys.exit(error_code)
+
 def print_links_to_level(url, max_depth):
     """ 
     arsespyder main function. Receives a URL and the crawling depth
@@ -31,12 +45,15 @@ def print_links_to_level(url, max_depth):
     max_depth -- The maximum depth of link analysis
 
     """
-    # First print all the child links (links on the URL)
-    print_child_list(url, 1)
+    if not url_is_http(url):
+        exit_error ("ERROR: URL provided must have HTTP/HTTPS scheme", 1)
+    else:
+        # First print all the child links (links on the URL)
+        print_child_list(url, 1)
 
-    # Print level 2 links and recursive among their links until reach
-    # maximum depth
-    recursive_analyze_links(url, 2, max_depth)
+        # Print level 2 links and recursive among their links until reach
+        # maximum depth
+        recursive_analyze_links(url, 2, max_depth)
     
 def recursive_analyze_links(url, depth, max_depth):
     """ 
