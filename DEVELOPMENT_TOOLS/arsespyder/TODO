@@ -20,4 +20,7 @@ This file includes a list of TODOs that could be added to the arsespyder Web cra
    |
    +-- http://level_2_c_a.link.org
 
-2) Include a "-c" option to enable autocompletion of URLs for those cases where a URL link is not of the format "http://whatever.org/test.html" and just the file name "test.html". As the URL containing the link is known, i.e: "http://whatever.org", links from root URL pointing to a non "http://" url link should be auto-completed with the parent url link.
+2) Include a "-a" option to enable autocompletion of URLs for those cases where a URL link is not of the format "http://whatever.org/test.html" and just the file name "test.html". 
+   As the URL containing the link is known, i.e: "http://whatever.org", links from root URL pointing to a non "http://" url link should be auto-completed with the parent url link.
+
+3) Include a "-c" option to allow indicating the character to print to identify the level of a certain link. Right now, only '*' character can be specified

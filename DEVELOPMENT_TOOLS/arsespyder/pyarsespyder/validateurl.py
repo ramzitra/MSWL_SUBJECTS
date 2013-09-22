@@ -17,8 +17,15 @@
 from urlparse import urlparse 
 
 def url_is_http(url):
+    """ 
+    This functions checks if url has HTTP/HTTPS scheme 
+   
+    Keyword arguments:
+    url -- A string with the URL to analyze
+
+    """
     parsed = urlparse(url)
     if parsed.scheme and \
-    (parsed.scheme == 'http' or parsed.scheme == 'https'):
+        (parsed.scheme == 'http' or parsed.scheme == 'https'):
         return True
     return False

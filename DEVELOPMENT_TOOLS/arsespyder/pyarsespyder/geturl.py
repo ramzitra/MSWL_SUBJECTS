@@ -15,8 +15,16 @@
 # THE USE OR PERFORMANCE OF THIS SOFTWARE
 #
 import urllib2
+from bs4 import BeautifulSoup as Soup
 
-def urlToString(url):
+def url_to_string(url):
+    """ 
+    This functions returns the text of the page specified by url parameter
+   
+    Keyword arguments:
+    url -- a URL whose text will be returned
+
+    """
     try:
         opened = urllib2.build_opener()
         # Get the string 
@@ -24,3 +32,21 @@ def urlToString(url):
     except (urllib2.URLError, urllib2.HTTPError, ValueError):
         return ""
     return string
+
+def get_url_list(html_text):
+    """ 
+    This functions returns a list with all the links of type
+    <a href="http://whatever">whatever</a> contained
+   
+    Keyword arguments:
+    html_text -- HTML text where <a href="http://whatever">whatever</a>
+                 links will be searched
+
+    """
+    text = url_to_string(html_text)
+    try:
+        s = Soup(text)
+        return [x['href'] for x in s.findAll('a', href=True)]
+    except:
+        print "ERROR ON SOUP CREATION"
+        return []
