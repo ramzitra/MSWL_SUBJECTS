@@ -18,6 +18,7 @@ import pyarsespyder
 import argparse
 
 def main ():
+    """ main() method of the arsespyder Web crawler """
 
     parser = argparse.ArgumentParser(description='Internet Crawler',
                                      version = '0.0.1')
@@ -30,5 +31,6 @@ def main ():
     url = args.url
 
     pyarsespyder.print_links_to_level(url[0], max_depth)
+
 if __name__ == '__main__':
     main()

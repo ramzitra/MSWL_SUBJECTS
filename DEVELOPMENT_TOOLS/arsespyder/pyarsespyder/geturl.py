@@ -14,7 +14,7 @@
 # NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH 
 # THE USE OR PERFORMANCE OF THIS SOFTWARE
 #
-import urllib2
+from urllib2 import build_opener, URLError, HTTPError
 from bs4 import BeautifulSoup as Soup
 
 def url_to_string(url):
@@ -26,10 +26,10 @@ def url_to_string(url):
 
     """
     try:
-        opened = urllib2.build_opener()
+        opened = build_opener()
         # Get the string 
         string = opened.open(url).read()
-    except (urllib2.URLError, urllib2.HTTPError, ValueError):
+    except (URLError, HTTPError, ValueError):
         return ""
     return string
 
