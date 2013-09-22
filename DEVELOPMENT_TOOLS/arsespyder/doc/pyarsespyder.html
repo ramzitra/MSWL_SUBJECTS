@@ -1,0 +1,76 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: package pyarsespyder</title>
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>pyarsespyder</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/sarroutbi/personal/MSWL/MSWL_SUBJECTS/DEVELOPMENT_TOOLS/arsespyder/pyarsespyder/__init__.py">/home/sarroutbi/personal/MSWL/MSWL_SUBJECTS/DEVELOPMENT_TOOLS/arsespyder/pyarsespyder/__init__.py</a></font></td></tr></table>
+    <p><tt>#&nbsp;Copyright&nbsp;2013-2014&nbsp;Sergio&nbsp;Arroutbi&nbsp;Braojos&nbsp;&lt;sarroutbi@yahoo.es&gt;<br>
+#&nbsp;<br>
+#&nbsp;Permission&nbsp;to&nbsp;use,&nbsp;copy,&nbsp;modify,&nbsp;and/or&nbsp;distribute&nbsp;this&nbsp;software&nbsp;<br>
+#&nbsp;for&nbsp;any&nbsp;purpose&nbsp;with&nbsp;or&nbsp;without&nbsp;fee&nbsp;is&nbsp;hereby&nbsp;granted,&nbsp;provided&nbsp;that&nbsp;<br>
+#&nbsp;the&nbsp;above&nbsp;copyright&nbsp;notice&nbsp;and&nbsp;this&nbsp;permission&nbsp;notice&nbsp;appear&nbsp;in&nbsp;all&nbsp;copies.<br>
+#&nbsp;<br>
+#&nbsp;THE&nbsp;SOFTWARE&nbsp;IS&nbsp;PROVIDED&nbsp;"AS&nbsp;IS"&nbsp;AND&nbsp;THE&nbsp;AUTHOR&nbsp;DISCLAIMS&nbsp;ALL&nbsp;WARRANTIES&nbsp;<br>
+#&nbsp;WITH&nbsp;REGARD&nbsp;TO&nbsp;THIS&nbsp;SOFTWARE&nbsp;INCLUDING&nbsp;ALL&nbsp;IMPLIED&nbsp;WARRANTIES&nbsp;OF&nbsp;MERCHANTABILITY&nbsp;<br>
+#&nbsp;AND&nbsp;FITNESS.&nbsp;IN&nbsp;NO&nbsp;EVENT&nbsp;SHALL&nbsp;THE&nbsp;AUTHOR&nbsp;BE&nbsp;LIABLE&nbsp;FOR&nbsp;ANY&nbsp;SPECIAL,&nbsp;DIRECT,&nbsp;<br>
+#&nbsp;INDIRECT,&nbsp;OR&nbsp;CONSEQUENTIAL&nbsp;DAMAGES&nbsp;OR&nbsp;ANY&nbsp;DAMAGES&nbsp;WHATSOEVER&nbsp;RESULTING&nbsp;FROM&nbsp;<br>
+#&nbsp;LOSS&nbsp;OF&nbsp;USE,&nbsp;DATA&nbsp;OR&nbsp;PROFITS,&nbsp;WHETHER&nbsp;IN&nbsp;AN&nbsp;ACTION&nbsp;OF&nbsp;CONTRACT,&nbsp;<br>
+#&nbsp;NEGLIGENCE&nbsp;OR&nbsp;OTHER&nbsp;TORTIOUS&nbsp;ACTION,&nbsp;ARISING&nbsp;OUT&nbsp;OF&nbsp;OR&nbsp;IN&nbsp;CONNECTION&nbsp;WITH&nbsp;<br>
+#&nbsp;THE&nbsp;USE&nbsp;OR&nbsp;PERFORMANCE&nbsp;OF&nbsp;THIS&nbsp;SOFTWARE<br>
+#</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Package Contents</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="pyarsespyder.geturl.html">geturl</a><br>
+</td><td width="25%" valign=top><a href="pyarsespyder.validateurl.html">validateurl</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-print_child_list"><strong>print_child_list</strong></a>(url, depth)</dt><dd><tt>Function&nbsp;to&nbsp;print&nbsp;all&nbsp;the&nbsp;links&nbsp;contained&nbsp;in&nbsp;a&nbsp;url,&nbsp;together&nbsp;with&nbsp;a&nbsp;<br>
+series&nbsp;of&nbsp;characters&nbsp;indicating&nbsp;the&nbsp;depth&nbsp;level&nbsp;of&nbsp;the&nbsp;link&nbsp;<br>
+being&nbsp;printed<br>
+&nbsp;<br>
+Keyword&nbsp;arguments:<br>
+url&nbsp;--&nbsp;A&nbsp;string&nbsp;with&nbsp;the&nbsp;URL&nbsp;to&nbsp;analyze<br>
+depth&nbsp;--&nbsp;The&nbsp;crawling&nbsp;depth&nbsp;being&nbsp;analyzed,&nbsp;needed&nbsp;for&nbsp;printing&nbsp;stuff</tt></dd></dl>
+ <dl><dt><a name="-print_depth_point"><strong>print_depth_point</strong></a>(depth)</dt><dd><tt>Function&nbsp;to&nbsp;print&nbsp;as&nbsp;many&nbsp;'level&nbsp;characters'.&nbsp;Default&nbsp;character&nbsp;is&nbsp;'*'<br>
+&nbsp;<br>
+Keyword&nbsp;arguments:<br>
+depth&nbsp;--&nbsp;The&nbsp;amount&nbsp;of&nbsp;'depth&nbsp;level&nbsp;characters'&nbsp;to&nbsp;print</tt></dd></dl>
+ <dl><dt><a name="-print_links_to_level"><strong>print_links_to_level</strong></a>(url, max_depth)</dt><dd><tt>arsespyder&nbsp;main&nbsp;function.&nbsp;Receives&nbsp;a&nbsp;URL&nbsp;and&nbsp;the&nbsp;crawling&nbsp;depth<br>
+and&nbsp;prints&nbsp;on&nbsp;screen&nbsp;the&nbsp;links&nbsp;of&nbsp;the&nbsp;url,&nbsp;the&nbsp;links&nbsp;of&nbsp;the&nbsp;links<br>
+of&nbsp;the&nbsp;url,&nbsp;etc.&nbsp;up&nbsp;to&nbsp;the&nbsp;max_depth<br>
+&nbsp;<br>
+Keyword&nbsp;arguments:<br>
+url&nbsp;--&nbsp;A&nbsp;string&nbsp;with&nbsp;the&nbsp;URL&nbsp;to&nbsp;analyze<br>
+max_depth&nbsp;--&nbsp;The&nbsp;maximum&nbsp;depth&nbsp;of&nbsp;link&nbsp;analysis</tt></dd></dl>
+ <dl><dt><a name="-recursive_analyze_links"><strong>recursive_analyze_links</strong></a>(url, depth, max_depth)</dt><dd><tt>Recursive&nbsp;function&nbsp;that&nbsp;prints&nbsp;the&nbsp;links&nbsp;of&nbsp;the&nbsp;url&nbsp;and&nbsp;at&nbsp;leven&nbsp;depth,<br>
+and&nbsp;if&nbsp;the&nbsp;max_depth&nbsp;has&nbsp;not&nbsp;been&nbsp;reached,&nbsp;continues&nbsp;analyzing&nbsp;to&nbsp;the<br>
+next&nbsp;level<br>
+&nbsp;<br>
+Keyword&nbsp;arguments:<br>
+url&nbsp;--&nbsp;A&nbsp;string&nbsp;with&nbsp;the&nbsp;URL&nbsp;to&nbsp;analyze<br>
+depth&nbsp;--&nbsp;The&nbsp;crawling&nbsp;depth&nbsp;being&nbsp;analyzed<br>
+max_depth&nbsp;--&nbsp;The&nbsp;maximum&nbsp;depth&nbsp;of&nbsp;link&nbsp;analysis</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>DEPTH_LEVEL_CHARACTER</strong> = '*'</td></tr></table>
+</body></html>

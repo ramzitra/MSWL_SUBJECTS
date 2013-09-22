@@ -47,3 +47,14 @@ Where:
 *   http://... are level 1 links (existing in HTML code URL specified parameter)
 **  http://... are level 2 links (existing in HTML code of level 1 links)
 *** http://... are level 3 links (existing in HTML code of level 2 links)
+
+4 - CODE DOCUMENTATION
+----------------------
+Code documentation is contained under "doc" folder. Main .html file is pyarsespyder.html:
+
+$ tree doc/
+doc/
+├── pyarsespyder.geturl.html
+├── pyarsespyder.html
+└── pyarsespyder.validateurl.html
+
