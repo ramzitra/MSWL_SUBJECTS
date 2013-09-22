@@ -14,21 +14,13 @@
 # NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH 
 # THE USE OR PERFORMANCE OF THIS SOFTWARE
 #
-import pyarsespyder
-import argparse
+import urllib2
 
-def main ():
-
-    parser = argparse.ArgumentParser(description='Internet Crawler',
-                                     version = '0.0.1')
-    parser.add_argument('-n', '--number-of-levels',
-                        type = int, default = 3, help = 'Crawling depth')
-    parser.add_argument('url', nargs=1, help = 'URL to crawl')
-
-    args = parser.parse_args()                        
-    max_depth = args.number_of_levels
-    url = args.url
-
-    pyarsespyder.print_links_to_level(url[0], max_depth)
-if __name__ == '__main__':
-    main()
+def urlToString(url):
+    try:
+        opened = urllib2.build_opener()
+        # Get the string 
+        string = opened.open(url).read()
+    except (urllib2.URLError, urllib2.HTTPError, ValueError):
+        return ""
+    return string
