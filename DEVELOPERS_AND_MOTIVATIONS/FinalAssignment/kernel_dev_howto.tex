@@ -1,0 +1,472 @@
+\documentclass{beamer}
+\usetheme{Warsaw}
+\usepackage{graphicx}
+\usepackage{wasysym}
+\usepackage{fancyvrb}
+\usepackage{hyperref}
+\setbeamertemplate{navigation symbols}{}
+
+\subject{An Introduction to the Linux Kernel Development Process}
+\keywords{Linux Kernel Developer git patch}
+
+\title{How to Participate in the Linux Kernel Development (and Why)}
+\institute{Tk Open Systems}
+\author{Baruch Siach \\ \texttt{baruch@tkos.co.il}}
+\date{October 10, 2011}
+\logo{\includegraphics[width=0.3\textwidth]{TkOS_color_logo_2010.png}}
+
+\begin{document}
+
+\frame{\titlepage
+  \includegraphics[width=0.2\textwidth]{by-sa.pdf}
+\hspace{0.05\textwidth} \raisebox{0.025\textwidth}
+       {\parbox{0.7\textwidth} {\tiny This work is released under the
+           Creative Commons BY-SA version 3.0 or later.}}}
+
+\begin{frame}{Introduction: The Linux Kernel Software Project}
+  \begin{itemize}
+  \item New release every three months
+  \item More than 8,000,000 lines of code
+  \item About 10,000 patches in each release
+  \item More than 1000 developers participate in each release
+  \item You can participate too
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Why Bother?}
+
+  The kernel development process tends to be time consuming and
+  frustrating at times, so why bother? Here are a few reasons:
+
+  \begin{itemize}
+  \item Improve code quality; get code review from the experts
+  \item Avoid common coding pitfalls:
+    \begin{itemize}
+    \item Incorrect use of kernel API
+    \item Wrong hardware initialization sequence
+    \end{itemize}
+  \item Learn better ways to do what you want
+  \item Influence the kernel development decision making
+    \begin{itemize}
+    \item The case of Linux Security Module framework (non) removal
+    \item Kernel people appreciate code rather than talk \footnote
+      {``Talk is cheap. Show me the code.'' -
+        \href{http://lkml.org/lkml/2000/8/25/132}{Linus Torvalds (Aug
+          25, 2000)}} % message-id
+                      % Pine.LNX.4.10.10008251108310.9513-100000@penguin.transmeta.com
+    \end{itemize}
+  \item Automatic availability of your feature to all users
+  \item Automatic maintenance of your code
+    \begin{itemize}
+    \item Internal kernel API tend to change as needed
+    \item Only in-kernel code gets updated when the API changes
+    \end{itemize}
+  \item Bug fixes from users and developers
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{The Kernel Release Schedule}
+  \begin{enumerate}
+  \item Kernel subsystem maintainers collect reviewed and tested
+    patches for kernel version \emph{N} until the release of
+    \emph{N-1}.
+  \item Linus releases Kernel version \emph{N-1}; the two weeks
+    ``merge window'' for kernel version \emph{N} begins
+  \item During the merge window Linus takes patches for kernel version
+    \emph{N} from subsystem maintainers
+  \item The merge window ends when Linus releases \texttt{-rc1} (first
+    release candidate) of kernel version \emph{N}
+  \item Every week Linus releases another \texttt{-rc} kernel
+    \begin{itemize}
+    \item Only bug fixes are accepted at this stage
+    \end{itemize}
+  \item Somewhere between \texttt{-rc6} and \texttt{-rc9}, Linus
+    releases kernel version \emph{N}
+  \item Kernel version \emph{N} moves to the \texttt{-stable} team,
+    and receives bug fixes until a little after the release of kernel
+    version \emph{N+1}
+  \item Some special kernel versions are maintained longer by
+    interested parties under \texttt{-longterm}
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}{Overview of the Patch Acceptance Process}
+  \begin{enumerate}
+  \item Develop a feature or fix a bug, and test
+  \item Send a patch to the maintainer(s), and Cc the mailing list
+  \item Listen to comments, fix, and resend the patch
+    \begin{itemize}
+    \item If you believe a suggested change is wrong, explain why
+    \end{itemize}
+  \item Repeat the last step as necessary
+  \item Wait for the subsystem maintainer to apply your patch
+  \item Be responsive to problem reports regarding your patch, and fix
+    them
+  \item If all goes well, Linus pulls the subsystem maintainer patches
+    during the merge window, including yours; your patch is now in the
+    ``mainline kernel''
+  \item Sometimes long term maintenance of your code is necessary
+    \begin{itemize}
+    \item Neglecting to maintain your code may lead to its removal in
+      the long run, if nobody else shows interest
+    \end{itemize}
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}{Code Licensing}
+  \begin{itemize}
+  \item Contributed code license must be compatible with the GNU
+    General Public License version 2 (GPL v2)
+  \item If you write the code as part of your job (contracted or
+    hired), you employer must be aware of the licensing requirement
+    \begin{itemize}
+    \item This is of concern mainly in large and bureaucratic companies
+    \end{itemize}
+  \item No copyright assignment is required
+  \item Submitted patches must include a \texttt{Signed-off-by:} tag,
+    which bears legal significance
+    \begin{itemize}
+    \item See the ``Developer's Certificate of Origin'' in
+      \texttt{Documentation/SubmittingPatches} for details
+    \end{itemize}
+  \end{itemize}
+  Disclaimer: I am not a lawyer. If in doubt, consult your local legal
+  advisor.
+\end{frame}
+
+\begin{frame}{Which Kernel Version to Use as Development Base}
+
+  Sometimes your work depends on features that are not present yet in
+  released kernels. In this case select your base development kernel
+  in the following descending order of precedence:
+
+  \begin{enumerate}
+  \item The latest released kernel
+  \item The last \texttt{-rc} development version
+  \item The development tree of the relevant subsystem
+  \end{enumerate}
+
+  Do not base you work on the \texttt{-next} tree.
+\end{frame}
+
+\begin{frame}[fragile]{Finding Patch Contacts}
+  Locate the relevant subsystem entry in the kernel
+  \texttt{MAINTAINERS} file, and get the following:
+  \begin{itemize}
+  \item Maintainer(s)
+  \item Mailing list
+  \item Development source tree (git, quilt, etc.)
+  \item Patchwork patch tracking website
+  \item Website
+  \end{itemize}
+
+  \begin{exampleblock}{Example \texttt{MAINTAINERS} entry}
+    \begin{Verbatim}[fontsize=\scriptsize]
+LINUX FOR POWERPC (32-BIT AND 64-BIT)
+M:    Benjamin Herrenschmidt <benh@kernel.crashing.org>
+M:    Paul Mackerras <paulus@samba.org>
+W:    http://www.penguinppc.org/
+L:    linuxppc-dev@lists.ozlabs.org
+Q:    http://patchwork.ozlabs.org/project/linuxppc-dev/list/
+T:    git git://git.kernel.org/pub/scm/linux/kernel/git/benh/powerpc.git
+S:    Supported
+F:    Documentation/powerpc/
+F:    arch/powerpc/
+    \end{Verbatim}
+  \end{exampleblock}
+\end{frame}
+
+\begin{frame}{Things to Do Before Sending a Patch}
+  \begin{itemize}
+  \item Make sure that your code matches the standard kernel coding
+    style as described in \texttt{Documentation/CodingStyle}
+  \item Write a short and clear description of the patch, and the
+    reason this patch is needed
+    \begin{itemize}
+    \item This description becomes part of the permanent kernel git
+      log
+    \item For fixes to an already released kernel, add the
+      ``\texttt{Cc:~stable@kernel.org}'' tag
+    \item See examples below
+    \end{itemize}
+  \item Follow \texttt{Documentation/SubmitChecklist}
+  \item Test your code based on a new enough kernel
+  \item Rebase on newer kernels if they introduce relevant changes
+  \item Monitor the subsystem mailing list for patches that are
+    relevant to your work
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{How to Generate and Send a Patch Using git}
+  \begin{enumerate}
+  \item When committing use the \texttt{-s} option of \texttt{git
+    commit} to add your \texttt{Signed-off-by} to the commit log
+  \item Generate a patch with \texttt{git format-patch}
+    \begin{exampleblock}{Example of single patch generation with git}
+      \scriptsize\texttt{\$ git format-patch -o /tmp HEAD\^}
+    \end{exampleblock}
+  \item Run \texttt{scripts/checkpatch.pl} on your patch
+  \item In a revised patch add meta changelog to the generated
+    \texttt{.patch} file(s)
+    \begin{itemize}
+    \item This goes below the \texttt{'---'} line
+    \end{itemize}
+  \item Send the patch to relevant lists and maintainers
+    \begin{exampleblock}{Example of single patch sending with git}
+      \scriptsize\texttt{\$ git send-email
+        \textbackslash \\ \hspace{5mm} --to 'Benjamin Herrenschmidt
+        <benh@kernel.crashing.org>' \textbackslash \\ \hspace{5mm}
+        --cc linuxppc-dev@lists.ozlabs.org \textbackslash
+        \\ \hspace{5mm} /tmp/powerpc-fix-something.patch}
+    \end{exampleblock}
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{Simple Patch Example}
+  \begin{Verbatim}[fontsize=\tiny]
+From: Baruch Siach <baruch@tkos.co.il>
+To: Guennadi Liakhovetski <g.liakhovetski@gmx.de>
+Cc: linux-media@vger.kernel.org, Baruch Siach <baruch@tkos.co.il>
+Subject: [PATCH] v4l: soc_camera: fix bound checking of mbus_fmt[] index
+
+When code <= V4L2_MBUS_FMT_FIXED soc_mbus_get_fmtdesc returns a pointer to
+mbus_fmt[x], where x < 0. Fix this.
+
+Signed-off-by: Baruch Siach <baruch@tkos.co.il>
+---
+ drivers/media/video/soc_mediabus.c |    2 ++
+ 1 files changed, 2 insertions(+), 0 deletions(-)
+
+diff --git a/drivers/media/video/soc_mediabus.c b/drivers/media/video/soc_mediabus.c
+index f8d5c87..a2808e2 100644
+--- a/drivers/media/video/soc_mediabus.c
++++ b/drivers/media/video/soc_mediabus.c
+@@ -136,6 +136,8 @@ const struct soc_mbus_pixelfmt *soc_mbus_get_fmtdesc(
+ {
+        if ((unsigned int)(code - V4L2_MBUS_FMT_FIXED) > ARRAY_SIZE(mbus_fmt))
+                return NULL;
++       if ((unsigned int)code <= V4L2_MBUS_FMT_FIXED)
++               return NULL;
+        return mbus_fmt + code - V4L2_MBUS_FMT_FIXED - 1;
+ }
+ EXPORT_SYMBOL(soc_mbus_get_fmtdesc);
+  \end{Verbatim}
+\end{frame}
+
+\begin{frame}[fragile]{Patch with Version, Changelog, and Review Tag}
+  \begin{Verbatim}[fontsize=\tiny]
+From: Baruch Siach <baruch@tkos.co.il>
+To: linux-kernel@vger.kernel.org
+Cc: Andrew Morton <akpm@linux-foundation.org>, Indan Zupancic <indan@nul.nu>,
+        Greg KH <greg@kroah.com>, "H. Peter Anvin" <hpa@zytor.com>,
+        Alex Gershgorin <agersh@rambler.ru>, Baruch Siach <baruch@tkos.co.il>
+Subject: [PATCHv3] drivers/misc: Altera active serial implementation
+
+From: Alex Gershgorin <agersh@rambler.ru>
+
+...
+
+Reviewed-by: Indan Zupancic <indan@nul.nu>
+Signed-off-by: Alex Gershgorin <agersh@rambler.ru>
+Signed-off-by: Baruch Siach <baruch@tkos.co.il>
+---
+Changes in v3:
+              
+    * Rename to altera_as for a better description of the driver scope
+                                                                      
+    * Mention ESPC devices in the Kconfig help text                   
+                                                   
+    * Add a comment that explains why the static altera_as_devs arrays doesn't
+      need locking protection                                                 
+                             
+    * Shorten too long delays
+                             
+    * Move the erase operation to a separate function
+                                                     
+    * Eliminate page_count in .write, use *ppos instead
+
+Changes in v2:
+
+    ...
+  \end{Verbatim}
+\end{frame}
+
+\begin{frame}{Patch Series}
+  \begin{itemize}
+  \item Split large changes into a series of smaller logical changes
+    \begin{itemize}
+    \item Easier for reviewers and maintainers
+    \item Separate patches for different subsystems
+    \end{itemize}
+  \item The series must be ``bisectable''; no single patch is allowed
+    to break the kernel build
+  \item Each patch in the series should be minimal
+    \begin{itemize}
+    \item No need to reflect you own development history in the series
+    \item Don't add something in one patch only to remove it in a
+      later one
+    \item With git, use interactive rebase (\texttt{git rebase -i}) to
+      edit earlier patches in a series
+    \end{itemize}
+  \item A series longer than 2 patches should include a cover letter
+  \item When emailing, the whole series should be in a single thread
+    \begin{itemize}
+    \item All emails (except the first) include the
+      \texttt{In-Reply-To} header pointing to the first, which is the
+      cover letter
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{How to Generate and Send a Patch Series Using git}
+  \begin{enumerate}
+  \item Put your \texttt{Signed-off-by} tag in each patch
+  \item Generate the patch series with \texttt{git format-patch}
+    \begin{exampleblock}{Example of patch series generation with git}
+      \scriptsize\texttt{\$ git format-patch -o
+        /tmp/myseries --cover-letter HEAD\textasciitilde5}
+    \end{exampleblock}
+  \item Edit the cover letter (the file with the \texttt{0000} prefix)
+    \begin{itemize}
+    \item Replace the \texttt{SUBJECT HERE} stub subject with something
+      sensible
+    \item Replace the \texttt{BLURB HERE} stub body text with an
+      overall description of your patch series
+    \item Add series change log when applicable
+    \end{itemize}
+  \item Send the patch series to relevant list and maintainers
+    \begin{exampleblock}{Example of patch series sending with git}
+      \scriptsize\texttt{\$ git send-email \textbackslash
+        \\ \hspace{5mm} --to 'Benjamin Herrenschmidt
+        <benh@kernel.crashing.org>' \textbackslash \\ \hspace{5mm}
+        --cc linuxppc-dev@lists.ozlabs.org \textbackslash
+        \\ \hspace{5mm} /tmp/myseries/*.patch}
+    \end{exampleblock}
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{Patch Series Cover Letter Example}
+  \begin{Verbatim}[fontsize=\tiny]
+From: Baruch Siach <baruch@tkos.co.il>
+To: Sascha Hauer <kernel@pengutronix.de>
+Subject: [PATCH 0/4] mx25: add support for FEC on i.MX25 PDK
+Cc: netdev@vger.kernel.org, Baruch Siach <baruch@tkos.co.il>,
+        linux-arm-kernel@lists.infradead.org
+
+This patch series adds support for the FEC peripheral of the i.MX25 on the 
+i.MX25 PDK board.
+
+The first two patches are fixes for compilation and run failures. The third 
+patch enables RMII if the FEC driver. Finally, the last patch adds the 
+necessary board support code (pads, clock, etc.)
+
+The FEC fix seems like an ugly hack to me. Suggestions for a better solution 
+are welcome.
+
+Baruch Siach (4):
+  mx25: s/NO_PAD_CTL/NO_PAD_CTRL/
+  mx25: don't force input on FEC pins
+  fec: add support for Freescale i.MX25 PDK (3DS)
+  mx25: add support for FEC on i.MX25 PDK
+
+ arch/arm/mach-mx25/clock.c                  |    2 +
+ arch/arm/mach-mx25/devices.c                |   19 ++++++++
+ arch/arm/mach-mx25/devices.h                |    1 +
+ arch/arm/mach-mx25/mx25pdk.c                |   40 ++++++++++++++++-
+ arch/arm/plat-mxc/include/mach/iomux-mx25.h |   64 +++++++++++++-------------
+ arch/arm/plat-mxc/include/mach/mx25.h       |    4 ++
+ drivers/net/fec.c                           |   22 +++++++++
+ drivers/net/fec.h                           |    2 +
+ 8 files changed, 121 insertions(+), 33 deletions(-)
+  \end{Verbatim}
+\end{frame}
+
+\begin{frame}{The Review Process}
+  \begin{itemize}
+  \item Good patches ease the work of reviewers
+  \item Pay attention to comments, and reply to the point
+  \item Sooner or later you are likely to see insulting language
+    flying at your direction; don't take it personally
+  \item Fix what you're asked to fix, or else explain why this is not
+    needed
+  \item Document changes to your patch in the subsequent submissions
+  \item Wait a few days before sending another round of patches
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{What to do When You get No Response}
+  \begin{itemize}
+  \item Wait
+  \item Update (rebase) and repost your patch as necessary
+  \item Send polite ping messages
+  \item Monitor the mailing list, participate in related discussions,
+    and mention your patch
+  \item Cc Andrew Morton if the maintainer is not responsive
+  \item Cc the linux-kernel mailing list
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{After Your Patch has been Merged}
+  There are several exposure levels of a merged patch in ascending
+  order:
+  \begin{itemize}
+  \item The subsystems maintainers' tree, and the \texttt{-next} tree
+  \item Linus' tree
+  \item A released kernel
+  \end{itemize}
+
+  At each level you should:
+  \begin{itemize}
+  \item Respond to reports of build failures and bugs
+  \item Send fixes to reported bugs promptly, especially regressions
+    \begin{itemize}
+    \item Don't forget to add ``\texttt{Cc:~stable@kernel.org}'' as
+      necessary
+    \end{itemize}
+  \item Respond to patches with bug fixes or improvement suggestions
+  \item Participate in the review of patches related to yours
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Further Info (1)}
+  In-kernel documentation:
+  \begin{itemize}
+  \item \texttt{Documentation/HOWTO}
+  \item ``A Guide to the Kernel Development Process'' at
+    \texttt{Documentation/development-process/*}
+  \item \texttt{Documentation/SubmittingPatches}
+  \item \texttt{Documentation/SubmitChecklist}
+  \item \texttt{Documentation/SubmittingDrivers}
+  \item \texttt{Documentation/CodingStyle}
+  \item \texttt{Documentation/stable\_api\_nonsense.txt}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Further Info (2)}
+
+  Recommended reading:
+  \begin{itemize}
+  \item Dan J. Williams, \emph{Avoiding the OS abstraction trap}
+    (\url{http://lwn.net/Articles/454716/})
+  \item Jonathan Corbet, \emph{On multi-platform drivers}
+    (\url{http://lwn.net/Articles/457674/})
+  \item Jonathan Corbet, \emph{The platform problem}
+    (\url{http://lwn.net/Articles/443531/})
+  \item Andi Kleen , \emph{On submitting kernel patches}
+    (\url {http://halobates.de/on-submitting-patches.pdf})
+  \end{itemize}
+
+  Guides:
+  \begin{itemize}
+  \item \url {http://kernelnewbies.org/UpstreamMerge}
+  \end{itemize}
+
+  Talks (video):
+  \begin{itemize}
+  \item Jonathan Corbet: How kernel development goes wrong and why you should
+        be a part of it anyway (FOSDEM 2011) \url
+        {http://www.youtube.com/watch?v=MzCIBZONf5M}
+  \end{itemize}
+
+\end{frame}
+\end{document}
