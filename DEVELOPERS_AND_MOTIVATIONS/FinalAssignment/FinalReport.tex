@@ -27,17 +27,265 @@ Linus Torvalds is, surely, the most influencing person on the Open Source World.
 Linus Torvalds is also creator and developer of the GIT source code control version system, the most used distributed version control system, with an increasing popularity above all on the Open Source projects enviroment. However, Torvalds turned over maintenance on 26 July 2005 to Junio Hamano, a major contributor to the project, so GIT is not a relevant aspect of the analysis of Linus Torvalds as Open Source Project Manager, compared to up to date leadership on the Linux Kernel Operating System project.
 
 \section{Biography}
+Linus Torvalds [1] was born on December 28, 1969 in Helsinki, Finland. His parents were communist campus radicals in the 1960s. Other children used to tease Linus about this aspect.  His family belongs to the Swedish-speaking minority (5.5\% of Finland's population).\\ 
+\\
+Linus expressed how intelligent he was as at a very early age. His grandfather bought a Commodore VIC 20 when he was twelve, one of the first personal computers, and Torvalds learned to write programs, computer games among others, for it. He became obsessed with computers and programming, buying many books on the subject. When his grandfather died, he was given the computer to work on at home.\\
+\\
+He was described as a perfectionist and sore loser. He was very focused on computers and ignored other activities such as sports to program in solitude. He later invested in a Sinclair QL computer, which was invented by a British man named Clive Sinclair. He modified this computer extensively, especially its operating system. He programmed, among others, an assembly language and a text editor, as well as a few games.\\
+\\
+From 1988 to 1996, Linus studied computer science at the University of Helsinki. His academic career suffered an interruption after his first year studying, as he joined the Army, selecting the 11-month officer training program to fulfill the mandatory military service of Finland.\\
+\\
+When Linus Torvalds come back to the university, he invested in a better computer with a 386 processor and began learning its assembly language. He coded a number of advanced software projects, including a floppy disk driver and a software assembler.\\
+\\
+In 1990, he began learning Unix when the university purchased a MicroVAX system. He decided to start writing his own Unix kernel for personal computers and spent half of a year in front of the PC coding. Once he started using the C programming language, his productivity increased greatly.\\
+\\
+The product of his hard work became known as Linux.
+Linux was released as an open source kernel, meaning that anyone could write operating systems around it without having to pay anything. It quickly became a symbol of the open source movement, with a tuxedo penguin as its mascot.\\
+\\
+As a result of his skills and accomplishments, Torvalds was appointed to the post of instructor at the University of Helsinki, a position which allowed him to simultaneously continue his development of Linux. One of the students, Tove Minni, a Finnish karate champion, complied by sending him an e-mail asking him out on a date. He accepted, and three years later the first of their three daughters was born.\\
+\\
+Over the next decade, it became more and more popular as some people, above all from computer engineering in the University, decided to abandon Microsoft Windows in favor of free operating systems that utilized the Linux kernel.\\
+\\
+Today, the Linux movement is still perceived as a threat to Microsoft, which currently has a tight grip on the world's personal computers. The many Linux-based operating systems include Red Hat, Knoppix, Debian, and Fedora.\\
+\\
+From 1997 to 2003, Linux worked for Transmeta Corporation. Later, he worked for Open Source Development Labs in Beaverton, Oregon.\\
+\\
+In 2004 he was named one of the world's most influential people by Time Magazine.\\
+\\
+He was honored with the 2012 Millennium Technology Prize, along with Shinya Yamanaka, by the Technology Academy Finland "in recognition of his creation of a new open source operating system for computers leading to the widely used Linux kernel" [3].\\
+\\
+He lives nowadays with his wife and three kids in Portland, and works for the Linux Foundation, the non-profit organization for promotion of the Linux Open Source Project.
 
 \section{The Linux Project}
-\subsection{Project success}
-\subsection{Project licensing}
+\subsection{Project Birth} 
+In early 1991, Linus Torvalds purchased an IBM-compatible personal computer with a \textbf{33MHz Intel 386 processor and a huge 4MB of memory}. Torvalds was intrigued with the hardware, as this processor greatly appealed to him because it represented a tremendous improvement over former Intel chips [3]. However, he was \textbf{disappointed with the MS-DOS operating system} that came with it. Microsoft's operating system had not advanced sufficiently to even begin to take advantage of the vastly improved capabilities of the 386 chip, and he thus strongly preferred the much more powerful and stable UNIX operating system that he had become accustomed to using on the university's computers.\\
+\\
+Consequently, Torvalds attempted to obtain a version of UNIX for his new computer. He could not find even a basic system for less than US\$5,000. \textbf{He also considered MINIX}, a small clone of UNIX that was created by operating systems expert Andrew Tanenbaum in the Netherlands to teach UNIX to university students. However, although much more powerful than MS-DOS and designed to run on Intel x86 processors, MINIX still had some serious disadvantages, as the facts that \textbf{not all of the source code was made public}, it lacked some of the features and performance of UNIX and there was a not-insignificant licensing fee.\\
+\\
+\textbf{Torvalds thus decided to create a new operating system from scratch}, based on both MINIX and UNIX. Obviously, he was not fully aware of the tremendous amount of work that would be necessary, and it is even far less likely that he could have envisioned the effects that his decision would have both on his life and on the rest of the computer science world. Because university education in Finland is free and there was little pressure to graduate within four years, Torvalds decided to take a break and devote his full attention to his project.\\
+\\
+On \textbf{August 25, 1991}, he announced his initial creation on the MINIX newsgroup comp.os.minix as follows:
+\begin{verbatim}
+Message-ID: 1991Aug25.205708.9541@klaava.helsinki.fi 
+From: torvalds@klaava.helsinki.fi (Linus Benedict Torvalds) 
+To: Newsgroups: comp.os.minix 
+Subject: What would you like to see most in minix? 
+Summary: small poll for my new operating system
 
-\section{Linux Project Management}
-\subsection{Project Architecture}
+Hello everybody out there using minix-
+
+I'm doing a (free) operating system (just a hobby, won't be big and
+professional like gnu) for 386 (486) AT clones. This has been brewing 
+since april, and is starting to get ready. I'd like any feedback on things 
+people like/dislike in minix, as my OS resembles it somewhat
+(same physical layout of the file-sytem due to practical reasons)
+among other things.
+
+I've currently ported bash (1.08) an gcc (1.40), and things seem to work. 
+This implies that i'll get something practical within a few months, and 
+I'd like to know what features most people want.
+
+Any suggestions are welcome, but I won't promise I'll implement them :-)
+
+Linus Torvalds torvalds@kruuna.helsinki.fi
+\end{verbatim}
+On September 17 of the same year, after a period of self-imposed isolation and intense concentration, he completed a crude version (0.01) of his new operating system. Shortly thereafter, on October 5, he announced version 0.02, the first official version.\\
+\\
+It featured the ability to run both \textbf{the bash shell} (a program that provides the traditional, text-only user interface for Unix-like operating systems) \textbf{and the GCC} (the GNU C Compiler), two key system utilities. This now famous announcement launched the biggest collaborative project the world has ever known. It began:
+\begin{verbatim}
+Do you pine for the nice days of minix-1.1, when men were men and wrote their
+own device drivers? 
+Are you without a nice project and just dying to cut your teeth on a OS you
+can try to modify for your needs? 
+Are you finding it frustrating when everything works on minix? 
+No more all-nighters to get a nifty program working? 
+Then this post might be just for you :-)
+
+As I mentioned a month(?) ago, I'm working on a free version of a 
+minix-lookalike for AT-386 computers. It has finally reached the stage where it's even usable (though may not be depending on what you want), and I am willing to put out the sources for wider distribution. It is just version 0.02 (+1 (very small) patch already), but I've successfully run bash/gcc/gnu-make/gnu-sed/compress etc under it.
+
+Sources for this pet project of mine can be found at nic.funet.fi 
+(128.214.6.100) in the directory /pub/OS/Linux. The directory also contains 
+some README-file and a couple of binaries to work under linux (bash, update 
+and gcc, what more can you ask for :-). 
+
+Full kernel source is provided, as no minix code has been used. Library 
+sources are only partially free, so that cannot be distributed currently. 
+The system is able to compile "as-is" and has been known to work. Heh. . . .
+\end{verbatim}
+Linus Torvalds had wanted to call his invention Freax("free", "freak", and "x", as an allusion to Unix). During the start of his work on the system, he stored the files under the name "Freax" for about half of a year. The files were uploaded to the FTP server (ftp.funet.fi).\\
+\\
+Ari Lemmke, who was one of the volunteer administrators for the FTP server at the time and  Torvald's coworker at the Helsinki University of Technology, encouraged him his source code to be uploaded to a network so it would be available for use, study, inspection and refinement by other programmers, a common practice then as it is now. Lemmke did not think that "Freax" was a name that fits. So, he re-named the project "Linux" on the server without consulting Torvalds. Torvalds consented to "Linux". He recognizes that he had already thought about that name, although he discarded the idea because thought it was too egoistical.\\
+\\
+In what Torvalds now admits was \textbf{one of his best decisions}, he decided to \textbf{release Linux under the GPL} (GNU General Public License) rather than under the more restrictive license that he had earlier planned. Developed by Richard Stallman, a notable programmer and a leading advocate of free software, GPL is one of the most popular of the free software licenses, above all among the ones known as "copyleft", and allows anyone to study, use, modify, extend and redistribute the software as long as they make the source code freely available for any modified versions that they create and then redistribute.\\
+\\
+In large part a consequence of this very liberal licensing, many programmers from around the world quickly became enthusiastic about helping Torvalds develop his still embryonic operating system. As a result, its performance began improving at a rapid rate.\\
+\\
+Torvalds' efforts focused on developing a kernel, which is only part of what is necessary to make a usable operating system. Fortunately, Stallman and his Free Software Foundation (FSF) had been developing a number of free programs for use in a free version of UNIX, and such programs (e.g., bash, GCC and GNU binutils) thus became major components of virtually all Linux distributions. A distribution is a complete operating system centered around a kernel and containing numerous utilities, device drivers and application programs.\\
+\\
+Other parts of Linux distributions came from the Berkeley UNIX Distribution (BSD), a version of UNIX that was developed at the University of California at Berkeley (UCB) and which later evolved into the highly regarded BSD operating systems. And the X Window System, which is the dominant system for managing GUIs (graphical user interfaces) on Linux and other Unix-like operating systems, came from the Massachusetts Institute of Technology (MIT).
+\subsection{Project success}
+Linux kernel project key for success was basically one: \textbf{Performance}. Linux kernel and Linux distributions appearing continued to improve as more and more developers, initially individual and later corporate as well, joined the project and contributed their enthusiasm, effort and programming skills. This was paralleled by a swift growth in the number of users.\\
+\\
+A very remarkable date for Linux Open Source project was 1994, because of different factors:
+\begin{itemize}\itemsep0pt
+\item{A usable ext2 filesystem, which featured a large increase in speed over its predecessor, the ext, was added to the kernel.}
+\item{Linux initially weak networking capability was improved substantially.}
+\item{This was also the year in which Torvalds began promoting the porting of Linux to additional processors.}
+\end{itemize}
+Regarding last item, Linus realized that one early complaint about Linux was that it could run only on computers with x86 (Intel-compatible) processors. Responding to this complain, Linux kernel started to be released for other processors as well. The first of the new processors was the Alpha, which was used in Digital Equipment Corporation's (DEC's) workstations. This was greatly facilitated by DEC's investment of both money and engineering talent, and it was soon followed by porting to the SPARC and MIPS processors.\\
+\\
+Although the arrival of his first daughter coincided with minor disruptions in the development of the Linux kernel, he was able to release version 2.0 by December 1996. This milestone version represented a major improvement in performance through its addition of support for additional processors and for symmetric multiprocessing (SMP), which lets multiple processors access and be equally close to all RAM locations.\\
+\\
+The use of Linux continued to grow rapidly as a result of these and numerous other advances as well as due to its spreading fame. By 1997, conservative estimates were placing worldwide Linux installations at more than three million computers. Two years later this had soared to in excess of seven million.\\
+\\
+PENDING: Introduce some market share around Linux Project.
+PENDING: Introduce success of Linux in year 2012 (HP, Android, Steam, ...).
+Despite the relentless successes of Linux and the great popularity of Torvalds, his activities were not entirely without controversy, even within the free software community. For example, Professor Tanenbaum, the developer of MINIX on which Linux was originally partially based, was convinced that microkernels (a minimalist type of kernel) were the wave of the future, and he expressed strong opposition to the monolithic approach of the Linux kernel in his now famous 1992 Usenet posting titled LINUX is obsolete [4].\\
+\\
+Also, Richard Stallman has continued to insist that Linux's name is inappropriate and that the operating system should instead be renamed GNU/Linux because Stallman's numerous GNU utilities are used together with the Linux kernel, as stated on the Film "Revolution OS" [5].
+\section{Linus Project Management}
+\subsection{Project Governance}
+The Linux Kernel project is a typical case of what is considered to be a project under a Benevolent Dictator For Live (BFDL) [6], who applies to the project a strong, centralized leadership. Linus Torvalds as the founder and BDFL sets the agenda and also appoints strong lieutenants, so most issues do not require his attention until they're ready for commit. Anybody can submit a patch to the mailing list, but getting it accepted is very much a matter of working with the chain of command.\\
+\\
+In an interview [8], Torvalds recognizes no hierarchy exist on the project. The kernel is more based on a trusted relationship network. He recognizes having around 50 trusted people, and suggest that people also have trusted people as well for their particular stuff. 
+\subsection{People around Linus}
+Linux kernel is a project with more than 17 million source code lines [7]. Taking into account this number, it is an obvious thing that the project is not managed completely by Linus Torvalds. Difficult to find a hierarchy graph about the project governance, there is somehow a kind of delegation in two manners:
+\begin{enumerate}
+\item{\textbf{The maintainer list}}. Linux kernel project contains a list of maintainers for patches to be sent. By November 2013, there is a list of 900 maintainers, handling the different drivers, CPU architectures, virtualization stuff, network layers, etc.
+\item{\textbf{Top Reviewers}}. As showed in the Linux Foundation Report: "Who writes Linux 2013", Senior Kernel Developers are more dedicated to review code from contributors. On this report, the list of "10 Top Reviewers" is as follows:\\
+\\
+Name Signoffs Percent
+Greg Kroah-Hartman 9,965 12.5\%
+David S. Miller 6,133 7.7\% 
+Mauro Carvalho Chehab 3,847 4.8\%
+John W. Linville 3,541 4.4\%
+Andrew Morton 3,403 4.3\%
+Mark Brown 2,479 3.1\%
+James Bottomley 1,246 1.6\%
+Daniel Vetter 1,192 1.5\%
+Ingo Molnar 1.012 1.3\%
+Samuel Ortiz 984 1.2\%
+\item{\textbf{Top Commiters List}}. Previous described report also shows the most important contributors to the Linux Kernel Project. The list is as follows:
+Name Changes Percentage
+Al Viro 4,124 1.2\% 
+David S. Miller 3,690 1.0\% 
+Takashi Iwai 3,387 1.0\%                
+Mark Brown 3,199 0.9\%                
+Tejun Heo 2,888 0.8\%                 
+Johannes Berg 2,841 0.8\%             
+Mauro Carvalho Chehab 2,718 0.8\%     
+Russell King 2,526 0.7\%              
+Greg Kroah-Hartman 2,502 0.7\%        
+Thomas Gleixner 2,423 0.7\%           
+H Hartley Sweeten 2,415 0.7\%         
+Ingo Molnar 2,376 0.7\%               
+Paul Mundt  2,268 0.6\%               
+Bartlomiej Zolnierkiewicz 2,076 0.6\% 
+Hans Verkuil 2,074 0.6\% 
+Alan Cox 1,962 0.6\%
+Adrian Bunk 1,919 0.5\%
+Christoph Hellwig 1,877 0.5\%       
+Ralf Baechle 1,840 0.5\%            
+Joe Perches 1,839 0.5\%             
+Eric Dumazet 1,771 0.5\%            
+Axel Lin 1,731 0.5\%                
+Andrew Morton 1,669 0.5\%           
+Trond Myklebust 1,665 0.5\%         
+Randy Dunlap 1,645 0.5\%            
+Jean Delvare 1,539 0.4\%            
+Arnaldo Carvalho de Melo 1,409 0.4\%
+Dan Carpenter 1,393 0.4\%           
+Peter Zijlstra 1,359 0.4\%          
+
+\item{\textbf{Releases Maintenance}}
+From Long-term based releases, we find next responsibles:\\
+Release  Maintainer Release Description\\
+2.6.32 Willy Tarreau (former maintainer Greg Kroah-Hartman) 3rd long-term stable release from December 2009 to mid 2014 used in Debian 6 Squeeze\\
+2.6.34	Paul Gortmaker 5th long-term stable release from January 2011 to mid 2013\\
+3.2	5 Ben Hutchings	8th long-term stable release from March 2012 to 2016, used in Ubuntu 12.04 LTS, Debian 7 Wheezy and Slackware 14.0.\\
+3.4	Greg Kroah-Hartman 9th long-term stable release from May 2012 to October 2014\\
+3.10 Greg Kroah-Hartman 10th long-term stable release from August 2013 to September 2015\\
+3.11 Greg Kroah-Hartman	Stable version.\\
+3.12 Linus Torvalds	Latest stable version.\\
+3.13 Linus Torvalds	Latest preview version.\\
+Previous lists show important people who are really very important roles for the Linux Kernel project:\\
+- Greg Kroah-Hartman\\
+- David S. Miller\\
+- Andew Morton\\
+- Adrian Bunk\\
+There have been also important contributors to the Linux Kernel who have quit from the project.\\
+- Alan Cox
+\end{enumerate}
 \subsection{Project Release System}
-\subsection{Project Roles}
+On version 1 of the kernel, releases happened frequently. Later, for version 2 of the kernel, release dates started growing. 2.2 Kernel release version happened in January 1999, after two years and a half from kernel 2.0. Kernel 2.4 release happened in January 2001, after two years of 2.2 release. Kernel 2.6 release happened on December 2003, after almost three years of 2.4 release.\\
+\\
+Starting in 2004, the release process changed, and new kernels started coming out on a regular schedule every 2–3 months, numbered 2.6.0, 2.6.1, up through 2.6.39. On 21 July 2011 Linus Torvalds announced the release of Linux 3.0: "Gone are the 2.6.<bignum> days".[19] The version bump is not about major technological changes when compared to Linux 2.6.39;[20] it marks the kernel's 20th anniversary.[21] The time-based release process remained the same.\\
+\\
+So, from that date, the project release dates follow a "Release Often, Release Early" basis.\\
+Next table show kernel 3.0 branch release dates and days of development:\\
+\\
+Kernel Version - Release Date - Days of Development\\
+3.0 2011-07-21 64\\
+3.1 2011-10-24 95\\
+3.2 2011-12-31 68\\
+3.3 2012-03-18 74\\
+3.4 2012-05-20 63\\
+3.5 2012-07-21 62\\
+3.6 2012-09-30 71\\
+3.7 2012-12-10 71\\
+3.8 2013-02-18 70\\
+3.9 2013-04-28 69\\
+3.10 2013-06-30 63
+
+\subsection{Linus Torvalds: The pragmatic view}
 \subsection{Linus Torvalds: The (not so?) benevolent dictator}
+HERE: Critically reflect skills, background, personality trays, characteristics, etc. that made Linus to be a leader.
+
+\subsubsection{Characteristics}
+∗ Founder? Arrived lately?
+∗ If possible, try to quantify their contributions (number of commits, bug fixes or other relevant activities to boost the project).
+∗ Is this person still leading the project? If that is not the case, why did he/she left?
+∗ Was he/she essential for the success of the project or the surrounding community?
+Why?
+– It is possible that they have lead more than one project. Then, students can either
+focus on just one of these projects or enlighten the transitions between projects and
+their reasons.
+– A thorough description of the main leadership traits exhibited by the analyzed figure
+is essential.
+
+\subsubsection{Skills}
+- Technical excellence.\\
+Kernel, GIT.
+- Self-confident (sometimes to rudeness).\\
+"Sometimes being polite drives to misunderstanding on the Internet".
+- Analytic.\\
+- Practical and Pragmatic.\\
+One of his favourite sentences: "Show me the code". He has also asserted:\\
+\\
+It was Edison who said ‘1\% inspiration, 99\% perspiration’. That may have been true a hundred years ago. These days it's ‘0.01\% inspiration, 99.99\% perspiration’, and the inspiration is the easy part. As a project manager, I have never had trouble finding people with crazy ideas. I have trouble finding people who can execute.  IOW, ‘innovation" is way oversold [8].
+- Charismatic.\\
+
+\subsubsection{Background}
 
 \section{Conclussion}
 
+\section{References}
+(1) \url{http://www.freeinfosociety.com/article.php?id=99}
+\\
+(2) \url{http://www.technologyacademy.fi/blog/2012/04/19/laureates/}
+\\
+(3) \url{http://www.linfo.org/linus.html}
+\\
+(4) \url{http://www.linfo.org/linuxobsolete.html}
+\\
+(5) \url{http://www.revolution-os.com/}
+\\
+(6) \url{http://randyfay.com/content/how-do-open-source-communities-govern-themselves}
+\\
+(7) \url{http://go.linuxfoundation.org/l/6342/-pub-who-writes-linux-2013-pdf/t5dzm}
+\\
+(8) \url{https://www.simple-talk.com/opinion/geek-of-the-week/linus-torvalds,-geek-of-the-week/}
+\\
+(9) \url{http://www.youtube.com/watch?v=fa01V0u_ybg}
 \end{document}
