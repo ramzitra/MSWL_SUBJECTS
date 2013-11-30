@@ -7,9 +7,13 @@ Linus Torvalds}}
 \date{\today}
 
 \usepackage{hyperref}
-\usepackage[bottom=14em]{geometry}
 \usepackage{amsmath}
 \usepackage{mathtools}
+\usepackage{varioref}
+\usepackage{placeins}
+\usepackage[bottom=14em]{geometry}
+\usepackage{float}
+\restylefloat{table}
 
 \begin{document}
 
@@ -23,6 +27,8 @@ pdfborder={0 0 0}
 \pagebreak
 
 \tableofcontents
+\listoffigures
+\listoftables
 
 \pagebreak
 
@@ -149,8 +155,14 @@ Although the arrival of his first daughter coincided with minor disruptions in t
 \\
 The use of Linux continued to grow rapidly as a result of these and numerous other advances as well as due to its spreading fame. By 1997, conservative estimates were placing worldwide Linux installations at more than three million computers. Two years later this had soared to in excess of seven million.\\
 \\
-PENDING: Introduce some market share around Linux Project.
-PENDING: Introduce success of Linux in year 2012 (HP, Android, Steam, ...).
+Lately, and, in particular, in year 2012, Linux has considered to be of great successful due to different factors:\\
+\begin{itemize}\itemsep0pt
+\item{Red Hat achieving \$1billion revenue}
+\item{Android increasing its position to 50 percent of American mobile market}
+\item{Steam distribution platform for Linux}
+\item{Adoption of Linux-based solutions from automotive industry}
+\item{HP becoming a platinum Linux foundation member}
+\end{itemize}
 Despite the relentless successes of Linux and the great popularity of Torvalds, his activities were not entirely without controversy, even within the free software community. For example, Professor Tanenbaum, the developer of MINIX on which Linux was originally partially based, was convinced that microkernels (a minimalist type of kernel) were the wave of the future, and he expressed strong opposition to the monolithic approach of the Linux kernel in his now famous 1992 Usenet posting titled LINUX is obsolete [4].\\
 \\
 Also, Richard Stallman has continued to insist that Linux's name is inappropriate and that the operating system should instead be renamed GNU/Linux because Stallman's numerous GNU utilities are used together with the Linux kernel, as stated on the Film "Revolution OS" [5].
@@ -163,8 +175,9 @@ In an interview [8], Torvalds recognizes no hierarchy exist on the project. The 
 Linux kernel is a project with more than 17 million source code lines [7]. Taking into account this number, it is an obvious thing that the project is not managed completely by Linus Torvalds. Difficult to find a hierarchy graph about the project governance, there is somehow a kind of delegation in two manners:
 \begin{enumerate}
 \item{\textbf{The maintainer list}}. Linux kernel project contains a list of maintainers for patches to be sent. By November 2013, there is a list of 900 maintainers, handling the different drivers, CPU architectures, virtualization stuff, network layers, etc.
-\item{\textbf{Top Reviewers}}. As showed in the Linux Foundation Report: "Who writes Linux 2013", Senior Kernel Developers are more dedicated to review code from contributors. On this report, the list of "10 Top Reviewers" is as follows:
-\begin{center}
+\item{\textbf{Top Reviewers}}. As showed in the Linux Foundation Report: "Who writes Linux 2013", Senior Kernel Developers are more dedicated to review code from contributors. On this report, the list of "10 Top Reviewers", as described in Table~\ref{tab:topreviewers}.
+\begin{table}[H]
+  \begin{center}
     \begin{tabular}{ | l | l | l | }
     \hline
     Name & Signoffs & Percent \\
@@ -181,10 +194,14 @@ Linux kernel is a project with more than 17 million source code lines [7]. Takin
     Samuel Ortiz          &   984 &  1.2\%\\
     \hline
     \end{tabular}
-\end{center}
+    \caption{Top Reviewers}
+    \label{tab:topreviewers}
+  \end{center}
+\end{table}
 
-\item{\textbf{Top Commiters List}}. Previous described report also shows the most important contributors to the Linux Kernel Project. The list is as follows:
-\begin{center}
+\item{\textbf{Top Commiters List}}. Previous described report also shows the most important contributors to the Linux Kernel Project. The list is described in Table~\ref{tab:topcommitters}.
+\begin{table}[H]
+  \begin{center}
     \begin{tabular}{ | l | l | l | }
     \hline
     Name & Changes & Percentage\\
@@ -211,11 +228,15 @@ Linux kernel is a project with more than 17 million source code lines [7]. Takin
     Joe Perches                & 1,839 & 0.5\%\\
     \hline
     \end{tabular}
-\end{center}
+    \caption{Top Committers}
+    \label{tab:topcommitters}
+  \end{center}
+\end{table}
 
 \item{\textbf{Releases Maintenance}}
-From Long-term based releases, we find next responsibles:\\
-\begin{center}
+From Long-term based releases, most important responsibles are defined in Table~\ref{tab:releasemaintainers}:
+\begin{table}[H]
+  \begin{center}
     \hspace*{-2cm}\begin{tabular}{ | l | l | l | }
     \hline
     Release & Maintainer & Release Description\\
@@ -240,7 +261,10 @@ From Long-term based releases, we find next responsibles:\\
     3.13   & Linus Torvalds	& Latest preview version.\\
     \hline
     \end{tabular}
-\end{center}
+    \caption{3.0 Kernel Release Maintainers}
+    \label{tab:releasemaintainers}
+  \end{center}
+\end{table}
 \end{enumerate}
 
 Previous lists show important people who are really very important roles for the Linux Kernel project:
@@ -263,15 +287,13 @@ Far from it I've had great fun working there."
 \end{itemize}
 
 \subsection{Project Release System}
-On version 1 of the kernel, releases happened frequently. Later, for version 2 of the kernel, release dates started growing. 2.2 Kernel release version happened in January 1999, after two years and a half from kernel 2.0. Kernel 2.4 release happened in January 2001, after two years of 2.2 release. Kernel 2.6 release happened on December 2003, after almost three years of 2.4 release.\\
-\\
-Starting in 2004, the release process changed, and new kernels started coming out on a regular schedule every 2–3 months, numbered 2.6.0, 2.6.1, up through 2.6.39. On 21 July 2011 Linus Torvalds announced the release of Linux 3.0. When releasing this kernel version, he asserted:
+On version 1 of the kernel, releases happened frequently. Later, for version 2 of the kernel, release dates started growing. 2.2 Kernel release version happened in January 1999, after two years and a half from kernel 2.0. Kernel 2.4 release happened in January 2001, after two years of 2.2 release. Kernel 2.6 release happened on December 2003, after almost three years of 2.4 release. Starting in 2004, the release process changed, and new kernels started coming out on a regular schedule every 2–3 months, numbered 2.6.0, 2.6.1, up through 2.6.39. On 21 July 2011 Linus Torvalds announced the release of Linux 3.0. When releasing this kernel version, he asserted:
 \begin{verbatim}
 "Gone are the 2.6.<bignum> days".
 \end{verbatim}
-The big number version change  is not about major technological changes, but rather marks the kernel's 20th anniversary. So, from that date, the project release dates follow a "Release Often, Release Early" basis associated to the second number (rather than third) of the second release version.\\
-Next table show kernel 3.0 branch release dates and days of development:
-\begin{center}
+The big number version change  is not about major technological changes, but rather marks the kernel's 20th anniversary. So, from that date, the project release dates follow a "Release Often, Release Early" basis associated to the second number (rather than third) of the second release version. Table ~\ref{tab:releasedates} shows kernel 3.0 branch release dates and days of development
+\begin{table}[H]
+  \begin{center}
     \begin{tabular}{ | l | l | l | }
     \hline
     Kernel Version & Release Date & Days of Development\\
@@ -289,7 +311,10 @@ Next table show kernel 3.0 branch release dates and days of development:
     3.10 & 2013-06-30 & 63\\
     \hline
     \end{tabular}
-\end{center}
+    \caption{3.0 Kernel Release Dates}
+    \label{tab:releasedates}
+  \end{center}
+\end{table}
 
 \pagebreak
 
