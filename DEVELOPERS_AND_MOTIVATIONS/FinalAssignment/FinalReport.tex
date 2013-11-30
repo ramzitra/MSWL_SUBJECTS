@@ -153,8 +153,7 @@ In an interview [8], Torvalds recognizes no hierarchy exist on the project. The 
 Linux kernel is a project with more than 17 million source code lines [7]. Taking into account this number, it is an obvious thing that the project is not managed completely by Linus Torvalds. Difficult to find a hierarchy graph about the project governance, there is somehow a kind of delegation in two manners:
 \begin{enumerate}
 \item{\textbf{The maintainer list}}. Linux kernel project contains a list of maintainers for patches to be sent. By November 2013, there is a list of 900 maintainers, handling the different drivers, CPU architectures, virtualization stuff, network layers, etc.
-\item{\textbf{Top Reviewers}}. As showed in the Linux Foundation Report: "Who writes Linux 2013", Senior Kernel Developers are more dedicated to review code from contributors. On this report, the list of "10 Top Reviewers" is as follows:\\
-\\
+\item{\textbf{Top Reviewers}}. As showed in the Linux Foundation Report: "Who writes Linux 2013", Senior Kernel Developers are more dedicated to review code from contributors. On this report, the list of "10 Top Reviewers" is as follows:
 \begin{center}
     \begin{tabular}{ | l | l | l | }
     \hline
@@ -200,15 +199,6 @@ Linux kernel is a project with more than 17 million source code lines [7]. Takin
     Christoph Hellwig          & 1,877 & 0.5\%\\
     Ralf Baechle               & 1,840 & 0.5\%\\
     Joe Perches                & 1,839 & 0.5\%\\
-    Eric Dumazet               & 1,771 & 0.5\%\\
-    Axel Lin                   & 1,731 & 0.5\%\\
-    Andrew Morton              & 1,669 & 0.5\%\\
-    Trond Myklebust            & 1,665 & 0.5\%\\
-    Randy Dunlap               & 1,645 & 0.5\%\\
-    Jean Delvare               & 1,539 & 0.4\%\\
-    Arnaldo Carvalho de Melo   & 1,409 & 0.4\%\\
-    Dan Carpenter              & 1,393 & 0.4\%\\
-    Peter Zijlstra             & 1,359 & 0.4\%\\            
     \hline
     \end{tabular}
 \end{center}
@@ -242,20 +232,22 @@ From Long-term based releases, we find next responsibles:\\
     \end{tabular}
 \end{center}
     
-Previous lists show important people who are really very important roles for the Linux Kernel project:\\
-- Greg Kroah-Hartman\\
-- David S. Miller\\
-- Andew Morton\\
-- Adrian Bunk\\
+Previous lists show important people who are really very important roles for the Linux Kernel project:
+\begin{itemize}\itemsep0pt
+\item{\textbf{Greg Kroah-Hartman}}: Definitely, the second most important person for the kernel projects according to the statistics above. Top reviewer, several branch maintainer and in the "Top 10" commiter group.
+\item{\textbf{David S. Miller}}: Being second top commiter and the second top reviewer as well, David S. Miller is definitely one of the nowadays top important people in the project.
+\end{itemize}
 There have been also important contributors to the Linux Kernel who have quit from the project.\\
 - Alan Cox
 \end{enumerate}
 \subsection{Project Release System}
 On version 1 of the kernel, releases happened frequently. Later, for version 2 of the kernel, release dates started growing. 2.2 Kernel release version happened in January 1999, after two years and a half from kernel 2.0. Kernel 2.4 release happened in January 2001, after two years of 2.2 release. Kernel 2.6 release happened on December 2003, after almost three years of 2.4 release.\\
 \\
-Starting in 2004, the release process changed, and new kernels started coming out on a regular schedule every 2–3 months, numbered 2.6.0, 2.6.1, up through 2.6.39. On 21 July 2011 Linus Torvalds announced the release of Linux 3.0: "Gone are the 2.6.<bignum> days".[19] The version bump is not about major technological changes when compared to Linux 2.6.39;[20] it marks the kernel's 20th anniversary.[21] The time-based release process remained the same.\\
-\\
-So, from that date, the project release dates follow a "Release Often, Release Early" basis.\\
+Starting in 2004, the release process changed, and new kernels started coming out on a regular schedule every 2–3 months, numbered 2.6.0, 2.6.1, up through 2.6.39. On 21 July 2011 Linus Torvalds announced the release of Linux 3.0. When releasing this kernel version, he asserted:
+\begin{verbatim}
+"Gone are the 2.6.<bignum> days".
+\end{verbatim}
+The big number version change  is not about major technological changes, but rather marks the kernel's 20th anniversary. So, from that date, the project release dates follow a "Release Often, Release Early" basis associated to the second number (rather than third) of the second release version.\\
 Next table show kernel 3.0 branch release dates and days of development:
 \begin{center}
     \begin{tabular}{ | l | l | l | }
