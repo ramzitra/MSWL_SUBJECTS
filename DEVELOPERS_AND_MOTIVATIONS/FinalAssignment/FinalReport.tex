@@ -155,60 +155,93 @@ Linux kernel is a project with more than 17 million source code lines [7]. Takin
 \item{\textbf{The maintainer list}}. Linux kernel project contains a list of maintainers for patches to be sent. By November 2013, there is a list of 900 maintainers, handling the different drivers, CPU architectures, virtualization stuff, network layers, etc.
 \item{\textbf{Top Reviewers}}. As showed in the Linux Foundation Report: "Who writes Linux 2013", Senior Kernel Developers are more dedicated to review code from contributors. On this report, the list of "10 Top Reviewers" is as follows:\\
 \\
-Name Signoffs Percent
-Greg Kroah-Hartman 9,965 12.5\%
-David S. Miller 6,133 7.7\% 
-Mauro Carvalho Chehab 3,847 4.8\%
-John W. Linville 3,541 4.4\%
-Andrew Morton 3,403 4.3\%
-Mark Brown 2,479 3.1\%
-James Bottomley 1,246 1.6\%
-Daniel Vetter 1,192 1.5\%
-Ingo Molnar 1.012 1.3\%
-Samuel Ortiz 984 1.2\%
+\begin{center}
+    \begin{tabular}{ | l | l | l | }
+    \hline
+    Name & Signoffs & Percent \\
+    \hline
+    Greg Kroah-Hartman    & 9,965 & 12.5\%\\
+    David S. Miller       & 6,133 &  7.7\%\\ 
+    Mauro Carvalho Chehab & 3,847 &  4.8\%\\
+    John W. Linville      & 3,541 &  4.4\%\\
+    Andrew Morton         & 3,403 &  4.3\%\\
+    Mark Brown            & 2,479 &  3.1\%\\
+    James Bottomley       & 1,246 &  1.6\%\\
+    Daniel Vetter         & 1,192 &  1.5\%\\
+    Ingo Molnar           & 1.012 &  1.3\%\\
+    Samuel Ortiz          &   984 &  1.2\%\\
+    \hline
+    \end{tabular}
+\end{center}
+
 \item{\textbf{Top Commiters List}}. Previous described report also shows the most important contributors to the Linux Kernel Project. The list is as follows:
-Name Changes Percentage
-Al Viro 4,124 1.2\% 
-David S. Miller 3,690 1.0\% 
-Takashi Iwai 3,387 1.0\%                
-Mark Brown 3,199 0.9\%                
-Tejun Heo 2,888 0.8\%                 
-Johannes Berg 2,841 0.8\%             
-Mauro Carvalho Chehab 2,718 0.8\%     
-Russell King 2,526 0.7\%              
-Greg Kroah-Hartman 2,502 0.7\%        
-Thomas Gleixner 2,423 0.7\%           
-H Hartley Sweeten 2,415 0.7\%         
-Ingo Molnar 2,376 0.7\%               
-Paul Mundt  2,268 0.6\%               
-Bartlomiej Zolnierkiewicz 2,076 0.6\% 
-Hans Verkuil 2,074 0.6\% 
-Alan Cox 1,962 0.6\%
-Adrian Bunk 1,919 0.5\%
-Christoph Hellwig 1,877 0.5\%       
-Ralf Baechle 1,840 0.5\%            
-Joe Perches 1,839 0.5\%             
-Eric Dumazet 1,771 0.5\%            
-Axel Lin 1,731 0.5\%                
-Andrew Morton 1,669 0.5\%           
-Trond Myklebust 1,665 0.5\%         
-Randy Dunlap 1,645 0.5\%            
-Jean Delvare 1,539 0.4\%            
-Arnaldo Carvalho de Melo 1,409 0.4\%
-Dan Carpenter 1,393 0.4\%           
-Peter Zijlstra 1,359 0.4\%          
+\begin{center}
+    \begin{tabular}{ | l | l | l | }
+    \hline
+    Name & Changes & Percentage\\
+    \hline
+    Al Viro                    & 4,124 & 1.2\%\\
+    David S. Miller            & 3,690 & 1.0\%\\
+    Takashi Iwai               & 3,387 & 1.0\%\\
+    Mark Brown                 & 3,199 & 0.9\%\\
+    Tejun Heo                  & 2,888 & 0.8\%\\
+    Johannes Berg              & 2,841 & 0.8\%\\
+    Mauro Carvalho Chehab      & 2,718 & 0.8\%\\
+    Russell King               & 2,526 & 0.7\%\\
+    Greg Kroah-Hartman         & 2,502 & 0.7\%\\
+    Thomas Gleixner            & 2,423 & 0.7\%\\
+    H Hartley Sweeten          & 2,415 & 0.7\%\\
+    Ingo Molnar                & 2,376 & 0.7\%\\
+    Paul Mundt                 & 2,268 & 0.6\%\\
+    Bartlomiej Zolnierkiewicz  & 2,076 & 0.6\%\\
+    Hans Verkuil               & 2,074 & 0.6\%\\
+    Alan Cox                   & 1,962 & 0.6\%\\
+    Adrian Bunk                & 1,919 & 0.5\%\\
+    Christoph Hellwig          & 1,877 & 0.5\%\\
+    Ralf Baechle               & 1,840 & 0.5\%\\
+    Joe Perches                & 1,839 & 0.5\%\\
+    Eric Dumazet               & 1,771 & 0.5\%\\
+    Axel Lin                   & 1,731 & 0.5\%\\
+    Andrew Morton              & 1,669 & 0.5\%\\
+    Trond Myklebust            & 1,665 & 0.5\%\\
+    Randy Dunlap               & 1,645 & 0.5\%\\
+    Jean Delvare               & 1,539 & 0.4\%\\
+    Arnaldo Carvalho de Melo   & 1,409 & 0.4\%\\
+    Dan Carpenter              & 1,393 & 0.4\%\\
+    Peter Zijlstra             & 1,359 & 0.4\%\\            
+    \hline
+    \end{tabular}
+\end{center}
 
 \item{\textbf{Releases Maintenance}}
 From Long-term based releases, we find next responsibles:\\
-Release  Maintainer Release Description\\
-2.6.32 Willy Tarreau (former maintainer Greg Kroah-Hartman) 3rd long-term stable release from December 2009 to mid 2014 used in Debian 6 Squeeze\\
-2.6.34	Paul Gortmaker 5th long-term stable release from January 2011 to mid 2013\\
-3.2	5 Ben Hutchings	8th long-term stable release from March 2012 to 2016, used in Ubuntu 12.04 LTS, Debian 7 Wheezy and Slackware 14.0.\\
-3.4	Greg Kroah-Hartman 9th long-term stable release from May 2012 to October 2014\\
-3.10 Greg Kroah-Hartman 10th long-term stable release from August 2013 to September 2015\\
-3.11 Greg Kroah-Hartman	Stable version.\\
-3.12 Linus Torvalds	Latest stable version.\\
-3.13 Linus Torvalds	Latest preview version.\\
+\begin{center}
+    \hspace*{-2cm}\begin{tabular}{ | l | l | l | }
+    \hline
+    Release & Maintainer & Release Description\\
+    \hline
+    \hline
+    2.6.32 & Willy Tarreau & 3rd long-term stable release from December 2009 to mid 2014\\
+    & & Used in Debian 6 Squeeze\\
+    \hline
+    2.6.34	& Paul Gortmaker & 5th long-term stable release from January 2011 to mid 2013\\
+    \hline
+    3.2	5  & Ben Hutchings	& 8th long-term stable release from March 2012 to 2016\\
+    & & Used in Ubuntu 12.04 LTS, Debian 7 Wheezy and Slackware 14.0\\
+    \hline
+    3.4	   & Greg Kroah-Hartman & 9th long-term stable release from May 2012 to October 2014\\
+    \hline
+    3.10   & Greg Kroah-Hartman & 10th long-term stable release from August 2013 to September 2015\\
+    \hline
+    3.11   & Greg Kroah-Hartman	& Stable version.\\
+    \hline
+    3.12   & Linus Torvalds	& Latest stable version.\\
+    \hline
+    3.13   & Linus Torvalds	& Latest preview version.\\
+    \hline
+    \end{tabular}
+\end{center}
+    
 Previous lists show important people who are really very important roles for the Linux Kernel project:\\
 - Greg Kroah-Hartman\\
 - David S. Miller\\
@@ -223,20 +256,26 @@ On version 1 of the kernel, releases happened frequently. Later, for version 2 o
 Starting in 2004, the release process changed, and new kernels started coming out on a regular schedule every 2–3 months, numbered 2.6.0, 2.6.1, up through 2.6.39. On 21 July 2011 Linus Torvalds announced the release of Linux 3.0: "Gone are the 2.6.<bignum> days".[19] The version bump is not about major technological changes when compared to Linux 2.6.39;[20] it marks the kernel's 20th anniversary.[21] The time-based release process remained the same.\\
 \\
 So, from that date, the project release dates follow a "Release Often, Release Early" basis.\\
-Next table show kernel 3.0 branch release dates and days of development:\\
-\\
-Kernel Version - Release Date - Days of Development\\
-3.0 2011-07-21 64\\
-3.1 2011-10-24 95\\
-3.2 2011-12-31 68\\
-3.3 2012-03-18 74\\
-3.4 2012-05-20 63\\
-3.5 2012-07-21 62\\
-3.6 2012-09-30 71\\
-3.7 2012-12-10 71\\
-3.8 2013-02-18 70\\
-3.9 2013-04-28 69\\
-3.10 2013-06-30 63
+Next table show kernel 3.0 branch release dates and days of development:
+\begin{center}
+    \begin{tabular}{ | l | l | l | }
+    \hline
+    Kernel Version & Release Date & Days of Development\\
+    \hline
+    3.0  & 2011-07-21 & 64\\
+    3.1  & 2011-10-24 & 95\\
+    3.2  & 2011-12-31 & 68\\
+    3.3  & 2012-03-18 & 74\\
+    3.4  & 2012-05-20 & 63\\
+    3.5  & 2012-07-21 & 62\\
+    3.6  & 2012-09-30 & 71\\
+    3.7  & 2012-12-10 & 71\\
+    3.8  & 2013-02-18 & 70\\
+    3.9  & 2013-04-28 & 69\\
+    3.10 & 2013-06-30 & 63\\
+    \hline
+    \end{tabular}
+\end{center}
 
 \subsection{Linus Torvalds: The pragmatic view}
 \subsection{Linus Torvalds: The (not so?) benevolent dictator}
