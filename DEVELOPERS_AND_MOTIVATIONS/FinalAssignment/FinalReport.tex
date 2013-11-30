@@ -144,7 +144,7 @@ PENDING: Introduce success of Linux in year 2012 (HP, Android, Steam, ...).
 Despite the relentless successes of Linux and the great popularity of Torvalds, his activities were not entirely without controversy, even within the free software community. For example, Professor Tanenbaum, the developer of MINIX on which Linux was originally partially based, was convinced that microkernels (a minimalist type of kernel) were the wave of the future, and he expressed strong opposition to the monolithic approach of the Linux kernel in his now famous 1992 Usenet posting titled LINUX is obsolete [4].\\
 \\
 Also, Richard Stallman has continued to insist that Linux's name is inappropriate and that the operating system should instead be renamed GNU/Linux because Stallman's numerous GNU utilities are used together with the Linux kernel, as stated on the Film "Revolution OS" [5].
-\section{Linus Project Management}
+
 \subsection{Project Governance}
 The Linux Kernel project is a typical case of what is considered to be a project under a Benevolent Dictator For Live (BFDL) [6], who applies to the project a strong, centralized leadership. Linus Torvalds as the founder and BDFL sets the agenda and also appoints strong lieutenants, so most issues do not require his attention until they're ready for commit. Anybody can submit a patch to the mailing list, but getting it accepted is very much a matter of working with the chain of command.\\
 \\
@@ -231,15 +231,27 @@ From Long-term based releases, we find next responsibles:\\
     \hline
     \end{tabular}
 \end{center}
-    
+\end{enumerate}
+
 Previous lists show important people who are really very important roles for the Linux Kernel project:
 \begin{itemize}\itemsep0pt
 \item{\textbf{Greg Kroah-Hartman}}: Definitely, the second most important person for the kernel projects according to the statistics above. Top reviewer, several branch maintainer and in the "Top 10" commiter group.
 \item{\textbf{David S. Miller}}: Being second top commiter and the second top reviewer as well, David S. Miller is definitely one of the nowadays top important people in the project.
 \end{itemize}
-There have been also important contributors to the Linux Kernel who have quit from the project.\\
-- Alan Cox
-\end{enumerate}
+There have been also important contributors to the Linux Kernel who have quit from the project.
+\begin{itemize}\itemsep0pt
+\item{\textbf{Alan Cox}}: Born in 1968, Cox was a very active Linux kernel developer in the past. Considered the number 2 in the Linux world for the initial period of Linux history (1991-2002). Before becoming a maintainer of the 2.2 production version of the kernel, he also was the maintainer of network stack, one of the most critical parts of the Linux kernel [10]. He quit from Linux project on January 2013, due to family issues[11]:
+\begin{verbatim}
+"I’m leaving the Linux world and Intel for a bit for family reasons,” 
+he wrote. “I’m aware that ‘family reasons’ is usually management speak for 
+‘I think the boss is an asshole’ but I’d like to assure everyone that while
+I frequently think Linus is an asshole (and therefore very good as 
+kernel dictator). I am departing quite genuinely for family reasons and not
+because I've fallen out with Linus or Intel or anyone else. 
+Far from it I've had great fun working there."
+\end{verbatim}
+\end{itemize}
+
 \subsection{Project Release System}
 On version 1 of the kernel, releases happened frequently. Later, for version 2 of the kernel, release dates started growing. 2.2 Kernel release version happened in January 1999, after two years and a half from kernel 2.0. Kernel 2.4 release happened in January 2001, after two years of 2.2 release. Kernel 2.6 release happened on December 2003, after almost three years of 2.4 release.\\
 \\
@@ -268,36 +280,65 @@ Next table show kernel 3.0 branch release dates and days of development:
     \hline
     \end{tabular}
 \end{center}
+\section{Linus Torvalds: The Project Manager}
+\subsection{Current role}
+Linus Torvalds is the Founder of the Linux Kernel project, and has performed also the leader role for more than 20 years. Only this data gives an idea of his persevering nature.\\
+Not being dedicated to committing much code any more (he is not in the top 20 commiters neither the top 10 reviewers in the project), Torvalds performs perfectly the role of Leader by:
+\begin{itemize}\itemsep0pt
+\item{Getting other developers’ patches into the kernel}
+\item{Driving the project maintainer list}
+\item{Routing accepted patches toward the mainline}
+\item{Spreading the project by giving talks and interviews}
+\item{Driving latest branches, and performing branch management}
+\item{Performing the role of the benevolent dictator, by making the final decissions on the top issues where no consensous is achieved}
+\end{itemize}
+Linus Torvalds importance for Linux project success has been enough evidence given through the years. The community, among other facts, recognizes specially that Torvalds designed in a very short period of time the core of an Operating System that proved to be modular, simple (as simplicity can be applied to an Operating System), and, above all, having a great performance in terms of both robustness and efficiency.\\
+But the community recognizes as well that the simplicity, modularity and licensing schema helped on spreading the project quickly and easily through years, for both contributors and final users as well.\\
+The project itself, along the years, has turned to be the market share leader of different important markets, such as Internet Servers, Supercomputers or Mobile Devices (as part of the Android project).
 
-\subsection{Linus Torvalds: The pragmatic view}
-\subsection{Linus Torvalds: The (not so?) benevolent dictator}
-HERE: Critically reflect skills, background, personality trays, characteristics, etc. that made Linus to be a leader.
-
-\subsubsection{Characteristics}
-∗ Founder? Arrived lately?
-∗ If possible, try to quantify their contributions (number of commits, bug fixes or other relevant activities to boost the project).
-∗ Is this person still leading the project? If that is not the case, why did he/she left?
-∗ Was he/she essential for the success of the project or the surrounding community?
-Why?
-– It is possible that they have lead more than one project. Then, students can either
-focus on just one of these projects or enlighten the transitions between projects and
-their reasons.
-– A thorough description of the main leadership traits exhibited by the analyzed figure
-is essential.
-
-\subsubsection{Skills}
-- Technical excellence.\\
-Kernel, GIT.
-- Self-confident (sometimes to rudeness).\\
-"Sometimes being polite drives to misunderstanding on the Internet".
-- Analytic.\\
-- Practical and Pragmatic.\\
-One of his favourite sentences: "Show me the code". He has also asserted:\\
-\\
-It was Edison who said ‘1\% inspiration, 99\% perspiration’. That may have been true a hundred years ago. These days it's ‘0.01\% inspiration, 99.99\% perspiration’, and the inspiration is the easy part. As a project manager, I have never had trouble finding people with crazy ideas. I have trouble finding people who can execute.  IOW, ‘innovation" is way oversold [8].
-- Charismatic.\\
-
-\subsubsection{Background}
+\subsection{Skills}
+So far, a description of Linus Torvalds and the Linux Project has been performed. However, an analysis of the main characteristics of the Benevolent Dictator can help on determining both the project success and the community recoginizing to him. Among the different Torvald's characteristics, next must be highlighted:
+\begin{itemize}
+\item{\textbf{Technical engineering excellence.}}
+Linux Kernel Project excellence itself allows to demonstrate Torvald's engineering excelence. Having designed it when he was just 22 years old, the simplicity of the kernel architecture and its modularity, together with the great robusteness, allow to assert that Torvalds was at a very early age, an excellent engineer.\\
+Besides this, his other great work, GIT, has been proven to be a magnificient designed control version system. Indeed, the control version system has supposed a revolution on this market, and is being acquired in a lot of Open Source Projects as well as Software companies.
+\item{\textbf{Resolvent}.} Torvalds has more than once proven that is a resolvent computer engineer and leader as well. When problems appear, Linus Torvalds appears under the guise of resolution.\\
+This is the case of GIT birth. When the problem appeared, by the copyright holder of BitKeeper, Larry McVoy, withdrawing free use of the product after he claimed that reverse-engineering of the BitKeeper protocols had been performed, Torvalds and others grasp the nettle by designing a BitKeeper inspired control version named GIT.
+\item{\textbf{Constant}.} Being for more than 20 years acting as leader of the most important Open Source project gives an idea of how constant Torvalds is.\\
+Far from appearing tired, it seems that, as time goes by, Linus Torvalds continues to be as enthusiastic and commited with the project as never.
+\item{\textbf{Analytical}.} Far from his technical excellence as developer, Torvalds is even more recognized for his analytical and designing capacities.\\
+Behind his decissions, Torvalds has proved to have an excellent nature to understand the issues and accomplish the solutions. Core Linux kernel designing is a good example of how simplicity and modularity can help on building an Operating System to boost performance.\\
+GIT is a good example as well, as it shows how some design decissions have helped this distributed control version system to be the prefered one for certain projects. 
+\item{\textbf{Self-confident (sometimes to rudeness)}.}
+When participating on a discussion, Torvalds always show determination and self reliance. He does not hesitate on arguing an eminence as Andrew S. Tanembaum when he has take up the cudgels of his project [12]: 
+\begin{verbatim}
+You use this as an excuse for the limitations of minix? Sorry, but you
+loose: I've got more excuses than you have, and linux still beats the
+pants of minix in almost all areas.  Not to mention the fact that most
+of the good code for PC minix seems to have been written by Bruce Evans.
+\end{verbatim}
+Despite the fact that Torvalds has several times being pointed as a flame initiator, not to say the various times that he has replied in order to defense himself from others accusations [13]. However, the good news are that he seems to be conscious of this[14]:
+\begin{verbatim}
+"Sometimes being polite drives to misunderstanding on the Internet"
+\end{verbatim}
+\item{\textbf{Charismatic}.} Many of his strenghtness, some of them previously described, and aceptation of his weakness (rudeness above all), make him a charismatic, well recognized, awarded and charismatic person, the most important in the Open Source history ever.\\
+Together with his acid sense of humour, make Linus one of the most interesting people to listen in conferences and interviews, not only in the Source Project world.
+\item{\textbf{Practical and Pragmatic}.}
+Regarding the Open Source Universe, the characteristic that best fits into Torvalds character is pragmatism, above all if compared to the other most important person in the Open Source Universe, Richard M. Stallman, who represents the most idealistic view. Next sectio shows this contrast deeper, but, in order to show how practical Torvalds can be, one of his favourite sentences can be included as example:
+\begin{verbatim}
+"Show me the code". 
+\end{verbatim}
+He has also asserted [8]:
+\begin{verbatim}
+It was Edison who said ‘1\% inspiration, 99\% perspiration’.
+That may have been true a hundred years ago. These days it's ‘0.01\%
+inspiration, 99.99\% perspiration’, and the inspiration is the easy part. 
+As a project manager, I have never had trouble finding people with crazy 
+ideas. I have trouble finding people who can execute.
+\end{verbatim}
+\end{itemize}
+\subsection{The pragmatic view}
+\subsection{Leadership: The (not so?) benevolent dictator}
 
 \section{Conclussion}
 
@@ -319,4 +360,15 @@ It was Edison who said ‘1\% inspiration, 99\% perspiration’. That may have b
 (8) \url{https://www.simple-talk.com/opinion/geek-of-the-week/linus-torvalds,-geek-of-the-week/}
 \\
 (9) \url{http://www.youtube.com/watch?v=fa01V0u_ybg}
+\\
+(10) \url{http://www.softpanorama.org/People/Cox/index.shtml}
+\\
+(11) \url{http://www.wired.com/wiredenterprise/2013/01/alan-cox/}
+\\
+(12) \url{https://groups.google.com/forum/?fromgroups=#!topic/comp.os.minix/wlhw16QWltI}
+\\
+(13) \url{http://www.attendly.com/linux-founder-linus-torvalds-delivers-a-smackdown-like-no-other/}
+\\
+(14) \url{https://www.youtube.com/watch?v=__fALdvvcM0}
+\\
 \end{document}
