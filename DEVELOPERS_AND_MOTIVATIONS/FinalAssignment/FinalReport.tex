@@ -1,9 +1,12 @@
 \documentclass[11pt]{article}
 %Gummi|061|=)
-\title{\textbf{MSWL Developers and Motivations: Linus Torvalds}}
+\title{\textbf{MSWL Developers and Motivations:\\
+Linus Torvalds}}
 \author{Sergio Arroutbi Braojos}
-\usepackage{hyperref}
+
 \date{\today}
+
+\usepackage{hyperref}
 \usepackage[bottom=14em]{geometry}
 \usepackage{amsmath}
 \usepackage{mathtools}
@@ -17,6 +20,8 @@ pdfborder={0 0 0}
    
 \maketitle
 
+\pagebreak
+
 \tableofcontents
 
 \pagebreak
@@ -25,6 +30,8 @@ pdfborder={0 0 0}
 Linus Torvalds is, surely, the most influencing person on the Open Source World. Twenty years after initiation of the Linux project by him, this open source Operating System being the main maintainer of the Linux project, this Operating System has become, surely, one of the most used and versatile Operating Systems, leader in some markets, as the Internet Servers Operating Systems or the SuperComputers Operating Systems, as well as the most important Open Source Project, at least, from an economic impact point view.\\
 \\
 Linus Torvalds is also creator and developer of the GIT source code control version system, the most used distributed version control system, with an increasing popularity above all on the Open Source projects enviroment. However, Torvalds turned over maintenance on 26 July 2005 to Junio Hamano, a major contributor to the project, so GIT is not a relevant aspect of the analysis of Linus Torvalds as Open Source Project Manager, compared to up to date leadership on the Linux Kernel Operating System project.
+
+\pagebreak
 
 \section{Biography}
 Linus Torvalds [1] was born on December 28, 1969 in Helsinki, Finland. His parents were communist campus radicals in the 1960s. Other children used to tease Linus about this aspect.  His family belongs to the Swedish-speaking minority (5.5\% of Finland's population).\\ 
@@ -56,7 +63,10 @@ He was honored with the 2012 Millennium Technology Prize, along with Shinya Yama
 \\
 He lives nowadays with his wife and three kids in Portland, and works for the Linux Foundation, the non-profit organization for promotion of the Linux Open Source Project.
 
+\pagebreak
+
 \section{The Linux Project}
+
 \subsection{Project Birth} 
 In early 1991, Linus Torvalds purchased an IBM-compatible personal computer with a \textbf{33MHz Intel 386 processor and a huge 4MB of memory}. Torvalds was intrigued with the hardware, as this processor greatly appealed to him because it represented a tremendous improvement over former Intel chips [3]. However, he was \textbf{disappointed with the MS-DOS operating system} that came with it. Microsoft's operating system had not advanced sufficiently to even begin to take advantage of the vastly improved capabilities of the 386 chip, and he thus strongly preferred the much more powerful and stable UNIX operating system that he had become accustomed to using on the university's computers.\\
 \\
@@ -280,7 +290,10 @@ Next table show kernel 3.0 branch release dates and days of development:
     \hline
     \end{tabular}
 \end{center}
-\section{Linus Torvalds: The Project Manager}
+
+\pagebreak
+
+\section{Linus Torvalds: The (not so?) Benevolent Dictator}
 \subsection{Current role}
 Linus Torvalds is the Founder of the Linux Kernel project, and has performed also the leader role for more than 20 years. Only this data gives an idea of his persevering nature.\\
 Not being dedicated to committing much code any more (he is not in the top 20 commiters neither the top 10 reviewers in the project), Torvalds performs perfectly the role of Leader by:
@@ -355,7 +368,7 @@ In the very beginning, I made my own licensing version, but was wrong
 in some concepts, such as not charging any money for Linux. That would 
 have become a problem if change to GPL had not been performed...
 I give this out, because I like doing it, but I want people doing changes 
-and improvement to come back. License clearly works very well. ".
+and improvement to come back. License clearly works very well."
 \end{verbatim}
 However, \textbf{Torvald's self characteristics drive him to the pragmatic side}, basically due to his skills and his practical driven nature. The Benevolent Dictators prefers:
 \begin{enumerate}\itemsep0pt
@@ -364,9 +377,86 @@ However, \textbf{Torvald's self characteristics drive him to the pragmatic side}
 \item{\textbf{Day to day results rather than innovation}}
 \end{enumerate}
 The pragmatic side in general, and Eric Raymond in particular, as stated in the Catheedral and the Bazaar [15], has always demonstrated admiration for the Benevolent Dictator, in what is a declaration of intent in recognition on how \textbf{the pragmatic view, once implemented, can drive to successful projects, with the Linux Kernel project as the most representative success story}.
-\subsection{Leadership: The (not so?) benevolent dictator}
-Introduce basic ideas according to Torvalds characteristics, and focus on description provieded on [16] and the ideas from video [9].
-\section{Conclussion}
+\subsection{Leadership: How Torvalds commands Linux}
+Volumes have been written about Linus Torvalds and the role he plays on the Linux kernel project leadership. There can be no doubt about this asertion: \textbf{In a huge Open Source project as the Linux Kernel Project, with thousands of people and dozens of companies involved, it must not be an easy thing to drive all the opinions and interests to a common point}.\\
+\\
+When asked, in a conference, for those things that bother him, Torvalds replied [14]:
+\begin{verbatim}
+The technical problems are not a big deal.
+The two areas where we have issues are:
+1 - Documentation from manufacturers. ... Hopefully this problem is going away.
+2 - The big problem. It is hard to manage a big project with thousands of people 
+and tens or hundreds of companies contributing which in turn have completely 
+different point of views of where to go.
+...
+If I loose sleep about something, it is always about politics and is always 
+about people.
+\end{verbatim}
+\textbf{With this basic idea in mind, how is Linux Kernel project managed?}\\
+\\
+Indeed, it is driven as any other Open Source project. Based on a "do-ocracy" basis, the Linux Kernel project is a clear example of a Bazaar based project management. Associated to this idea, Torvalds recognizes that, in an Open Source project, normal hierarchies do not apply[9]:
+\begin{verbatim}
+It is not a hierarchy. It works rather than a network, based on a matter 
+of trust. It is not the traditional graph with me on the top, and 5 lieutenants
+below, and each of them with several people below, it does not work like that,
+with me as a traditional CEO.
+\end{verbatim}
+However, Torvalds also recognizes that they have no organization issues, although there is an organization [9]:
+\begin{verbatim}
+We don't have organization problems because we don't have an organization.
+We do have one, but it is more in the conexion between people than something 
+external.
+\end{verbatim}
+Besides this, the Benevolent Dictator asserts that someone cannot trust in all the people, or even in many people, as happens in real life. Regarding this fact, Torvalds asserts [9]:
+\begin{verbatim}
+Although there are thousands of people involved in arelease, I have few people 
+I trust in. Around fifty. I cannot trust in everybody, in a similar way as I 
+don't have hundred of friends. I can have them on Facebook, but they are not
+people I trust in.
+\end{verbatim}
+So, from management perspective, the project works as a trusted network, where there are some nodes which are, somehow, more centralized, and contain more links to others[9.b]:
+\begin{verbatim}
+There are several levels of connectedness. It is a network, but, some people 
+are better networked than others, and are more central in the network.
+\end{verbatim}
+Meanwhile, regarding his project leadership and how he has kept as the project leader for a long time, he recognizes that his abilities, besides the technical thing, have to do with the "meritocracy" obtained along the time [9.b]:
+\begin{verbatim}
+The reason why I am an effective project maitainer is not because I am 
+technically superior to everybody else in the world. I like to think I am, 
+but that is not the fundamental thing. The main reason is just that people 
+trust me, not to always make the right decission, but they know how I work. 
+They trust me the way somebody trusts on you after knowing you
+for more than 20 years.
+\end{verbatim}
+Regarding the more personal relationship thing, Torvalds has been sometimes blamed to be excesively rudeness [13]. The Benevolent Overlord looses his "benevolent" nature due to dissenting voices like this, but defends himself with the argument that, on Internet, for others to understand the message, this one has to be crystal clear [14]:
+\begin{verbatim}
+In the Internet, we have a lot of people disappointed because their work 
+was not used. Sometimes I get really frustrated, and flame people, and I 
+call them dirty names.
+...
+I think we are solving the problem, as in the past flames were even worst, 
+with discussions lasting for months.
+...
+When you develop the way we develop, you have to be able to let people know 
+what you are thinking. If you are shuttle in the Internet, nobody gets it.
+\end{verbatim}
+So, as a conclussion to the way Linus Torvalds manages the kernel, with the good things and the bad things, it must be highlighted that, after more than 20 years, no forks have been performed successfully, meaning that he is doing very well his job.\\
+\\Flames have to be considered a part of the deal, as they are in any other project, where tensions and discussions are the normal thing on the project execution, always while it is a controlled issue that does not increase along the time. Even better when the Benevolent Dictator recognizes that the project in general and himself in particular are improving this issue as project goes by.
+
+\pagebreak
+
+\section{Conclussions}
+Linux kernel project is, definetely, the most important Open Source project ever. Together with some GNU applications, such as the bash shell and the GCC compiler, Linux has helped on providing the users an Open Source Operating System alternative to Microsoft Windows and Apple Mac OS. It is an Open Source alternative, costless, that every human being should, if not massively use, at least test.\\
+\\
+Its proven effectiveness, performance, modularity and maturity has taken this Operating System kernel to be massively used, turning it to be market share leader on different important computing markets, such as Internet Servers or Super-Computers. Besides this, the spread of the Android Operating System, relying on Linux kernel, has performed a further step for the project, into mobile handhelds.\\
+\\
+And, as the founder and most representative role of the movie, its founder and project leader during the last 22 years appears. During this time, with its strenghts and weakness, Linus Torvalds has demonstrated to be a great computer programmer and better designer and architecture, mainly because of the creation and leadership in the Linux kernel, but also with the design and implementation of GIT, where, not being the main maintainer neither being involved any more, the Benevolent Overlord played an important role together with other people in what seems to be the top preferred versions in the distributed Source Code Management systems.\\
+\\
+Beyond this, Torvalds is also recognized as a magnificient project leader, even from people who has quit from the project and has been involved, somehow, in acid discussions with him, as Alan Cox has [11].\\
+\\
+Due to all these reasons, Torvalds can be definetely named as the most influencing person in Open Source. And the very good news are that it seems he is definetely keep on going and still a lot to offer to the Open Source community.
+
+\pagebreak
 
 \section{References}
 (1) \url{http://www.freeinfosociety.com/article.php?id=99}
@@ -386,6 +476,7 @@ Introduce basic ideas according to Torvalds characteristics, and focus on descri
 (8) \url{https://www.simple-talk.com/opinion/geek-of-the-week/linus-torvalds,-geek-of-the-week/}
 \\
 (9) \url{http://www.youtube.com/watch?v=fa01V0u_ybg}
+(9.b) \url{http://www.youtube.com/watch?v=QHJfTja0VOs}
 \\
 (10) \url{http://www.softpanorama.org/People/Cox/index.shtml}
 \\
