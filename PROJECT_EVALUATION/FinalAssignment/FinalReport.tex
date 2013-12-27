@@ -22,20 +22,77 @@ pdfborder={0 0 0}
 \pagebreak
 
 \section{Executive Summary}
-This final assignment tries to perform an estimation of quality for a particular Open Source project, in this case, OpenNebula. Apart from that, this paper compares this project to other similar projects which are its competitors, such as CloudStack, Eucalyptus and OpenStack, considering the same quality model and how these projects score on it.\\
+This paper tries to perform an estimation of quality for a particular Cloud Computing Open Source Project, in this case, OpenNebula. Apart from that, a comparison of this project to other similar projects which are its competitors, such as CloudStack, Eucalyptus and OpenStack, is performed, considering the same quality model and how these projects score on it.\\
 \\
-By means of definition of a custom quality model, focused on the necessities of an invented role, OpenNebula project is analyzed, scored, and compared to the other projects. The final aim of this document is to take a decission of which is the best alternative to use, taking into account the most important factors in terms of quality that a Cloud Computing System must have for the inventend role.
+In particular, by means of using a role play, the selection of a Cloud Computing System by a company offering cloud computing, storage and network services for other companies, from the perspective of a member of the Board of Directors of the company.\\
+\\
+By means of definition of a custom quality model, focused on the necessities of an invented role, OpenNebula project is analyzed, scored, and compared to the other projects. The final aim of this document is to take a decission of which is the best alternative to use, taking into account the most important factors in terms of quality that a Cloud Computing System must have for the invented role.
 
-\section{Introduction}
+\section{Introduction} \label{sec:introduction}
+This document is an approach to demonstrate the different issues and evaluations that can be taken into consideration in order to make a decission on the selection of an Open Source Project. A complete analysis of the quality of a particular project, in this case, OpenNebula, will be performed, by applying a self-defined quality model. 
 
-\section{Methodology}
+\subsection{Document Objectives}
+Apart from previously approach, a comparison with the score of other projects into the same quality model will be performed, so that decission making will be structured by following next steps:
 
-\section{Analysis}
+\begin{itemize}\itemsep0pt
+\item{Defining a role that justifies why some aspects are more or less important from a quality perspective, hence which factors are more valuable to consider in a quality model, in such way that allows to select or discard a particular project.}
+\item{Defining a quality model that has been initially agreed and drafted between different students, that allows to obtain a quality score so that comparison between other Cloud Computing Open Source Projects can be performed.}
+\item{Defining the different values in terms of scoring (weights) that all of the statements included in the quality model have, according to the role selected.}
+\item{Analysing a particular Cloud Computing Open Source Project, OpenNebula in this case, by obtaining metrics of it and sharing with the rest of the students}
+\item{Calculating the final scoring of this particular project, OpenNebula, according to the weights decided according to the role}
+\item{And finally, by comparing the final score to the rest of the projects and justifying the selection of the "Winner Project"}
+\end{itemize}
 
-\section{Results}
+\subsection{Document Structure}
+This document follows next structure, in order to accomplish the different phases that must be considered before making the final decission on the Cloud Computing Open Source Project selected:
 
-\section{Conclussion}
+\begin{itemize}\itemsep0pt
+\item{\textbf{Introduction}}. This chapter describes the final aim of this document, how it is structured and the role being taken in order to take into consideration the most important factors to make the final decission on the Cloud Computing Open Source Project.
+\item{\textbf{Methodology}}. On this chapter, the Quality Model will be described, justifying the selection of the different attributes to consider, the metrics derived from them and the weights applied taking into consideration the role selected.
+\item{\textbf{Analysis}}. Analysis chapter will justify the application of the model, which tools will be used in order to obtain and analyze the different representative metrics and the data sources used to retrieve them. A Goal-Question-Metric (GQM) model will be implemented to describe how OpenNebula project will be analysed.
+\item{\textbf{Results}}. Chapter whose final aim is to calculate OpenNebula score obtained by the application of the Quality Model by using the different tools and source data, all of them described on the previous sources. 
+\item{\textbf{Conclussion}}. In parallel to this document, and analysis of other Cloud Computing Open Source Projects have been performed with the same quality model. However, on those documents the particular weights applied are related to what the other students invented roles have considered to be appropriate. In this and those documents the metrics obtained will be shared.
+This document will perform the score of the rest of the projects, taking into account the same weights that this document have taken into consideration. With OpenNebula and the other Cloud Computing Open Source Projects score, the final decission will be taken.
 
-\section{References}
+\item{\textbf{Bibliography and References}}. This chapter collects the references and bibliography followed to perform this analysis.
+
+\subsection{Introduction to the Quality Model}. This document considers a Quality Model agreed between some students and a professor in order to have a common starting point. In section~\nameref{sec:methodology} a complete description of the Quality Model will be performed. However, an introduction to it is appropriate to later justify the most important Quality Model Attributes that the role will consider.\\
+\\
+The Quality Model Main Attributes agreed are described below:
+\begin{enumerate}\itemsep0pt
+\item{\textbf{Efficiency}}. From the perspective of performance of the software. E.g: Do benchmarks of the product exist? 
+\item{\textbf{Documentation}}. Quality of documentation of the project. E.g: Is the project documentation updated frequently?
+\item{\textbf{Functionality}}. Quality of the project in terms of representative functionality. E.g: Does this project have a web browser to configure and administrate the resources under control?
+\item{\textbf{Professional Support}}. Amount of companies providing professional support. E.g: How many companies provide professional support?
+\item{\textbf{Community}}. Community Health as a way of measuring quality. E.g: Has the number of committers grown or decreased in the last year?
+\end{enumerate}
+
+With previous quality attributes brought up, now an invention of the role, a description of it and a cathegorization of the most important attributes from her/his perspective can be performed.
+
+\subsection{Role Description}
+This document assumes a role play that allows to determine the more important factors from a quality perspective. In particular, the role of a member of the Board of Directors have been considered. So, the main question to answer is next one: \textbf{Which are the more relevant factors for this role?}\\
+\\
+To answer this question, a first assumption of the personal background of this role must be performed. This member has been part of the leadership group of an important Open Source project.\\
+\\
+For this reason, his personal and professional background makes him aware of the \textbf{Importance of the Community} for an Open Source Project to succeed along the time.\\
+\\
+Apart from being aware of the Community, this role considers that \textbf{Documentation} is as well an important factor, as it helps to strengthen and consolidate Community itself.\\
+\\
+Meanwhile, role's professional background and experience also makes him/her to be aware of the \textbf{Importance of having professional support}.\\
+\\
+Last, but not least, the board member considers that having a full featured functionality and good efficiency/performance is not as important as the previous factors, as having a strong community and a good professional support can help on improving this factors in a relatively short period of time.
+
+\end{itemize}
+
+\section{Methodology} \label{sec:methodology}
+
+\section{Analysis} \label{sec:analysis}
+
+\section{Results} \label{sec:results}
+
+\section{Conclussion} \label{sec:conclussion}
+
+\section{Bibliography and References} \label{sec:bibliography}
 (1) \url{http://www.whatever.com}
+
 \end{document}
