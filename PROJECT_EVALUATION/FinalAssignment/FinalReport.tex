@@ -1,12 +1,13 @@
 \documentclass[11pt]{article}
-%Gummi|061|=)
 \title{\textbf{MSWL Project Evaluation: OpenNebula Project Analysis}}
 \author{Sergio Arroutbi Braojos}
-\usepackage{hyperref}
 \date{\today}
+
+\usepackage{hyperref}
 \usepackage[bottom=14em]{geometry}
 \usepackage{amsmath}
 \usepackage{mathtools}
+\usepackage{cite}
 
 \begin{document}
 
@@ -50,7 +51,7 @@ This document follows next structure, in order to accomplish the different phase
 \item{\textbf{Introduction}}. This chapter describes the final aim of this document, how it is structured and the role being taken in order to take into consideration the most important factors to make the final decission on the Cloud Computing Open Source Project.
 \item{\textbf{Methodology}}. On this chapter, the Quality Model will be described, justifying the selection of the different attributes to consider, the metrics derived from them and the weights applied taking into consideration the role selected.
 \item{\textbf{Analysis}}. Analysis chapter will justify the application of the model, which tools will be used in order to obtain and analyze the different representative metrics and the data sources used to retrieve them. A Goal-Question-Metric (GQM) model will be implemented to describe how OpenNebula project will be analysed.
-\item{\textbf{Results}}. Chapter whose final aim is to calculate OpenNebula score obtained by the application of the Quality Model by using the different tools and source data, all of them described on the previous sources. 
+\item{\textbf{Results}}. Chapter whose final aim is to calculate OpenNebula score obtained by the application of the Quality Model by using the different tools and source data, all of them described on the previous sources.
 \item{\textbf{Conclussion}}. In parallel to this document, and analysis of other Cloud Computing Open Source Projects have been performed with the same quality model. However, on those documents the particular weights applied are related to what the other students invented roles have considered to be appropriate. In this and those documents the metrics obtained will be shared.
 This document will perform the score of the rest of the projects, taking into account the same weights that this document have taken into consideration. With OpenNebula and the other Cloud Computing Open Source Projects score, the final decission will be taken.
 
@@ -81,10 +82,97 @@ Apart from being aware of the Community, this role considers that \textbf{Docume
 \\
 Meanwhile, role's professional background and experience also makes him/her to be aware of the \textbf{Importance of having professional support}.\\
 \\
-Last, but not least, the board member considers that having a full featured functionality and good efficiency/performance is not as important as the previous factors, as having a strong community and a good professional support can help on improving this factors in a relatively short period of time.
+Last, but not least, the board member considers that \textbf{having a full featured functionality and good efficiency/performance is not as important as the previous factors}, as having a strong community and a good professional support can help on improving both attributes in a relatively short period of time.
 \end{itemize}
 
 \section{Methodology} \label{sec:methodology}
+In order to calculate what is the quality of a project, first of all the Quality Model must be defined. It is not the objective of this chapter to describe on a very detailed basis the different Software Quality Models and its characteristics. However, a very brief description and classification of them is required in order to evaluate them and select the most appropriate, or, as well, the one that can inspire the Final Quality Model.\\
+\\
+There are many different type of Quality Models to evaluate Software Quality. Several classifications can be taken into consideration:
+
+\subsection{Software Generic Quality Models}
+There are Quality Models that have been designed to measure the Quality of the Software, or, at least, the process that is followed to produce software. Examples of this kind of Quality Models are:
+\begin{itemize}\itemsep0pt
+\item{ISO 9126}~\cite{ISO00, ISO01}.
+This model defines a set of six super-attributes that are considered the more relevant from Software Quality perspective:
+\begin{enumerate}
+\item{Functionality}
+\item{Reliability}
+\item{Usability}
+\item{Efficiency}
+\item{Maintainability}
+\item{Portability}
+\end{enumerate}
+Each of the super-attributes defines a collection of sub-attributes as well. A collection of 27 sub-attributes derived from the super-attributes are defined.
+Taking into consideration all of the attributes and sub-attributes, a consideration on the quality of the Software of a particular project can be performed.
+\item{CMMI}~\cite{CMMI00}.
+Code Maturity Model Integration (CMMI) is applied more to the process of Software production rather than the Software itself. Defined in Carnegie Mellon University, this model claims that the modle can be used to guide process improvement across a project, division, or an entire organization.
+It basically defines a set of levels that allow to identify the state of the development process up to day. The levels defined are as follow, taking into account that the higher the level is, the more quality the development process of the project has:
+\end{itemize}
+
+\begin{itemize}\itemsep0pt
+\item{\textbf{Level 1. Initial.}} Processes are unpredictible and unmeasurable, and no reactive.
+\item{\textbf{Level 2. Managed.}} Processes are characterized for projects, and often reactive.
+\item{\textbf{Level 3. Defined.}} Processes are characterized for the organization and proactive. 
+\item{\textbf{Level 4. Quantitatively Managed.}} Development Processes are Measured and Under Control.
+\item{\textbf{Level 5. Optimizing.}} Focus on Process Improvement.
+\end{itemize}
+Both previously defined models, although being complete in terms of quality of the Software and its development process respectiveley, do not take into consideration additional aspects which are considered important only in the case of Open Source Software Projects. Examples of factors not beeing taken into consideration are, e.g.:
+\begin{itemize}\itemsep0pt
+\item{Community commitment}
+\item{Community activity}
+\item{What kind of licensing is used? (Copyleft/Permissive)}
+\end{itemize}
+Fortunately, there have been several approaches to define Quality Models which are more appropriate to be applied to an Open Source Project, and, which indeed, address previous factors, as well as other different ones that are also important to measure particular Quality factors related to this kind of projects. Next section defines some of the most commonly used models.
+
+\subsection{Open Source Software Project Models}
+
+As previously defined, some Open Source Software Project Quality Models have been defined. There are two basic kind of models, taking into account the complexity of its implementation:
+
+\begin{itemize}\itemsep0pt
+\item{\textbf{Light-weight}}: This kind of Quality Models are easy to accomplish. Examples of this kind of Quality Models are OpenBRR and QSoS:
+\begin{itemize}\itemsep0pt
+\item{\textbf{OpenBRR}}~\cite{OPENBRR00}.
+Open Business Readiness Rating Quality model defines a Spreadsheet with a set of super-attributes. Each of the super-attributes (named Cathegories in the model). Proposed cathegories by the model are:
+\begin{enumerate}\itemsep0pt
+\item{\textbf{Functionality}}
+\item{\textbf{Usability}}
+\item{\textbf{Quality}}
+\item{\textbf{Security}}
+\item{\textbf{Performance}}
+\item{\textbf{Scalability}}
+\item{\textbf{Architecture}}
+\item{\textbf{Support}}
+\item{\textbf{Documentation}}
+\item{\textbf{Adoption}}
+\item{\textbf{Community}}
+\item{\textbf{Professionalism}}
+\end{enumerate}
+Each of the Cathegories define a set of subcathegories (Metrics) with a description of the metric itself and the specification of the scores that apply to that particular metric. The user of the spreadsheet can assign different weights to both the cathegory and the subcathegories, in order to achieve a final score for the Open Source Project under study.\\
+\\
+This model, although beeing very improvable, has the merit of being the most simple one among the ones studied. For this reason, our Quality Model will be derived from an even more simple version of this model.
+\item{\textbf{QSOS}}~\cite{QSOS00}. Qualification and Selection of Opensource Software is a Quality Model, licensed under GNU Free Documentation License.\\
+\\
+The quality model defines what is named as the "QSOS Manifesto", which establishes a list of statements for the objectives that this Quality Model tries to define, that can be summarized in:
+\begin{itemize}\itemsep0pt
+\item{Analyzing needs and limitations in software adoption}
+\item{Evaluating functional and technical requirements}
+\item{Formalising a methodology}
+\item{Results reusing}
+\item{Providing a free method}
+\end{itemize}
+
+\end{itemize}
+\item{\textbf{Heavy-weight}}: This kind of Quality Models are complex and not easily implementable. A good example of this kind of project is QualOSS.
+\begin{itemize}\itemsep0pt
+\item{QualOSS}:
+\end{itemize}
+\end{itemize}
+
+\subsection{Details of the Selected Quality Model}
+However, a particular Quality Model is not mandatory to be applied "AS IS". Some variations, limitations, trims, extensions or further considerations can be performed. This document does not pretend to be an extensive report or investigation on Quality, but rather an explanation on what a definition of a simple Quality Model for a particular type of Open Source Projects, in this case, related to an incipient and very active technology as Cloud Computing is, and how a particular project scores to that model.\\
+\\
+For previous reason, in this case, a very simple Quality Model has been developed, taking some of the attributes of OpenBRR on the one hand, and on the other hand implementing and extending other attributes that have been considered to be important for this kind of Cloud Computing Open Source Projects.
 
 \section{Analysis} \label{sec:analysis}
 
@@ -93,6 +181,6 @@ Last, but not least, the board member considers that having a full featured func
 \section{Conclussion} \label{sec:conclussion}
 
 \section{Bibliography and References} \label{sec:bibliography}
-(1) \url{http://www.whatever.com}
-
+\bibliographystyle{unsrt}
+\bibliography{mybib}{}
 \end{document}
