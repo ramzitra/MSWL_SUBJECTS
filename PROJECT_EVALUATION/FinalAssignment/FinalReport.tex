@@ -8,6 +8,12 @@
 \usepackage{amsmath}
 \usepackage{mathtools}
 \usepackage{cite}
+\usepackage{varioref}
+\usepackage{placeins}
+\usepackage{float}
+\usepackage{graphicx}
+
+\restylefloat{table}
 
 \begin{document}
 
@@ -201,14 +207,139 @@ For previous reason, in this case, a very simple Quality Model has been develope
 \subsubsection{Quality Model Description}
 The model is inspired on OpenBRR, but with a set of Cathegories and metrics which differ from the original model. Apart from that, some concepts from ISO 9126~\cite{ISO00, ISO01} have been taken into account.\\
 \\
-The set of Cathegories is described below:
+The set of Cathegories agreed for the Quality Model is described below:
 \begin{itemize}\itemsep0pt
-\item{Efficiency}
-\item{Documentation}
-\item{Functionality}
-\item{Professional Support}
-\item{Community}
+\item{\textbf{Efficiency}}
+\item{\textbf{Documentation}}
+\item{\textbf{Functionality}}
+\item{\textbf{Professional Support}}
+\item{\textbf{Community}}
 \end{itemize}
+
+Besides this, each of the cathegories, have a set of questions, with answers that are, somehow, measurable. Apart from that, there are several scores applicable, depending on the metrics obtained. Next tables define, for each cathegory, the metrics and scores applicable.
+
+\begin{table}[H]
+  \begin{center}
+    \begin{tabular}{ | p{3cm} | p{5cm} | p{3cm} | l | }
+    \hline
+    Metric & Description & Score Specification & Score \\
+    \hline
+    Billing System & Does The Cloud System provide a Billing System for User Accounting? & Yes, fully supported & 5 \\ \cline{3-3} \cline{4-4} 
+    & & Yes, partially supported & 3 \\ \cline{3-3}\cline{4-4}
+    & & No & 1 \\ 
+    \hline
+    Multi-Platform Support & Does The Cloud System work on top of different Operating Systems?? & Yes, more than two & 5 \\ \cline{3-3} \cline{4-4} 
+    & & Yes, two & 3 \\ \cline{3-3}\cline{4-4}
+    & & No & 1 \\
+    \hline
+    Administration Configuration System & Does the Cloud System provide a System (Web preferably) to help on Administration Tasks? & Yes, a web framework & 5 \\ \cline{3-3} \cline{4-4} 
+    & & Yes, not web-based & 3 \\ \cline{3-3}\cline{4-4}
+    & & No & 1 \\
+    \hline
+    i18n & Does The Cloud System provide multi-language support & Yes, more than 5 languages & 5 \\ \cline{3-3} \cline{4-4} 
+    & & Yes, from 1 to 5 languages & 3 \\ \cline{3-3}\cline{4-4}
+    & & No & 1 \\
+    \hline
+    Quota Management & Does The Cloud System provide a system for quota management & Yes, for computing, storage and networking & 5 \\ \cline{3-3} \cline{4-4} 
+    & & Yes, but not for all functionalities & 3 \\ \cline{3-3}\cline{4-4}
+    & & No & 1 \\
+    \hline
+
+    \end{tabular}
+    \caption{Functionality}
+    \label{tab:functionality}
+  \end{center}
+\end{table}
+
+\begin{table}[H]
+  \begin{center}
+    \begin{tabular}{ | p{3cm} | p{5cm} | p{3cm} | l | }
+    \hline
+    Metric & Description & Score Specification & Score \\
+    \hline
+    Performance or Benchmark Tests Available & This measures if there was any performance testing done and benchmarks published — typically in comparison to other equivalent solutions & Yes, with good results & 5 \\ \cline{3-3} \cline{4-4} 
+    & & Yes & 3 \\ \cline{3-3}\cline{4-4}
+    & & No & 1 \\ 
+    \hline
+    Performance Tuning and Configuration & Is there documentation or tool to help fine-tune the component for performance? & Yes, extensive & 5 \\ \cline{3-3} \cline{4-4} 
+    & & Yes, some & 3 \\ \cline{3-3}\cline{4-4}
+    & & No & 1 \\ 
+    \hline
+    \end{tabular}
+    \caption{Efficiency}
+    \label{tab:efficiency}
+  \end{center}
+\end{table}
+
+\begin{table}[H]
+  \begin{center}
+    \begin{tabular}{ | p{3cm} | p{5cm} | p{3cm} | l | }
+    \hline
+    Metric & Description & Score Specification & Score \\
+    \hline
+    Company Support & Which is the amount of companies providing support ? & More than one & 5 \\ \cline{3-3} \cline{4-4} 
+    & & Just one & 3 \\ \cline{3-3}\cline{4-4}
+    & & No one & 1 \\ 
+    \hline
+    \end{tabular}
+    \caption{Support}
+    \label{tab:support}
+  \end{center}
+\end{table}
+
+\begin{table}[H]
+  \begin{center}
+    \begin{tabular}{ | p{3cm} | p{5cm} | p{3cm} | l | }
+    \hline
+    Metric & Description & Score Specification & Score \\
+    \hline
+    Documentation Update & When was the last time that documentation was updated ? & Last week & 5 \\ \cline{3-3} \cline{4-4} 
+    & & Last Month & 4 \\ \cline{3-3}\cline{4-4}
+    & & Last Three Months & 3 \\ \cline{3-3}\cline{4-4}
+    & & Last Year & 2 \\ \cline{3-3}\cline{4-4}
+    & & More than one year ago & 1 \\ 
+    \hline
+    Number of contributors to documentation & Amount of people who contributed to documentation last year & Ten or more people & 5 \\ \cline{3-3} \cline{4-4} 
+    & & Five to ten people & 4 \\ \cline{3-3}\cline{4-4}
+    & & Two to Five people & 3 \\ \cline{3-3}\cline{4-4}
+    & & One person & 2 \\ \cline{3-3}\cline{4-4}
+    & & No person & 1 \\ 
+    \hline
+    \end{tabular}
+    \caption{Documentation}
+    \label{tab:documentation}
+  \end{center}
+\end{table}
+
+\begin{table}[H]
+  \begin{center}
+    \begin{tabular}{ | p{3cm} | p{5cm} | p{3cm} | l | }
+    \hline
+    Metric & Description & Score Specification & Score \\
+    \hline
+    Mean commits & Which was the mean number of commits per developer last month? & 20 or more commits / developer & 5 \\ \cline{3-3} \cline{4-4}
+    & & 10 to 20 commits / developer & 4 \\ \cline{3-3}\cline{4-4}
+    & & 5 to 10 commits / developer & 3 \\ \cline{3-3}\cline{4-4}
+    & & 1 to 5 commits / developer & 2 \\ \cline{3-3}\cline{4-4}
+    & & \textless 1 commit / developer & 1 \\ 
+    \hline
+    File Territoriality & Percentage of files of the total modified by a unique developer & \textless 5\% & 5 \\ \cline{3-3} \cline{4-4}
+    & & 5\%-10\%  & 4 \\ \cline{3-3}\cline{4-4}
+    & & 10\%-20\% & 3 \\ \cline{3-3}\cline{4-4}
+    & & 20\%-50\% & 2 \\ \cline{3-3}\cline{4-4}
+    & & \textgreater 50\% & 1 \\ 
+    \hline
+    Community Growth & \% of committers number increase/decrease in the last year, calculated as percent difference in the amount of people who commited changes on 2012 compared to 2013 & \textgreater50\% & 5 \\ \cline{3-3} \cline{4-4}
+    & & 25\% to 50\% & 4 \\ \cline{3-3}\cline{4-4}
+    & & 0\% to 25\%  & 3 \\ \cline{3-3}\cline{4-4}
+    & & 0\% to -25\% & 2 \\ \cline{3-3}\cline{4-4}
+    & & \textless-25\%       & 1 \\ 
+    \hline
+    \end{tabular}
+    \caption{Community}
+    \label{tab:community}
+  \end{center}
+\end{table}
 
 \subsubsection{Weights}
 
