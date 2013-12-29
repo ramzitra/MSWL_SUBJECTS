@@ -77,7 +77,7 @@ The Quality Model Main Attributes agreed are described below:
 
 With previous quality attributes brought up, now an invention of the role, a description of it and a cathegorization of the most important attributes from her/his perspective can be performed.
 
-\subsection{Role Description}
+\subsection{Role Description} \label{sec:roledesc}
 This document assumes a role play that allows to determine the more important factors from a quality perspective. In particular, the role of a member of the Board of Directors have been considered. So, the main question to answer is next one: \textbf{Which are the more relevant factors for this role?}\\
 \\
 To answer this question, a first assumption of the personal background of this role must be performed. This member has been part of the leadership group of an important Open Source project.\\
@@ -244,7 +244,6 @@ Besides this, each of the cathegories, have a set of questions, with answers tha
     & & Yes, but not for all functionalities & 3 \\ \cline{3-3}\cline{4-4}
     & & No & 1 \\
     \hline
-
     \end{tabular}
     \caption{Functionality}
     \label{tab:functionality}
@@ -348,11 +347,41 @@ In particular, the Quality Model Spreadsheet can be downloaded on path "spreadsh
 \\
 \url{https://github.com/MSWL-PROJ-EV-2013-2014/projev/blob/master/spreadsheet/BRR_ProjEval_2013.ods}
 \subsubsection{Weights}
+Apart from the Quality Model Question / Metrics, the spreadsheet selected, inspired by OpenBRR Quality Model, contain the concept of "weights". Weights are simply a percentage to prioritize those aspects that are important for the role on his concept of quality. \\
+\\
+On previous section~\nameref{sec:roledesc}, the priorities for the role selected was explained from a descriptive perspective. However, on this section, a quantitative specification will be provided.\\
+\\
+As stated before, the role is aware of the \textbf{Importance of the Community} for an Open Source Project to succeed along the time. Apart from that, this role considers that \textbf{Documentation} is the next factor in terms of importance, as it helps to strengthen and consolidate Community itself. Role's experience also makes the \textbf{Importance of having professional support} important enough to consider it next. Last, but not least, the board member considers that \textbf{having a full featured functionality and good efficiency/performance is not as important as the previous factors}. However, although having not high priority, considers that efficiency has more impact on quality than functionality does. \textbf{Regarding metrics, no special concern is communicated from the role, so that all the metrics for each cathegory seems important equally}.\\
+\\
+According to the role's priorities, her/his preferences and concerns, the resulting table for Cathegories will be as the following one:
+\begin{table}[H]
+  \begin{center}
+    \begin{tabular}{ | l | l | }
+    \hline
+    Cathegory & Weight \\
+    \hline
+    Community & 30\%\\
+    Documentation & 25\% \\
+    Support & 20\% \\
+    Efficiency & 15\% \\
+    Functionality & 10\% \\
+    \hline
+    \end{tabular}
+    \caption{Weights}
+    \label{tab:weights}
+  \end{center}
+\end{table}
+
+Regarding metrics, no special consideration has been taken into. Depending on the number of metrics, proportionality will be applied, so that weight is proportional to all the metrics. 
+\begin{itemize}\itemsep0pt
+\item{For those cathegories having two metrics, 50\% weight will be applied to the metrics.}
+\item{For those cathegories having three metrics, 33,33\% weight will be applied to the metrics.}
+\item{And so on, and so forth.}
+\end{itemize}
 
 \subsubsection{Tools for Metrics Retrieval}
 
 \subsubsection{Data Sources}
-
 
 \section{Analysis} \label{sec:analysis}
 
