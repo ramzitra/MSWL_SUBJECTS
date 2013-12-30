@@ -347,11 +347,15 @@ In particular, the Quality Model Spreadsheet can be downloaded on path "spreadsh
 \\
 \url{https://github.com/MSWL-PROJ-EV-2013-2014/projev/blob/master/spreadsheet/BRR_ProjEval_2013.ods}
 \subsubsection{Weights}
-Apart from the Quality Model Question / Metrics, the spreadsheet selected, inspired by OpenBRR Quality Model, contain the concept of "weights". Weights are simply a percentage to prioritize those aspects that are important for the role on his concept of quality. \\
+Apart from the Quality Model Question / Metrics, the spreadsheet selected, inspired by OpenBRR Quality Model, contain the concept of "weights". Weights are simply a percentage to prioritize those aspects that are important for the role on her/his concept of quality. \\
 \\
 On previous section~\nameref{sec:roledesc}, the priorities for the role selected was explained from a descriptive perspective. However, on this section, a quantitative specification will be provided.\\
 \\
-As stated before, the role is aware of the \textbf{Importance of the Community} for an Open Source Project to succeed along the time. Apart from that, this role considers that \textbf{Documentation} is the next factor in terms of importance, as it helps to strengthen and consolidate Community itself. Role's experience also makes the \textbf{Importance of having professional support} important enough to consider it next. Last, but not least, the board member considers that \textbf{having a full featured functionality and good efficiency/performance is not as important as the previous factors}. However, although having not high priority, considers that efficiency has more impact on quality than functionality does. \textbf{Regarding metrics, no special concern is communicated from the role, so that all the metrics for each cathegory seems important equally}.\\
+As stated before, the role is aware of the \textbf{Importance of the Community} for an Open Source Project to succeed along the time. Apart from that, this role considers that \textbf{Documentation} is the next factor in terms of importance, as it helps to strengthen and consolidate Community itself.\\
+\\
+Role's experience also makes the \textbf{Importance of having professional support} important enough to consider it next. Last, but not least, the board member considers that \textbf{having a full featured functionality and good efficiency/performance is not as important as the previous factors}.\\
+\\
+However, although having not high priority, considers that efficiency has more impact on quality than functionality does. \textbf{Regarding metrics, no special concern is communicated from the role, so that all the metrics for each cathegory seems important equally}.\\
 \\
 According to the role's priorities, her/his preferences and concerns, the resulting table for Cathegories will be as the following one:
 \begin{table}[H]
@@ -381,7 +385,28 @@ Regarding metrics, no special consideration has been taken into. Depending on th
 
 \subsubsection{Tools for Metrics Retrieval}
 
+Once Quality Model has been explained, it is time for an explanation on how to carry out the different methods to obtain the metrics associated to the quality attributes defined. Tools used to obtain the metrics have been basically three:
+\begin{enumerate}\itemsep0pt
+\item{\textbf{OpenNebula web page}}. To obtain information related to \textbf{Functionality} and \textbf{Professional Support}.
+\item{\textbf{Google}}. To obtain information related to benchmarks comparing Cloud Computing Systems and, in this manner, obtain metrics related to \textbf{Efficiency}.
+\item{\textbf{cvsanaly}}~\cite{CVSANALY00}. This tool, written in Python, allows obtaining and analyzing a particular software among different kind of them (CVS, as well as Subversion and GIT) and stores analyzed information on a SQL database. This information can be later analyzed in order to measure, for example:
+\begin{itemize}\itemsep0pt
+\item{Number of commits in a period of time, or a a particular time or date}.
+\item{Most active committers}.
+\item{And, in general, all the information that can be retrieved from that particular Software Configuration Manager}.
+\item{Territoriality of the project, by means of calculation of the different people modifying a particular file}.
+\item{Type of files commited}.
+\end{itemize}
+\end{enumerate}
+This kind of analysis fits perfectly to obtain metrics of the Quality Model associated to \textbf{Community}and \textbf{Documentation}, with metrics such as last update of documentation, mean number of commits per developer or files territoriality as percentage of files being touched by a unique developer.
+
 \subsubsection{Data Sources}
+Regarding sources of data used to obtain the metrics, next datasets have been used:
+\begin{itemize}\itemsep0pt
+\item{\textbf{Documentation associated to Key Features on OpenNebula project}~\cite{OPNEB00}}. Through this documentation, all the characteristics, functionalities and different features provided by the main component have been found out. It has been used to find out attributes having to do with \textbf{Functionality} cathegory, such as if Billing System exist, if there is a configuration tool for administration, etc.
+\item{\textbf{Documentation associated to Commercial Support}~\cite{OPNEB01}}. This documentation has helped on finding out attributes having to do with \textbf{Support} cathegory, clarifying the amount of companies providing professional support.
+\item{\textbf{Cloud Stack Benchmark comparison}~\cite{BENCH00}}. This documentation has helped on finding out attributes having to do with \textbf{Efficiency} cathegory, clarifying if Benchmark studies exist.
+\end{itemize}
 
 \section{Analysis} \label{sec:analysis}
 
@@ -389,7 +414,6 @@ Regarding metrics, no special consideration has been taken into. Depending on th
 
 \section{Conclussion} \label{sec:conclussion}
 
-\section{Bibliography and References} \label{sec:bibliography}
 \bibliographystyle{unsrt}
 \bibliography{mybib}{}
 \end{document}
