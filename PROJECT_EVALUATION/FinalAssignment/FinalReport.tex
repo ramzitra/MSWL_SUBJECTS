@@ -1,4 +1,6 @@
 \documentclass[11pt]{article}
+\newcommand{\shellcmd}[1]{\\\indent\indent\texttt{\# #1}\\}
+\newcommand{\mysqlcmd}[1]{\\\indent\indent\texttt{mysql> #1}\\}
 \title{\textbf{MSWL Project Evaluation: OpenNebula Project Analysis}}
 \author{Sergio Arroutbi Braojos}
 \date{\today}
@@ -154,7 +156,7 @@ Open Business Readiness Rating Quality model defines a Spreadsheet with a set of
 \item{\textbf{Community}}
 \item{\textbf{Professionalism}}
 \end{enumerate}
-Each of the Cathegories define a set of subcathegories (Metrics) with a description of the metric itself and the specification of the scores that apply to that particular metric. The user of the spreadsheet can assign different weights to both the cathegory and the subcathegories, in order to achieve a final score for the Open Source Project under study.\\
+Each of the Cathegories define a set of subcathegories (Metrics) with a description of the metric itself and the specification of the scores that apply to that particular metric. The user of the spreadsheet can assign different weights to both the category and the subcathegories, in order to achieve a final score for the Open Source Project under study.\\
 \\
 This model, although beeing very improvable, has the merit of being the most simple one among the ones studied. For this reason, our Quality Model will be derived from an even more simple version of this model.
 \item{\textbf{QSOS}}~\cite{QSOS00}. Qualification and Selection of Opensource Software is a Quality Model, licensed under GNU Free Documentation License.\\
@@ -216,7 +218,7 @@ The set of Cathegories agreed for the Quality Model is described below:
 \item{\textbf{Community}}
 \end{itemize}
 
-Besides this, each of the cathegories, have a set of questions, with answers that are, somehow, measurable. Apart from that, there are several scores applicable, depending on the metrics obtained. Next tables define, for each cathegory, the metrics and scores applicable.
+Besides this, each of the cathegories, have a set of questions, with answers that are, somehow, measurable. Apart from that, there are several scores applicable, depending on the metrics obtained. Next tables define, for each category, the metrics and scores applicable.
 
 \begin{table}[H]
   \begin{center}
@@ -355,14 +357,14 @@ As stated before, the role is aware of the \textbf{Importance of the Community} 
 \\
 Role's experience also makes the \textbf{Importance of having professional support} important enough to consider it next. Last, but not least, the board member considers that \textbf{having a full featured functionality and good efficiency/performance is not as important as the previous factors}.\\
 \\
-However, although having not high priority, considers that efficiency has more impact on quality than functionality does. \textbf{Regarding metrics, no special concern is communicated from the role, so that all the metrics for each cathegory seems important equally}.\\
+However, although having not high priority, considers that efficiency has more impact on quality than functionality does. \textbf{Regarding metrics, no special concern is communicated from the role, so that all the metrics for each category seems important equally}.\\
 \\
 According to the role's priorities, her/his preferences and concerns, the resulting table for Cathegories will be as the following one:
 \begin{table}[H]
   \begin{center}
     \begin{tabular}{ | l | l | }
     \hline
-    Cathegory & Weight \\
+    Category & Weight \\
     \hline
     Community & 30\%\\
     Documentation & 25\% \\
@@ -403,12 +405,303 @@ This kind of analysis fits perfectly to obtain metrics of the Quality Model asso
 \subsubsection{Data Sources}
 Regarding sources of data used to obtain the metrics, next datasets have been used:
 \begin{itemize}\itemsep0pt
-\item{\textbf{Documentation associated to Key Features on OpenNebula project}~\cite{OPNEB00}}. Through this documentation, all the characteristics, functionalities and different features provided by the main component have been found out. It has been used to find out attributes having to do with \textbf{Functionality} cathegory, such as if Billing System exist, if there is a configuration tool for administration, etc.
-\item{\textbf{Documentation associated to Commercial Support}~\cite{OPNEB01}}. This documentation has helped on finding out attributes having to do with \textbf{Support} cathegory, clarifying the amount of companies providing professional support.
-\item{\textbf{Cloud Stack Benchmark comparison}~\cite{BENCH00}}. This documentation has helped on finding out attributes having to do with \textbf{Efficiency} cathegory, clarifying if Benchmark studies exist.
+\item{\textbf{Documentation associated to Key Features on OpenNebula project}~\cite{OPNEB00}}. Through this documentation, all the characteristics, functionalities and different features provided by the main component have been found out. It has been used to find out attributes having to do with \textbf{Functionality} category, such as if Billing System exist, if there is a configuration tool for administration, etc.
+\item{\textbf{Documentation associated to Commercial Support}~\cite{OPNEB01}}. This documentation has helped on finding out attributes having to do with \textbf{Support} category, clarifying the amount of companies providing professional support.
+\item{\textbf{Cloud Stack Benchmark comparison}~\cite{BENCH00}}. This documentation has helped on finding out attributes having to do with \textbf{Efficiency} category, clarifying if Benchmark studies exist.
 \end{itemize}
 
 \section{Analysis} \label{sec:analysis}
+
+This section summarizes the score obtained by OpenNebula Open Source project on the previously proposed Quality Model. Each of the next subsections cover the application of the Quality Model, and how by using the tools described on the data sources, an score is obtained for each category. Later, a final score will be obtained by setting weights to each metric and each category, to obtain the final score for OpenNebula.\\
+\\
+Spreadsheet covering all this information, weights and scores, can be checked on next URL:\\
+\\
+\url{https://github.com/MSWL-PROJ-EV-2013-2014/projev.git}\\
+\\
+In particular, the Quality Model Spreadsheet can be downloaded on path "spreadsheet/OpenNebula/OpenNebula\_BRR\_ProjEval\_2013.ods", or directly through next path:\\
+\\
+\url{https://github.com/MSWL-PROJ-EV-2013-2014/projev/blob/master/spreadsheet/OpenNebula/OpenNebula\_BRR\_ProjEval\_2013.ods}
+
+\subsection{Functionality}
+This chapter focuses on Functionality category metrics. It must be remarked that, for this category, following parameters have been considered:
+\begin{itemize}\itemsep0pt
+\item{\textbf{Tools:}} This category has been filled out basically through information existing on OpenNebula Open Source Project Web. Just a web browser (Firefox in this case) has been used.
+\item{\textbf{Data Sources:}} Key Feature chapter on OpenNebula Open Source Project~\cite{OPNEB00}.
+\item{\textbf{Category Weight:}} As previously stated, for this cathegory it has been considered a weight of 10\%.
+\end{itemize}
+Taking into account previous data, next table shows the final score of this category.
+\begin{table}[H]
+  \begin{center}
+    \begin{tabular}{ | p{4cm} | p{3cm} | l | p{1.2cm} | p{1.2cm} | }
+    \hline
+    \textbf{Metric} & \textbf{Score Obtained} & \textbf{Score} & \textbf{Metric Weight} & \textbf{Metric Score}\\
+    \hline
+    Billing System & Yes, fully supported & 5 & 20\% & 1\\
+    \hline
+    Multi-Platform Support & No & 1 & 20\% & 0.2\\
+    \hline
+    Administration Configuration System & Yes, a web framework & 5 & 20\% & 1\\
+    \hline
+    i18n & Yes, more than 5 languages & 5 & 20\% & 1\\
+    \hline
+    Quota Management & Yes, for computing, storage and networking & 5 & 20\% & 1\\
+    \hline
+    Unweighted rating & \multicolumn{4}{c|}{\textbf{4.2}}\\
+    \hline
+    Weighted rating (10\%) & \multicolumn {4}{c|}{\textbf{0.42}}\\
+    \hline
+    \end{tabular}
+    \caption{Functionality Score}
+    \label{tab:func_score}
+  \end{center}
+\end{table}
+
+\subsection{Efficiency}
+Efficiency category metrics are handled in this section. For this category, it must be remarked that following parameters have been considered:
+\begin{itemize}\itemsep0pt
+\item{\textbf{Tools:}} This category has been filled out basically through information existing on Benchmark studies about OpenNebula. Google, DuckDuckGo and a web browser (Firefox in this case) have been used.
+\item{\textbf{Data Sources:}} Performance comparison between OpenStack and OpenNebula~\cite{BENCH00}.
+\item{\textbf{Category Weight:}} As previously stated, for this cathegory it has been considered a weight of 15\%.
+\end{itemize}
+Taking into account previous data, next table shows the final score of this category.
+\begin{table}[H]
+  \begin{center}
+    \begin{tabular}{ | p{4cm} | p{3cm} | l | p{1.2cm} | p{1.2cm} | }
+    \hline
+    \textbf{Metric} & \textbf{Score Obtained} & \textbf{Score} & \textbf{Metric Weight} & \textbf{Metric Score}\\
+    \hline
+    Performance Testing and Benchmark Reports available & Yes & 3 & 50\% & 1.5\\
+    \hline
+    Performance Tuning and Configuration & No & 1 & 50\% & 0.5\\
+    \hline
+    Unweighted rating & \multicolumn{4}{c|}{\textbf{2}}\\
+    \hline
+    Weighted rating (15\%) & \multicolumn {4}{c|}{\textbf{0.3}}\\
+    \hline
+    \end{tabular}
+    \caption{Efficiency Score}
+    \label{tab:effi_score}
+  \end{center}
+\end{table}
+
+\subsection{Support}
+Support category metrics is studied in this chapter. For this category, it must be remarked that following parameters have been considered:
+\begin{itemize}\itemsep0pt
+\item{\textbf{Tools:}} This category has been filled out basically through information existing on OpenNebula Open Source Project Web. Just a web browser (Firefox in this case) has been used.
+\item{\textbf{Data Sources:}} OpenNebula information associated to Commercial Support~\cite{OPNEB01}.
+\item{\textbf{Category Weight:}} As previously stated, for this cathegory it has been considered a weight of 20\%.
+\end{itemize}
+Taking into account previous data, next table shows the final score of this category.
+\begin{table}[H]
+  \begin{center}
+    \begin{tabular}{ | p{4cm} | p{3cm} | l | p{1.2cm} | p{1.2cm} | }
+    \hline
+    \textbf{Metric} & \textbf{Score Obtained} & \textbf{Score} & \textbf{Metric Weight} & \textbf{Metric Score}\\
+    \hline
+    Company Support & Just one & 3 & 100\% & 3\\
+    \hline
+    Unweighted rating & \multicolumn{4}{c|}{\textbf{3}}\\
+    \hline
+    Weighted rating (20\%) & \multicolumn {4}{c|}{\textbf{0.6}}\\
+    \hline
+    \end{tabular}
+    \caption{Support Score}
+    \label{tab:supp_score}
+  \end{center}
+\end{table}
+
+\subsection{Documentation}\label{sec:analysis_documentation}
+Documentation category metrics are analyzed in this chapter, to measure the quality of the documenation, considered important from the invented role perspective. For this category, it must be remarked that following parameters have been considered:
+\begin{itemize}\itemsep0pt
+\item{\textbf{Data Sources:}} OpenNebula main source code repository, \textbf{One}, has been used to retrieve and analyze metrics. 
+\item{\textbf{Tools:}} Tools used for this category have been basically \textbf{Git}, \textbf{cvsanaly2} and \textbf{MySQL Server}, to retrieve source code repository, classify it and analyze it respectively.
+\begin{itemize}\itemsep0pt
+\item{Git.} Git has been used to retrieve OpenNebula source code from previously described repository. The command issue for retrieval has been:
+\shellcmd{git clone https://github.com/OpenNebula/one.git}
+Previous command will create a directory, "one", where OpenNebula source code can be classified and analyzed.
+\item{cvsanaly2.} cvsanaly2 tool has been used to classify source code existing on previous directory. Next command assumes that an empty database, called "cvsanaly\_one", already exists. Creation of a database with MySQL will be described later, on MySQL tool usage. cvsanaly2 command issued to perform source code classification and storage has been:
+\shellcmd{cvsanaly2 --db-user=root --db-password=whatever --db-database=cvsanaly\_one --extensions=FileTypes}
+It is remarkable that cvsanaly2 provides extensions, which are in the end plugins that allow to expand the possibilities of analysis. Extension "FileTypes" have been included, as this extension allow to classify the type of files by its extension.
+\item{MySQL.} MySQL server is an important tool to calculate this metrics as well. On the one hand, "cvsanaly\_one" table has been created, through this commands:
+\shellcmd{mysql -uroot -pwhatever}
+Previous command gives access to MySQL server prompt. Next command allows creation of the database needed by cvsanaly2 to store the information appropriately sorted in different tables.
+\mysqlcmd{create database cvsanaly\_one;}
+Once the tables have been created and filled by "cvsanaly2" tool, queries must be performed in order to analyze the metrics needed for this category. It is not the objective of this document to include a deep study of the tables that cvsanaly.\\
+\\
+Queries used and information dumped by MySQL prompt for each of the metrics is shown below:
+\shellcmd{mysql -uroot -pwhatever}
+Previous command gives access to MySQL prompt. In order to use the database, next command has to be issued:
+\shellcmd{use cvsanaly\_one}
+To obtain when was documentation updated last time:
+\mysqlcmd{select MAX(s.date) from files ff, scmlog s, file\_types f, actions a where s.id=a.commit\_id and f.file\_id=a.file\_id AND f.type='documentation' AND ff.file\_name LIKE '\%.txt' ORDER BY s.date;}
+This query gives a resulting date equal to:
+\begin{verbatim}
++---------------------+
+| MAX(s.date)         |
++---------------------+
+| 2013-11-28 15:11:52 |
++---------------------+
+1 row in set (1.74 sec)
+\end{verbatim}
+Taking into account that the query was performed on 27th of December, 2013, resulting score is \"Last Month\".
+Meanwhile, to obtain how many people contributed to documentation on last year, next query has been used:
+\mysqlcmd{select DISTINCT(p.email) from files ff, scmlog s, file\_types f, people p, actions a where s.id=a.commit\_id and f.file\_id=a.file\_id AND f.type='documentation' AND ff.file\_name LIKE '\%.txt' AND YEAR(s.date)='2013' AND s.committer\_id=p.id; }
+This query gives a resulting number equal to:
+\begin{verbatim}
++--------------------------+
+| email                    |
++--------------------------+
+| jmelis@opennebula.org    |
+| dmolina@opennebula.org   |
+| tinova@opennebula.org    |
+| rsmontero@opennebula.org |
+| cmartin@opennebula.org   |
+| jfontan@opennebula.org   |
++--------------------------+
+6 rows in set (3.32 sec)
+\end{verbatim}
+\end{itemize}
+Resulting score is, as demonstrated above, "5 to 10 people", and, in particular, 6.
+\item{\textbf{Category Weight:}} As previously stated, for this cathegory it has been considered a weight of 25\%.
+\end{itemize}
+Taking into account previous data, next table shows the final score of this category.
+\begin{table}[H]
+  \begin{center}
+    \begin{tabular}{ | p{4cm} | p{3cm} | l | p{1.2cm} | p{1.2cm} | }
+    \hline
+    \textbf{Metric} & \textbf{Score Obtained} & \textbf{Score} & \textbf{Metric Weight} & \textbf{Metric Score}\\
+    \hline
+    Documentation Update & Documentation updated last month & 4 & 50\% & 2\\
+    \hline
+    People Contributing Documentation on last year & 5 to 10 people & 4 & 50\% & 2\\
+    \hline
+    Unweighted rating & \multicolumn{4}{c|}{\textbf{4}}\\
+    \hline
+    Weighted rating (25\%) & \multicolumn {4}{c|}{\textbf{1}}\\
+    \hline
+    \end{tabular}
+    \caption{Documentation Score}
+    \label{tab:docu_score}
+  \end{center}
+\end{table}
+
+\subsection{Community}
+Last, but not least, Community category metrics are analyzed to measure the stability and community health. Nevertheless, this category has been considered the most important one. For this category, it must be remarked that following parameters have been considered:
+\begin{itemize}\itemsep0pt
+\item{\textbf{Data Sources:}} OpenNebula main source code repository, \textbf{One}, has been used to retrieve and analyze metrics. 
+\item{\textbf{Tools:}} Tools used for this category have been basically \textbf{Git}, \textbf{cvsanaly2} and \textbf{MySQL Server}, to retrieve source code repository, classify it and analyze it respectively. 
+\begin{itemize}\itemsep0pt
+\item{Git.} Git has been used to retrieve OpenNebula source code from previously described repository. Usage is exactly the same as described in~\nameref{sec:analysis_documentation}.
+\item{cvsanaly2.} cvsanaly2 tool has been used to classify source code existing on previous directory. Usage is exactly the same as described in~\nameref{sec:analysis_documentation}.
+\item{MySQL.} MySQL server is an important tool to calculate this metrics as well. Apart from database creation, described on previous section~\nameref{sec:analysis_documentation}, MySQL has been used in order to obtain the metrics need to score the project on this category. Queries used and information dumped by MySQL prompt for each of the metrics is shown below:
+\shellcmd{mysql -uroot -pwhatever}
+Previous command gives access to MySQL prompt. In order to use the database, next command has to be issued:
+\shellcmd{use cvsanaly\_one}
+To obtain the number of committers per developer on last month (last complete month was November), first the total number of committers must be issued:
+\mysqlcmd{select COUNT(DISTINCT(p.email)) as "Number of Commiters" from scmlog s, people p WHERE YEAR(s.date)='2013' AND MONTH(s.date)='11' AND s.committer\_id=p.id;}
+This query gives a resulting number equal to:
+\begin{verbatim}
++---------------------+
+| Number of Commiters |
++---------------------+
+|                   6 |
++---------------------+
+1 row in set (0.11 sec)
+\end{verbatim}
+On the other hand, the total number of commits must be calculated. In particular, it can be done with next query:
+\mysqlcmd{select COUNT(s.id) as "Number of Commits" from scmlog s, people p WHERE YEAR(s.date)='2013' AND MONTH(s.date)='11' AND s.committer\_id=p.id;}
+This query gives a resulting number equal to:
+\begin{verbatim}
++-------------------+
+| Number of Commits |
++-------------------+
+|               315 |
++-------------------+
+1 row in set (0.04 sec)
+\end{verbatim}
+Resulting score is 315/6 = 52.5, which is in the end \"20 or more commits / developer\".
+Meanwhile, to obtain the territoriality of files, first the total number of files must be calculated:
+\mysqlcmd{SELECT COUNT(DISTINCT(file\_path)) AS "File Number" FROM file\_links;}
+This query gives a resulting number equal to:
+\begin{verbatim}
++-------------+
+| File Number |
++-------------+
+|        4215 |
++-------------+
+1 row in set (3.05 sec)
+\end{verbatim}
+On the other hand, the number of people who modified just one file can be calculated with next command:
+\mysqlcmd{SELECT f.file\_path, COUNT(p.email) AS "People touching file" FROM scmlog as s, people as p, file\_links as f WHERE f.commit\_id=s.id AND s.committer\_id=p.id GROUP BY f.file\_path HAVING COUNT(p.email)=1;}
+This query gives huge result with all the files being touched by just one person, giving a resulting number equal to:
+\begin{verbatim}
++--------------------------------+----------------------+
+| file_path                      | People touching file |
++--------------------------------+----------------------+
+| apptools                       |                    1 |
+| apptools/install.sh            |                    1 |
+| ...                            |                  ... |
+| sunstone/routes/appenv.rb      |                    1 |
+| sunstone/routes                |                    1 |
++--------------------------------+----------------------+
+2230 rows in set (0.00 sec)
+
+\end{verbatim}
+Resulting score is, as demonstrated above 2230/4215 = 0.529, which gives an score of "more than 50\% of the files".
+Last, but not least, it must be calculated how community has grown or abated on last year. To do so, the number of committers on 2012 has been calculated with next query:
+\mysqlcmd{select DISTINCT(p.email) as "Number of Commits" from scmlog s, people p WHERE YEAR(s.date)='2012' AND s.committer\_id=p.id;}
+This query gives a resulting number equal to:
+\begin{verbatim}
++--------------------------+
+| Number of Commits        |
++--------------------------+
+| rubensm@dacya.ucm.es     |
+...
+| hector@convivencial.org  |
++--------------------------+
+16 rows in set (0.02 sec)
+\end{verbatim}
+Later, the number of commiters in 2013 has been calculated by issuing next query:
+\mysqlcmd{select DISTINCT(p.email) as "Number of Commits" from scmlog s, people p WHERE YEAR(s.date)='2013' AND s.committer\_id=p.id;}
+This query gives a resulting number equal to:
+\begin{verbatim}
++--------------------------+
+| Number of Commits        |
++--------------------------+
+| jfontan@gmail.com        |
+...
+| dmolina@c12g.com         |
++--------------------------+
+9 rows in set (0.05 sec)
+\end{verbatim}
+With this information, it can be ensured that resulting score is, as demonstrated above, is a decrease of 7/16 =0.43 (43\%), what means a "decrease of more than 25\%".
+\end{itemize}
+\item{\textbf{Category Weight:}} As previously stated, for this cathegory it has been considered a weight of 30\%.
+\end{itemize}
+Taking into account previous data, next table shows the final score of this category.
+\begin{table}[H]
+  \begin{center}
+    \begin{tabular}{ | p{4cm} | p{3cm} | l | p{1.2cm} | p{1.2cm} | }
+    \hline
+    \textbf{Metric} & \textbf{Score Obtained} & \textbf{Score} & \textbf{Metric Weight} & \textbf{Metric Score}\\
+    \hline
+    Mean commits / developer last month & 20 or more / developer & 5 & 33\% & 1.67\\
+    \hline
+    Percent of files only modified by one developer & \textgreater50\% & 1 & 33\% & 0.33\\
+    \hline
+    Community growth & \textless-25\% & 1 & 33\% & 0.33\\
+    \hline
+    Unweighted rating & \multicolumn{4}{c|}{\textbf{2.33}}\\
+    \hline
+    Weighted rating (30\%) & \multicolumn {4}{c|}{\textbf{0.7}}\\
+    \hline
+    \end{tabular}
+    \caption{Documentation Score}
+    \label{tab:docu_score}
+  \end{center}
+\end{table}
+
+\subsection{Final Score}
 
 \section{Results} \label{sec:results}
 
