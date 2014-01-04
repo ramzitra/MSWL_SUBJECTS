@@ -14,6 +14,7 @@
 \usepackage{placeins}
 \usepackage{float}
 \usepackage{graphicx}
+\usepackage{booktabs}
 
 \restylefloat{table}
 
@@ -77,7 +78,7 @@ The Quality Model Main Attributes agreed are described below:
 \item{\textbf{Community}}. Community Health as a way of measuring quality. E.g: Has the number of committers grown or decreased in the last year?
 \end{enumerate}
 
-With previous quality attributes brought up, now an invention of the role, a description of it and a cathegorization of the most important attributes from her/his perspective can be performed.
+With previous quality attributes brought up, now an invention of the role, a description of it and a categorization of the most important attributes from her/his perspective can be performed.
 
 \subsection{Role Description} \label{sec:roledesc}
 This document assumes a role play that allows to determine the more important factors from a quality perspective. In particular, the role of a member of the Board of Directors have been considered. So, the main question to answer is next one: \textbf{Which are the more relevant factors for this role?}\\
@@ -141,7 +142,7 @@ As previously defined, some Open Source Software Project Quality Models have bee
 \item{\textbf{Light-weight}}: This kind of Quality Models are easy to accomplish. Examples of this kind of Quality Models are OpenBRR and QSoS:
 \begin{itemize}\itemsep0pt
 \item{\textbf{OpenBRR}}~\cite{OPENBRR00}.
-Open Business Readiness Rating Quality model defines a Spreadsheet with a set of super-attributes. Each of the super-attributes (named Cathegories in the model). Proposed cathegories by the model are:
+Open Business Readiness Rating Quality model defines a Spreadsheet with a set of super-attributes. Each of the super-attributes (named Categories in the model) proposed by the model are:
 \begin{enumerate}\itemsep0pt
 \item{\textbf{Functionality}}
 \item{\textbf{Usability}}
@@ -156,9 +157,11 @@ Open Business Readiness Rating Quality model defines a Spreadsheet with a set of
 \item{\textbf{Community}}
 \item{\textbf{Professionalism}}
 \end{enumerate}
-Each of the Cathegories define a set of subcathegories (Metrics) with a description of the metric itself and the specification of the scores that apply to that particular metric. The user of the spreadsheet can assign different weights to both the category and the subcathegories, in order to achieve a final score for the Open Source Project under study.\\
+Each of the Categories define a set of subcategories (Metrics) with a description of the metric itself and the specification of the scores that apply to that particular metric. The user of the spreadsheet can assign different weights to both the category and the subcategories, in order to achieve a final score for the Open Source Project under study.\\
 \\
-This model, although beeing very improvable, has the merit of being the most simple one among the ones studied. For this reason, our Quality Model will be derived from an even more simple version of this model.
+The model gives, in the end, a Final Score for each project, what allows to the evaluator the possibility of quickly determining which is the most appropriate project according to her/his priorities in terms of Quality.\\
+\\
+This model, although beeing very improvable, has the merit of being the most simple one among the ones studied. For this reason, our Quality Model will be derived from an even more simple version of this model.\\
 \item{\textbf{QSOS}}~\cite{QSOS00}. Qualification and Selection of Opensource Software is a Quality Model, licensed under GNU Free Documentation License.\\
 \\
 The quality model defines what is named as the "QSOS Manifesto", which establishes a list of statements for the objectives that this Quality Model tries to define, that can be summarized in:
@@ -207,9 +210,9 @@ This document does not pretend to be an extensive report or investigation on Qua
 For previous reason, in this case, a very simple Quality Model has been developed, taking some of the attributes of OpenBRR on the one hand, and on the other hand implementing and extending other attributes that have been considered to be important for this kind of Cloud Computing Open Source Projects.
 
 \subsubsection{Quality Model Description}
-The model is inspired on OpenBRR, but with a set of Cathegories and metrics which differ from the original model. Apart from that, some concepts from ISO 9126~\cite{ISO00, ISO01} have been taken into account.\\
+The model is inspired on OpenBRR, but with a set of Categories and metrics which differ from the original model. Apart from that, some concepts from ISO 9126~\cite{ISO00, ISO01} have been taken into account.\\
 \\
-The set of Cathegories agreed for the Quality Model is described below:
+The set of Categories agreed for the Quality Model is described below:
 \begin{itemize}\itemsep0pt
 \item{\textbf{Efficiency}}
 \item{\textbf{Documentation}}
@@ -218,7 +221,7 @@ The set of Cathegories agreed for the Quality Model is described below:
 \item{\textbf{Community}}
 \end{itemize}
 
-Besides this, each of the cathegories, have a set of questions, with answers that are, somehow, measurable. Apart from that, there are several scores applicable, depending on the metrics obtained. Next tables define, for each category, the metrics and scores applicable.
+Besides this, each of the categories, have a set of questions, with answers that are, somehow, measurable. Apart from that, there are several scores applicable, depending on the metrics obtained. Next tables define, for each category, the metrics and scores applicable.
 
 \begin{table}[H]
   \begin{center}
@@ -359,7 +362,7 @@ Role's experience also makes the \textbf{Importance of having professional suppo
 \\
 However, although having not high priority, considers that efficiency has more impact on quality than functionality does. \textbf{Regarding metrics, no special concern is communicated from the role, so that all the metrics for each category seems important equally}.\\
 \\
-According to the role's priorities, her/his preferences and concerns, the resulting table for Cathegories will be as the following one:
+According to the role's priorities, her/his preferences and concerns, the resulting table for Categories will be as the following one:
 \begin{table}[H]
   \begin{center}
     \begin{tabular}{ | l | l | }
@@ -380,8 +383,8 @@ According to the role's priorities, her/his preferences and concerns, the result
 
 Regarding metrics, no special consideration has been taken into. Depending on the number of metrics, proportionality will be applied, so that weight is proportional to all the metrics. 
 \begin{itemize}\itemsep0pt
-\item{For those cathegories having two metrics, 50\% weight will be applied to the metrics.}
-\item{For those cathegories having three metrics, 33,33\% weight will be applied to the metrics.}
+\item{For those categories having two metrics, 50\% weight will be applied to the metrics.}
+\item{For those categories having three metrics, 33,33\% weight will be applied to the metrics.}
 \item{And so on, and so forth.}
 \end{itemize}
 
@@ -427,13 +430,13 @@ This chapter focuses on Functionality category metrics. It must be remarked that
 \begin{itemize}\itemsep0pt
 \item{\textbf{Tools:}} This category has been filled out basically through information existing on OpenNebula Open Source Project Web. Just a web browser (Firefox in this case) has been used.
 \item{\textbf{Data Sources:}} Key Feature chapter on OpenNebula Open Source Project~\cite{OPNEB00}.
-\item{\textbf{Category Weight:}} As previously stated, for this cathegory it has been considered a weight of 10\%.
+\item{\textbf{Category Weight:}} As previously stated, for this category it has been considered a weight of 10\%.
 \end{itemize}
 Taking into account previous data, next table shows the final score of this category.
 \begin{table}[H]
   \begin{center}
     \begin{tabular}{ | p{4cm} | p{3cm} | l | p{1.2cm} | p{1.2cm} | }
-    \hline
+    \toprule
     \textbf{Metric} & \textbf{Score Obtained} & \textbf{Score} & \textbf{Metric Weight} & \textbf{Metric Score}\\
     \hline
     Billing System & Yes, fully supported & 5 & 20\% & 1\\
@@ -445,11 +448,11 @@ Taking into account previous data, next table shows the final score of this cate
     i18n & Yes, more than 5 languages & 5 & 20\% & 1\\
     \hline
     Quota Management & Yes, for computing, storage and networking & 5 & 20\% & 1\\
+    \midrule
+    \textbf{Unweighted rating} & \multicolumn{4}{c|}{\textbf{4.2}}\\
     \hline
-    Unweighted rating & \multicolumn{4}{c|}{\textbf{4.2}}\\
-    \hline
-    Weighted rating (10\%) & \multicolumn {4}{c|}{\textbf{0.42}}\\
-    \hline
+    \textbf{Weighted rating (10\%)} & \multicolumn {4}{c|}{\textbf{0.42}}\\
+    \bottomrule
     \end{tabular}
     \caption{Functionality Score}
     \label{tab:func_score}
@@ -461,23 +464,23 @@ Efficiency category metrics are handled in this section. For this category, it m
 \begin{itemize}\itemsep0pt
 \item{\textbf{Tools:}} This category has been filled out basically through information existing on Benchmark studies about OpenNebula. Google, DuckDuckGo and a web browser (Firefox in this case) have been used.
 \item{\textbf{Data Sources:}} Performance comparison between OpenStack and OpenNebula~\cite{BENCH00}.
-\item{\textbf{Category Weight:}} As previously stated, for this cathegory it has been considered a weight of 15\%.
+\item{\textbf{Category Weight:}} As previously stated, for this category it has been considered a weight of 15\%.
 \end{itemize}
 Taking into account previous data, next table shows the final score of this category.
 \begin{table}[H]
   \begin{center}
     \begin{tabular}{ | p{4cm} | p{3cm} | l | p{1.2cm} | p{1.2cm} | }
-    \hline
+    \toprule
     \textbf{Metric} & \textbf{Score Obtained} & \textbf{Score} & \textbf{Metric Weight} & \textbf{Metric Score}\\
     \hline
     Performance Testing and Benchmark Reports available & Yes & 3 & 50\% & 1.5\\
     \hline
     Performance Tuning and Configuration & No & 1 & 50\% & 0.5\\
+    \midrule
+    \textbf{Unweighted rating} & \multicolumn{4}{c|}{\textbf{2}}\\
     \hline
-    Unweighted rating & \multicolumn{4}{c|}{\textbf{2}}\\
-    \hline
-    Weighted rating (15\%) & \multicolumn {4}{c|}{\textbf{0.3}}\\
-    \hline
+    \textbf{Weighted rating (15\%)} & \multicolumn {4}{c|}{\textbf{0.3}}\\
+    \bottomrule
     \end{tabular}
     \caption{Efficiency Score}
     \label{tab:effi_score}
@@ -489,21 +492,21 @@ Support category metrics is studied in this chapter. For this category, it must 
 \begin{itemize}\itemsep0pt
 \item{\textbf{Tools:}} This category has been filled out basically through information existing on OpenNebula Open Source Project Web. Just a web browser (Firefox in this case) has been used.
 \item{\textbf{Data Sources:}} OpenNebula information associated to Commercial Support~\cite{OPNEB01}.
-\item{\textbf{Category Weight:}} As previously stated, for this cathegory it has been considered a weight of 20\%.
+\item{\textbf{Category Weight:}} As previously stated, for this category it has been considered a weight of 20\%.
 \end{itemize}
 Taking into account previous data, next table shows the final score of this category.
 \begin{table}[H]
   \begin{center}
     \begin{tabular}{ | p{4cm} | p{3cm} | l | p{1.2cm} | p{1.2cm} | }
-    \hline
+    \toprule
     \textbf{Metric} & \textbf{Score Obtained} & \textbf{Score} & \textbf{Metric Weight} & \textbf{Metric Score}\\
     \hline
     Company Support & Just one & 3 & 100\% & 3\\
+    \midrule
+    \textbf{Unweighted rating} & \multicolumn{4}{c|}{\textbf{3}}\\
     \hline
-    Unweighted rating & \multicolumn{4}{c|}{\textbf{3}}\\
-    \hline
-    Weighted rating (20\%) & \multicolumn {4}{c|}{\textbf{0.6}}\\
-    \hline
+    \textbf{Weighted rating (20\%)} & \multicolumn {4}{c|}{\textbf{0.6}}\\
+    \bottomrule
     \end{tabular}
     \caption{Support Score}
     \label{tab:supp_score}
@@ -562,23 +565,23 @@ This query gives a resulting number equal to:
 \end{verbatim}
 \end{itemize}
 Resulting score is, as demonstrated above, "5 to 10 people", and, in particular, 6.
-\item{\textbf{Category Weight:}} As previously stated, for this cathegory it has been considered a weight of 25\%.
+\item{\textbf{Category Weight:}} As previously stated, for this category it has been considered a weight of 25\%.
 \end{itemize}
 Taking into account previous data, next table shows the final score of this category.
 \begin{table}[H]
   \begin{center}
     \begin{tabular}{ | p{4cm} | p{3cm} | l | p{1.2cm} | p{1.2cm} | }
-    \hline
+    \toprule
     \textbf{Metric} & \textbf{Score Obtained} & \textbf{Score} & \textbf{Metric Weight} & \textbf{Metric Score}\\
     \hline
     Documentation Update & Documentation updated last month & 4 & 50\% & 2\\
     \hline
     People Contributing Documentation on last year & 5 to 10 people & 4 & 50\% & 2\\
+    \midrule
+    \textbf{Unweighted rating} & \multicolumn{4}{c|}{\textbf{4}}\\
     \hline
-    Unweighted rating & \multicolumn{4}{c|}{\textbf{4}}\\
-    \hline
-    Weighted rating (25\%) & \multicolumn {4}{c|}{\textbf{1}}\\
-    \hline
+    \textbf{Weighted rating (25\%)} & \multicolumn {4}{c|}{\textbf{1}}\\
+    \bottomrule
     \end{tabular}
     \caption{Documentation Score}
     \label{tab:docu_score}
@@ -653,36 +656,55 @@ Last, but not least, it must be calculated how community has grown or abated on 
 This query gives a resulting number equal to:
 \begin{verbatim}
 +--------------------------+
-| Number of Commits        |
+| Committers               |
 +--------------------------+
 | rubensm@dacya.ucm.es     |
-...
+| j.melis@fdi.ucm.es       |
+| jfontan@gmail.com        |
+| cmartins@fdi.ucm.es      |
+| tinova79@gmail.com       |
+| danmolin@fdi.ucm.es      |
+| support@c12g.com         |
+| hsanjuan@opennebula.org  |
+| rsmontero@opennebula.org |
+| ruben@pc-ruben.(none)    |
+| jmelis@opennebula.org    |
+| jfontan@opennebula.org   |
+| tinova@opennebula.org    |
+| dmolina@opennebula.org   |
+| cmartin@opennebula.org   |
 | hector@convivencial.org  |
 +--------------------------+
-16 rows in set (0.02 sec)
+16 rows in set (0.03 sec)
 \end{verbatim}
 Later, the number of commiters in 2013 has been calculated by issuing next query:
 \mysqlcmd{select DISTINCT(p.email) as "Number of Commits" from scmlog s, people p WHERE YEAR(s.date)='2013' AND s.committer\_id=p.id;}
 This query gives a resulting number equal to:
 \begin{verbatim}
 +--------------------------+
-| Number of Commits        |
+| Committers               |
 +--------------------------+
 | jfontan@gmail.com        |
-...
+| tinova79@gmail.com       |
+| rsmontero@opennebula.org |
+| jmelis@opennebula.org    |
+| jfontan@opennebula.org   |
+| tinova@opennebula.org    |
+| dmolina@opennebula.org   |
+| cmartin@opennebula.org   |
 | dmolina@c12g.com         |
 +--------------------------+
-9 rows in set (0.05 sec)
+9 rows in set (0.04 sec)
 \end{verbatim}
-With this information, it can be ensured that resulting score is, as demonstrated above, is a decrease of 7/16 =0.43 (43\%), what means a "decrease of more than 25\%".
+This information is not enough, as, on this small number of results, it can be observed that some committers are repeated. Indeed, for each table, it can be asserted than on 2012 there were 9 unique committers. Meanwhile, on 2013, there were 6 unique committers. After fixing the results, it can be ensured that resulting score is, as demonstrated above, is a decrease of 3/9 =0.33 (33\%), what means a "decrease of more than 25\%".
 \end{itemize}
-\item{\textbf{Category Weight:}} As previously stated, for this cathegory it has been considered a weight of 30\%.
+\item{\textbf{Category Weight:}} As previously stated, for this category it has been considered a weight of 30\%.
 \end{itemize}
 Taking into account previous data, next table shows the final score of this category.
 \begin{table}[H]
   \begin{center}
     \begin{tabular}{ | p{4cm} | p{3cm} | l | p{1.2cm} | p{1.2cm} | }
-    \hline
+    \toprule
     \textbf{Metric} & \textbf{Score Obtained} & \textbf{Score} & \textbf{Metric Weight} & \textbf{Metric Score}\\
     \hline
     Mean commits / developer last month & 20 or more / developer & 5 & 33\% & 1.67\\
@@ -690,11 +712,11 @@ Taking into account previous data, next table shows the final score of this cate
     Percent of files only modified by one developer & \textgreater50\% & 1 & 33\% & 0.33\\
     \hline
     Community growth & \textless-25\% & 1 & 33\% & 0.33\\
+    \midrule
+    \textbf{Unweighted rating} & \multicolumn{4}{c|}{\textbf{2.33}}\\
     \hline
-    Unweighted rating & \multicolumn{4}{c|}{\textbf{2.33}}\\
-    \hline
-    Weighted rating (30\%) & \multicolumn {4}{c|}{\textbf{0.7}}\\
-    \hline
+    \textbf{Weighted rating (30\%)} & \multicolumn {4}{c|}{\textbf{0.7}}\\
+    \bottomrule
     \end{tabular}
     \caption{Documentation Score}
     \label{tab:docu_score}
@@ -702,7 +724,35 @@ Taking into account previous data, next table shows the final score of this cate
 \end{table}
 
 \subsection{Final Score}
-
+With data existing on the previous tables, where partial scores for each category and weighted rating have been calculated, give the possibility to calculate the final total score for OpenNebula.\\
+\\
+Final score is just calculated by adding the weighted rating of each of the category, what gives a final result of 3.02, as shown summarized in next table:
+\begin{table}[H]
+  \begin{center}
+    \begin{tabular}{ | p{3cm} | p{2.5cm} | p{1.5cm} | p{2cm} | }
+    \toprule
+    \textbf{Category} & \textbf{Unweighted rating} & \textbf{Weigth} & \textbf{Weighted Score}\\
+    \hline
+    Functionality & 4.2 & 10\% & 0.42\\
+    \hline
+    Efficiency & 2 & 15\% & 0.3\\
+    \hline
+    Support & 3 & 20\% & 0.6\\
+    \hline
+    Documentation & 4 & 25\% & 1\\
+    \hline
+    Community & 2.33 & 30\% & 0.7\\
+    \midrule
+    \textbf{Final Score} & \multicolumn {3}{c|}{\textbf{3.02}}\\
+    \bottomrule
+    \end{tabular}
+    \caption{OpenNebula Score}
+    \label{tab:final_score}
+  \end{center}
+\end{table}
+Once the Final Score for OpenNebula has been obtained, one question appears: \textbf{Is OpenNebula a good quality project? There is no answer to this question}. OpenBRR does not define to which level a project is a quality project, as it just allows comparing between projects of the same nature for a evaluator to take a final decission.\\
+\\
+On next section, taking advantage of the scores obtained to the same Quality Model from other Cloud Computing Open Source Projects, in particular CloudStack, Eucalyptus and OpenStack, and adjusting the weights of them to be the the same as the ones used for calculating OpenNebula score, a calculation of the best project fitting the necessities of the role will be performed.
 \section{Results} \label{sec:results}
 
 \section{Conclussion} \label{sec:conclussion}
