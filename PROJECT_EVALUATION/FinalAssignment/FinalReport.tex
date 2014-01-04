@@ -83,7 +83,7 @@ With previous quality attributes brought up, now an invention of the role, a des
 \subsection{Role Description} \label{sec:roledesc}
 This document assumes a role play that allows to determine the more important factors from a quality perspective. In particular, the role of a member of the Board of Directors have been considered. So, the main question to answer is next one: \textbf{Which are the more relevant factors for this role?}\\
 \\
-To answer this question, a first assumption of the personal background of this role must be performed. This member has been part of the leadership group of an important Open Source project.\\
+To answer this question, a first assumption of the personal background of this role must be performed. This member has been part of the leadership group of an important Open Source Project.\\
 \\
 For this reason, his personal and professional background makes him aware of the \textbf{Importance of the Community} for an Open Source Project to succeed along the time.\\
 \\
@@ -202,7 +202,7 @@ As this document will not use or even inspire on QualOSS, not very deep informat
 \end{itemize}
 \end{itemize}
 
-\subsection{Details of the Selected Quality Model}
+\subsection{Details of the Selected Quality Model}\label{sec:quality_model}
 However, a particular Quality Model is not mandatory to be applied "AS IS". Some variations, limitations, trims, extensions or further considerations can be performed, according to the requirements and priorities defined for a particular Open Source Project.\\
 \\
 This document does not pretend to be an extensive report or investigation on Quality, but rather an explanation on what a definition of a simple Quality Model for a particular type of Open Source Projects, in this case, related to an incipient and very active technology as Cloud Computing is, and how a particular project scores to that model.\\
@@ -351,7 +351,7 @@ The Quality Model Spreadsheet previously described can be downloaded at next rep
 In particular, the Quality Model Spreadsheet can be downloaded on path "spreadsheet/BRR\_ProjEval\_2013.ods", or directly through next path:\\
 \\
 \url{https://github.com/MSWL-PROJ-EV-2013-2014/projev/blob/master/spreadsheet/BRR_ProjEval_2013.ods}
-\subsubsection{Weights}
+\subsubsection{Weights}\label{sec:weights}
 Apart from the Quality Model Question / Metrics, the spreadsheet selected, inspired by OpenBRR Quality Model, contain the concept of "weights". Weights are simply a percentage to prioritize those aspects that are important for the role on her/his concept of quality. \\
 \\
 On previous section~\nameref{sec:roledesc}, the priorities for the role selected was explained from a descriptive perspective. However, on this section, a quantitative specification will be provided.\\
@@ -413,7 +413,7 @@ Regarding sources of data used to obtain the metrics, next datasets have been us
 \item{\textbf{Cloud Stack Benchmark comparison}~\cite{BENCH00}}. This documentation has helped on finding out attributes having to do with \textbf{Efficiency} category, clarifying if Benchmark studies exist.
 \end{itemize}
 
-\section{Analysis} \label{sec:analysis}
+\section{Analysis}\label{sec:analysis}
 
 This section summarizes the score obtained by OpenNebula Open Source project on the previously proposed Quality Model. Each of the next subsections cover the application of the Quality Model, and how by using the tools described on the data sources, an score is obtained for each category. Later, a final score will be obtained by setting weights to each metric and each category, to obtain the final score for OpenNebula.\\
 \\
@@ -718,12 +718,12 @@ Taking into account previous data, next table shows the final score of this cate
     \textbf{Weighted rating (30\%)} & \multicolumn {4}{c|}{\textbf{0.7}}\\
     \bottomrule
     \end{tabular}
-    \caption{Documentation Score}
-    \label{tab:docu_score}
+    \caption{Community Score}
+    \label{tab:comm_score}
   \end{center}
 \end{table}
 
-\subsection{Final Score}
+\subsection{Final Score}\label{sec:final_score}
 With data existing on the previous tables, where partial scores for each category and weighted rating have been calculated, give the possibility to calculate the final total score for OpenNebula.\\
 \\
 Final score is just calculated by adding the weighted rating of each of the category, what gives a final result of 3.02, as shown summarized in next table:
@@ -754,6 +754,149 @@ Once the Final Score for OpenNebula has been obtained, one question appears: \te
 \\
 On next section, taking advantage of the scores obtained to the same Quality Model from other Cloud Computing Open Source Projects, in particular CloudStack, Eucalyptus and OpenStack, and adjusting the weights of them to be the the same as the ones used for calculating OpenNebula score, a calculation of the best project fitting the necessities of the role will be performed.
 \section{Results} \label{sec:results}
+On previous section~\nameref{sec:analysis}, the calculation of the quality score of OpenNebula Open Sour ce Project has been carried out. However, this score is only valid to compare the project against other similar nature projects in order to take a decission on which project fits better for the necessities identified by the invented role described in subsection~\nameref{sec:roledesc}.\\
+\\
+In parallel to the redaction of this final assignment, other lectures have performed the evaluation of CloudStack, Eucalyptus and OpenStack Open Source Projects. Spreadsheets developed by them can be obtained on next repository:
+\\
+\url{https://github.com/MSWL-PROJ-EV-2013-2014/projev.git}\\
+\\
+In particular, the Quality Model Spreadsheets can be downloaded, respectively, on next paths:
+\begin{itemize}\itemsep0pt
+\item{"spreadsheet/CloudStack/CloudStack\_BRR\_ProjEval\_2013.ods"}
+\item{"spreadsheet/eucalyptus/BRR\_ProjEval\_eucalyptus.ods"}
+\item{"spreadsheet/OpenStack/OpenStack\_BRR\_ProjEval\_2013.ods"}
+\end{itemize}
+or directly through next urls:
+\begin{itemize}\itemsep0pt
+\item{\url{https://github.com/MSWL-PROJ-EV-2013-2014/projev/blob/master/spreadsheet/CloudStack/CloudStack\_BRR\_ProjEval\_2013.ods}}
+\item{\url{https://github.com/MSWL-PROJ-EV-2013-2014/projev/blob/master/spreadsheet/eucalyptus/BRR\_ProjEval\_eucalyptus.ods}}
+\item{\url{https://github.com/MSWL-PROJ-EV-2013-2014/projev/blob/master/spreadsheet/OpenStack/OpenStack\_BRR\_ProjEval\_2013.ods}}
+\end{itemize}
+Previous models contain an analysis of the rest of the Cloud Computing Open Source Projects, similar to the one performed . However, they contain weights adapted to what other students' invented roles have considered appropriate.\\
+\\
+\textbf{For this reason, the models have been reused in order to calculate the scores of each of these other projects}, but taking into account the invented role described previously on section~\nameref{sec:roledesc}, which, in turn, means considering the weights described in~\nameref{sec:weights}.\\
+\\
+The score of each of the rest of the projects is shown in next subsections, on a summarized way similar to the Final Score described in subsection\label{sec:final_score}. Besides this, a comparison table showing a top down projects classification, always considering the Quality Model proposed in subsection~\nameref{sec:quality_model}.\\
+\\
+It must be remarked that information existing on next subsections can also be obtained through next repository:
+\\
+\url{https://github.com/MSWL-PROJ-EV-2013-2014/projev.git}\\
+\\
+In particular, the Quality Model Spreadsheets can be downloaded, respectively, on next paths:
+\begin{itemize}\itemsep0pt
+\item{"spreadsheet/OpenNebula/CloudStack\_BRR\_ProjEval\_2013.ods"}
+\item{"spreadsheet/OpenNebula/BRR\_ProjEval\_eucalyptus.ods"}
+\item{"spreadsheet/OpenNebula/OpenStack\_BRR\_ProjEval\_2013.ods"}
+\end{itemize}
+or directly through next urls:
+\begin{itemize}\itemsep0pt
+\item{\url{https://github.com/MSWL-PROJ-EV-2013-2014/projev/blob/master/spreadsheet/OpenNebula/CloudStack\_BRR\_ProjEval\_2013.ods}}
+\item{\url{https://github.com/MSWL-PROJ-EV-2013-2014/projev/blob/master/spreadsheet/OpenNebula/BRR\_ProjEval\_eucalyptus.ods}}
+\item{\url{https://github.com/MSWL-PROJ-EV-2013-2014/projev/blob/master/spreadsheet/OpenNebula/OpenStack\_BRR\_ProjEval\_2013.ods}}
+The reason for each of the projects to be contained in \"OpenNebula\" folder is simply that they follow the weights proposed for OpenNebula project.
+\end{itemize}
+
+\subsection{CloudStack}
+This section contemplates the final score of CloudStack Open Source Project. Final score is just calculated by adding the weighted rating of each of the categories, what gives a final result of 3.571, as shown summarized in next table:
+\begin{table}[H]
+  \begin{center}
+    \begin{tabular}{ | p{3cm} | p{2.5cm} | p{1.5cm} | p{2cm} | }
+    \toprule
+    \textbf{Category} & \textbf{Unweighted rating} & \textbf{Weigth} & \textbf{Weighted Score}\\
+    \hline
+    Functionality & 3.8 & 10\% & 0.38\\
+    \hline
+    Efficiency & 3 & 15\% & 0.45\\
+    \hline
+    Support & 3 & 20\% & 0.6\\
+    \hline
+    Documentation & 5 & 25\% & 1.25\\
+    \hline
+    Community & 2.97 & 30\% & 0.891\\
+    \midrule
+    \textbf{Final Score} & \multicolumn {3}{c|}{\textbf{3.571}}\\
+    \bottomrule
+    \end{tabular}
+    \caption{CloudStack Score}
+    \label{tab:cloudstack_score}
+  \end{center}
+\end{table}
+
+\subsection{Eucalyptus}
+This section contemplates the final score of Eucalyptus Open Source Project. Final score is just calculated by adding the weighted rating of each of the categories, what gives a final result of 3.43, as shown summarized in next table:
+\begin{table}[H]
+  \begin{center}
+    \begin{tabular}{ | p{3cm} | p{2.5cm} | p{1.5cm} | p{2cm} | }
+    \toprule
+    \textbf{Category} & \textbf{Unweighted rating} & \textbf{Weigth} & \textbf{Weighted Score}\\
+    \hline
+    Functionality & 4.6 & 10\% & 0.46\\
+    \hline
+    Efficiency & 3 & 15\% & 0.45\\
+    \hline
+    Support & 3 & 20\% & 0.6\\
+    \hline
+    Documentation & 4.5 & 25\% & 1.13\\
+    \hline
+    Community & 2.64 & 30\% & 0.79\\
+    \midrule
+    \textbf{Final Score} & \multicolumn {3}{c|}{\textbf{3.43}}\\
+    \bottomrule
+    \end{tabular}
+    \caption{Eucalyptus Score}
+    \label{tab:eucalyptus_score}
+  \end{center}
+\end{table}
+
+\subsection{OpenStack}
+Finally, the final score of OpenStack Open Source Project. Final score is just calculated by adding the weighted rating of each of the categories, what gives a final result of 3.31, as shown summarized in next table:
+\begin{table}[H]
+  \begin{center}
+    \begin{tabular}{ | p{3cm} | p{2.5cm} | p{1.5cm} | p{2cm} | }
+    \toprule
+    \textbf{Category} & \textbf{Unweighted rating} & \textbf{Weigth} & \textbf{Weighted Score}\\
+    \hline
+    Functionality & 3.4 & 10\% & 0.34\\
+    \hline
+    Efficiency & 3 & 15\% & 0.45\\
+    \hline
+    Support & 5 & 20\% & 1\\
+    \hline
+    Documentation & 4.5 & 25\% & 1.13\\
+    \hline
+    Community & 1.32 & 30\% & 0.4\\
+    \midrule
+    \textbf{Final Score} & \multicolumn {3}{c|}{\textbf{3.31}}\\
+    \bottomrule
+    \end{tabular}
+    \caption{OpenStack Score}
+    \label{tab:openstack_score}
+  \end{center}
+\end{table}
+
+\subsection{Cloud Computing Open Source Projects Comparison}
+Last, but not least, it is important to set a top-down table, ordered by weighted final score, with the Quality Model decided. Next table shows project classification depending on the Final Score, as well as the weighted score obtained for each category:
+\begin{table}[H]
+  \begin{center}
+    \begin{tabular}{ | p{2.5cm} | p{1cm} | p{2.2cm} | p{1.8cm} | p{1.7cm} | p{2.4cm} | p{1.9cm} | }
+    \toprule
+    Project & \textbf{Final Score} & Functionality & Efficiency & Support & Documentation & Community\\
+    \hline
+    CloudStack & \textbf{3.57} & 0.38 & 0.45 & 0.6 & 1.25 & 0.891\\
+    \hline
+    Eucalyptus & \textbf{3.43} & 0.46 & 0.45 & 0.6 & 1.13 & 0.79\\
+    \hline
+    OpenStack & \textbf{3.31} & 0.34 & 0.45 & 1 & 1.13 & 0.4\\
+    \hline
+    OpenNebula & \textbf{3.02} & 0.42 & 0.3 & 0.6 & 1 & 0.7\\
+    \midrule
+    \textbf{Winner Project} & \multicolumn {6}{c|}{\textbf{CloudStack}}\\
+    \bottomrule
+    \end{tabular}
+    \caption{Comparison Table}
+    \label{tab:comparison_table}
+  \end{center}
+\end{table}
 
 \section{Conclussion} \label{sec:conclussion}
 
