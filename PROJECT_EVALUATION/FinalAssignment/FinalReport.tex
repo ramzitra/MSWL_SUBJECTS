@@ -28,6 +28,7 @@ pdfborder={0 0 0}
 \maketitle
 
 \tableofcontents
+\listoftables
 
 \pagebreak
 
@@ -225,8 +226,8 @@ Besides this, each of the categories, have a set of questions, with answers that
 \begin{table}[H]
   \begin{center}
     \begin{tabular}{ | p{3cm} | p{5cm} | p{3cm} | l | }
-    \hline
-    Metric & Description & Score Specification & Score \\
+    \toprule
+    \textbf{Metric} & \textbf{Description} & \textbf{Score Specification} & \textbf{Score} \\
     \hline
     Billing System & Does The Cloud System provide a Billing System for User Accounting? & Yes, fully supported & 5 \\ \cline{3-3} \cline{4-4} 
     & & Yes, partially supported & 3 \\ \cline{3-3}\cline{4-4}
@@ -247,7 +248,7 @@ Besides this, each of the categories, have a set of questions, with answers that
     Quota Management & Does The Cloud System provide a system for quota management & Yes, for computing, storage and networking & 5 \\ \cline{3-3} \cline{4-4} 
     & & Yes, but not for all functionalities & 3 \\ \cline{3-3}\cline{4-4}
     & & No & 1 \\
-    \hline
+    \bottomrule
     \end{tabular}
     \caption{Functionality}
     \label{tab:functionality}
@@ -257,8 +258,8 @@ Besides this, each of the categories, have a set of questions, with answers that
 \begin{table}[H]
   \begin{center}
     \begin{tabular}{ | p{3cm} | p{5cm} | p{3cm} | l | }
-    \hline
-    Metric & Description & Score Specification & Score \\
+    \toprule
+    \textbf{Metric} & \textbf{Description} & \textbf{Score Specification} & \textbf{Score} \\
     \hline
     Performance or Benchmark Tests Available & This measures if there was any performance testing done and benchmarks published — typically in comparison to other equivalent solutions & Yes, with good results & 5 \\ \cline{3-3} \cline{4-4} 
     & & Yes & 3 \\ \cline{3-3}\cline{4-4}
@@ -267,7 +268,7 @@ Besides this, each of the categories, have a set of questions, with answers that
     Performance Tuning and Configuration & Is there documentation or tool to help fine-tune the component for performance? & Yes, extensive & 5 \\ \cline{3-3} \cline{4-4} 
     & & Yes, some & 3 \\ \cline{3-3}\cline{4-4}
     & & No & 1 \\ 
-    \hline
+    \bottomrule
     \end{tabular}
     \caption{Efficiency}
     \label{tab:efficiency}
@@ -277,13 +278,13 @@ Besides this, each of the categories, have a set of questions, with answers that
 \begin{table}[H]
   \begin{center}
     \begin{tabular}{ | p{3cm} | p{5cm} | p{3cm} | l | }
-    \hline
-    Metric & Description & Score Specification & Score \\
+    \toprule
+    \textbf{Metric} & \textbf{Description} & \textbf{Score Specification} & \textbf{Score} \\
     \hline
     Company Support & Which is the amount of companies providing support ? & More than one & 5 \\ \cline{3-3} \cline{4-4} 
     & & Just one & 3 \\ \cline{3-3}\cline{4-4}
     & & No one & 1 \\ 
-    \hline
+    \bottomrule
     \end{tabular}
     \caption{Support}
     \label{tab:support}
@@ -293,8 +294,8 @@ Besides this, each of the categories, have a set of questions, with answers that
 \begin{table}[H]
   \begin{center}
     \begin{tabular}{ | p{3cm} | p{5cm} | p{3cm} | l | }
-    \hline
-    Metric & Description & Score Specification & Score \\
+    \toprule
+    \textbf{Metric} & \textbf{Description} & \textbf{Score Specification} & \textbf{Score} \\
     \hline
     Documentation Update & When was the last time that documentation was updated ? & Last week & 5 \\ \cline{3-3} \cline{4-4} 
     & & Last Month & 4 \\ \cline{3-3}\cline{4-4}
@@ -307,7 +308,7 @@ Besides this, each of the categories, have a set of questions, with answers that
     & & Two to Five people & 3 \\ \cline{3-3}\cline{4-4}
     & & One person & 2 \\ \cline{3-3}\cline{4-4}
     & & No person & 1 \\ 
-    \hline
+    \bottomrule
     \end{tabular}
     \caption{Documentation}
     \label{tab:documentation}
@@ -317,8 +318,8 @@ Besides this, each of the categories, have a set of questions, with answers that
 \begin{table}[H]
   \begin{center}
     \begin{tabular}{ | p{3cm} | p{5cm} | p{3cm} | l | }
-    \hline
-    Metric & Description & Score Specification & Score \\
+    \toprule
+    \textbf{Metric} & \textbf{Description} & \textbf{Score Specification} & \textbf{Score} \\
     \hline
     Mean commits & Which was the mean number of commits per developer last month? & 20 or more commits / developer & 5 \\ \cline{3-3} \cline{4-4}
     & & 10 to 20 commits / developer & 4 \\ \cline{3-3}\cline{4-4}
@@ -337,7 +338,7 @@ Besides this, each of the categories, have a set of questions, with answers that
     & & 0\% to 25\%  & 3 \\ \cline{3-3}\cline{4-4}
     & & 0\% to -25\% & 2 \\ \cline{3-3}\cline{4-4}
     & & \textless-25\%       & 1 \\ 
-    \hline
+    \bottomrule
     \end{tabular}
     \caption{Community}
     \label{tab:community}
@@ -365,15 +366,15 @@ According to the role's priorities, her/his preferences and concerns, the result
 \begin{table}[H]
   \begin{center}
     \begin{tabular}{ | l | l | }
-    \hline
-    Category & Weight \\
+    \toprule
+    \textbf{Category} & \textbf{Weight} \\
     \hline
     Community & 30\%\\
     Documentation & 25\% \\
     Support & 20\% \\
     Efficiency & 15\% \\
     Functionality & 10\% \\
-    \hline
+    \bottomrule
     \end{tabular}
     \caption{Weights}
     \label{tab:weights}
