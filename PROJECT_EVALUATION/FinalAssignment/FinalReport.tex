@@ -59,10 +59,9 @@ This document follows next structure, in order to accomplish the different phase
 \begin{itemize}\itemsep0pt
 \item{\textbf{Introduction}}. This chapter describes the final aim of this document, how it is structured and the role being taken in order to take into consideration the most important factors to make the final decission on the Cloud Computing Open Source Project.
 \item{\textbf{Methodology}}. On this chapter, the Quality Model will be described, justifying the selection of the different attributes to consider, the metrics derived from them and the weights applied taking into consideration the role selected.
-\item{\textbf{Analysis}}. Analysis chapter will justify the application of the model, which tools will be used in order to obtain and analyze the different representative metrics and the data sources used to retrieve them. A Goal-Question-Metric (GQM) model will be implemented to describe how OpenNebula project will be analysed.
-\item{\textbf{Results}}. Chapter whose final aim is to calculate OpenNebula score obtained by the application of the Quality Model by using the different tools and source data, all of them described on the previous sources.
-\item{\textbf{Conclussion}}. In parallel to this document, and analysis of other Cloud Computing Open Source Projects have been performed with the same quality model. However, on those documents the particular weights applied are related to what the other students invented roles have considered to be appropriate. In this and those documents the metrics obtained will be shared.
-This document will perform the score of the rest of the projects, taking into account the same weights that this document have taken into consideration. With OpenNebula and the other Cloud Computing Open Source Projects score, the final decission will be taken.
+\item{\textbf{Analysis}}. Analysis chapter will justify the application of the model, which tools will be used in order to obtain and analyze the different representative metrics and the data sources used to retrieve them. A Goal-Question-Metric (GQM) model will be implemented to describe how OpenNebula project will be analysed. Chapter final aim is to calculate OpenNebula score obtained by the application of the Quality Model by using the different tools and source data, all of them described on the previous sources.
+\item{\textbf{Results}}. In parallel to this document, and analysis of other Cloud Computing Open Source Projects have been performed with the same quality model. However, on those documents the particular weights applied are related to what the other students invented roles have considered to be appropriate. In this and those documents the metrics obtained will be shared. This chapter will perform the score of the rest of the projects, taking into account the same weights that this document have taken into consideration. With OpenNebula and the other Cloud Computing Open Source Projects score, the final decission will be taken.
+\item{\textbf{Conclussion}}. Conclussion chapter will justify if results and Open Source Project selected does really fit into requirements specified. It will also summarize the different aspects collected on this document.
 
 \item{\textbf{Bibliography and References}}. This chapter collects the references and bibliography followed to perform this analysis.
 
@@ -134,7 +133,7 @@ Both previously defined models, although being complete in terms of quality of t
 \end{itemize}
 Fortunately, there have been several approaches to define Quality Models which are more appropriate to be applied to an Open Source Project, and, which indeed, address previous factors, as well as other different ones that are also important to measure particular Quality factors related to this kind of projects. Next section defines some of the most commonly used models.
 
-\subsection{Open Source Software Project Models}
+\subsection{Open Source Software Project Quality Models}\label{sec:oss_quality_models}
 
 As previously defined, some Open Source Software Project Quality Models have been defined. There are two basic kind of models, taking into account the complexity of its implementation:
 
@@ -897,9 +896,26 @@ Last, but not least, it is important to set a top-down table, ordered by weighte
     \label{tab:comparison_table}
   \end{center}
 \end{table}
+For this reason, it can be ensured that, according to the Quality Model and the weights specified, \textbf{CloudStack is the most appropriate Cloud Computing Open Source Project}, at least among the set of projects which have been analyzed.
 
 \section{Conclussion} \label{sec:conclussion}
-
+Contrary to what may appear initially, where OpenStack seems to be the most important Cloud Stack Computing Open Source Project, the final conclussion of this document is clear: \textbf{CloudStack is the most appropriate Cloud Computing Open Source Project}, at least, for a self-defined Quality Model and taking into account those factors considered more important for an invented role acting as evaluator. However, special attention has to be paid before taking the final decission. At least, some inspection on the results of the weighted scores for each category against this project competitors must be analyzed.\\
+\\
+At a first glance, it could happen that the project was much better in less important categories, such as Functionality, Efficiency or even Support, compared to CloudStack competitors, but nothing could be further from the truth. CloudStack is the \textbf{best project} in what has been determined the most important categories for the invented role, namely, \textbf{Documentation and Community}.\\
+\\
+Besides this, on the rest of categories, CloudStack is never the worst case, at least on a unique way. For Functionality category, CloudStack is, at least, better than OpenStack, although worst than OpenNebula and Eucalyptus. Meanwhile, for Efficiency category, CloudStack equals in first place with Eucalyptus and OpenStack, improving OpenNebula. Support category is not the strength of CloudStack, but at least it seems that its score equals Eucalyptus and OpenNebula.\\
+\\
+Considering previous information, there is no doubt that \textbf{CloudStack Open Source Project is the one fitting best the requirements of the evaluator}.\\
+\\
+This document is an entry point to the different steps that must be followed in order to determine the best option when selecting a particular Open Source project, and in particular:
+\begin{enumerate}
+\item{\textbf{Identifying the set of candidate projects.}} Select a group of Open Source Projects among the different possibilities by considering the nature of the product that must be acquired, together with the information existing on specialized magazines, scientific papers, blogs and other Internet information sources in order to build a set of candidate projects to be evaluated.
+\item{\textbf{Determining a Quality Model.}} It can be based on existing ones, as described in section~\nameref{sec:oss_quality_models}, or a self-defined/adapted version to fit better into the requirements of the company. It is recommended to set a Quality Model based on GQM (Goal/Question/Metric) model, by setting Goals, rasing Question and obtaining Metrics that allow answering them.
+\item{\textbf{Weighting the different categories.}} Depending on the type of Quality Model selected, it could be possible that a classification in importance of the different categories existing on the model must be carried out, as described in subsection~\nameref{sec:weights}.
+\item{\textbf{Analyzing and Classifying candidate projects.}} Using a particular set of tools, applied to different sets of data sources, an analysis of the candidate projects should be performed. This analysis must determine as result a final top-down classification of the different projects, for the evaluator to select the most appropriate project for the necessities proposed.
+\item{\textbf{Final decission.}} Before takign the final decission, some other questions must be asked: Is the project a good option for my necessities? Does the project have special weakness compared to other projects? And if so, can they suppose a problem for the company/organization?. Are there projects that, although being slightly worst in the Quality Model score result, are, somehow, more balanced, having fewer weaknesses?
+\end{enumerate}
+Taking a decission on which Open Source Project must be acquired is normally a hard thing. This document aims to be an entry point to follow some very basic steps for facilitating this task, and minimize the risk associated to facing a wrong selection.
 \bibliographystyle{unsrt}
 \bibliography{mybib}{}
 \end{document}
