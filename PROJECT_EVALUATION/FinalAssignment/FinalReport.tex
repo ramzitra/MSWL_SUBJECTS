@@ -5,7 +5,6 @@
 \author{Sergio Arroutbi Braojos}
 \date{\today}
 
-\usepackage{hyperref}
 \usepackage[bottom=14em]{geometry}
 \usepackage{amsmath}
 \usepackage{mathtools}
@@ -15,6 +14,7 @@
 \usepackage{float}
 \usepackage{graphicx}
 \usepackage{booktabs}
+\usepackage{hyperref}
 
 \restylefloat{table}
 
@@ -37,32 +37,32 @@ This paper tries to perform an estimation of quality for a particular Cloud Comp
 \\
 In particular, by means of using a role play, the selection of a Cloud Computing System by a company offering cloud computing, storage and network services for other companies, from the perspective of a member of the Board of Directors of the company.\\
 \\
-By means of definition of a custom quality model, focused on the necessities of an invented role, OpenNebula project is analyzed, scored, and compared to the other projects. The final aim of this document is to take a decission of which is the best alternative to use, taking into account the most important factors in terms of quality that a Cloud Computing System must have for the invented role.
+By means of definition of a custom quality model, focused on the necessities of an invented role, OpenNebula project is analyzed, scored, and compared to the other projects. The final aim of this document is to take a decision of which is the best alternative to use, taking into account the most important factors in terms of quality that a Cloud Computing System must have for the invented role.
 
 \section{Introduction} \label{sec:introduction}
-This document is an approach to demonstrate the different issues and evaluations that can be taken into consideration in order to make a decission on the selection of an Open Source Project. A complete analysis of the quality of a particular project, in this case, OpenNebula, will be performed, by applying a self-defined quality model. 
+This document is an approach to demonstrate the different issues and evaluations that can be taken into consideration in order to make a decision on the selection of an Open Source Project. A complete analysis of the quality of a particular project, in this case, OpenNebula, will be performed, by applying a self-defined quality model. 
 
 \subsection{Document Objectives}
-Apart from previously approach, a comparison with the score of other projects into the same quality model will be performed, so that decission making will be structured by following next steps:
+Apart from previously approach, a comparison with the score of other projects into the same quality model will be performed, so that decision making will be structured by following next steps:
 
 \begin{itemize}\itemsep0pt
 \item{Defining a role that justifies why some aspects are more or less important from a quality perspective, hence which factors are more valuable to consider in a quality model, in such way that allows to select or discard a particular project.}
 \item{Defining a quality model that has been initially agreed and drafted between different students, that allows to obtain a quality score so that comparison between other Cloud Computing Open Source Projects can be performed.}
 \item{Defining the different values in terms of scoring (weights) that all of the statements included in the quality model have, according to the role selected.}
-\item{Analysing a particular Cloud Computing Open Source Project, OpenNebula in this case, by obtaining metrics of it and sharing with the rest of the students.}
+\item{Analyzing a particular Cloud Computing Open Source Project, OpenNebula in this case, by obtaining metrics of it and sharing with the rest of the students.}
 \item{Calculating the final scoring of this particular project, OpenNebula, according to the weights decided according to the role.}
 \item{And finally, by comparing the final score to the rest of the projects and justifying the selection of the "Winner Project".}
 \end{itemize}
 
 \subsection{Document Structure}
-This document follows next structure, in order to accomplish the different phases that must be considered before making the final decission on the Cloud Computing Open Source Project selected:
+This document follows next structure, in order to accomplish the different phases that must be considered before making the final decision on the Cloud Computing Open Source Project selected:
 
 \begin{itemize}\itemsep0pt
-\item{\textbf{Introduction}}. This chapter describes the final aim of this document, how it is structured and the role being taken in order to take into consideration the most important factors to make the final decission on the Cloud Computing Open Source Project.
+\item{\textbf{Introduction}}. This chapter describes the final aim of this document, how it is structured and the role being taken in order to take into consideration the most important factors to make the final decision on the Cloud Computing Open Source Project.
 \item{\textbf{Methodology}}. On this chapter, the Quality Model will be described, justifying the selection of the different attributes to consider, the metrics derived from them and the weights applied taking into consideration the role selected.
-\item{\textbf{Analysis}}. Analysis chapter will justify the application of the model, which tools will be used in order to obtain and analyze the different representative metrics and the data sources used to retrieve them. A Goal-Question-Metric (GQM) model will be implemented to describe how OpenNebula project will be analysed. Chapter final aim is to calculate OpenNebula score obtained by the application of the Quality Model by using the different tools and source data, all of them described on the previous sources.
-\item{\textbf{Results}}. In parallel to this document, and analysis of other Cloud Computing Open Source Projects have been performed with the same quality model. However, on those documents the particular weights applied are related to what the other students invented roles have considered to be appropriate. In this and those documents the metrics obtained will be shared. This chapter will perform the score of the rest of the projects, taking into account the same weights that this document have taken into consideration. With OpenNebula and the other Cloud Computing Open Source Projects score, the final decission will be taken.
-\item{\textbf{Conclussion}}. Conclussion chapter will justify if results and Open Source Project selected does really fit into requirements specified. It will also summarize the different aspects collected on this document.
+\item{\textbf{Analysis}}. Analysis chapter will justify the application of the model, which tools will be used in order to obtain and analyze the different representative metrics and the data sources used to retrieve them. A Goal-Question-Metric (GQM) model will be implemented to describe how OpenNebula project will be analyzed. Chapter final aim is to calculate OpenNebula score obtained by the application of the Quality Model by using the different tools and source data, all of them described on the previous sources.
+\item{\textbf{Results}}. In parallel to this document, and analysis of other Cloud Computing Open Source Projects have been performed with the same quality model. However, on those documents the particular weights applied are related to what the other students invented roles have considered to be appropriate. In this and those documents the metrics obtained will be shared. This chapter will perform the score of the rest of the projects, taking into account the same weights that this document have taken into consideration. With OpenNebula and the other Cloud Computing Open Source Projects score, the final decision will be taken.
+\item{\textbf{Conclusion}}. Conclusion chapter will justify if results and Open Source Project selected does really fit into requirements specified. It will also summarize the different aspects collected on this document.
 
 \item{\textbf{Bibliography and References}}. This chapter collects the references and bibliography followed to perform this analysis.
 
@@ -115,18 +115,18 @@ This model defines a set of six super-attributes that are considered the more re
 Each of the super-attributes defines a collection of sub-attributes as well. A collection of 27 sub-attributes derived from the super-attributes are defined.
 Taking into consideration all of the attributes and sub-attributes, a consideration on the quality of the Software of a particular project can be performed.
 \item{CMMI}~\cite{CMMI00}.
-Code Maturity Model Integration (CMMI) is applied more to the process of Software production rather than the Software itself. Defined in Carnegie Mellon University, this model claims that the modle can be used to guide process improvement across a project, division, or an entire organization.
+Code Maturity Model Integration (CMMI) is applied more to the process of Software production rather than the Software itself. Defined in Carnegie Mellon University, this model claims that the model can be used to guide process improvement across a project, division, or an entire organization.
 It basically defines a set of levels that allow to identify the state of the development process up to day. The levels defined are as follow, taking into account that the higher the level is, the more quality the development process of the project has:
 \end{itemize}
 
 \begin{itemize}\itemsep0pt
-\item{\textbf{Level 1. Initial.}} Processes are unpredictible and unmeasurable, and no reactive.
+\item{\textbf{Level 1. Initial.}} Processes are unpredictable and unmeasurable, and no reactive.
 \item{\textbf{Level 2. Managed.}} Processes are characterized for projects, and often reactive.
 \item{\textbf{Level 3. Defined.}} Processes are characterized for the organization and proactive. 
 \item{\textbf{Level 4. Quantitatively Managed.}} Development Processes are Measured and Under Control.
 \item{\textbf{Level 5. Optimizing.}} Focus on Process Improvement.
 \end{itemize}
-Both previously defined models, although being complete in terms of quality of the Software and its development process respectiveley, do not take into consideration additional aspects which are considered important only in the case of Open Source Software Projects. Examples of factors not beeing taken into consideration are, e.g.:
+Both previously defined models, although being complete in terms of quality of the Software and its development process respectively, do not take into consideration additional aspects which are considered important only in the case of Open Source Software Projects. Examples of factors not being taken into consideration are, e.g.:
 \begin{itemize}\itemsep0pt
 \item{Community commitment}
 \item{Community activity}
@@ -161,14 +161,14 @@ Each of the Categories define a set of subcategories (Metrics) with a descriptio
 \\
 The model gives, in the end, a Final Score for each project, what allows to the evaluator the possibility of quickly determining which is the most appropriate project according to her/his priorities in terms of Quality.\\
 \\
-This model, although beeing very improvable, has the merit of being the most simple one among the ones studied. For this reason, our Quality Model will be derived from an even more simple version of this model.\\
+This model, although being very improvable, has the merit of being the most simple one among the ones studied. For this reason, our Quality Model will be derived from an even more simple version of this model.\\
 \item{\textbf{QSOS}}~\cite{QSOS00}. Qualification and Selection of Opensource Software is a Quality Model, licensed under GNU Free Documentation License.\\
 \\
 The quality model defines what is named as the "QSOS Manifesto", which establishes a list of statements for the objectives that this Quality Model tries to define, that can be summarized in:
 \begin{itemize}\itemsep0pt
 \item{Analyzing needs and limitations in software adoption}
 \item{Evaluating functional and technical requirements}
-\item{Formalising a methodology}
+\item{Formalizing a methodology}
 \item{Results reusing}
 \item{Providing a free method}
 \end{itemize}
@@ -179,13 +179,13 @@ Based on this manifesto, QSOS defines an iterative process that consist of four 
 \item{\textbf{Evaluation}}. An Evaluation sheet is defined to evaluate the functional coverage and the risks that are to be considered from both user and service provider perspectives.
 \item{\textbf{Qualification}}. This step define filters that take into account needs and limitations on the 
 specific context of the project.
-\item{\textbf{Selection}}. Identify software meeting the needs and/or requirements. Compare sofware and target selection.
+\item{\textbf{Selection}}. Identify software meeting the needs and/or requirements. Compare software and target selection.
 \end{itemize}
 To summarize, this model, despite the fact that is a light-weight model, is, somehow, a more difficult model to implement compared to OpenBRR. Apart from that, OpenBRR, having the possibility to assign different weights makes OpenBRR a more flexible model, more malleable to the necessities and priorities of a particular role or a particular company.
 \end{itemize}
 \item{\textbf{Heavy-weight}}: This kind of Quality Models are complex and not easily implementable. A good example of this kind of project is QualOSS.
 \begin{itemize}\itemsep0pt
-\item{\textbf{QualOSS}}~\cite{QUALOSS00}: Quality of Open Source Software. Started on 2006 and funded mainly by the Eurpoean Union, this project aimed to fill the gap in the state of the art of the Quality Models for Open Source Project Evaluation.\\
+\item{\textbf{QualOSS}}~\cite{QUALOSS00}: Quality of Open Source Software. Started on 2006 and funded mainly by the European Union, this project aimed to fill the gap in the state of the art of the Quality Models for Open Source Project Evaluation.\\
 \\
 It is considered a \textbf{heavy-weight} Quality Model, due to the progress and change of methodology that supposed compared to the already existing Quality Models, described above.\\
 \\
@@ -333,7 +333,7 @@ Besides this, each of the categories, have a set of questions, with answers that
     & & 20\%-50\% & 2 \\ \cline{3-3}\cline{4-4}
     & & \textgreater 50\% & 1 \\ 
     \hline
-    Community Growth & \% of committers number increase/decrease in the last year, calculated as percent difference in the amount of people who commited changes on 2012 compared to 2013 & \textgreater50\% & 5 \\ \cline{3-3} \cline{4-4}
+    Community Growth & \% of committers number increase/decrease in the last year, calculated as percent difference in the amount of people who committed changes on 2012 compared to 2013 & \textgreater50\% & 5 \\ \cline{3-3} \cline{4-4}
     & & 25\% to 50\% & 4 \\ \cline{3-3}\cline{4-4}
     & & 0\% to 25\%  & 3 \\ \cline{3-3}\cline{4-4}
     & & 0\% to -25\% & 2 \\ \cline{3-3}\cline{4-4}
@@ -400,7 +400,7 @@ Once Quality Model has been explained, it is time for an explanation on how to c
 \item{Most active committers}.
 \item{And, in general, all the information that can be retrieved from that particular Software Configuration Manager}.
 \item{Territoriality of the project, by means of calculation of the different people modifying a particular file}.
-\item{Type of files commited}.
+\item{Type of files committed}.
 \end{itemize}
 \end{enumerate}
 This kind of analysis fits perfectly to obtain metrics of the Quality Model associated to \textbf{Community}and \textbf{Documentation}, with metrics such as last update of documentation, mean number of commits per developer or files territoriality as percentage of files being touched by a unique developer.
@@ -514,7 +514,7 @@ Taking into account previous data, next table shows the final score of this cate
 \end{table}
 
 \subsection{Documentation}\label{sec:analysis_documentation}
-Documentation category metrics are analyzed in this chapter, to measure the quality of the documenation, considered important from the invented role perspective. For this category, it must be remarked that following parameters have been considered:
+Documentation category metrics are analyzed in this chapter, to measure the quality of the documentation, considered important from the invented role perspective. For this category, it must be remarked that following parameters have been considered:
 \begin{itemize}\itemsep0pt
 \item{\textbf{Data Sources:}} OpenNebula main source code repository, \textbf{One}, has been used to retrieve and analyze metrics. 
 \item{\textbf{Tools:}} Tools used for this category have been basically \textbf{Git}, \textbf{cvsanaly2} and \textbf{MySQL Server}, to retrieve source code repository, classify it and analyze it respectively.
@@ -731,7 +731,7 @@ Final score is just calculated by adding the weighted rating of each of the cate
   \begin{center}
     \begin{tabular}{ | p{3cm} | p{2.5cm} | p{1.5cm} | p{2cm} | }
     \toprule
-    \textbf{Category} & \textbf{Unweighted rating} & \textbf{Weigth} & \textbf{Weighted Score}\\
+    \textbf{Category} & \textbf{Unweighted rating} & \textbf{Weight} & \textbf{Weighted Score}\\
     \hline
     Functionality & 4.2 & 10\% & 0.42\\
     \hline
@@ -750,11 +750,11 @@ Final score is just calculated by adding the weighted rating of each of the cate
     \label{tab:final_score}
   \end{center}
 \end{table}
-Once the Final Score for OpenNebula has been obtained, one question appears: \textbf{Is OpenNebula a good quality project? There is no answer to this question}. OpenBRR does not define to which level a project is a quality project, as it just allows comparing between projects of the same nature for a evaluator to take a final decission.\\
+Once the Final Score for OpenNebula has been obtained, one question appears: \textbf{Is OpenNebula a good quality project? There is no answer to this question}. OpenBRR does not define to which level a project is a quality project, as it just allows comparing between projects of the same nature for a evaluator to take a final decision.\\
 \\
 On next section, taking advantage of the scores obtained to the same Quality Model from other Cloud Computing Open Source Projects, in particular CloudStack, Eucalyptus and OpenStack, and adjusting the weights of them to be the the same as the ones used for calculating OpenNebula score, a calculation of the best project fitting the necessities of the role will be performed.
 \section{Results} \label{sec:results}
-On previous section~\nameref{sec:analysis}, the calculation of the quality score of OpenNebula Open Sour ce Project has been carried out. However, this score is only valid to compare the project against other similar nature projects in order to take a decission on which project fits better for the necessities identified by the invented role described in subsection~\nameref{sec:roledesc}.\\
+On previous section~\nameref{sec:analysis}, the calculation of the quality score of OpenNebula Open Source Project has been carried out. However, this score is only valid to compare the project against other similar nature projects in order to take a decision on which project fits better for the necessities identified by the invented role described in subsection~\nameref{sec:roledesc}.\\
 \\
 In parallel to the redaction of this final assignment, other lectures have performed the evaluation of CloudStack, Eucalyptus and OpenStack Open Source Projects. Spreadsheets developed by them can be obtained on next repository:
 \\
@@ -792,8 +792,9 @@ or directly through next urls:
 \begin{itemize}\itemsep0pt
 \item{\url{https://github.com/MSWL-PROJ-EV-2013-2014/projev/blob/master/spreadsheet/OpenNebula/CloudStack\_BRR\_ProjEval\_2013.ods}}
 \item{\url{https://github.com/MSWL-PROJ-EV-2013-2014/projev/blob/master/spreadsheet/OpenNebula/BRR\_ProjEval\_eucalyptus.ods}}
-\item{\url{https://github.com/MSWL-PROJ-EV-2013-2014/projev/blob/master/spreadsheet/OpenNebula/OpenStack\_BRR\_ProjEval\_2013.ods}}
-The reason for each of the projects to be contained in \"OpenNebula\" folder is simply that they follow the weights proposed for OpenNebula project.
+\item{\url{https://github.com/MSWL-PROJ-EV-2013-2014/projev/blob/master/spreadsheet/OpenNebula/OpenStack\_BRR\_ProjEval\_2013.ods}}\\
+\\
+The reason for each of the projects to be contained in "OpenNebula" folder is simply that they follow the weights proposed for OpenNebula project.
 \end{itemize}
 
 \subsection{CloudStack}
@@ -802,7 +803,7 @@ This section contemplates the final score of CloudStack Open Source Project. Fin
   \begin{center}
     \begin{tabular}{ | p{3cm} | p{2.5cm} | p{1.5cm} | p{2cm} | }
     \toprule
-    \textbf{Category} & \textbf{Unweighted rating} & \textbf{Weigth} & \textbf{Weighted Score}\\
+    \textbf{Category} & \textbf{Unweighted rating} & \textbf{Weight} & \textbf{Weighted Score}\\
     \hline
     Functionality & 3.8 & 10\% & 0.38\\
     \hline
@@ -828,7 +829,7 @@ This section contemplates the final score of Eucalyptus Open Source Project. Fin
   \begin{center}
     \begin{tabular}{ | p{3cm} | p{2.5cm} | p{1.5cm} | p{2cm} | }
     \toprule
-    \textbf{Category} & \textbf{Unweighted rating} & \textbf{Weigth} & \textbf{Weighted Score}\\
+    \textbf{Category} & \textbf{Unweighted rating} & \textbf{Weight} & \textbf{Weighted Score}\\
     \hline
     Functionality & 4.6 & 10\% & 0.46\\
     \hline
@@ -854,7 +855,7 @@ Finally, the final score of OpenStack Open Source Project. Final score is just c
   \begin{center}
     \begin{tabular}{ | p{3cm} | p{2.5cm} | p{1.5cm} | p{2cm} | }
     \toprule
-    \textbf{Category} & \textbf{Unweighted rating} & \textbf{Weigth} & \textbf{Weighted Score}\\
+    \textbf{Category} & \textbf{Unweighted rating} & \textbf{Weight} & \textbf{Weighted Score}\\
     \hline
     Functionality & 3.4 & 10\% & 0.34\\
     \hline
@@ -899,8 +900,8 @@ Last, but not least, it is important to set a top-down table, ordered by weighte
 \end{table}
 For this reason, it can be ensured that, according to the Quality Model and the weights specified, \textbf{CloudStack is the most appropriate Cloud Computing Open Source Project}, at least among the set of projects which have been analyzed.
 
-\section{Conclussion} \label{sec:conclussion}
-Contrary to what may appear initially, where OpenStack seems to be the most important Cloud Stack Computing Open Source Project, the final conclussion of this document is clear: \textbf{CloudStack is the most appropriate Cloud Computing Open Source Project}, at least, for a self-defined Quality Model and taking into account those factors considered more important for an invented role acting as evaluator. However, special attention has to be paid before taking the final decission. At least, some inspection on the results of the weighted scores for each category against this project competitors must be analyzed.\\
+\section{Conclusion} \label{sec:conclusion}
+Contrary to what may appear initially, where OpenStack seems to be the most important Cloud Stack Computing Open Source Project, the final conclusion of this document is clear: \textbf{CloudStack is the most appropriate Cloud Computing Open Source Project}, at least, for a self-defined Quality Model and taking into account those factors considered more important for an invented role acting as evaluator. However, special attention has to be paid before taking the final decision. At least, some inspection on the results of the weighted scores for each category against this project competitors must be analyzed.\\
 \\
 At a first glance, it could happen that the project was much better in less important categories, such as Functionality, Efficiency or even Support, compared to CloudStack competitors, but nothing could be further from the truth. CloudStack is the \textbf{best project} in what has been determined the most important categories for the invented role, namely, \textbf{Documentation and Community}.\\
 \\
@@ -911,12 +912,12 @@ Considering previous information, there is no doubt that \textbf{CloudStack Open
 This document is an entry point to the different steps that must be followed in order to determine the best option when selecting a particular Open Source project, and in particular:
 \begin{enumerate}
 \item{\textbf{Identifying the set of candidate projects.}} Select a group of Open Source Projects among the different possibilities by considering the nature of the product that must be acquired, together with the information existing on specialized magazines, scientific papers, blogs and other Internet information sources in order to build a set of candidate projects to be evaluated.
-\item{\textbf{Determining a Quality Model.}} It can be based on existing ones, as described in section~\nameref{sec:oss_quality_models}, or a self-defined/adapted version to fit better into the requirements of the company. It is recommended to set a Quality Model based on GQM (Goal/Question/Metric) model, by setting Goals, rasing Question and obtaining Metrics that allow answering them.
+\item{\textbf{Determining a Quality Model.}} It can be based on existing ones, as described in section~\nameref{sec:oss_quality_models}, or a self-defined/adapted version to fit better into the requirements of the company. It is recommended to set a Quality Model based on GQM (Goal/Question/Metric) model, by setting Goals, raising Question and obtaining Metrics that allow answering them.
 \item{\textbf{Weighting the different categories.}} Depending on the type of Quality Model selected, it could be possible that a classification in importance of the different categories existing on the model must be carried out, as described in subsection~\nameref{sec:weights}.
 \item{\textbf{Analyzing and Classifying candidate projects.}} Using a particular set of tools, applied to different sets of data sources, an analysis of the candidate projects should be performed. This analysis must determine as result a final top-down classification of the different projects, for the evaluator to select the most appropriate project for the necessities proposed.
-\item{\textbf{Final decission.}} Before takign the final decission, some other questions must be asked: Is the project a good option for my necessities? Does the project have special weakness compared to other projects? And if so, can they suppose a problem for the company/organization?. Are there projects that, although being slightly worst in the Quality Model score result, are, somehow, more balanced, having fewer weaknesses?
+\item{\textbf{Final decision.}} Before taking the final decision, some other questions must be asked: Is the project a good option for my necessities? Does the project have special weakness compared to other projects? And if so, can they suppose a problem for the company/organization?. Are there projects that, although being slightly worst in the Quality Model score result, are, somehow, more balanced, having fewer weaknesses?
 \end{enumerate}
-Taking a decission on which Open Source Project must be acquired is normally a hard thing. This document aims to be an entry point to follow some very basic steps for facilitating this task, and minimize the risk associated to facing a wrong selection.
+Taking a decision on which Open Source Project must be acquired is normally a hard thing. This document aims to be an entry point to follow some very basic steps for facilitating this task, and minimize the risk associated to facing a wrong selection.
 \bibliographystyle{unsrt}
 \bibliography{mybib}{}
 \end{document}
